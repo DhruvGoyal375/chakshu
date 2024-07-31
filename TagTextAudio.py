@@ -32,7 +32,7 @@ def ReadPara(para, Heading):
           #highlight the word only once
           if word in links:
             links.remove(word)
-          textSpeech = gTTS(word, lang='en', tld="co.uk", slow=False)
+          textSpeech = gTTS(word, lang='en', tld="co.in", slow=False)
         else:
           textSpeech = gTTS(word.strip(), lang='en', tld = "co.in", slow=False)       
         textSpeech.write_to_fp(f) 
