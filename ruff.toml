@@ -1,0 +1,62 @@
+line-length = 120
+
+indent-width = 4
+
+exclude = [
+    ".git",
+    ".gitignore",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[format]
+quote-style = "double"
+
+
+[lint]
+select = [
+   "F",
+   "E",
+   "W",
+   "I",
+   "UP",
+   "YTT",
+   "ASYNC",
+   "S2", "S5", "S7",
+   "C4",
+   "T10",
+   "DJ003", "DJ012", "DJ013",
+   "EM",
+   "EXE",
+   "ICN",
+   "LOG",
+   "INP",
+   "SLOT",
+   "RSE",
+   "PD",
+   "PGH",
+   "TRY003",
+   "TRY004",
+   "TRY2",
+   "TRY302",
+   "FLY",
+   "NPY",
+   "AIR",
+]
+
+ignore = ["E501", "E722", "F821"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+
+unfixable = []
+
+preview = true
+
+per-file-ignores = {}

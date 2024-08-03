@@ -1,0 +1,31 @@
+# Python byte-code
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.ruff_cache/
+
+# Django-specific
+db.sqlite3
+local_settings.py
+
+# IDE-specific
+.idea/
+.vscode/
+
+# Testing
+*.egg-info/
+dist/
+build/
+htmlcov/
+.tox/
+
+# Miscellaneous
+*.swp
+.DS_Store
+
+# Poetry
+.venv/
+poetry.lock
