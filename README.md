@@ -8,7 +8,7 @@ Chakshu helps blind people read and navigate Wikipedia articles using voice comm
 
 Make sure you have the following installed on your machine:
 
-- [Python 3.12](https://www.python.org/downloads/)
+- [Python 3.10+](https://www.python.org/downloads/)
 - [Poetry](https://python-poetry.org/docs/#installation)
 
 ### Installation
