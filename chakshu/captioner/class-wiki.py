@@ -49,7 +49,48 @@ class WikipediaImageCaptioner:
         except Exception as e:
             print(f"Failed to download {url}: {e}")
             return None, url
-    # Add Scrapper
+    def parse_wikipedia_page(self, html_content):
+        soup = BeautifulSoup(html_content, "html.parser")
+        references, image_info_list, links, main_content = [], [], [], []
+
+        for sup in soup.find_all("sup", class_="reference"):
+            a_tag = sup.find("a")
+            if a_tag and a_tag.text and a_tag.has_attr("href"):
+                references.append({a_tag.text: a_tag["href"]})
+            sup.decompose()
+
+        body_content = soup.find("div", id="bodyContent")
+        for figure in body_content.find_all("figure"):
+            image_info = self.extract_image_info("https://en.wikipedia.org" + figure.find("a")["href"])
+            if image_info:
+                image_info_list.append(image_info)
+            figure.decompose()
+
+        for anchor in body_content.find_all("a"):
+            if anchor.has_attr("href") and anchor.text:
+                link_address = anchor["href"]
+                if link_address.startswith("/wiki"):
+                    link_address = "https://en.wikipedia.org" + link_address
+                links.append({anchor.get_text(separator=" "): link_address})
+
+        for item in body_content.find_all(["p", "h1", "h2", "h3", "h4", "h5", "h6"]):
+            content_item = {"heading": item.get_text(separator=" ")} if item.name != "p" else {"paragraph": item.get_text(separator=" ")}
+            main_content.append(content_item)
+
+        return {"references": references, "image_info": image_info_list, "links": links, "content": main_content}
+
+    def extract_image_info(self, url):
+        response = requests.get(url)
+        if response.status_code != 200:
+            return None
+
+        image_page = BeautifulSoup(response.text, "html.parser")
+        img_div = image_page.find("div", class_="fullImageLink", id="file")
+        if img_div and img_div.find("a").has_attr("href"):
+            image_link = img_div.find("a")["href"][2:]
+            description = " ".join(desc.get_text(separator=" ") for desc in image_page.findAll("td", class_="description"))
+            return {"link": image_link, "description": description}
+        return None
     def generate_caption(self, context, full_description):
         """Generate a caption for an image using the LLM model."""
         prompt = (
