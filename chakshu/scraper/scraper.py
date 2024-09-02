@@ -191,6 +191,13 @@ class WikipediaScraper:
             return
         soup = self.clean_html_tags(soup)
         self.print_structure(soup)
+        # Uncomment to print links, figures, and images
+        # for i in scraper.link:
+        #     print(i, ":", scraper.link[i])
+        # for i in scraper.figure:
+        #     print(i[0], ":", i[1])
+        # for i in scraper.images:
+        #     print(i[0], ":", i[1])
 
 
 # Example usage
@@ -198,10 +205,3 @@ if __name__ == "__main__":
     url = "https://en.wikipedia.org/wiki/James_Bond"
     scraper = WikipediaScraper()
     scraper.main(url)
-    # Uncomment to print links, figures, and images
-    # for i in scraper.link:
-    #     print(i, ":", scraper.link[i])
-    # for i in scraper.figure:
-    #     print(i[0], ":", i[1])
-    # for i in scraper.images:
-    #     print(i[0], ":", i[1])
