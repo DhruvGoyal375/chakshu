@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import shutil
 import ollama
 import requests
-from scrapper import WikipediaImageScrapper # Referenec From Image Scrapper
+from scrapper import WikipediaImageScrapper #Include From Image Scrapper
 
 warnings.filterwarnings("ignore")
 
@@ -47,9 +47,9 @@ class WikipediaImageCaptioner:
             html_content = await scrapper.fetch_content(session, self.url)
             if not html_content:
                 return {}
-
-            page_data = scrapper.parse_wikipedia_page(html_content)
-            self.image_data = [img for img in page_data["image_info"] if scrapper.is_image_link(img['link'])]
+            image_info = scrapper.get_all_images(html_content)
+           
+            self.image_data = [img for img in image_info if scrapper.is_image_link(img['link'])]
 
             image_urls = ["https://" + img["link"] for img in self.image_data]
             os.makedirs(self.image_folder, exist_ok=True)
@@ -70,7 +70,8 @@ class WikipediaImageCaptioner:
                     if show:
                         print(filename, ':', caption)
                     self.captions[url] = caption
-
+            
+            
             shutil.rmtree(self.image_folder, ignore_errors=True)
             return self.captions
 
@@ -98,5 +99,5 @@ if __name__ == "__main__":
     path = "https://en.wikipedia.org/wiki/James_Bond"
     scrapper = WikipediaImageScrapper(path)
     cap = WikipediaImageCaptioner(path)
-    single_image_caption = asyncio.run(cap.process_images())
+    single_image_caption = asyncio.run(cap.process_single_image('https://upload.wikimedia.org/wikipedia/commons/c/c3/Hoagy_Carmichael_-_1947.jpg'))
     print(single_image_caption)
