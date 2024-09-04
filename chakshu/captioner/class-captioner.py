@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import shutil
 import ollama
 import requests
-from scrapper import WikipediaImageScrapper
+from scrapper import WikipediaImageScrapper # Referenec From Image Scrapper
 
 warnings.filterwarnings("ignore")
 
