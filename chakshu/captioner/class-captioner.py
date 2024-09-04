@@ -3,13 +3,13 @@ import os
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
-import re
-import urllib
 import shutil
 import ollama
 import requests
+from scrapper import WikipediaImageScrapper
 
 warnings.filterwarnings("ignore")
+
 
 class WikipediaImageCaptioner:
     def __init__(self, url):
@@ -18,38 +18,6 @@ class WikipediaImageCaptioner:
         self.image_data = []
         self.captions = {}
 
-    def clean_filename(self, filename):
-        name_without_extension = filename.rsplit('.', 1)[0]
-        name_with_spaces = name_without_extension.replace('_', ' ')
-        decoded_name = urllib.parse.unquote(name_with_spaces)
-        return decoded_name.title()
-
-    def is_image_link(self, url):
-        """Check if a URL is an image link."""
-        return re.search(r"\.(jpg|jpeg|png)$", url, re.IGNORECASE) is not None
-
-    async def fetch_content(self, session, url):
-        try:
-            async with session.get(url) as response:
-                response.raise_for_status()
-                return await response.text()
-        except Exception as e:
-            print(f"Error fetching {url}: {e}")
-            return None
-
-    async def download_image(self, session, url):
-        file_name = url.split("/")[-1]
-        file_path = os.path.join(self.image_folder, file_name)
-        try:
-            async with session.get(url) as response:
-                response.raise_for_status()
-                with open(file_path, "wb") as file:
-                    file.write(await response.read())
-            return file_path, url
-        except Exception as e:
-            print(f"Failed to download {url}: {e}")
-            return None, url
-    # Add Scrapper
     def generate_caption(self, context, full_description):
         """Generate a caption for an image using the LLM model."""
         prompt = (
@@ -76,18 +44,17 @@ class WikipediaImageCaptioner:
 
     async def process_images(self, show=False):
         async with aiohttp.ClientSession() as session:
-            html_content = await self.fetch_content(session, self.url)
+            html_content = await scrapper.fetch_content(session, self.url)
             if not html_content:
                 return {}
 
-            page_data = self.parse_wikipedia_page(html_content)
-            self.image_data = [img for img in page_data["image_info"] if self.is_image_link(img['link'])]
+            page_data = scrapper.parse_wikipedia_page(html_content)
+            self.image_data = [img for img in page_data["image_info"] if scrapper.is_image_link(img['link'])]
 
             image_urls = ["https://" + img["link"] for img in self.image_data]
             os.makedirs(self.image_folder, exist_ok=True)
 
-            # Use asynchronous downloading for images
-            tasks = [self.download_image(session, url) for url in image_urls]
+            tasks = [scrapper.download_image(session, url) for url in image_urls]
             download_results = await asyncio.gather(*tasks)
 
             print("Downloaded..")
@@ -96,8 +63,8 @@ class WikipediaImageCaptioner:
                 print("LLM making Responses...")
                 if file_path:
                     filename = os.path.basename(file_path)
-                    full_info = self.gather_image_metadata(filename)
-                    clean_name = self.clean_filename(filename)
+                    full_info = scrapper.gather_image_metadata(filename)
+                    clean_name = scrapper.clean_filename(filename)
                     description = next((img['description'] for img in self.image_data if "https://" + img["link"] == url), "Description not found.")
                     caption = self.generate_caption(f"{clean_name} {description}", full_description=full_info)
                     if show:
@@ -111,13 +78,13 @@ class WikipediaImageCaptioner:
         """Process a single image URL asynchronously and return a dictionary with the image URL as the key and the generated caption as the value."""
         async with aiohttp.ClientSession() as session:
             os.makedirs(self.image_folder, exist_ok=True)
-            file_path, url = await self.download_image(session, image_url)
+            file_path, url = await scrapper.download_image(session, image_url)
             if not file_path:
                 return {}
 
             filename = os.path.basename(file_path)
-            full_info = self.gather_image_metadata(filename)
-            clean_name = self.clean_filename(filename)
+            full_info = scrapper.gather_image_metadata(filename)
+            clean_name = scrapper.clean_filename(filename)
             context = clean_name
             description = "Description not found."
             caption = self.generate_caption(context, full_description=full_info)
@@ -128,7 +95,8 @@ class WikipediaImageCaptioner:
 
 
 if __name__ == "__main__":
-    scraper = WikipediaImageCaptioner("https://en.wikipedia.org/wiki/Narendra_Modi")
-    single_image_caption = asyncio.run(scraper.process_single_image('https://upload.wikimedia.org/wikipedia/commons/0/0f/Narendra_Modi_and_Prime_Minister_Atal_Bihari_Vajpayee_in_New_Delhi_in_October_12%2C_2001.jpg'))
+    path = "https://en.wikipedia.org/wiki/James_Bond"
+    scrapper = WikipediaImageScrapper(path)
+    cap = WikipediaImageCaptioner(path)
+    single_image_caption = asyncio.run(cap.process_images())
     print(single_image_caption)
-
