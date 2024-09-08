@@ -1,12 +1,13 @@
-import warnings
-import os
-import aiohttp
 import asyncio
-from bs4 import BeautifulSoup
+import os
 import shutil
+import warnings
+
+import aiohttp
 import ollama
 import requests
-from scrapper import WikipediaImageScrapper #Include From Image Scrapper
+from bs4 import BeautifulSoup
+from scrapper import WikipediaImageScrapper  # Include From Image Scrapper
 
 warnings.filterwarnings("ignore")
 
@@ -36,8 +37,8 @@ class WikipediaImageCaptioner:
             try:
                 response = requests.get(base_url + filename)
                 if response.status_code == 200:
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    return soup.get_text(separator='\n', strip=True).lower()
+                    soup = BeautifulSoup(response.content, "html.parser")
+                    return soup.get_text(separator="\n", strip=True).lower()
             except Exception:
                 pass
         return ""
@@ -48,8 +49,8 @@ class WikipediaImageCaptioner:
             if not html_content:
                 return {}
             image_info = scrapper.get_all_images(html_content)
-           
-            self.image_data = [img for img in image_info if scrapper.is_image_link(img['link'])]
+
+            self.image_data = [img for img in image_info if scrapper.is_image_link(img["link"])]
 
             image_urls = ["https://" + img["link"] for img in self.image_data]
             os.makedirs(self.image_folder, exist_ok=True)
@@ -65,13 +66,15 @@ class WikipediaImageCaptioner:
                     filename = os.path.basename(file_path)
                     full_info = scrapper.gather_image_metadata(filename)
                     clean_name = scrapper.clean_filename(filename)
-                    description = next((img['description'] for img in self.image_data if "https://" + img["link"] == url), "Description not found.")
+                    description = next(
+                        (img["description"] for img in self.image_data if "https://" + img["link"] == url),
+                        "Description not found.",
+                    )
                     caption = self.generate_caption(f"{clean_name} {description}", full_description=full_info)
                     if show:
-                        print(filename, ':', caption)
+                        print(filename, ":", caption)
                     self.captions[url] = caption
-            
-            
+
             shutil.rmtree(self.image_folder, ignore_errors=True)
             return self.captions
 
@@ -99,5 +102,7 @@ if __name__ == "__main__":
     path = "https://en.wikipedia.org/wiki/James_Bond"
     scrapper = WikipediaImageScrapper(path)
     cap = WikipediaImageCaptioner(path)
-    single_image_caption = asyncio.run(cap.process_single_image('https://upload.wikimedia.org/wikipedia/commons/c/c3/Hoagy_Carmichael_-_1947.jpg'))
+    single_image_caption = asyncio.run(
+        cap.process_single_image("https://upload.wikimedia.org/wikipedia/commons/c/c3/Hoagy_Carmichael_-_1947.jpg")
+    )
     print(single_image_caption)

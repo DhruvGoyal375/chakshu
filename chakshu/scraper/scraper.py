@@ -1,4 +1,3 @@
-import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
@@ -29,7 +28,6 @@ class WikipediaScraper:
         for i in element.find_all("a"):
             if type(i.get_text()) is str:
                 self.link[i.get_text()] = i.get("href")
-                # print(i.get_text(), ":", i.get('href'))
         for i in element.find_all("img"):
             self.images.append([i.get("src"), i.get("alt")])
 
@@ -56,10 +54,6 @@ class WikipediaScraper:
         counts = [0] * cols
         # Corresponding text data for the columns with remaining rowspan
         textdata = [None] * cols
-        # for counter in range (0,len(rows)):
-        #     firsthead = rows[counter].find(["th"])
-        #     if firsthead:
-        #         if firsthead.get('colspan',1) == cols:
         i = 0
         tstr = ""
         while i < len(rows):
@@ -67,7 +61,6 @@ class WikipediaScraper:
             cells = row.find_all(["th", "td"])
             if cells[0].name == "th" and int(cells[0].get("colspan", 1)) == cols:
                 if len(table_data) != 0:
-                    # print(pd.DataFrame(table_data))
                     tstr += pd.DataFrame(table_data).to_string(index=False, header=False) + "\n"
                     table_data.clear()
                 table = cells[0].get_text()
@@ -86,13 +79,9 @@ class WikipediaScraper:
                     tstr += "\n"
                     continue
                 df = pd.DataFrame(td)  # noqa: PD901
-                # print(df)
-                df.style.set_caption(table)
                 tablee = df.to_string(index=False, header=False) + "\n"
                 tstr += table + "\n" + tablee + "\n"
                 self.subtables[table] = td
-                # print(td)
-                # print(df)
                 continue
             row_data = []
             # For cells list
@@ -120,11 +109,9 @@ class WikipediaScraper:
 
             table_data.append(row_data)
             i += 1
-            # print(row_data)
         if not table_data:
             return tstr
         table_df = pd.DataFrame(table_data)
-        # print(table_df)
         drf = table_df.to_string(index=False, header=False)
         tstr += drf
         return tstr
@@ -185,22 +172,22 @@ class WikipediaScraper:
         for block in content:
             print(block)
 
+    def fetch_short_description(self, soup):
+        """Fetch text from div with class 'shortdescription'."""
+        short_desc_div = soup.find("div", class_="shortdescription")
+        if short_desc_div:
+            return short_desc_div.get_text(strip=True)
+        return "No short description available."
+
     def main(self, url):
         soup = self.fetch_wikipedia_content(url)
         if soup is None:
             return
         soup = self.clean_html_tags(soup)
-        self.print_structure(soup)
-        # Uncomment to print links, figures, and images
-        # for i in scraper.link:
-        #     print(i, ":", scraper.link[i])
-        # for i in scraper.figure:
-        #     print(i[0], ":", i[1])
-        # for i in scraper.images:
-        #     print(i[0], ":", i[1])
+        short_description = self.fetch_short_description(soup)
+        print(f"Short Description:\n{short_description}")
 
 
-# Example usage
 if __name__ == "__main__":
     url = "https://en.wikipedia.org/wiki/James_Bond"
     scraper = WikipediaScraper()

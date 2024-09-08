@@ -29,3 +29,6 @@ htmlcov/
 # Poetry
 .venv/
 poetry.lock
+
+# Nix-TTS Model Pkl
+nix-ljspeech-deterministic-v0.1/
