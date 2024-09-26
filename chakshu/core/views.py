@@ -1,21 +1,15 @@
-import requests
-from bs4 import BeautifulSoup
-from django.http import HttpResponse
+import re
+from collections import OrderedDict
+
+from django.http import JsonResponse
 from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
-from scraper.views import get_short_description
-from text_to_speech.views import convert_text_to_speech
+from scraper.views import get_citations, get_full_content, get_short_description
 
 from .wiki_api import WikiAPI
 
-
-def convert_to_audio_response(text):
-    audio_bytes = convert_text_to_speech(text)
-
-    response = HttpResponse(audio_bytes, content_type="audio/wav")
-    response["Content-Disposition"] = 'attachment; filename="short_description.wav"'
-    return response
+mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
 
 
 class SearchResultsView(View):
@@ -25,19 +19,29 @@ class SearchResultsView(View):
 
         if query:
             search_results_list = list(search(query_for_wiki, num_results=10))
+            print(search_results_list)
 
-            descriptions = Parallel(n_jobs=-1)(delayed(get_short_description)(url) for url in search_results_list)
+            # Remove duplicates by converting the list to an OrderedDict, which maintains order
+            search_results_list = list(OrderedDict.fromkeys(search_results_list))
 
+            # Fetch descriptions in parallel for the filtered results
+            short_descriptions = Parallel(n_jobs=-1)(delayed(get_short_description)(url) for url in search_results_list)
+
+            # Format the results into a response-friendly structure
             results = [
-                f"{index + 1}. {url.split('/')[-1]}: {description}."
-                for index, (url, description) in enumerate(zip(search_results_list, descriptions))
+                {
+                    "index": index + 1,
+                    "url": url,
+                    "title": " ".join(url.split("/")[-1].split("_")),
+                    "short_description": short_description,
+                }
+                for index, (url, short_description) in enumerate(zip(search_results_list, short_descriptions))
             ]
-            response_text = "Select the article you want to read: " + " ".join(results)
+            response_data = {"message": "Select the article you want to read", "results": results}
 
-            response_audio = convert_to_audio_response(response_text[:300])
-            return response_audio
+            return JsonResponse(response_data)
 
-        return HttpResponse("Please provide a search query using the 'q' parameter.")
+        return JsonResponse({"error": "Please provide a search query using the 'q' parameter."}, status=400)
 
 
 class SelectLinkView(View):
@@ -45,17 +49,17 @@ class SelectLinkView(View):
         selected_link = request.GET.get("link")
 
         if selected_link:
-            options = (
-                "1. Read short description of the page.\n"
-                "2. Read summary of the page.\n"
-                "3. Read the whole page.\n"
-                "4. Read only captions of the images present on the page.\n"
-                "5. Read all the References present on the page.\n"
-            )
-            response = convert_to_audio_response(options)
-            return response
-        else:
-            return HttpResponse("Please provide the 'link' parameter.")
+            options = [
+                "Read short description of the page.",
+                "Read summary of the page.",
+                "Read the whole page.",
+                "Read only captions of the images present on the page.",
+                "Read all the References present on the page.",
+            ]
+
+            return JsonResponse({"message": "Select an option", "options": options})
+
+        return JsonResponse({"error": "Please provide the 'link' parameter."}, status=400)
 
 
 class ProcessOptionView(View):
@@ -68,47 +72,49 @@ class ProcessOptionView(View):
                 option = int(option)
                 page_title = selected_link.split("/")[-1]
 
+                # get short description of page
                 if option == 1:
-                    """get short description of page"""
                     short_description = get_short_description(selected_link)
-                    response = convert_to_audio_response(short_description)
-                    return response
+                    return JsonResponse({"short_description": short_description})
 
+                # get summary of page
                 elif option == 2:
-                    """get summary of page"""
-                    mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
                     summary = mediawiki_api.get_page_summary(page_title)
-                    response = convert_to_audio_response(summary[:300])
-                    return response
 
-                page = requests.get(selected_link)
-                soup = BeautifulSoup(page.content, "html.parser")
+                    # Remove escape characters like \n, \t, etc.
+                    clean_summary = re.sub(r"[\n\t\r]+", " ", summary).strip()
 
+                    return JsonResponse({"summary": clean_summary})
+
+                # get full page content
                 if option == 3:
-                    """get full page content"""
-                    full_text = soup.get_text()
-                    return HttpResponse(f"Full page content:\n\n{full_text}")
+                    full_content = get_full_content(selected_link)
+                    return JsonResponse({"text": full_content})
+                    # full_page_content = soup.get_text()
+                    # return JsonResponse({"full_page_content": full_page_content})
 
-                elif option == 4:
-                    """get captions of all images"""
-                    captions = "\n".join([img.get("alt", "No caption") for img in soup.find_all("img")])
-                    return HttpResponse(f"Image captions:\n\n{captions}")
+                # get captions of all images
+                # elif option == 4:
+                #     captions = "\n".join(
+                #         [img.get("alt", "No caption") for img in soup.find_all("img")])
+                #     return JsonResponse({"text": captions})
 
+                # get the references
                 elif option == 5:
-                    """"get the references"""
-                    references = "\n".join(
-                        [
-                            ref.get_text()
-                            for ref in soup.find_all("li", {"id": lambda x: x and x.startswith("cite_note")})
-                        ]
-                    )
-                    return HttpResponse(f"References on the page:\n\n{references}")
+                    # references = "\n".join(
+                    #     [
+                    #         ref.get_text()
+                    #         for ref in soup.find_all("li", {"id": lambda x: x and x.startswith("cite_note")})
+                    #     ]
+                    # )
+                    citations = get_citations(selected_link)
+                    return JsonResponse({"text": citations})
 
-                else:
-                    return HttpResponse("Invalid option. Please select a valid option (1-4).")
+                return JsonResponse({"error": "Invalid option. Please select a valid option (1-5)."}, status=400)
 
             except ValueError:
-                return HttpResponse("Invalid option. Please provide a valid number for the option.")
+                return JsonResponse(
+                    {"error": "Invalid option. Please provide a valid number for the option."}, status=400
+                )
 
-        else:
-            return HttpResponse("Please provide both 'link' and 'option' parameters.")
+        return JsonResponse({"error": "Please provide both 'link' and 'option' parameters."}, status=400)

@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
@@ -8,6 +9,7 @@ class WikipediaScraper:
         self.figure = []
         self.images = []
         self.subtables = {}
+        self.citations = []
 
     def clean_html_tags(self, soup):
         """Remove unwanted tags like script, style that do not have any important text."""
@@ -140,10 +142,10 @@ class WikipediaScraper:
                 for cite in element.find_all("cite"):
                     cite.decompose()
 
-            elif element.name == "table":
-                table_str = self.process_table(element)
-                if table_str:
-                    content.append("\n" + table_str + "\n")
+            # elif element.name == "table":
+            #     table_str = self.process_table(element)
+            #     if table_str:
+            #         content.append("\n" + table_str + "\n")
 
             elif element.name == "ul":
                 for a in element.find_all("a"):
@@ -168,9 +170,11 @@ class WikipediaScraper:
                 for img in element.find_all("img"):
                     self.images.append([img.get("src"), img.get("alt")])
                 content.append(element.get_text())
+                self.citations.append(element.get_text())
 
-        for block in content:
-            print(block)
+        # for block in content:
+        #     print(block)
+        return content
 
     def fetch_short_description(self, soup):
         """Fetch text from div with class 'shortdescription'."""
@@ -184,8 +188,8 @@ class WikipediaScraper:
         if soup is None:
             return
         soup = self.clean_html_tags(soup)
-        short_description = self.fetch_short_description(soup)
-        print(f"Short Description:\n{short_description}")
+        whole_content = self.print_structure(soup)
+        print(whole_content)
 
 
 if __name__ == "__main__":

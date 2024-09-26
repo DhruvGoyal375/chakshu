@@ -29,3 +29,21 @@ class WikiSummaryScraper(View):
         paragraphs = soup.find_all("p")
         summary = "\n".join([p.get_text(strip=True) for p in paragraphs[:2]])
         return summary
+
+
+def get_citations(url):
+    scraper = WikipediaScraper()
+    soup = scraper.fetch_wikipedia_content(url)
+
+    scraper.print_structure(soup)
+
+    return scraper.citations
+
+
+def get_full_content(url):
+    scraper = WikipediaScraper()
+    soup = scraper.fetch_wikipedia_content(url)
+
+    whole_content = scraper.print_structure(soup)
+
+    return whole_content
