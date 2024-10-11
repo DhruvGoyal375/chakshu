@@ -54,8 +54,7 @@ class LlavaImageCaptioner:
             else:
                 print(f"Failed to fetch metadata, status code: {
                       response.status_code}")
-                metadata = {"title": "No title",
-                            "description": "No description"}
+                metadata = {"title": "No title", "description": "No description"}
 
         except Exception as e:
             print(f"Error fetching metadata: {str(e)}")
@@ -99,8 +98,7 @@ class LlavaImageCaptioner:
             )
 
             # Send the request to the model API
-            response = requests.post(MODEL_URL, data=payload, headers={
-                                     "Content-Type": "application/json"})
+            response = requests.post(MODEL_URL, data=payload, headers={"Content-Type": "application/json"})
 
             # Check if the request was successful
             if response.status_code == 200:
@@ -123,5 +121,4 @@ if __name__ == "__main__":
 
     analyzer = LlavaImageCaptioner()
 
-    analyzer.test_model_with_image_url_and_text(
-        image_url, LLAVA_IMAGE_CAPTIONER_PROMPT, page_url)
+    analyzer.test_model_with_image_url_and_text(image_url, LLAVA_IMAGE_CAPTIONER_PROMPT, page_url)

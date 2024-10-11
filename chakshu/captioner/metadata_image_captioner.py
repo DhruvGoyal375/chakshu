@@ -8,6 +8,7 @@ import ollama
 import requests
 from bs4 import BeautifulSoup
 from scrapper import WikipediaImageScrapper  # Include From Image Scrapper
+
 from chakshu.config import METADATA_IMAGE_CAPTIONER_PROMPT
 
 warnings.filterwarnings("ignore")
