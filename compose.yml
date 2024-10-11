@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  # Django Application
+  chakshu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chakshu
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - ollama
+    environment:
+      DJANGO_SETTINGS_MODULE: chakshu.settings
+    command: sh -c "python /app/chakshu/manage.py runserver 0.0.0.0:8000"
+
+  # Ollama Container
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"

@@ -15,8 +15,8 @@ mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
 class SearchResultsView(View):
     def get(self, request):
         query = request.GET.get("q", "")
+        query.replace("%20", " ")
         query_for_wiki = query + " site:en.wikipedia.org"
-
         if query:
             search_results_list = list(search(query_for_wiki, num_results=10))
             print(search_results_list)
@@ -101,12 +101,6 @@ class ProcessOptionView(View):
 
                 # get the references
                 elif option == 5:
-                    # references = "\n".join(
-                    #     [
-                    #         ref.get_text()
-                    #         for ref in soup.find_all("li", {"id": lambda x: x and x.startswith("cite_note")})
-                    #     ]
-                    # )
                     citations = get_citations(selected_link)
                     return JsonResponse({"text": citations})
 

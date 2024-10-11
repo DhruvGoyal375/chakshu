@@ -8,11 +8,12 @@ import ollama
 import requests
 from bs4 import BeautifulSoup
 from scrapper import WikipediaImageScrapper  # Include From Image Scrapper
+from chakshu.config import METADATA_IMAGE_CAPTIONER_PROMPT
 
 warnings.filterwarnings("ignore")
 
 
-class WikipediaImageCaptioner:
+class MetadataImageCaptioner:
     def __init__(self, url):
         self.url = url
         self.image_folder = "images_wiki"
@@ -21,13 +22,7 @@ class WikipediaImageCaptioner:
 
     def generate_caption(self, context, full_description):
         """Generate a caption for an image using the LLM model."""
-        prompt = (
-            f"Create an image description that incorporates the context provided in {context}. "
-            f"If the context is brief, use {full_description} to provide a more complete description of what is happening in the image. "
-            "Write a clear, concise description of 30-40 words that communicates the key details about the image. "
-            "The description should be in simple, easy-to-understand English, suitable for someone who cannot see the image. "
-            "Focus strictly on what is visible and happening in the image, without mentioning any technical details such as image quality, resolution, or licensing."
-        )
+        prompt = METADATA_IMAGE_CAPTIONER_PROMPT.format(context=context, full_description=full_description)
         response = ollama.generate(model="wizardlm2", prompt=prompt)["response"]
         return response
 
@@ -101,7 +96,7 @@ class WikipediaImageCaptioner:
 if __name__ == "__main__":
     path = "https://en.wikipedia.org/wiki/James_Bond"
     scrapper = WikipediaImageScrapper(path)
-    cap = WikipediaImageCaptioner(path)
+    cap = MetadataImageCaptioner(path)
     single_image_caption = asyncio.run(
         cap.process_single_image("https://upload.wikimedia.org/wikipedia/commons/c/c3/Hoagy_Carmichael_-_1947.jpg")
     )

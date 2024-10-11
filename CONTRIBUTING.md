@@ -77,8 +77,8 @@ We use [Ruff](https://github.com/charliermarsh/ruff) for code formatting. Ensure
   - Automatically format your code and fix linting issues:
 
   ```sh
-  ruff format
   ruff check . --fix
+  ruff format
   ```
 
   This command will automatically format your code to meet the project's standards.
