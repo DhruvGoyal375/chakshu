@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+from transformers import AutoTokenizer, pipeline
 from bs4 import BeautifulSoup
 
 
@@ -24,6 +25,53 @@ class WikipediaScraper:
             print("Failed to retrieve the page.")
             return None
         return BeautifulSoup(response.text, "html.parser")
+    
+    # Function to split text into chunks of approximately 500 tokens for summarizer
+    def chunk_text_with_context(self, text, context, max_tokens=500):
+        words = text.split()
+        chunks = []
+        current_chunk = [context]
+        tokenizer = AutoTokenizer.from_pretrained("google/roberta2roberta_L-24_discofuse")
+        current_length = len(tokenizer.encode(context, add_special_tokens=False))
+        
+        for word in words:
+            word_length = len(tokenizer.encode(word, add_special_tokens=False))
+            if current_length + word_length <= max_tokens:
+                current_chunk.append(word)
+                current_length += word_length
+            else:
+                chunks.append(" ".join(current_chunk))
+                current_chunk = [context, word]
+                current_length = len(tokenizer.encode(context, add_special_tokens=False)) + word_length
+
+        # Add the last chunk if there's any
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+
+        return chunks
+
+    def summarize_table(self, df, element):
+        caption_tag = element.find('caption')
+        context = caption_tag.get_text(strip=True) if caption_tag else "No caption found"
+
+        # Convert DataFrame to sentences
+        def create_sentence(row):
+            return ". ".join([f"{col}: {row[col]}" for col in df.columns])
+
+        sentences = df.apply(create_sentence, axis=1).tolist()
+        context_sentence = f"The following is about: {context}"
+        sentences.insert(0, context_sentence)
+        input_text = " ".join(sentences)
+
+        # Chunk text with context
+        chunks = self.chunk_text_with_context(input_text, context_sentence)
+
+        # Summarize using BART
+        model_name = 'facebook/bart-large-cnn'
+        summarizer = pipeline('summarization', model=model_name, device=-1)
+        summaries = [summarizer(chunk, max_length=40, min_length=5, do_sample=False)[0]['summary_text'] for chunk in chunks]
+
+        return " ".join(summaries)
 
     def process_table(self, element):
         # Used for processing the table elements.
@@ -116,7 +164,10 @@ class WikipediaScraper:
         table_df = pd.DataFrame(table_data)
         drf = table_df.to_string(index=False, header=False)
         tstr += drf
-        return tstr
+
+        summary = self.summarize_table(df, element)
+        tstr += "\nSummary:\n" + summary + "\n"
+
 
     def print_structure(self, soup):
         """Process and print the content from the soup object."""
