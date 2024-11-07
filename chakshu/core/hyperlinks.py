@@ -1,88 +1,57 @@
-import difflib
-
-import requests
 from bs4 import BeautifulSoup
+import requests
+from rapidfuzz import process
 
+# Extract hyperlinks and their text from the entire Wikipedia page
+def extract_hyperlinks(page_content):
+    soup = BeautifulSoup(page_content, 'html.parser')
+    # Find all <a> tags with 'href' attribute
+    links = soup.find_all('a', href=True)
+    # Create a dictionary {hyperlink: text}
+    return {link.get('href'): link.text for link in links if link.text.strip()}
 
-def extract_paragraph_with_hyperlinks(url):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    # Find all paragraphs (<p> tags) in the page
-    paragraphs = soup.find_all("p")
-
-    extracted_paragraph = ""
-    for p in paragraphs:
-        extracted_paragraph += str(p)  # This will include the <a> tags as-is
-
-    return extracted_paragraph
-
-
-def extract_hyperlinks_from_paragraph(paragraph):
-    # Extract all <a> tags and their 'href' attributes
-    soup = BeautifulSoup(paragraph, "html.parser")
-    links = {}
-    for a_tag in soup.find_all("a", href=True):
-        link_text = a_tag.get_text(strip=True)  # Get the anchor text
-        href = a_tag["href"]  # Get the hyperlink URL
-        # Include only valid Wikipedia links
-        if href.startswith("/wiki/") and ":" not in href:
-            full_link = f"https://en.wikipedia.org{href}"
-            links[link_text] = full_link  # Map the link text to the full URL
-    return links
-
-
-def get_closest_hyperlinks(user_query, hyperlink_map, n=5):
-    """Get the closest 'n' hyperlinks using edit distance"""
-    hyperlinks = list(hyperlink_map.keys())
-    matches = difflib.get_close_matches(user_query, hyperlinks, n=n)
+# Get closest matches based on the user's query
+def get_closest_hyperlinks(user_query, hyperlink_map, limit=5):
+    hyperlinks = list(hyperlink_map.values())
+    # Using rapidfuzz to get the closest 'limit' matches
+    matches = process.extract(user_query, hyperlinks, limit=limit)
     return matches
 
-
 def main():
-    # Sample Wikipedia page (you can change this to any Wikipedia URL)
-    url = "https://en.wikipedia.org/wiki/James_Bond"  # Example Wikipedia URL
-    print(f"Fetching content and hyperlinks from: {url}")
+    # Example Wikipedia page (can be any valid URL)
+    url = "https://en.wikipedia.org/wiki/Black_hole"
+    response = requests.get(url)
 
-    # Extract the full paragraph, including hyperlinks
-    paragraph = extract_paragraph_with_hyperlinks(url)
-
-    print("\nExtracted paragraph with hyperlinks:")
-    print(paragraph)  # This prints the paragraph as-is, including hyperlinks
-
-    # Extract individual hyperlinks from the paragraph
-    hyperlink_map = extract_hyperlinks_from_paragraph(paragraph)
+    # Extract hyperlinks from the page content
+    hyperlink_map = extract_hyperlinks(response.text)
 
     if not hyperlink_map:
-        print("No valid hyperlinks found in this paragraph.")
+        print("No hyperlinks found on the page.")
         return
 
-    # Display all the hyperlinks found
-    print("\nHere are the hyperlinks extracted from the paragraph:")
-    for link_text, full_link in hyperlink_map.items():
-        print(f"{link_text}: {full_link}")
-
     # Ask user for input
-    user_query = input("\nWhat word or phrase do you have a doubt about? ")
+    user_query = input("What word do you have a doubt about? ")
 
-    # Get the closest 'n' hyperlinks (start with top 5)
-    closest_links = get_closest_hyperlinks(user_query, hyperlink_map, n=len(hyperlink_map))
+    # Get the closest hyperlinks
+    closest_links = get_closest_hyperlinks(user_query, hyperlink_map)
 
     if closest_links:
-        for closest_link in closest_links:
-            print(f"This is the closest link I found: {
-                  closest_link} -> {hyperlink_map[closest_link]}")
-            response = input("Do you want to know about this link? (yes/no) ")
-
-            if response.lower() == "yes":
-                print(f"Showing details for {closest_link}: {
-                      hyperlink_map[closest_link]}")
-                break  # Stop once the user confirms they want this link
-            else:
-                print("Moving to the next closest match...")
+        for match in closest_links:
+            closest_text = match[0]
+            # Find the corresponding hyperlink
+            for href, text in hyperlink_map.items():
+                if text == closest_text:
+                    print(f"This is the closest link I found: {text}")
+                    response = input("Do you want to know about this link? (yes/no) ")
+                    if response.lower() == 'yes':
+                        print(f"Here is the description: {text}")
+                        print(f"Click here: https://en.wikipedia.org{href}")  # Full clickable link
+                        return  # Exit after showing the link
+                    else:
+                        print("Moving to the next option...")
     else:
         print("No matching hyperlink found.")
 
-
+        
 if __name__ == "__main__":
     main()
