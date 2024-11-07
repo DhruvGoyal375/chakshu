@@ -71,12 +71,13 @@ We use [Ruff](https://github.com/charliermarsh/ruff) for code formatting. Ensure
   ```
 
   This command will analyze your code and report any formatting issues.
-  
+
   <br>
 
-  - Automatically format your code:
+  - Automatically format your code and fix linting issues:
 
   ```sh
+  ruff check . --fix
   ruff format
   ```
 
