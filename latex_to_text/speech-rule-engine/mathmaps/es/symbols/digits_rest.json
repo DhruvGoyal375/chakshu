@@ -1,0 +1,257 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "00B2",
+    "mappings": {
+      "default": {
+        "default": "al cuadrado"
+      },
+      "mathspeak": {
+        "default": "al cuadrado"
+      },
+      "clearspeak": {
+        "default": "al cuadrado"
+      }
+    }
+  },
+  {
+    "key": "00B3",
+    "mappings": {
+      "default": {
+        "default": "al cubo"
+      },
+      "mathspeak": {
+        "default": "al cubo"
+      },
+      "clearspeak": {
+        "default": "al cubo"
+      }
+    }
+  },
+  {
+    "key": "00BC",
+    "mappings": {
+      "default": {
+        "default": "un cuarto"
+      }
+    }
+  },
+  {
+    "key": "00BD",
+    "mappings": {
+      "default": {
+        "default": "un medio"
+      }
+    }
+  },
+  {
+    "key": "00BE",
+    "mappings": {
+      "default": {
+        "default": "tres cuartos"
+      }
+    }
+  },
+  {
+    "key": "2150",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Séptimo"
+      }
+    }
+  },
+  {
+    "key": "2151",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Noveno"
+      }
+    }
+  },
+  {
+    "key": "2152",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Décimo"
+      }
+    }
+  },
+  {
+    "key": "2153",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Tercero"
+      }
+    }
+  },
+  {
+    "key": "2154",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar dos tercios"
+      }
+    }
+  },
+  {
+    "key": "2155",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fraction One Fifth"
+      }
+    }
+  },
+  {
+    "key": "2156",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar dos quintos"
+      }
+    }
+  },
+  {
+    "key": "2157",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar tres quintos"
+      }
+    }
+  },
+  {
+    "key": "2158",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar cuatro quintos"
+      }
+    }
+  },
+  {
+    "key": "2159",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Sexto"
+      }
+    }
+  },
+  {
+    "key": "215A",
+    "mappings": {
+      "default": {
+        "default": "Vulgar fracción cinco sextos"
+      }
+    }
+  },
+  {
+    "key": "215B",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fracción Un Octavo"
+      }
+    }
+  },
+  {
+    "key": "215C",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar tres octavos"
+      }
+    }
+  },
+  {
+    "key": "215D",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar cinco octavos"
+      }
+    }
+  },
+  {
+    "key": "215E",
+    "mappings": {
+      "default": {
+        "default": "Fracción vulgar siete octavos"
+      }
+    }
+  },
+  {
+    "key": "215F",
+    "mappings": {
+      "default": {
+        "default": "Numerador de fracciones uno"
+      }
+    }
+  },
+  {
+    "key": "2189",
+    "mappings": {
+      "default": {
+        "default": "Vulgar Fraction Zero Thirds"
+      }
+    }
+  },
+  {
+    "key": "3248",
+    "mappings": {
+      "default": {
+        "default": "Número diez en un círculo en la Plaza Negra"
+      }
+    }
+  },
+  {
+    "key": "3249",
+    "mappings": {
+      "default": {
+        "default": "Número veinte en un círculo en la Plaza Negra"
+      }
+    }
+  },
+  {
+    "key": "324A",
+    "mappings": {
+      "default": {
+        "default": "Número circundado treinta en cuadrado negro"
+      }
+    }
+  },
+  {
+    "key": "324B",
+    "mappings": {
+      "default": {
+        "default": "Número circundado Cuarenta en cuadrado negro"
+      }
+    }
+  },
+  {
+    "key": "324C",
+    "mappings": {
+      "default": {
+        "default": "Círculo número cincuenta en la plaza negra"
+      }
+    }
+  },
+  {
+    "key": "324D",
+    "mappings": {
+      "default": {
+        "default": "Círculo número sesenta en la plaza negra"
+      }
+    }
+  },
+  {
+    "key": "324E",
+    "mappings": {
+      "default": {
+        "default": "Número setenta en un círculo en la Plaza Negra"
+      }
+    }
+  },
+  {
+    "key": "324F",
+    "mappings": {
+      "default": {
+        "default": "Círculo número ochenta en cuadrado negro"
+      }
+    }
+  }
+]

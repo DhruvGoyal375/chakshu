@@ -1,0 +1,197 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "210F",
+    "mappings": {
+      "default": {
+        "default": "Planck-Konstante über zwei Pi"
+      }
+    }
+  },
+  {
+    "key": "2114",
+    "mappings": {
+      "default": {
+        "default": "L B Balkensymbol"
+      }
+    }
+  },
+  {
+    "key": "2116",
+    "mappings": {
+      "default": {
+        "default": "Numero-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "2117",
+    "mappings": {
+      "default": {
+        "default": "Tonaufnahme Copyright"
+      }
+    }
+  },
+  {
+    "key": "211E",
+    "mappings": {
+      "default": {
+        "default": "Rezept nehmen"
+      }
+    }
+  },
+  {
+    "key": "211F",
+    "mappings": {
+      "default": {
+        "default": "Antwort"
+      }
+    }
+  },
+  {
+    "key": "2120",
+    "mappings": {
+      "default": {
+        "default": "Dienstleistungsmarke"
+      }
+    }
+  },
+  {
+    "key": "2121",
+    "mappings": {
+      "default": {
+        "default": "Telefon Zeichen"
+      }
+    }
+  },
+  {
+    "key": "2122",
+    "mappings": {
+      "default": {
+        "default": "Markenzeichen"
+      }
+    }
+  },
+  {
+    "key": "2123",
+    "mappings": {
+      "default": {
+        "default": "Versicle"
+      }
+    }
+  },
+  {
+    "key": "2125",
+    "mappings": {
+      "default": {
+        "default": "Unze-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "2126",
+    "mappings": {
+      "default": {
+        "default": "Ohm-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "2127",
+    "mappings": {
+      "default": {
+        "default": "Umgekehrtes Ohm-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "212A",
+    "mappings": {
+      "default": {
+        "default": "Kelvin-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "212B",
+    "mappings": {
+      "default": {
+        "default": "Angstrom-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "212E",
+    "mappings": {
+      "default": {
+        "default": "Geschätztes Symbol"
+      }
+    }
+  },
+  {
+    "key": "2132",
+    "mappings": {
+      "default": {
+        "default": "Umgeschlagenes Kapital F"
+      }
+    }
+  },
+  {
+    "key": "2139",
+    "mappings": {
+      "default": {
+        "default": "Informationsquelle"
+      }
+    }
+  },
+  {
+    "key": "213A",
+    "mappings": {
+      "default": {
+        "default": "Gedrehtes Kapital Q"
+      }
+    }
+  },
+  {
+    "key": "213B",
+    "mappings": {
+      "default": {
+        "default": "Faksimile-Zeichen"
+      }
+    }
+  },
+  {
+    "key": "2141",
+    "mappings": {
+      "default": {
+        "default": "Sans-Serif Capital G"
+      }
+    }
+  },
+  {
+    "key": "2142",
+    "mappings": {
+      "default": {
+        "default": "Sans-Serif Capital L"
+      }
+    }
+  },
+  {
+    "key": "2143",
+    "mappings": {
+      "default": {
+        "default": "Aufgehobenes Sans-Serif-Kapital L"
+      }
+    }
+  },
+  {
+    "key": "2144",
+    "mappings": {
+      "default": {
+        "default": "Sans-Serif Capital Y"
+      }
+    }
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "cu",
+    "mappings": {
+      "default": {
+        "default": "kubik",
+        "plural": "kubik"
+      }
+    }
+  },
+  {
+    "key": "cu inch",
+    "mappings": {
+      "default": {
+        "default": "kubiktum",
+        "plural": "kubiktum"
+      }
+    }
+  },
+  {
+    "key": "cu ft",
+    "mappings": {
+      "default": {
+        "default": "kubik fot",
+        "plural": "kubik fot"
+      }
+    }
+  },
+  {
+    "key": "cu yd",
+    "mappings": {
+      "default": {
+        "default": "kubik yard",
+        "plural": "kubik yards"
+      }
+    }
+  },
+  {
+    "key": "bbl",
+    "mappings": {
+      "default": {
+        "default": "fat",
+        "plural": "fat"
+      }
+    }
+  },
+  {
+    "key": "fl. oz.",
+    "mappings": {
+      "default": {
+        "default": "flytande uns",
+        "plural": "flytande uns"
+      }
+    }
+  },
+  {
+    "key": "gal",
+    "mappings": {
+      "default": {
+        "default": "gallon",
+        "plural": "gallons"
+      }
+    }
+  },
+  {
+    "key": "pt",
+    "mappings": {
+      "default": {
+        "default": "pint",
+        "plural": "pints"
+      }
+    }
+  },
+  {
+    "key": "qt",
+    "mappings": {
+      "default": {
+        "default": "quart",
+        "plural": "quarts"
+      }
+    }
+  },
+  {
+    "key": "fluid dram",
+    "mappings": {
+      "default": {
+        "default": "flytande drakma",
+        "plural": "flytande drakmer"
+      }
+    }
+  },
+  {
+    "key": "tbsp",
+    "mappings": {
+      "default": {
+        "default": "matsked",
+        "plural": "matskedar"
+      }
+    }
+  },
+  {
+    "key": "tsp",
+    "mappings": {
+      "default": {
+        "default": "tesked",
+        "plural": "teskedar"
+      }
+    }
+  },
+  {
+    "key": "cup",
+    "mappings": {
+      "default": {
+        "default": "kopp",
+        "plural": "koppar"
+      }
+    }
+  },
+  {
+    "key": "cc",
+    "mappings": {
+      "default": {
+        "default": "kubikcentimeter",
+        "plural": "kubikcentimeter"
+      }
+    }
+  },
+  {
+    "key": "l",
+    "mappings": {
+      "default": {
+        "default": "liter",
+        "plural": "liter"
+      }
+    }
+  }
+]

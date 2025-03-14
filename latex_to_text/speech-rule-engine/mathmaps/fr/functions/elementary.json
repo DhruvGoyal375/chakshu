@@ -1,0 +1,191 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "log",
+    "mappings": {
+      "default": {
+        "default": "log"
+      }
+    }
+  },
+  {
+    "key": "ln",
+    "mappings": {
+      "default": {
+        "default": "logarithme népérien"
+      },
+      "clearspeak": {
+        "default": "l n",
+        "Log_LnAsNaturalLog": "logarithme népérien"
+      }
+    }
+  },
+  {
+    "key": "lg",
+    "mappings": {
+      "default": {
+        "default": "logarithme décimal"
+      }
+    }
+  },
+  {
+    "key": "exp",
+    "mappings": {
+      "default": {
+        "default": "exponentielle"
+      }
+    }
+  },
+  {
+    "key": "gcd",
+    "mappings": {
+      "default": {
+        "default": "plus grand commun diviseur"
+      },
+      "mathspeak": {
+        "default": "pgcd"
+      },
+      "clearspeak": {
+        "default": "pgcd"
+      }
+    },
+    "names": [
+      "PGCD",
+      "pgcd"
+    ]
+  },
+  {
+    "key": "lcm",
+    "mappings": {
+      "default": {
+        "default": "plus petit commun multiple"
+      },
+      "mathspeak": {
+        "default": "ppcm"
+      },
+      "clearspeak": {
+        "default": "ppcm"
+      }
+    },
+    "names": [
+      "ppcm",
+      "PPCM",
+      "PPMC",
+      "ppmc"
+    ]
+  },
+  {
+    "key": "arg",
+    "mappings": {
+      "default": {
+        "default": "argument"
+      }
+    }
+  },
+  {
+    "key": "im",
+    "mappings": {
+      "default": {
+        "default": "partie imaginaire"
+      }
+    }
+  },
+  {
+    "key": "re",
+    "mappings": {
+      "default": {
+        "default": "partie réelle"
+      }
+    }
+  },
+  {
+    "key": "inf",
+    "mappings": {
+      "default": {
+        "default": "borne inférieure"
+      }
+    }
+  },
+  {
+    "key": "lim",
+    "mappings": {
+      "default": {
+        "default": "limite"
+      }
+    }
+  },
+  {
+    "key": "max",
+    "mappings": {
+      "default": {
+        "default": "maximum"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "minimum"
+      }
+    }
+  },
+  {
+    "key": "sup",
+    "mappings": {
+      "default": {
+        "default": "borne supérieure"
+      }
+    }
+  },
+  {
+    "key": "liminf",
+    "mappings": {
+      "default": {
+        "default": "limite inferior"
+      }
+    }
+  },
+  {
+    "key": "limsup",
+    "mappings": {
+      "default": {
+        "default": "limite superior"
+      }
+    }
+  },
+  {
+    "key": "injlim",
+    "mappings": {
+      "default": {
+        "default": "limite inductive"
+      }
+    }
+  },
+  {
+    "key": "projlim",
+    "mappings": {
+      "default": {
+        "default": "limite projective"
+      }
+    }
+  },
+  {
+    "key": "mod",
+    "mappings": {
+      "default": {
+        "default": "modulo"
+      }
+    }
+  },
+  {
+    "key": "Pr",
+    "mappings": {
+      "default": {
+        "default": "probabilité"
+      }
+    }
+  }
+]

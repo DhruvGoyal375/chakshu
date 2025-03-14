@@ -6,7 +6,28 @@ import requests
 from bs4 import BeautifulSoup
 from PIL import Image
 
-from chakshu.config import LLAVA_IMAGE_CAPTIONER_PROMPT, MODEL_NAME, MODEL_URL
+# from chakshu.config import LLAVA_IMAGE_CAPTIONER_PROMPT, MODEL_NAME, MODEL_URL
+# Captioner
+MODEL_URL = "http://localhost:11434/api/generate"
+
+MODEL_NAME = "llava"
+
+LLAVA_IMAGE_CAPTIONER_PROMPT = """
+Analyze and describe the content of the image based on the metadata provided. Use the following guidelines:
+
+1. Identify and name any individuals, places, or objects mentioned in the metadata.
+2. Describe their positions and actions within the scene (e.g., who is on the left, right, etc.).
+3. Include any notable interactions or movements.
+4. Provide a detailed overview of the image that a blind person could understand, including visual cues like colors, lighting, and emotions where possible.
+
+Use the following metadata to guide your description:
+
+Image Metadata:
+Title: {Title}
+Description: {Description}
+
+Ensure the description incorporates the names of people or places mentioned, along with their actions and relationships in the scene suitable for a blind person. Do not include any technical details like links, metadata, etc. The description should focus on helping a blind person understand the visual content.
+"""
 
 
 class LlavaImageCaptioner:
@@ -17,8 +38,7 @@ class LlavaImageCaptioner:
         if response.status_code == 200:
             return Image.open(io.BytesIO(response.content))
         else:
-            msg = f"Failed to download image. Status code: {
-                response.status_code}"
+            msg = f"Failed to download image. Status code: {response.status_code}"
             raise Exception(msg)
 
     @staticmethod
@@ -52,8 +72,7 @@ class LlavaImageCaptioner:
                 print(f"Title: {metadata['title']}")
                 print(f"Description: {metadata['description']}")
             else:
-                print(f"Failed to fetch metadata, status code: {
-                      response.status_code}")
+                print(f"Failed to fetch metadata, status code: {response.status_code}")
                 metadata = {"title": "No title", "description": "No description"}
 
         except Exception as e:

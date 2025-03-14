@@ -1,0 +1,95 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "lb",
+    "mappings": {
+      "default": {
+        "default": "libra"
+      }
+    }
+  },
+  {
+    "key": "LT",
+    "mappings": {
+      "default": {
+        "default": "libra imperiale",
+        "plural": "libras imperiales"
+      }
+    }
+  },
+  {
+    "key": "oz",
+    "mappings": {
+      "default": {
+        "default": "onza"
+      }
+    }
+  },
+  {
+    "key": "mcg",
+    "mappings": {
+      "default": {
+        "default": "microgramo"
+      }
+    }
+  },
+  {
+    "key": "gr",
+    "mappings": {
+      "default": {
+        "default": "gramo"
+      }
+    }
+  },
+  {
+    "key": "g",
+    "mappings": {
+      "default": {
+        "default": "gramo"
+      }
+    }
+  },
+  {
+    "key": "t",
+    "mappings": {
+      "default": {
+        "default": "tonelada"
+      }
+    }
+  },
+  {
+    "key": "dram",
+    "mappings": {
+      "default": {
+        "default": "dracma"
+      }
+    }
+  },
+  {
+    "key": "st",
+    "mappings": {
+      "default": {
+        "default": "stone",
+        "plural": "stones"
+      }
+    }
+  },
+  {
+    "key": "qtr",
+    "mappings": {
+      "default": {
+        "default": "cuarto corto"
+      }
+    }
+  },
+  {
+    "key": "cwt",
+    "mappings": {
+      "default": {
+        "default": "centena"
+      }
+    }
+  }
+]

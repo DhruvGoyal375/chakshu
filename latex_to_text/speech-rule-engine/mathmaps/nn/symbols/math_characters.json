@@ -1,0 +1,117 @@
+[
+  {
+    "locale": "nn"
+  },
+  {
+    "key": "2113",
+    "mappings": {
+      "default": {
+        "default": "skript-l"
+      }
+    }
+  },
+  {
+    "key": "2118",
+    "mappings": {
+      "default": {
+        "default": "skript-P"
+      }
+    }
+  },
+  {
+    "key": "213C",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek pi"
+      }
+    }
+  },
+  {
+    "key": "213D",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek gamma"
+      }
+    }
+  },
+  {
+    "key": "213E",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek stor gamma"
+      }
+    }
+  },
+  {
+    "key": "213F",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek stor pi"
+      }
+    }
+  },
+  {
+    "key": "2140",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek sigma sum"
+      }
+    }
+  },
+  {
+    "key": "2145",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek stor kursiv D"
+      }
+    }
+  },
+  {
+    "key": "2146",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek kursiv d"
+      }
+    }
+  },
+  {
+    "key": "2147",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek kursiv e"
+      }
+    }
+  },
+  {
+    "key": "2148",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek kursiv i"
+      }
+    }
+  },
+  {
+    "key": "2149",
+    "mappings": {
+      "default": {
+        "default": "dobbelstrek kursiv j"
+      }
+    }
+  },
+  {
+    "key": "1D6A4",
+    "mappings": {
+      "default": {
+        "default": "kursiv i utan prikk"
+      }
+    }
+  },
+  {
+    "key": "1D6A5",
+    "mappings": {
+      "default": {
+        "default": "kursiv j utan prikk"
+      }
+    }
+  }
+]

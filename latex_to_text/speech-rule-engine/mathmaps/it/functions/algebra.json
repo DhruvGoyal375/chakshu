@@ -1,0 +1,53 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "deg",
+    "mappings": {
+      "default": {
+        "default": "grado"
+      }
+    }
+  },
+  {
+    "key": "det",
+    "mappings": {
+      "default": {
+        "default": "determinante"
+      }
+    }
+  },
+  {
+    "key": "dim",
+    "mappings": {
+      "default": {
+        "default": "dimensione"
+      }
+    }
+  },
+  {
+    "key": "hom",
+    "mappings": {
+      "default": {
+        "default": "omomorfismo"
+      }
+    }
+  },
+  {
+    "key": "ker",
+    "mappings": {
+      "default": {
+        "default": "nucleo"
+      }
+    }
+  },
+  {
+    "key": "Tr",
+    "mappings": {
+      "default": {
+        "default": "traccia"
+      }
+    }
+  }
+]

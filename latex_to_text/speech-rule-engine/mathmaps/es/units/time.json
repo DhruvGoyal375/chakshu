@@ -1,0 +1,45 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "s",
+    "mappings": {
+      "default": {
+        "default": "segundo"
+      }
+    }
+  },
+  {
+    "key": "″",
+    "mappings": {
+      "default": {
+        "default": "segundo"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "minuto"
+      }
+    }
+  },
+  {
+    "key": "°",
+    "mappings": {
+      "default": {
+        "default": "grado"
+      }
+    }
+  },
+  {
+    "key": "h",
+    "mappings": {
+      "default": {
+        "default": "hora"
+      }
+    }
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "00B2",
+    "mappings": {
+      "default": {
+        "default": "Quadrat"
+      },
+      "clearspeak": {
+        "Exponent_Exponent": "mit Exponent 2",
+        "Exponent_OrdinalPower": "zur zweiten Potenz"
+      }
+    }
+  },
+  {
+    "key": "00B3",
+    "mappings": {
+      "default": {
+        "default": "Kubik"
+      },
+      "clearspeak": {
+        "Exponent_Exponent": "mit Exponent 3",
+        "Exponent_OrdinalPower": "zur dritten Potenz"
+      }
+    }
+  },
+  {
+    "key": "00BC",
+    "mappings": {
+      "default": {
+        "default": "ein Viertel"
+      }
+    }
+  },
+  {
+    "key": "00BD",
+    "mappings": {
+      "default": {
+        "default": "ein Halb"
+      }
+    }
+  },
+  {
+    "key": "00BE",
+    "mappings": {
+      "default": {
+        "default": "drei Viertel"
+      }
+    }
+  },
+  {
+    "key": "2150",
+    "mappings": {
+      "default": {
+        "default": "ein siebtel"
+      }
+    }
+  },
+  {
+    "key": "2151",
+    "mappings": {
+      "default": {
+        "default": "ein neuntel"
+      }
+    }
+  },
+  {
+    "key": "2152",
+    "mappings": {
+      "default": {
+        "default": "ein zehntel"
+      }
+    }
+  },
+  {
+    "key": "2153",
+    "mappings": {
+      "default": {
+        "default": "ein drittel"
+      }
+    }
+  },
+  {
+    "key": "2154",
+    "mappings": {
+      "default": {
+        "default": "zwei drittel"
+      }
+    }
+  },
+  {
+    "key": "2155",
+    "mappings": {
+      "default": {
+        "default": "ein fünftel"
+      }
+    }
+  },
+  {
+    "key": "2156",
+    "mappings": {
+      "default": {
+        "default": "zwei fünftel"
+      }
+    }
+  },
+  {
+    "key": "2157",
+    "mappings": {
+      "default": {
+        "default": "drei fünftel"
+      }
+    }
+  },
+  {
+    "key": "2158",
+    "mappings": {
+      "default": {
+        "default": "vier fünftel"
+      }
+    }
+  },
+  {
+    "key": "2159",
+    "mappings": {
+      "default": {
+        "default": "ein sechstel"
+      }
+    }
+  },
+  {
+    "key": "215A",
+    "mappings": {
+      "default": {
+        "default": "fünf sechstel"
+      }
+    }
+  },
+  {
+    "key": "215B",
+    "mappings": {
+      "default": {
+        "default": "ein achtel"
+      }
+    }
+  },
+  {
+    "key": "215C",
+    "mappings": {
+      "default": {
+        "default": "drei achtel"
+      }
+    }
+  },
+  {
+    "key": "215D",
+    "mappings": {
+      "default": {
+        "default": "fünf achtel"
+      }
+    }
+  },
+  {
+    "key": "215E",
+    "mappings": {
+      "default": {
+        "default": "sieben achtel"
+      }
+    }
+  },
+  {
+    "key": "215F",
+    "mappings": {
+      "default": {
+        "default": "Bruchzähler eins"
+      }
+    }
+  },
+  {
+    "key": "2189",
+    "mappings": {
+      "default": {
+        "default": "null drittel"
+      }
+    }
+  },
+  {
+    "key": "3248",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Zehn auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "3249",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Zwanzig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324A",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Dreißig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324B",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Vierzig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324C",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Fünfzig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324D",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Sechzig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324E",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Siebzig auf schwarzem Quadrat"
+      }
+    }
+  },
+  {
+    "key": "324F",
+    "mappings": {
+      "default": {
+        "default": "eingekreiste Achtzig auf schwarzem Quadrat"
+      }
+    }
+  }
+]

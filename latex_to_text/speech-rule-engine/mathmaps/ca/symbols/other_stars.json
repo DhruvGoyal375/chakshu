@@ -1,0 +1,469 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "23E8",
+    "mappings": {
+      "default": {
+        "default": "símbol exponent decimal"
+      }
+    }
+  },
+  {
+    "key": "2605",
+    "mappings": {
+      "default": {
+        "default": "estrella farcida"
+      }
+    }
+  },
+  {
+    "key": "2606",
+    "mappings": {
+      "default": {
+        "default": "estrella buida"
+      }
+    }
+  },
+  {
+    "key": "26AA",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc mitjà"
+      }
+    }
+  },
+  {
+    "key": "26AB",
+    "mappings": {
+      "default": {
+        "default": "cercle negre mitjà"
+      }
+    }
+  },
+  {
+    "key": "2705",
+    "mappings": {
+      "default": {
+        "default": "vist pesant blanca"
+      }
+    }
+  },
+  {
+    "key": "2713",
+    "mappings": {
+      "default": {
+        "default": "vist"
+      }
+    }
+  },
+  {
+    "key": "2714",
+    "mappings": {
+      "default": {
+        "default": "vist pesant"
+      }
+    }
+  },
+  {
+    "key": "2715",
+    "mappings": {
+      "default": {
+        "default": "multiplicació x"
+      }
+    }
+  },
+  {
+    "key": "2716",
+    "mappings": {
+      "default": {
+        "default": "multiplicació pesant X"
+      }
+    }
+  },
+  {
+    "key": "2717",
+    "mappings": {
+      "default": {
+        "default": "ballot x"
+      }
+    }
+  },
+  {
+    "key": "2718",
+    "mappings": {
+      "default": {
+        "default": "boleta pesant X"
+      }
+    }
+  },
+  {
+    "key": "271B",
+    "mappings": {
+      "default": {
+        "default": "centre obert de la creu"
+      }
+    }
+  },
+  {
+    "key": "271C",
+    "mappings": {
+      "default": {
+        "default": "centre obert creu pesant"
+      }
+    }
+  },
+  {
+    "key": "2720",
+    "mappings": {
+      "default": {
+        "default": "creu de Malta"
+      }
+    }
+  },
+  {
+    "key": "2721",
+    "mappings": {
+      "default": {
+        "default": "estrella de David"
+      }
+    }
+  },
+  {
+    "key": "2722",
+    "mappings": {
+      "default": {
+        "default": "quatre asterisc de llàgrima"
+      }
+    }
+  },
+  {
+    "key": "2723",
+    "mappings": {
+      "default": {
+        "default": "quatre asterisc de globus"
+      }
+    }
+  },
+  {
+    "key": "2724",
+    "mappings": {
+      "default": {
+        "default": "quatre asterisc impulsat per globus pesant"
+      }
+    }
+  },
+  {
+    "key": "2725",
+    "mappings": {
+      "default": {
+        "default": "quatre asterisc de club-spoked"
+      }
+    }
+  },
+  {
+    "key": "2726",
+    "mappings": {
+      "default": {
+        "default": "estrella de quatre puntes negra"
+      }
+    }
+  },
+  {
+    "key": "2727",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca de quatre puntes"
+      }
+    }
+  },
+  {
+    "key": "2728",
+    "mappings": {
+      "default": {
+        "default": "centelleigs"
+      }
+    }
+  },
+  {
+    "key": "2729",
+    "mappings": {
+      "default": {
+        "default": "estrès subratllat estrella blanca"
+      }
+    }
+  },
+  {
+    "key": "272A",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca circulada"
+      }
+    }
+  },
+  {
+    "key": "272B",
+    "mappings": {
+      "default": {
+        "default": "centre obert estrella negra"
+      }
+    }
+  },
+  {
+    "key": "272C",
+    "mappings": {
+      "default": {
+        "default": "centre negre estrella blanca"
+      }
+    }
+  },
+  {
+    "key": "272D",
+    "mappings": {
+      "default": {
+        "default": "contornejat estrella negra"
+      }
+    }
+  },
+  {
+    "key": "272E",
+    "mappings": {
+      "default": {
+        "default": "estrella negra contornejada pesant"
+      }
+    }
+  },
+  {
+    "key": "272F",
+    "mappings": {
+      "default": {
+        "default": "estrella de molinet"
+      }
+    }
+  },
+  {
+    "key": "2730",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca ombrejada"
+      }
+    }
+  },
+  {
+    "key": "2731",
+    "mappings": {
+      "default": {
+        "default": "asterisc pesant"
+      }
+    }
+  },
+  {
+    "key": "2732",
+    "mappings": {
+      "default": {
+        "default": "centre obert d'asterisc"
+      }
+    }
+  },
+  {
+    "key": "2733",
+    "mappings": {
+      "default": {
+        "default": "vuit asterisc parlat"
+      }
+    }
+  },
+  {
+    "key": "2734",
+    "mappings": {
+      "default": {
+        "default": "vuit esterelles negres punxegudes"
+      }
+    }
+  },
+  {
+    "key": "2735",
+    "mappings": {
+      "default": {
+        "default": "vuit estrelles de molinet en punta"
+      }
+    }
+  },
+  {
+    "key": "2736",
+    "mappings": {
+      "default": {
+        "default": "estrella farcida de sis puntes"
+      }
+    }
+  },
+  {
+    "key": "2739",
+    "mappings": {
+      "default": {
+        "default": "dotze estrelles negres punxegudes"
+      }
+    }
+  },
+  {
+    "key": "273A",
+    "mappings": {
+      "default": {
+        "default": "setze asteriscs en punta"
+      }
+    }
+  },
+  {
+    "key": "273B",
+    "mappings": {
+      "default": {
+        "default": "asterisc amb efecte de llàgrima"
+      }
+    }
+  },
+  {
+    "key": "273C",
+    "mappings": {
+      "default": {
+        "default": "centre obert amb asterisc amb forma de llàgrima"
+      }
+    }
+  },
+  {
+    "key": "273D",
+    "mappings": {
+      "default": {
+        "default": "asterisc de llàgrima pesant"
+      }
+    }
+  },
+  {
+    "key": "273E",
+    "mappings": {
+      "default": {
+        "default": "sis pètals d floreta en blanc i negre"
+      }
+    }
+  },
+  {
+    "key": "273F",
+    "mappings": {
+      "default": {
+        "default": "floreta negra"
+      }
+    }
+  },
+  {
+    "key": "2740",
+    "mappings": {
+      "default": {
+        "default": "floreta blanca"
+      }
+    }
+  },
+  {
+    "key": "2741",
+    "mappings": {
+      "default": {
+        "default": "vuit pètals contornejats floreta negra"
+      }
+    }
+  },
+  {
+    "key": "2742",
+    "mappings": {
+      "default": {
+        "default": "cercle obert centre vuit estrelles senyalades"
+      }
+    }
+  },
+  {
+    "key": "2743",
+    "mappings": {
+      "default": {
+        "default": "asterisc pesant de molinet de vent"
+      }
+    }
+  },
+  {
+    "key": "2744",
+    "mappings": {
+      "default": {
+        "default": "floc de neu"
+      }
+    }
+  },
+  {
+    "key": "2745",
+    "mappings": {
+      "default": {
+        "default": "floc de neu trifoli atapeït"
+      }
+    }
+  },
+  {
+    "key": "2746",
+    "mappings": {
+      "default": {
+        "default": "floc de neu pesant de Chevron"
+      }
+    }
+  },
+  {
+    "key": "2747",
+    "mappings": {
+      "default": {
+        "default": "brillar"
+      }
+    }
+  },
+  {
+    "key": "2748",
+    "mappings": {
+      "default": {
+        "default": "espurna pesant"
+      }
+    }
+  },
+  {
+    "key": "2749",
+    "mappings": {
+      "default": {
+        "default": "asterisc de globus"
+      }
+    }
+  },
+  {
+    "key": "274A",
+    "mappings": {
+      "default": {
+        "default": "vuit asterisc d'hèlix amb efecte de llàgrima"
+      }
+    }
+  },
+  {
+    "key": "274B",
+    "mappings": {
+      "default": {
+        "default": "vuit asterisc d'hèlix en forma de llàgrima"
+      }
+    }
+  },
+  {
+    "key": "274C",
+    "mappings": {
+      "default": {
+        "default": "marca de la creu"
+      }
+    }
+  },
+  {
+    "key": "274D",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc ombrejat"
+      }
+    }
+  }
+]

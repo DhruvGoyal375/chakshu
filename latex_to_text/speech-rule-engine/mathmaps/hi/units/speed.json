@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "kt",
+    "mappings": {
+      "default": {
+        "default": "नॉट"
+      }
+    }
+  },
+  {
+    "key": "mph",
+    "mappings": {
+      "default": {
+        "default": "मील प्रति घंटा"
+      }
+    }
+  },
+  {
+    "key": "rpm",
+    "mappings": {
+      "default": {
+        "default": "परिक्रमण प्रति मिनट"
+      }
+    }
+  },
+  {
+    "key": "kmh",
+    "mappings": {
+      "default": {
+        "default": "किलोमीटर प्रति घंटा"
+      }
+    }
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "$",
+    "mappings": {
+      "default": {
+        "default": "डॉलर"
+      }
+    }
+  },
+  {
+    "key": "£",
+    "mappings": {
+      "default": {
+        "default": "पाउंड"
+      }
+    }
+  },
+  {
+    "key": "¥",
+    "mappings": {
+      "default": {
+        "default": "येन"
+      }
+    }
+  },
+  {
+    "key": "€",
+    "mappings": {
+      "default": {
+        "default": "यूरो"
+      }
+    }
+  },
+  {
+    "key": "₡",
+    "mappings": {
+      "default": {
+        "default": "कोलोन"
+      }
+    }
+  },
+  {
+    "key": "₢",
+    "mappings": {
+      "default": {
+        "default": "क्रुज़ीरू"
+      }
+    }
+  },
+  {
+    "key": "₣",
+    "mappings": {
+      "default": {
+        "default": "फ्रांक"
+      }
+    }
+  },
+  {
+    "key": "₤",
+    "mappings": {
+      "default": {
+        "default": "लीरा"
+      }
+    }
+  },
+  {
+    "key": "₥",
+    "mappings": {
+      "default": {
+        "default": "मिल"
+      }
+    }
+  },
+  {
+    "key": "₦",
+    "mappings": {
+      "default": {
+        "default": "नाइरा"
+      }
+    }
+  },
+  {
+    "key": "₧",
+    "mappings": {
+      "default": {
+        "default": "पेसेता"
+      }
+    }
+  },
+  {
+    "key": "₨",
+    "mappings": {
+      "default": {
+        "default": "रूपया",
+        "plural": "रूपए"
+      }
+    }
+  },
+  {
+    "key": "₩",
+    "mappings": {
+      "default": {
+        "default": "वॉन"
+      }
+    }
+  },
+  {
+    "key": "₪",
+    "mappings": {
+      "default": {
+        "default": "शेकेल"
+      }
+    }
+  },
+  {
+    "key": "₫",
+    "mappings": {
+      "default": {
+        "default": "दोंग"
+      }
+    }
+  },
+  {
+    "key": "₭",
+    "mappings": {
+      "default": {
+        "default": "किप"
+      }
+    }
+  },
+  {
+    "key": "₮",
+    "mappings": {
+      "default": {
+        "default": "तुग्रिक"
+      }
+    }
+  },
+  {
+    "key": "₯",
+    "mappings": {
+      "default": {
+        "default": "द्राख़्मा"
+      }
+    }
+  },
+  {
+    "key": "₰",
+    "mappings": {
+      "default": {
+        "default": "फेनीग"
+      }
+    }
+  },
+  {
+    "key": "₱",
+    "mappings": {
+      "default": {
+        "default": "पेसो"
+      }
+    }
+  },
+  {
+    "key": "₲",
+    "mappings": {
+      "default": {
+        "default": "ग्वारानी"
+      }
+    }
+  },
+  {
+    "key": "₳",
+    "mappings": {
+      "default": {
+        "default": "ऑस्ट्राल"
+      }
+    }
+  },
+  {
+    "key": "₴",
+    "mappings": {
+      "default": {
+        "default": "ह्रीविन्या"
+      }
+    }
+  },
+  {
+    "key": "₵",
+    "mappings": {
+      "default": {
+        "default": "सीडी"
+      }
+    }
+  },
+  {
+    "key": "₸",
+    "mappings": {
+      "default": {
+        "default": "तेंगे"
+      }
+    }
+  },
+  {
+    "key": "₺",
+    "mappings": {
+      "default": {
+        "default": "तुर्की लीरा"
+      }
+    }
+  },
+  {
+    "key": "元",
+    "mappings": {
+      "default": {
+        "default": "युआन"
+      }
+    }
+  },
+  {
+    "key": "¢",
+    "mappings": {
+      "default": {
+        "default": "सेंट"
+      }
+    }
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "cos",
+    "mappings": {
+      "default": {
+        "default": "Kosinus"
+      }
+    }
+  },
+  {
+    "key": "cot",
+    "mappings": {
+      "default": {
+        "default": "Kotangens"
+      }
+    }
+  },
+  {
+    "key": "csc",
+    "mappings": {
+      "default": {
+        "default": "Kosekans"
+      }
+    }
+  },
+  {
+    "key": "sec",
+    "mappings": {
+      "default": {
+        "default": "Sekans"
+      }
+    }
+  },
+  {
+    "key": "sin",
+    "mappings": {
+      "default": {
+        "default": "Sinus"
+      }
+    }
+  },
+  {
+    "key": "tan",
+    "mappings": {
+      "default": {
+        "default": "Tangens"
+      }
+    }
+  },
+  {
+    "key": "arccos",
+    "mappings": {
+      "default": {
+        "default": "Arkuskosinus"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Kosinus"
+      }
+    }
+  },
+  {
+    "key": "arccot",
+    "mappings": {
+      "default": {
+        "default": "Arkuskotangens"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Kotangens"
+      }
+    }
+  },
+  {
+    "key": "arccsc",
+    "mappings": {
+      "default": {
+        "default": "Arkuskosekans"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Kosekans"
+      }
+    }
+  },
+  {
+    "key": "arcsec",
+    "mappings": {
+      "default": {
+        "default": "Arkussekans"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Sekans"
+      }
+    }
+  },
+  {
+    "key": "arcsin",
+    "mappings": {
+      "default": {
+        "default": "Arkussinus"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Sinus"
+      }
+    }
+  },
+  {
+    "key": "arctan",
+    "mappings": {
+      "default": {
+        "default": "Arkustangens"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "inverser Tangens"
+      }
+    }
+  }
+]

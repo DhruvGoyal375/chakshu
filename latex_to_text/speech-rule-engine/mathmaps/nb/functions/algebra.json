@@ -1,0 +1,53 @@
+[
+  {
+    "locale": "nb"
+  },
+  {
+    "key": "deg",
+    "mappings": {
+      "default": {
+        "default": "grad"
+      }
+    }
+  },
+  {
+    "key": "det",
+    "mappings": {
+      "default": {
+        "default": "det"
+      }
+    }
+  },
+  {
+    "key": "dim",
+    "mappings": {
+      "default": {
+        "default": "dimensjon"
+      }
+    }
+  },
+  {
+    "key": "hom",
+    "mappings": {
+      "default": {
+        "default": "hom"
+      }
+    }
+  },
+  {
+    "key": "ker",
+    "mappings": {
+      "default": {
+        "default": "kjerne"
+      }
+    }
+  },
+  {
+    "key": "Tr",
+    "mappings": {
+      "default": {
+        "default": "trase"
+      }
+    }
+  }
+]

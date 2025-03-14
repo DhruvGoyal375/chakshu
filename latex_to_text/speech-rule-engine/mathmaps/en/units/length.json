@@ -1,0 +1,87 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "ft",
+    "mappings": {
+      "default": {
+        "default": "foot",
+        "plural": "feet"
+      }
+    }
+  },
+  {
+    "key": "in",
+    "mappings": {
+      "default": {
+        "default": "inch",
+        "plural": "inches"
+      }
+    }
+  },
+  {
+    "key": "mi",
+    "mappings": {
+      "default": {
+        "default": "mile"
+      }
+    }
+  },
+  {
+    "key": "yd",
+    "mappings": {
+      "default": {
+        "default": "yard"
+      }
+    }
+  },
+  {
+    "key": "link",
+    "mappings": {
+      "default": {
+        "default": "link"
+      }
+    }
+  },
+  {
+    "key": "rod",
+    "mappings": {
+      "default": {
+        "default": "rod"
+      }
+    }
+  },
+  {
+    "key": "chain",
+    "mappings": {
+      "default": {
+        "default": "chain"
+      }
+    }
+  },
+  {
+    "key": "furlong",
+    "mappings": {
+      "default": {
+        "default": "furlong"
+      }
+    }
+  },
+  {
+    "key": "n.m.",
+    "mappings": {
+      "default": {
+        "default": "nautical mile"
+      }
+    }
+  },
+  {
+    "key": "m",
+    "mappings": {
+      "default": {
+        "default": "meter"
+      }
+    }
+  }
+]

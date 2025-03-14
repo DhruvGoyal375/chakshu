@@ -1,0 +1,101 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "cosh",
+    "mappings": {
+      "default": {
+        "default": "coseno hiperbólico"
+      }
+    }
+  },
+  {
+    "key": "coth",
+    "mappings": {
+      "default": {
+        "default": "cotangente hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "csch",
+    "mappings": {
+      "default": {
+        "default": "cosecante hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "sech",
+    "mappings": {
+      "default": {
+        "default": "secante hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "sinh",
+    "mappings": {
+      "default": {
+        "default": "seno hiperbólico"
+      }
+    }
+  },
+  {
+    "key": "tanh",
+    "mappings": {
+      "default": {
+        "default": "tangente hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "arcosh",
+    "mappings": {
+      "default": {
+        "default": "area coseno hiperbólico"
+      }
+    }
+  },
+  {
+    "key": "arcoth",
+    "mappings": {
+      "default": {
+        "default": "area cotangente hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "arcsch",
+    "mappings": {
+      "default": {
+        "default": "area cosecante hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "arsech",
+    "mappings": {
+      "default": {
+        "default": "area secante hiperbólica"
+      }
+    }
+  },
+  {
+    "key": "arsinh",
+    "mappings": {
+      "default": {
+        "default": "area seno hiperbólico"
+      }
+    }
+  },
+  {
+    "key": "artanh",
+    "mappings": {
+      "default": {
+        "default": "area tangente hiperbólica"
+      }
+    }
+  }
+]

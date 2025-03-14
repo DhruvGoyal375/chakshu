@@ -10,6 +10,9 @@ __pycache__/
 # Django-specific
 db.sqlite3
 local_settings.py
+migrations/
+media/
+staticfiles/
 
 # IDE-specific
 .idea/
@@ -29,3 +32,25 @@ htmlcov/
 # Poetry
 .venv/
 poetry.lock
+
+# Docker-related
+docker/
+
+# Node.js-specific
+node_modules/
+npm-debug.log
+.latext_to_text.env
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+
+# Build artifacts
+*.sqlite3

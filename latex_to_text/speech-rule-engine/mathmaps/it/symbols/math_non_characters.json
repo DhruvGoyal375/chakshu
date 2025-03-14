@@ -1,0 +1,197 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "210F",
+    "mappings": {
+      "default": {
+        "default": "planck Constant Over Two Pi"
+      }
+    }
+  },
+  {
+    "key": "2114",
+    "mappings": {
+      "default": {
+        "default": "l B Bar Symbol"
+      }
+    }
+  },
+  {
+    "key": "2116",
+    "mappings": {
+      "default": {
+        "default": "simbolo di numero"
+      }
+    }
+  },
+  {
+    "key": "2117",
+    "mappings": {
+      "default": {
+        "default": "copyright della registrazione del suono"
+      }
+    }
+  },
+  {
+    "key": "211E",
+    "mappings": {
+      "default": {
+        "default": "presa di prescrizione"
+      }
+    }
+  },
+  {
+    "key": "211F",
+    "mappings": {
+      "default": {
+        "default": "risposta"
+      }
+    }
+  },
+  {
+    "key": "2120",
+    "mappings": {
+      "default": {
+        "default": "segno di servizio"
+      }
+    }
+  },
+  {
+    "key": "2121",
+    "mappings": {
+      "default": {
+        "default": "segno del telefono"
+      }
+    }
+  },
+  {
+    "key": "2122",
+    "mappings": {
+      "default": {
+        "default": "segno di treid mark"
+      }
+    }
+  },
+  {
+    "key": "2123",
+    "mappings": {
+      "default": {
+        "default": "versicle"
+      }
+    }
+  },
+  {
+    "key": "2125",
+    "mappings": {
+      "default": {
+        "default": "segno di oncia"
+      }
+    }
+  },
+  {
+    "key": "2126",
+    "mappings": {
+      "default": {
+        "default": "simbolo dell'ohm"
+      }
+    }
+  },
+  {
+    "key": "2127",
+    "mappings": {
+      "default": {
+        "default": "ohm invertito"
+      }
+    }
+  },
+  {
+    "key": "212A",
+    "mappings": {
+      "default": {
+        "default": "segno Kelvin"
+      }
+    }
+  },
+  {
+    "key": "212B",
+    "mappings": {
+      "default": {
+        "default": "angstrom"
+      }
+    }
+  },
+  {
+    "key": "212E",
+    "mappings": {
+      "default": {
+        "default": "simbolo stimato"
+      }
+    }
+  },
+  {
+    "key": "2132",
+    "mappings": {
+      "default": {
+        "default": "turned f maiuscola"
+      }
+    }
+  },
+  {
+    "key": "2139",
+    "mappings": {
+      "default": {
+        "default": "fonte di informazione"
+      }
+    }
+  },
+  {
+    "key": "213A",
+    "mappings": {
+      "default": {
+        "default": "capitale ruotato Q"
+      }
+    }
+  },
+  {
+    "key": "213B",
+    "mappings": {
+      "default": {
+        "default": "segno di facsimile"
+      }
+    }
+  },
+  {
+    "key": "2141",
+    "mappings": {
+      "default": {
+        "default": "trasformato Sans-Serif Capitale G"
+      }
+    }
+  },
+  {
+    "key": "2142",
+    "mappings": {
+      "default": {
+        "default": "trasformato Sans-Serif Capital L"
+      }
+    }
+  },
+  {
+    "key": "2143",
+    "mappings": {
+      "default": {
+        "default": "capitale Sans-Serif inversa L"
+      }
+    }
+  },
+  {
+    "key": "2144",
+    "mappings": {
+      "default": {
+        "default": "svolta Sans-Serif Capital Y"
+      }
+    }
+  }
+]

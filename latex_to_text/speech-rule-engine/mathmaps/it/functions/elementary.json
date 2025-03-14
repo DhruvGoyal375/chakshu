@@ -1,0 +1,177 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "log",
+    "mappings": {
+      "default": {
+        "default": "logaritmo"
+      }
+    }
+  },
+  {
+    "key": "ln",
+    "mappings": {
+      "default": {
+        "default": "logaritmo naturale"
+      },
+      "clearspeak": {
+        "default": "l n",
+        "Log_LnAsNaturalLog": "logaritmo naturale"
+      }
+    }
+  },
+  {
+    "key": "lg",
+    "mappings": {
+      "default": {
+        "default": "logaritmo in basi 10"
+      }
+    }
+  },
+  {
+    "key": "exp",
+    "mappings": {
+      "default": {
+        "default": "esponenziale"
+      }
+    }
+  },
+  {
+    "key": "gcd",
+    "mappings": {
+      "default": {
+        "default": "massimo comun divisore"
+      }
+    },
+    "names": [
+      "mcd",
+      "MCD"
+    ]
+  },
+  {
+    "key": "lcm",
+    "mappings": {
+      "default": {
+        "default": "minimo comune multiplo"
+      }
+    },
+    "names": [
+      "mcm",
+      "MCM"
+    ]
+  },
+  {
+    "key": "arg",
+    "mappings": {
+      "default": {
+        "default": "argomento"
+      }
+    }
+  },
+  {
+    "key": "im",
+    "mappings": {
+      "default": {
+        "default": "la parte immaginaria del numero complesso"
+      }
+    }
+  },
+  {
+    "key": "re",
+    "mappings": {
+      "default": {
+        "default": "la parte reale del numero complesso"
+      }
+    }
+  },
+  {
+    "key": "inf",
+    "mappings": {
+      "default": {
+        "default": "estremo inferiore"
+      }
+    }
+  },
+  {
+    "key": "lim",
+    "mappings": {
+      "default": {
+        "default": "limite"
+      }
+    }
+  },
+  {
+    "key": "liminf",
+    "mappings": {
+      "default": {
+        "default": "limite inferiore"
+      }
+    }
+  },
+  {
+    "key": "limsup",
+    "mappings": {
+      "default": {
+        "default": "limite superiore"
+      }
+    }
+  },
+  {
+    "key": "max",
+    "mappings": {
+      "default": {
+        "default": "massimo"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "minimo"
+      }
+    }
+  },
+  {
+    "key": "sup",
+    "mappings": {
+      "default": {
+        "default": "estremo superiore"
+      }
+    }
+  },
+  {
+    "key": "injlim",
+    "mappings": {
+      "default": {
+        "default": "colimiti"
+      }
+    }
+  },
+  {
+    "key": "projlim",
+    "mappings": {
+      "default": {
+        "default": "limite proiettivo"
+      }
+    }
+  },
+  {
+    "key": "mod",
+    "mappings": {
+      "default": {
+        "default": "modulo"
+      }
+    }
+  },
+  {
+    "key": "Pr",
+    "mappings": {
+      "default": {
+        "default": "probabilità"
+      }
+    }
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "$",
+    "mappings": {
+      "default": {
+        "default": "dollar",
+        "plural": "dollar"
+      }
+    }
+  },
+  {
+    "key": "£",
+    "mappings": {
+      "default": {
+        "default": "pund",
+        "plural": "pund"
+      }
+    }
+  },
+  {
+    "key": "¥",
+    "mappings": {
+      "default": {
+        "default": "yen",
+        "plural": "yen"
+      }
+    }
+  },
+  {
+    "key": "€",
+    "mappings": {
+      "default": {
+        "default": "euro",
+        "plural": "euro"
+      }
+    }
+  },
+  {
+    "key": "₡",
+    "mappings": {
+      "default": {
+        "default": "colón",
+        "plural": "colón"
+      }
+    }
+  },
+  {
+    "key": "₢",
+    "mappings": {
+      "default": {
+        "default": "cruzeiro",
+        "plural": "cruzeiro"
+      }
+    }
+  },
+  {
+    "key": "₣",
+    "mappings": {
+      "default": {
+        "default": "franc",
+        "plural": "franc"
+      }
+    }
+  },
+  {
+    "key": "₤",
+    "mappings": {
+      "default": {
+        "default": "lire",
+        "plural": "lire"
+      }
+    }
+  },
+  {
+    "key": "₥",
+    "mappings": {
+      "default": {
+        "default": "mill",
+        "plural": "mill"
+      }
+    }
+  },
+  {
+    "key": "₦",
+    "mappings": {
+      "default": {
+        "default": "naira",
+        "plural": "naira"
+      }
+    }
+  },
+  {
+    "key": "₧",
+    "mappings": {
+      "default": {
+        "default": "peseta",
+        "plural": "pesetas"
+      }
+    }
+  },
+  {
+    "key": "₨",
+    "mappings": {
+      "default": {
+        "default": "rupis",
+        "plural": "rupis"
+      }
+    }
+  },
+  {
+    "key": "₩",
+    "mappings": {
+      "default": {
+        "default": "won",
+        "plural": "won"
+      }
+    }
+  },
+  {
+    "key": "₪",
+    "mappings": {
+      "default": {
+        "default": "shekel",
+        "plural": "shekel"
+      }
+    }
+  },
+  {
+    "key": "₫",
+    "mappings": {
+      "default": {
+        "default": "dong",
+        "plural": "dong"
+      }
+    }
+  },
+  {
+    "key": "₭",
+    "mappings": {
+      "default": {
+        "default": "kip",
+        "plural": "kip"
+      }
+    }
+  },
+  {
+    "key": "₮",
+    "mappings": {
+      "default": {
+        "default": "tugrik",
+        "plural": "tugrik"
+      }
+    }
+  },
+  {
+    "key": "₯",
+    "mappings": {
+      "default": {
+        "default": "drakma",
+        "plural": "drakmer"
+      }
+    }
+  },
+  {
+    "key": "₰",
+    "mappings": {
+      "default": {
+        "default": "tyska pennis",
+        "plural": "tyska pennis"
+      }
+    }
+  },
+  {
+    "key": "₱",
+    "mappings": {
+      "default": {
+        "default": "peso",
+        "plural": "pesos"
+      }
+    }
+  },
+  {
+    "key": "₲",
+    "mappings": {
+      "default": {
+        "default": "guarani",
+        "plural": "guarani"
+      }
+    }
+  },
+  {
+    "key": "₳",
+    "mappings": {
+      "default": {
+        "default": "austral",
+        "plural": "austral"
+      }
+    }
+  },
+  {
+    "key": "₴",
+    "mappings": {
+      "default": {
+        "default": "hryvnia",
+        "plural": "hryvnia"
+      }
+    }
+  },
+  {
+    "key": "₵",
+    "mappings": {
+      "default": {
+        "default": "cedi",
+        "plural": "cedi"
+      }
+    }
+  },
+  {
+    "key": "₸",
+    "mappings": {
+      "default": {
+        "default": "tenge",
+        "plural": "tenge"
+      }
+    }
+  },
+  {
+    "key": "₺",
+    "mappings": {
+      "default": {
+        "default": "turkisk lira",
+        "plural": "turkiska lira"
+      }
+    }
+  },
+  {
+    "key": "元",
+    "mappings": {
+      "default": {
+        "default": "yuan",
+        "plural": "yuan"
+      }
+    }
+  },
+  {
+    "key": "¢",
+    "mappings": {
+      "default": {
+        "default": "cent",
+        "plural": "cent"
+      }
+    }
+  }
+]

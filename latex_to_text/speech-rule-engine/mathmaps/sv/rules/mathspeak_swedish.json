@@ -1,0 +1,34 @@
+{
+  "domain": "mathspeak",
+  "locale": "sv",
+  "modality": "speech",
+  "inherits": "base",
+  "rules": [
+    [
+      "Ignore",
+      "vulgar-fraction"
+    ],
+    [
+      "Precondition",
+      "font-double-struck",
+      "default",
+      "self::*[@font=\"double-struck\"]",
+      "string-length(text())=1",
+      "not(contains(@grammar, \"ignoreFont\"))"
+    ],
+    [
+      "Precondition",
+      "german-font",
+      "default",
+      "self::*[@font=\"fraktur\"]",
+      "not(contains(@grammar, \"ignoreFont\"))"
+    ],
+    [
+      "Precondition",
+      "german-font-bold",
+      "default",
+      "self::*[@font=\"bold-fraktur\"]",
+      "not(contains(@grammar, \"ignoreFont\"))"
+    ]
+  ]
+}

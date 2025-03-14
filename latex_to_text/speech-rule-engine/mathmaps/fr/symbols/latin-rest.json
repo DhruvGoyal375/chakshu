@@ -1,0 +1,477 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "210E",
+    "mappings": {
+      "default": {
+        "default": "constante de planck"
+      }
+    }
+  },
+  {
+    "key": "0363",
+    "mappings": {
+      "default": {
+        "default": "diacritique a"
+      }
+    }
+  },
+  {
+    "key": "0364",
+    "mappings": {
+      "default": {
+        "default": "diacritique e"
+      }
+    }
+  },
+  {
+    "key": "0365",
+    "mappings": {
+      "default": {
+        "default": "diacritique i"
+      }
+    }
+  },
+  {
+    "key": "0366",
+    "mappings": {
+      "default": {
+        "default": "diacritique o"
+      }
+    }
+  },
+  {
+    "key": "0367",
+    "mappings": {
+      "default": {
+        "default": "diacritique u"
+      }
+    }
+  },
+  {
+    "key": "0368",
+    "mappings": {
+      "default": {
+        "default": "diacritique c"
+      }
+    }
+  },
+  {
+    "key": "0369",
+    "mappings": {
+      "default": {
+        "default": "diacritique d"
+      }
+    }
+  },
+  {
+    "key": "036A",
+    "mappings": {
+      "default": {
+        "default": "diacritique h"
+      }
+    }
+  },
+  {
+    "key": "036B",
+    "mappings": {
+      "default": {
+        "default": "diacritique m"
+      }
+    }
+  },
+  {
+    "key": "036C",
+    "mappings": {
+      "default": {
+        "default": "diacritique r"
+      }
+    }
+  },
+  {
+    "key": "036D",
+    "mappings": {
+      "default": {
+        "default": "diacritique t"
+      }
+    }
+  },
+  {
+    "key": "036E",
+    "mappings": {
+      "default": {
+        "default": "diacritique v"
+      }
+    }
+  },
+  {
+    "key": "036F",
+    "mappings": {
+      "default": {
+        "default": "diacritique x"
+      }
+    }
+  },
+  {
+    "key": "1D62",
+    "mappings": {
+      "default": {
+        "default": "i souscrit"
+      }
+    }
+  },
+  {
+    "key": "1D63",
+    "mappings": {
+      "default": {
+        "default": "r souscrit"
+      }
+    }
+  },
+  {
+    "key": "1D64",
+    "mappings": {
+      "default": {
+        "default": "u souscrit"
+      }
+    }
+  },
+  {
+    "key": "1D65",
+    "mappings": {
+      "default": {
+        "default": "v souscrit"
+      }
+    }
+  },
+  {
+    "key": "1DCA",
+    "mappings": {
+      "default": {
+        "default": "diacritique r souscrite"
+      }
+    }
+  },
+  {
+    "key": "1DD3",
+    "mappings": {
+      "default": {
+        "default": "diacritique a ouvert aplati suscrit"
+      }
+    }
+  },
+  {
+    "key": "1DD4",
+    "mappings": {
+      "default": {
+        "default": "diacritique ae"
+      }
+    }
+  },
+  {
+    "key": "1DD5",
+    "mappings": {
+      "default": {
+        "default": "diacritique ao"
+      }
+    }
+  },
+  {
+    "key": "1DD6",
+    "mappings": {
+      "default": {
+        "default": "diacritique av"
+      }
+    }
+  },
+  {
+    "key": "1DD7",
+    "mappings": {
+      "default": {
+        "default": "diacritique c cédille"
+      }
+    }
+  },
+  {
+    "key": "1DD8",
+    "mappings": {
+      "default": {
+        "default": "diacritique d insulaire"
+      }
+    }
+  },
+  {
+    "key": "1DD9",
+    "mappings": {
+      "default": {
+        "default": "diacritique eth"
+      }
+    }
+  },
+  {
+    "key": "1DDA",
+    "mappings": {
+      "default": {
+        "default": "diacritique g"
+      }
+    }
+  },
+  {
+    "key": "1DDB",
+    "mappings": {
+      "default": {
+        "default": "diacritique petite g majuscule"
+      }
+    }
+  },
+  {
+    "key": "1DDC",
+    "mappings": {
+      "default": {
+        "default": "diacritique k"
+      }
+    }
+  },
+  {
+    "key": "1DDD",
+    "mappings": {
+      "default": {
+        "default": "diacritique l"
+      }
+    }
+  },
+  {
+    "key": "1DDE",
+    "mappings": {
+      "default": {
+        "default": "diacritique petite l majuscule"
+      }
+    }
+  },
+  {
+    "key": "1DDF",
+    "mappings": {
+      "default": {
+        "default": "diacritique petite m majuscule"
+      }
+    }
+  },
+  {
+    "key": "1DE0",
+    "mappings": {
+      "default": {
+        "default": "diacritique n"
+      }
+    }
+  },
+  {
+    "key": "1DE1",
+    "mappings": {
+      "default": {
+        "default": "diacritique petite n majuscule"
+      }
+    }
+  },
+  {
+    "key": "1DE2",
+    "mappings": {
+      "default": {
+        "default": "diacritique petite r majuscule"
+      }
+    }
+  },
+  {
+    "key": "1DE3",
+    "mappings": {
+      "default": {
+        "default": "diacritique r rotunda"
+      }
+    }
+  },
+  {
+    "key": "1DE4",
+    "mappings": {
+      "default": {
+        "default": "diacritique s"
+      }
+    }
+  },
+  {
+    "key": "1DE5",
+    "mappings": {
+      "default": {
+        "default": "diacritique s long"
+      }
+    }
+  },
+  {
+    "key": "1DE6",
+    "mappings": {
+      "default": {
+        "default": "diacritique z"
+      }
+    }
+  },
+  {
+    "key": "2071",
+    "mappings": {
+      "default": {
+        "default": "exposant i"
+      }
+    }
+  },
+  {
+    "key": "207F",
+    "mappings": {
+      "default": {
+        "default": "exposant n"
+      }
+    }
+  },
+  {
+    "key": "2090",
+    "mappings": {
+      "default": {
+        "default": "indice a"
+      }
+    }
+  },
+  {
+    "key": "2091",
+    "mappings": {
+      "default": {
+        "default": "indice e"
+      }
+    }
+  },
+  {
+    "key": "2092",
+    "mappings": {
+      "default": {
+        "default": "indice o"
+      }
+    }
+  },
+  {
+    "key": "2093",
+    "mappings": {
+      "default": {
+        "default": "indice x"
+      }
+    }
+  },
+  {
+    "key": "2094",
+    "mappings": {
+      "default": {
+        "default": "indice schwa"
+      }
+    }
+  },
+  {
+    "key": "2095",
+    "mappings": {
+      "default": {
+        "default": "souscrite h"
+      }
+    }
+  },
+  {
+    "key": "2096",
+    "mappings": {
+      "default": {
+        "default": "souscrite k"
+      }
+    }
+  },
+  {
+    "key": "2097",
+    "mappings": {
+      "default": {
+        "default": "souscrite l"
+      }
+    }
+  },
+  {
+    "key": "2098",
+    "mappings": {
+      "default": {
+        "default": "souscrite m"
+      }
+    }
+  },
+  {
+    "key": "2099",
+    "mappings": {
+      "default": {
+        "default": "souscrite n"
+      }
+    }
+  },
+  {
+    "key": "209A",
+    "mappings": {
+      "default": {
+        "default": "souscrite p"
+      }
+    }
+  },
+  {
+    "key": "209B",
+    "mappings": {
+      "default": {
+        "default": "souscrite s"
+      }
+    }
+  },
+  {
+    "key": "209C",
+    "mappings": {
+      "default": {
+        "default": "souscrite t"
+      }
+    }
+  },
+  {
+    "key": "2C7C",
+    "mappings": {
+      "default": {
+        "default": "j souscrite"
+      }
+    }
+  },
+  {
+    "key": "1F12A",
+    "mappings": {
+      "default": {
+        "default": "s majuscule en écaille crochetée"
+      }
+    }
+  },
+  {
+    "key": "1F12B",
+    "mappings": {
+      "default": {
+        "default": "c majuscule en italique cerclée"
+      }
+    }
+  },
+  {
+    "key": "1F12C",
+    "mappings": {
+      "default": {
+        "default": "r majuscule en italique cerclée"
+      }
+    }
+  },
+  {
+    "key": "1F18A",
+    "mappings": {
+      "default": {
+        "default": "P majuscule encadrée et en inversion avec croix"
+      }
+    }
+  }
+]

@@ -1,0 +1,333 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "0020",
+    "mappings": {
+      "default": {
+        "default": "espace"
+      }
+    }
+  },
+  {
+    "key": "00A0",
+    "mappings": {
+      "default": {
+        "default": " "
+      }
+    }
+  },
+  {
+    "key": "00AD",
+    "mappings": {
+      "default": {
+        "default": "trait d'union conditionnel"
+      }
+    }
+  },
+  {
+    "key": "2000",
+    "mappings": {
+      "default": {
+        "default": "demi cadratin"
+      }
+    }
+  },
+  {
+    "key": "2001",
+    "mappings": {
+      "default": {
+        "default": "cadratin"
+      }
+    }
+  },
+  {
+    "key": "2002",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2003",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2004",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2005",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2006",
+    "mappings": {
+      "default": {
+        "default": "sixième de cadratin"
+      }
+    }
+  },
+  {
+    "key": "2007",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2008",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2009",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "200A",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "200B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "200C",
+    "mappings": {
+      "default": {
+        "default": "antiliant sans chasse"
+      }
+    }
+  },
+  {
+    "key": "200D",
+    "mappings": {
+      "default": {
+        "default": "liant sans chasse"
+      }
+    }
+  },
+  {
+    "key": "200E",
+    "mappings": {
+      "default": {
+        "default": "marque gauche à droite"
+      }
+    }
+  },
+  {
+    "key": "200F",
+    "mappings": {
+      "default": {
+        "default": "marque droite à gauche"
+      }
+    }
+  },
+  {
+    "key": "2028",
+    "mappings": {
+      "default": {
+        "default": "séparateur de lignes"
+      }
+    }
+  },
+  {
+    "key": "2029",
+    "mappings": {
+      "default": {
+        "default": "séparateur de paragraphes"
+      }
+    }
+  },
+  {
+    "key": "202A",
+    "mappings": {
+      "default": {
+        "default": "enchâssement gauche à droite"
+      }
+    }
+  },
+  {
+    "key": "202B",
+    "mappings": {
+      "default": {
+        "default": "enchâssement droite à gauche"
+      }
+    }
+  },
+  {
+    "key": "202C",
+    "mappings": {
+      "default": {
+        "default": "dépilement de formatage directionnel"
+      }
+    }
+  },
+  {
+    "key": "202D",
+    "mappings": {
+      "default": {
+        "default": "forçage gauche à droite"
+      }
+    }
+  },
+  {
+    "key": "202E",
+    "mappings": {
+      "default": {
+        "default": "forçage droite à gauche"
+      }
+    }
+  },
+  {
+    "key": "202F",
+    "mappings": {
+      "default": {
+        "default": "espace insécable étroite"
+      }
+    }
+  },
+  {
+    "key": "205F",
+    "mappings": {
+      "default": {
+        "default": "espace moyenne mathématique"
+      }
+    }
+  },
+  {
+    "key": "2060",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2061",
+    "mappings": {
+      "default": {
+        "default": "de"
+      }
+    }
+  },
+  {
+    "key": "2062",
+    "mappings": {
+      "default": {
+        "default": "multiplié par"
+      }
+    }
+  },
+  {
+    "key": "2063",
+    "mappings": {
+      "default": {
+        "default": "virgule"
+      }
+    }
+  },
+  {
+    "key": "2064",
+    "mappings": {
+      "default": {
+        "default": "plus"
+      }
+    }
+  },
+  {
+    "key": "206A",
+    "mappings": {
+      "default": {
+        "default": "inhibiteur d'échange symétrique"
+      }
+    }
+  },
+  {
+    "key": "206B",
+    "mappings": {
+      "default": {
+        "default": "activateur d'échange symétrique"
+      }
+    }
+  },
+  {
+    "key": "206E",
+    "mappings": {
+      "default": {
+        "default": "sélecteur de formes numérales nationales"
+      }
+    }
+  },
+  {
+    "key": "206F",
+    "mappings": {
+      "default": {
+        "default": "sélecteur de formes numérales de référence"
+      }
+    }
+  },
+  {
+    "key": "FEFF",
+    "mappings": {
+      "default": {
+        "default": "espace ultrafine"
+      }
+    }
+  },
+  {
+    "key": "FFF9",
+    "mappings": {
+      "default": {
+        "default": "ancre d'annotation interlinéaire"
+      }
+    }
+  },
+  {
+    "key": "FFFA",
+    "mappings": {
+      "default": {
+        "default": "séparateur d'annotation interlinéaire"
+      }
+    }
+  },
+  {
+    "key": "FFFB",
+    "mappings": {
+      "default": {
+        "default": "terminateur d'annotation interlinéaire"
+      }
+    }
+  }
+]

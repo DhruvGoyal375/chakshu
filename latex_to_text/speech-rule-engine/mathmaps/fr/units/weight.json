@@ -1,0 +1,96 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "lb",
+    "mappings": {
+      "default": {
+        "default": "livre"
+      }
+    }
+  },
+  {
+    "key": "oz",
+    "mappings": {
+      "default": {
+        "default": "once"
+      }
+    }
+  },
+  {
+    "key": "gr",
+    "mappings": {
+      "default": {
+        "default": "gramme"
+      }
+    }
+  },
+  {
+    "key": "g",
+    "mappings": {
+      "default": {
+        "default": "gramme"
+      }
+    }
+  },
+  {
+    "key": "t",
+    "mappings": {
+      "default": {
+        "default": "tonne"
+      }
+    }
+  },
+  {
+    "key": "dram",
+    "mappings": {
+      "default": {
+        "default": "drachme"
+      }
+    }
+  },
+  {
+    "key": "st",
+    "mappings": {
+      "default": {
+        "default": "stone"
+      }
+    }
+  },
+  {
+    "key": "qtr",
+    "mappings": {
+      "default": {
+        "default": "quarter"
+      }
+    }
+  },
+  {
+    "key": "LT",
+    "mappings": {
+      "default": {
+        "default": "long ton"
+      }
+    }
+  },
+  {
+    "key": "mcg",
+    "mappings": {
+      "default": {
+        "default": "microgramme"
+      }
+    }
+  },
+  {
+    "key": "cwt",
+    "mappings": {
+      "default": {
+        "default": "quintal"
+      }
+    },
+    "names": [
+      "qq"
+    ]
+  }
+]

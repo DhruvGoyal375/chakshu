@@ -1,0 +1,69 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "W",
+    "mappings": {
+      "default": {
+        "default": "वॉट"
+      }
+    }
+  },
+  {
+    "key": "kwh",
+    "mappings": {
+      "default": {
+        "default": "किलोवॉट घंटा"
+      }
+    }
+  },
+  {
+    "key": "J",
+    "mappings": {
+      "default": {
+        "default": "जूल"
+      }
+    }
+  },
+  {
+    "key": "N",
+    "mappings": {
+      "default": {
+        "default": "न्यूटन"
+      }
+    }
+  },
+  {
+    "key": "A",
+    "mappings": {
+      "default": {
+        "default": "एम्पियर"
+      }
+    }
+  },
+  {
+    "key": "V",
+    "mappings": {
+      "default": {
+        "default": "वॉल्ट"
+      }
+    }
+  },
+  {
+    "key": "ohm",
+    "mappings": {
+      "default": {
+        "default": "ओह्म"
+      }
+    }
+  },
+  {
+    "key": "Ω",
+    "mappings": {
+      "default": {
+        "default": "ओह्म"
+      }
+    }
+  }
+]

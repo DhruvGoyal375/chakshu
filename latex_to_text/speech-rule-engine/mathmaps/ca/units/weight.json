@@ -1,0 +1,104 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "dram",
+    "mappings": {
+      "default": {
+        "default": "dracma",
+        "plural": "dracmes"
+      }
+    }
+  },
+  {
+    "key": "oz",
+    "mappings": {
+      "default": {
+        "default": "unça",
+        "plural": "unces"
+      }
+    }
+  },
+  {
+    "key": "lb",
+    "mappings": {
+      "default": {
+        "default": "lliura",
+        "plural": "lliures"
+      }
+    }
+  },
+  {
+    "key": "st",
+    "mappings": {
+      "default": {
+        "default": "stone",
+        "plural": "stones"
+      }
+    }
+  },
+  {
+    "key": "qtr",
+    "mappings": {
+      "default": {
+        "default": "quart curt",
+        "plural": "quarts curts"
+      }
+    }
+  },
+  {
+    "key": "cwt",
+    "mappings": {
+      "default": {
+        "default": "centena",
+        "plural": "centenes"
+      }
+    }
+  },
+  {
+    "key": "LT",
+    "mappings": {
+      "default": {
+        "default": "lliura imperial",
+        "plural": "lliures imperials"
+      }
+    }
+  },
+  {
+    "key": "gr",
+    "mappings": {
+      "default": {
+        "default": "gram",
+        "plural": "grams"
+      }
+    }
+  },
+  {
+    "key": "g",
+    "mappings": {
+      "default": {
+        "default": "gram",
+        "plural": "grams"
+      }
+    }
+  },
+  {
+    "key": "mcg",
+    "mappings": {
+      "default": {
+        "default": "microgram",
+        "plural": "micrograms"
+      }
+    }
+  },
+  {
+    "key": "t",
+    "mappings": {
+      "default": {
+        "default": "tona",
+        "plural": "tones"
+      }
+    }
+  }
+]

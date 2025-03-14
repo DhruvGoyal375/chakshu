@@ -1,0 +1,13 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "docena"
+      }
+    }
+  }
+]

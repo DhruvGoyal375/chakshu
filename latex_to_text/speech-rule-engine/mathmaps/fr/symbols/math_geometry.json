@@ -1,0 +1,2373 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "2500",
+    "mappings": {
+      "default": {
+        "default": "filet horizontal fin"
+      }
+    }
+  },
+  {
+    "key": "2501",
+    "mappings": {
+      "default": {
+        "default": "filet horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "2502",
+    "mappings": {
+      "default": {
+        "default": "filet vertical fin"
+      }
+    }
+  },
+  {
+    "key": "2503",
+    "mappings": {
+      "default": {
+        "default": "filet vertical gras"
+      }
+    }
+  },
+  {
+    "key": "2504",
+    "mappings": {
+      "default": {
+        "default": "filet brisé triple horizontal fin"
+      }
+    }
+  },
+  {
+    "key": "2505",
+    "mappings": {
+      "default": {
+        "default": "filet brisé triple horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "2506",
+    "mappings": {
+      "default": {
+        "default": "filet brisé triple vertical fin"
+      }
+    }
+  },
+  {
+    "key": "2507",
+    "mappings": {
+      "default": {
+        "default": "filet brisé triple vertical gras"
+      }
+    }
+  },
+  {
+    "key": "2508",
+    "mappings": {
+      "default": {
+        "default": "filet brisé quadruple horizontal fin"
+      }
+    }
+  },
+  {
+    "key": "2509",
+    "mappings": {
+      "default": {
+        "default": "filet brisé quadruple horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "250A",
+    "mappings": {
+      "default": {
+        "default": "filet brisé quadruple vertical fin"
+      }
+    }
+  },
+  {
+    "key": "250B",
+    "mappings": {
+      "default": {
+        "default": "filet brisé quadruple vertical gras"
+      }
+    }
+  },
+  {
+    "key": "250C",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "250D",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras vers la droite"
+      }
+    }
+  },
+  {
+    "key": "250E",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin vers la droite"
+      }
+    }
+  },
+  {
+    "key": "250F",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2510",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2511",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2512",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2513",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2514",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2515",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2516",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2517",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2518",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2519",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "251A",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "251B",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "251C",
+    "mappings": {
+      "default": {
+        "default": "filet fin vertical et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "251D",
+    "mappings": {
+      "default": {
+        "default": "filet fin vertical et gras vers la droite"
+      }
+    }
+  },
+  {
+    "key": "251E",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers la droite et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "251F",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin vers la droite et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2520",
+    "mappings": {
+      "default": {
+        "default": "filet gras vertical et fin vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2521",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras vers la droite et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2522",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers la droite et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2523",
+    "mappings": {
+      "default": {
+        "default": "filet gras vertical et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2524",
+    "mappings": {
+      "default": {
+        "default": "filet fin vertical et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2525",
+    "mappings": {
+      "default": {
+        "default": "filet fin vertical et gras vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2526",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers la gauche et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2527",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin vers la gauche et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2528",
+    "mappings": {
+      "default": {
+        "default": "filet gras vertical et fin vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2529",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras vers la gauche et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "252A",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers la gauche et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "252B",
+    "mappings": {
+      "default": {
+        "default": "filet gras vertical et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "252C",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et horizontal"
+      }
+    }
+  },
+  {
+    "key": "252D",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et fin vers la droite et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "252E",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite et fin vers la gauche et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "252F",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras horizontal"
+      }
+    }
+  },
+  {
+    "key": "2530",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin horizontal"
+      }
+    }
+  },
+  {
+    "key": "2531",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la droite et gras vers la gauche et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2532",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la gauche et gras vers la droite et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2533",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2534",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2535",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et fin vers la droite et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2536",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite et fin vers la gauche et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2537",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras horizontal"
+      }
+    }
+  },
+  {
+    "key": "2538",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin horizontal"
+      }
+    }
+  },
+  {
+    "key": "2539",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la droite et gras vers la gauche et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "253A",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la gauche et gras vers la droite et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "253B",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et horizontal"
+      }
+    }
+  },
+  {
+    "key": "253C",
+    "mappings": {
+      "default": {
+        "default": "filet fin vertical et horizontal"
+      }
+    }
+  },
+  {
+    "key": "253D",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et fin vers la droite et vertical"
+      }
+    }
+  },
+  {
+    "key": "253E",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite et fin vers la gauche et vertical"
+      }
+    }
+  },
+  {
+    "key": "253F",
+    "mappings": {
+      "default": {
+        "default": "filet vertical fin et horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "2540",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers le bas et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2541",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas et fin vers le haut et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2542",
+    "mappings": {
+      "default": {
+        "default": "filet vertical gras et horizontal fin"
+      }
+    }
+  },
+  {
+    "key": "2543",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et vers le haut et fin vers la droite et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2544",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite et vers le haut et fin vers la gauche et vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2545",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et vers le bas et fin vers la droite et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2546",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite et vers le bas et fin vers la gauche et vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2547",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas et gras vers le haut et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2548",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers le bas et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2549",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la droite et gras vers la gauche et vertical"
+      }
+    }
+  },
+  {
+    "key": "254A",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la gauche et gras vers la droite et vertical"
+      }
+    }
+  },
+  {
+    "key": "254B",
+    "mappings": {
+      "default": {
+        "default": "filet vertical et horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "254C",
+    "mappings": {
+      "default": {
+        "default": "filet brisé double horizontal fin"
+      }
+    }
+  },
+  {
+    "key": "254D",
+    "mappings": {
+      "default": {
+        "default": "filet brisé double horizontal gras"
+      }
+    }
+  },
+  {
+    "key": "254E",
+    "mappings": {
+      "default": {
+        "default": "filet brisé double vertical fin"
+      }
+    }
+  },
+  {
+    "key": "254F",
+    "mappings": {
+      "default": {
+        "default": "filet brisé double vertical gras"
+      }
+    }
+  },
+  {
+    "key": "2550",
+    "mappings": {
+      "default": {
+        "default": "filet double horizontal"
+      }
+    }
+  },
+  {
+    "key": "2551",
+    "mappings": {
+      "default": {
+        "default": "filet double vertical"
+      }
+    }
+  },
+  {
+    "key": "2552",
+    "mappings": {
+      "default": {
+        "default": "filet simple le bas et double vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2553",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le bas et simple vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2554",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le bas et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2555",
+    "mappings": {
+      "default": {
+        "default": "filet simple vers le bas et double vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2556",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le bas et simple vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2557",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le bas et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2558",
+    "mappings": {
+      "default": {
+        "default": "filet simple vers le haut et double vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2559",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le haut et simple vers la droite"
+      }
+    }
+  },
+  {
+    "key": "255A",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le haut et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "255B",
+    "mappings": {
+      "default": {
+        "default": "filet simple vers le haut et double vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "255C",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le haut et simple vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "255D",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le haut et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "255E",
+    "mappings": {
+      "default": {
+        "default": "filet vertical simple et droit double"
+      }
+    }
+  },
+  {
+    "key": "255F",
+    "mappings": {
+      "default": {
+        "default": "filet vertical double et droit simple"
+      }
+    }
+  },
+  {
+    "key": "2560",
+    "mappings": {
+      "default": {
+        "default": "filet double vertical et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2561",
+    "mappings": {
+      "default": {
+        "default": "filet vertical simple et gauche double"
+      }
+    }
+  },
+  {
+    "key": "2562",
+    "mappings": {
+      "default": {
+        "default": "filet vertical double et gauche simple"
+      }
+    }
+  },
+  {
+    "key": "2563",
+    "mappings": {
+      "default": {
+        "default": "filet double vertical et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2564",
+    "mappings": {
+      "default": {
+        "default": "filet vers le bas simple et horizontal double"
+      }
+    }
+  },
+  {
+    "key": "2565",
+    "mappings": {
+      "default": {
+        "default": "filet vers le bas double et horizontal simple"
+      }
+    }
+  },
+  {
+    "key": "2566",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le bas et horizontal"
+      }
+    }
+  },
+  {
+    "key": "2567",
+    "mappings": {
+      "default": {
+        "default": "filet vers le haut simple et horizontal double"
+      }
+    }
+  },
+  {
+    "key": "2568",
+    "mappings": {
+      "default": {
+        "default": "filet vers le haut double et horizontal simple"
+      }
+    }
+  },
+  {
+    "key": "2569",
+    "mappings": {
+      "default": {
+        "default": "filet double vers le haut et horizontal"
+      }
+    }
+  },
+  {
+    "key": "256A",
+    "mappings": {
+      "default": {
+        "default": "filet vertical simple et horizontal double"
+      }
+    }
+  },
+  {
+    "key": "256B",
+    "mappings": {
+      "default": {
+        "default": "filet vertical double et horizontal simple"
+      }
+    }
+  },
+  {
+    "key": "256C",
+    "mappings": {
+      "default": {
+        "default": "filet double vertical et horizontall"
+      }
+    }
+  },
+  {
+    "key": "256D",
+    "mappings": {
+      "default": {
+        "default": "filet fin arc vers le bas et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "256E",
+    "mappings": {
+      "default": {
+        "default": "filet fin arc vers le bas et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "256F",
+    "mappings": {
+      "default": {
+        "default": "filet fin arc vers le haut et vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2570",
+    "mappings": {
+      "default": {
+        "default": "filet fin arc vers le haut et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2571",
+    "mappings": {
+      "default": {
+        "default": "filet diagonal fin du coin supérieur droit au coin inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "2572",
+    "mappings": {
+      "default": {
+        "default": "filet diagonal fin du coin supérieur gauche vers le coin inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "2573",
+    "mappings": {
+      "default": {
+        "default": "filet diagonal fin en croix"
+      }
+    }
+  },
+  {
+    "key": "2574",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2575",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2576",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2577",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2578",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2579",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut"
+      }
+    }
+  },
+  {
+    "key": "257A",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la droite"
+      }
+    }
+  },
+  {
+    "key": "257B",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le bas"
+      }
+    }
+  },
+  {
+    "key": "257C",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers la gauche et gras vers la droite"
+      }
+    }
+  },
+  {
+    "key": "257D",
+    "mappings": {
+      "default": {
+        "default": "filet fin vers le haut et gras vers le bas"
+      }
+    }
+  },
+  {
+    "key": "257E",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers la gauche et fin vers la droite"
+      }
+    }
+  },
+  {
+    "key": "257F",
+    "mappings": {
+      "default": {
+        "default": "filet gras vers le haut et fin vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2580",
+    "mappings": {
+      "default": {
+        "default": "moitié supérieure de pavé"
+      }
+    }
+  },
+  {
+    "key": "2581",
+    "mappings": {
+      "default": {
+        "default": "huitième inférieur de pavé"
+      }
+    }
+  },
+  {
+    "key": "2582",
+    "mappings": {
+      "default": {
+        "default": "quart inférieur de pavé"
+      }
+    }
+  },
+  {
+    "key": "2583",
+    "mappings": {
+      "default": {
+        "default": "trois huitièmes inférieurs de pavé"
+      }
+    }
+  },
+  {
+    "key": "2584",
+    "mappings": {
+      "default": {
+        "default": "moitié inférieure de pavé"
+      }
+    }
+  },
+  {
+    "key": "2585",
+    "mappings": {
+      "default": {
+        "default": "cinq huitièmes inférieurs de pavé"
+      }
+    }
+  },
+  {
+    "key": "2586",
+    "mappings": {
+      "default": {
+        "default": "trois quarts inférieurs de pavé"
+      }
+    }
+  },
+  {
+    "key": "2587",
+    "mappings": {
+      "default": {
+        "default": "sept huitièmes inférieurs de pavé"
+      }
+    }
+  },
+  {
+    "key": "2588",
+    "mappings": {
+      "default": {
+        "default": "pavé plein"
+      }
+    }
+  },
+  {
+    "key": "2589",
+    "mappings": {
+      "default": {
+        "default": "sept huitièmes gauches de pavé"
+      }
+    }
+  },
+  {
+    "key": "258A",
+    "mappings": {
+      "default": {
+        "default": "trois quarts gauches de pavé"
+      }
+    }
+  },
+  {
+    "key": "258B",
+    "mappings": {
+      "default": {
+        "default": "cinq huitièmes gauches de pavé"
+      }
+    }
+  },
+  {
+    "key": "258C",
+    "mappings": {
+      "default": {
+        "default": "moitié gauche de pavé"
+      }
+    }
+  },
+  {
+    "key": "258D",
+    "mappings": {
+      "default": {
+        "default": "trois huitièmes gauches de pavé"
+      }
+    }
+  },
+  {
+    "key": "258E",
+    "mappings": {
+      "default": {
+        "default": "un quart gauche de pavé"
+      }
+    }
+  },
+  {
+    "key": "258F",
+    "mappings": {
+      "default": {
+        "default": "un huitième gauche de pavé"
+      }
+    }
+  },
+  {
+    "key": "2590",
+    "mappings": {
+      "default": {
+        "default": "moitié droite de pavé"
+      }
+    }
+  },
+  {
+    "key": "2591",
+    "mappings": {
+      "default": {
+        "default": "ombre légère"
+      }
+    }
+  },
+  {
+    "key": "2592",
+    "mappings": {
+      "default": {
+        "default": "ombre moyenne"
+      }
+    }
+  },
+  {
+    "key": "2593",
+    "mappings": {
+      "default": {
+        "default": "ombre foncée"
+      }
+    }
+  },
+  {
+    "key": "2594",
+    "mappings": {
+      "default": {
+        "default": "huitième supérieur de pavé"
+      }
+    }
+  },
+  {
+    "key": "2595",
+    "mappings": {
+      "default": {
+        "default": "huitième droit de pavé"
+      }
+    }
+  },
+  {
+    "key": "2596",
+    "mappings": {
+      "default": {
+        "default": "quadrant inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "2597",
+    "mappings": {
+      "default": {
+        "default": "quadrant inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "2598",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "2599",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur gauche inférieur gauche et inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "259A",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur gauche et inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "259B",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur gauche supérieur droit et inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "259C",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur gauche supérieur droit et inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "259D",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "259E",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur droit et inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "259F",
+    "mappings": {
+      "default": {
+        "default": "quadrant supérieur droit inférieur gauche et inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "25A0",
+    "mappings": {
+      "default": {
+        "default": "petit carré noir"
+      }
+    }
+  },
+  {
+    "key": "25A1",
+    "mappings": {
+      "default": {
+        "default": "carré blanc"
+      }
+    }
+  },
+  {
+    "key": "25A2",
+    "mappings": {
+      "default": {
+        "default": "carré blanc aux coins arrondis"
+      }
+    }
+  },
+  {
+    "key": "25A3",
+    "mappings": {
+      "default": {
+        "default": "petit carré noir inscrit dans un carré blanc"
+      }
+    }
+  },
+  {
+    "key": "25A4",
+    "mappings": {
+      "default": {
+        "default": "carré hachuré horizontalement"
+      }
+    }
+  },
+  {
+    "key": "25A5",
+    "mappings": {
+      "default": {
+        "default": "carré hachuré verticalement"
+      }
+    }
+  },
+  {
+    "key": "25A6",
+    "mappings": {
+      "default": {
+        "default": "carré quadrillé"
+      }
+    }
+  },
+  {
+    "key": "25A7",
+    "mappings": {
+      "default": {
+        "default": "carré hachuré du haut à gauche vers le bas à droite"
+      }
+    }
+  },
+  {
+    "key": "25A8",
+    "mappings": {
+      "default": {
+        "default": "carré hachuré du haut à droite vers le bas à gauche"
+      }
+    }
+  },
+  {
+    "key": "25A9",
+    "mappings": {
+      "default": {
+        "default": "carré quadrillé en diagonale"
+      }
+    }
+  },
+  {
+    "key": "25AA",
+    "mappings": {
+      "default": {
+        "default": "petit carré noir"
+      }
+    }
+  },
+  {
+    "key": "25AB",
+    "mappings": {
+      "default": {
+        "default": "petit carré blanc"
+      }
+    }
+  },
+  {
+    "key": "25AC",
+    "mappings": {
+      "default": {
+        "default": "rectangle noir"
+      }
+    }
+  },
+  {
+    "key": "25AD",
+    "mappings": {
+      "default": {
+        "default": "rectangle blanc"
+      }
+    }
+  },
+  {
+    "key": "25AE",
+    "mappings": {
+      "default": {
+        "default": "rectangle vertical noir"
+      }
+    }
+  },
+  {
+    "key": "25AF",
+    "mappings": {
+      "default": {
+        "default": "white vertical rectangle"
+      }
+    }
+  },
+  {
+    "key": "25B0",
+    "mappings": {
+      "default": {
+        "default": "parallélogramme noir"
+      }
+    }
+  },
+  {
+    "key": "25B1",
+    "mappings": {
+      "default": {
+        "default": "parallélogramme blanc"
+      }
+    }
+  },
+  {
+    "key": "25B2",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers le haut"
+      }
+    }
+  },
+  {
+    "key": "25B3",
+    "mappings": {
+      "default": {
+        "default": "triangle blanc pointant vers le haut"
+      }
+    }
+  },
+  {
+    "key": "25B4",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers le haut"
+      }
+    }
+  },
+  {
+    "key": "25B5",
+    "mappings": {
+      "default": {
+        "default": "petit triangle blanc pointant vers le haut"
+      }
+    }
+  },
+  {
+    "key": "25B6",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25B7",
+    "mappings": {
+      "default": {
+        "default": "triangle blanc pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25B8",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25B9",
+    "mappings": {
+      "default": {
+        "default": "petit triangle blanc pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25BA",
+    "mappings": {
+      "default": {
+        "default": "pointeur noir vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25BB",
+    "mappings": {
+      "default": {
+        "default": "pointeur blanc vers la droite"
+      }
+    }
+  },
+  {
+    "key": "25BC",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers le bas"
+      }
+    }
+  },
+  {
+    "key": "25BD",
+    "mappings": {
+      "default": {
+        "default": "triangle blanc pointant vers le bas"
+      }
+    }
+  },
+  {
+    "key": "25BE",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers le bas"
+      }
+    }
+  },
+  {
+    "key": "25BF",
+    "mappings": {
+      "default": {
+        "default": "petit triangle blanc pointant vers le bas"
+      }
+    }
+  },
+  {
+    "key": "25C0",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C1",
+    "mappings": {
+      "default": {
+        "default": "petit triangle blanc pointant vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C2",
+    "mappings": {
+      "default": {
+        "default": "petit triangle noir pointant vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C3",
+    "mappings": {
+      "default": {
+        "default": "petit triangle blanc pointant vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C4",
+    "mappings": {
+      "default": {
+        "default": "pointeur noir vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C5",
+    "mappings": {
+      "default": {
+        "default": "pointeur blanc vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "25C6",
+    "mappings": {
+      "default": {
+        "default": "losange noir"
+      }
+    }
+  },
+  {
+    "key": "25C7",
+    "mappings": {
+      "default": {
+        "default": "losange blanc"
+      }
+    }
+  },
+  {
+    "key": "25C8",
+    "mappings": {
+      "default": {
+        "default": "losange blanc évidé"
+      }
+    }
+  },
+  {
+    "key": "25C9",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc évidé"
+      }
+    }
+  },
+  {
+    "key": "25CA",
+    "mappings": {
+      "default": {
+        "default": "losange"
+      }
+    }
+  },
+  {
+    "key": "25CB",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc"
+      }
+    }
+  },
+  {
+    "key": "25CC",
+    "mappings": {
+      "default": {
+        "default": "cercle en pointillés"
+      }
+    }
+  },
+  {
+    "key": "25CD",
+    "mappings": {
+      "default": {
+        "default": "cercle hachuré verticalement"
+      }
+    }
+  },
+  {
+    "key": "25CE",
+    "mappings": {
+      "default": {
+        "default": "deux cercles concentriques"
+      }
+    }
+  },
+  {
+    "key": "25CF",
+    "mappings": {
+      "default": {
+        "default": "cercle noir"
+      }
+    }
+  },
+  {
+    "key": "25D0",
+    "mappings": {
+      "default": {
+        "default": "cercle avec moitié gauche noire"
+      }
+    }
+  },
+  {
+    "key": "25D1",
+    "mappings": {
+      "default": {
+        "default": "cercle avec moitié droite noire"
+      }
+    }
+  },
+  {
+    "key": "25D2",
+    "mappings": {
+      "default": {
+        "default": "cercle avec moitié inférieure"
+      }
+    }
+  },
+  {
+    "key": "25D3",
+    "mappings": {
+      "default": {
+        "default": "cercle avec moitié supérieure"
+      }
+    }
+  },
+  {
+    "key": "25D4",
+    "mappings": {
+      "default": {
+        "default": "cercle avec quadrant supérieur droit noir"
+      }
+    }
+  },
+  {
+    "key": "25D5",
+    "mappings": {
+      "default": {
+        "default": "disque avec quadrant supérieur gauche blanc"
+      }
+    }
+  },
+  {
+    "key": "25D6",
+    "mappings": {
+      "default": {
+        "default": "demi disque gauche noir"
+      }
+    }
+  },
+  {
+    "key": "25D7",
+    "mappings": {
+      "default": {
+        "default": "demi disque droite noir"
+      }
+    }
+  },
+  {
+    "key": "25D8",
+    "mappings": {
+      "default": {
+        "default": "point noir au blanc"
+      }
+    }
+  },
+  {
+    "key": "25D9",
+    "mappings": {
+      "default": {
+        "default": "cercle noir au blanc"
+      }
+    }
+  },
+  {
+    "key": "25DA",
+    "mappings": {
+      "default": {
+        "default": "demi cercle supérieur noir au  blanc"
+      }
+    }
+  },
+  {
+    "key": "25DB",
+    "mappings": {
+      "default": {
+        "default": "demi cercle inférieur noir au  blanc"
+      }
+    }
+  },
+  {
+    "key": "25DC",
+    "mappings": {
+      "default": {
+        "default": "arc de cercle dans le quadrant supérieur gauchearc de cercle dans le quadrant supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25DD",
+    "mappings": {
+      "default": {
+        "default": "arc de cercle dans le quadrant supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "25DE",
+    "mappings": {
+      "default": {
+        "default": "arc de cercle dans le quadrant inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "25DF",
+    "mappings": {
+      "default": {
+        "default": "arc de cercle dans le quadrant inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25E0",
+    "mappings": {
+      "default": {
+        "default": "demi cercle supérieur"
+      }
+    }
+  },
+  {
+    "key": "25E1",
+    "mappings": {
+      "default": {
+        "default": "demi cercle inférieur"
+      }
+    }
+  },
+  {
+    "key": "25E2",
+    "mappings": {
+      "default": {
+        "default": "coin triangulaire noir inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "25E3",
+    "mappings": {
+      "default": {
+        "default": "coin triangulaire noir inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25E4",
+    "mappings": {
+      "default": {
+        "default": "coin triangulaire noir supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25E5",
+    "mappings": {
+      "default": {
+        "default": "coin triangulaire noir supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "25E6",
+    "mappings": {
+      "default": {
+        "default": "opérateur rond"
+      }
+    }
+  },
+  {
+    "key": "25E7",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié gauche noire"
+      }
+    }
+  },
+  {
+    "key": "25E8",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié droite noire"
+      }
+    }
+  },
+  {
+    "key": "25E9",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié supérieure gauche noire"
+      }
+    }
+  },
+  {
+    "key": "25EA",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié inférieure droite noire"
+      }
+    }
+  },
+  {
+    "key": "25EB",
+    "mappings": {
+      "default": {
+        "default": "carré blanc à ligne bissectrice verticale"
+      }
+    }
+  },
+  {
+    "key": "25EC",
+    "mappings": {
+      "default": {
+        "default": "triangle blanc pointant vers le haut pointé"
+      }
+    }
+  },
+  {
+    "key": "25ED",
+    "mappings": {
+      "default": {
+        "default": "triangle pointe vers le haut À moitié gauche noire"
+      }
+    }
+  },
+  {
+    "key": "25EE",
+    "mappings": {
+      "default": {
+        "default": "triangle pointe vers le haut À moitié droite noire"
+      }
+    }
+  },
+  {
+    "key": "25EF",
+    "mappings": {
+      "default": {
+        "default": "grand cercle"
+      }
+    }
+  },
+  {
+    "key": "25F0",
+    "mappings": {
+      "default": {
+        "default": "carré blanc à quartier supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25F1",
+    "mappings": {
+      "default": {
+        "default": "carré blanc à quartier inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25F2",
+    "mappings": {
+      "default": {
+        "default": "carré blanc à quartier inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "25F3",
+    "mappings": {
+      "default": {
+        "default": "carré blanc à quartier supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "25F4",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc à quartier supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25F5",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc à quartier inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25F6",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc à quartier inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "25F7",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc à quartier supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "25F8",
+    "mappings": {
+      "default": {
+        "default": "triangle rectangle supérieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25F9",
+    "mappings": {
+      "default": {
+        "default": "triangle rectangle supérieur droit"
+      }
+    }
+  },
+  {
+    "key": "25FA",
+    "mappings": {
+      "default": {
+        "default": "triangle rectangle inférieur gauche"
+      }
+    }
+  },
+  {
+    "key": "25FB",
+    "mappings": {
+      "default": {
+        "default": "carré moyen blanc"
+      }
+    }
+  },
+  {
+    "key": "25FC",
+    "mappings": {
+      "default": {
+        "default": "carré moyen noir"
+      }
+    }
+  },
+  {
+    "key": "25FD",
+    "mappings": {
+      "default": {
+        "default": "carré moyen blanc"
+      }
+    }
+  },
+  {
+    "key": "25FE",
+    "mappings": {
+      "default": {
+        "default": "carré moyen noir"
+      }
+    }
+  },
+  {
+    "key": "25FF",
+    "mappings": {
+      "default": {
+        "default": "triangle rectangle inférieur droit"
+      }
+    }
+  },
+  {
+    "key": "2B12",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié supérieure noire"
+      }
+    }
+  },
+  {
+    "key": "2B13",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié inférieure noire"
+      }
+    }
+  },
+  {
+    "key": "2B14",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié diagonale supérieure droite noire"
+      }
+    }
+  },
+  {
+    "key": "2B15",
+    "mappings": {
+      "default": {
+        "default": "carré à moitié diagonale inférieure droite noire"
+      }
+    }
+  },
+  {
+    "key": "2B16",
+    "mappings": {
+      "default": {
+        "default": "losange à moitié gauche noire"
+      }
+    }
+  },
+  {
+    "key": "2B17",
+    "mappings": {
+      "default": {
+        "default": "losange à moitié droite noire"
+      }
+    }
+  },
+  {
+    "key": "2B18",
+    "mappings": {
+      "default": {
+        "default": "losange à moitié supérieure noire"
+      }
+    }
+  },
+  {
+    "key": "2B19",
+    "mappings": {
+      "default": {
+        "default": "losange à moitié inférieure noire"
+      }
+    }
+  },
+  {
+    "key": "2B1A",
+    "mappings": {
+      "default": {
+        "default": "carré en pointillés"
+      }
+    }
+  },
+  {
+    "key": "2B1B",
+    "mappings": {
+      "default": {
+        "default": "grand carré noir"
+      }
+    }
+  },
+  {
+    "key": "2B1C",
+    "mappings": {
+      "default": {
+        "default": "grand carré blanc"
+      }
+    }
+  },
+  {
+    "key": "2B1D",
+    "mappings": {
+      "default": {
+        "default": "très petit carré noir"
+      }
+    }
+  },
+  {
+    "key": "2B1E",
+    "mappings": {
+      "default": {
+        "default": "très petit carré blanc"
+      }
+    }
+  },
+  {
+    "key": "2B1F",
+    "mappings": {
+      "default": {
+        "default": "pentagone noir"
+      }
+    }
+  },
+  {
+    "key": "2B20",
+    "mappings": {
+      "default": {
+        "default": "pentagone blanc"
+      }
+    }
+  },
+  {
+    "key": "2B21",
+    "mappings": {
+      "default": {
+        "default": "hexagone blanc"
+      }
+    }
+  },
+  {
+    "key": "2B22",
+    "mappings": {
+      "default": {
+        "default": "hexagone noir"
+      }
+    }
+  },
+  {
+    "key": "2B23",
+    "mappings": {
+      "default": {
+        "default": "hexagone noir posé sur un côté"
+      }
+    }
+  },
+  {
+    "key": "2B24",
+    "mappings": {
+      "default": {
+        "default": "grand cercle noir"
+      }
+    }
+  },
+  {
+    "key": "2B25",
+    "mappings": {
+      "default": {
+        "default": "losange moyen noir"
+      }
+    }
+  },
+  {
+    "key": "2B26",
+    "mappings": {
+      "default": {
+        "default": "losange moyen blanc"
+      }
+    }
+  },
+  {
+    "key": "2B27",
+    "mappings": {
+      "default": {
+        "default": "rhombe moyen noir"
+      }
+    }
+  },
+  {
+    "key": "2B28",
+    "mappings": {
+      "default": {
+        "default": "rhombe moyen blanc"
+      }
+    }
+  },
+  {
+    "key": "2B29",
+    "mappings": {
+      "default": {
+        "default": "petit losange noir"
+      }
+    }
+  },
+  {
+    "key": "2B2A",
+    "mappings": {
+      "default": {
+        "default": "petit rhombe noir"
+      }
+    }
+  },
+  {
+    "key": "2B2B",
+    "mappings": {
+      "default": {
+        "default": "petit rhombe blanc"
+      }
+    }
+  },
+  {
+    "key": "2B2C",
+    "mappings": {
+      "default": {
+        "default": "ellipse horizontale noire"
+      }
+    }
+  },
+  {
+    "key": "2B2D",
+    "mappings": {
+      "default": {
+        "default": "ellipse horizontale blanche"
+      }
+    }
+  },
+  {
+    "key": "2B2E",
+    "mappings": {
+      "default": {
+        "default": "ellipse verticale noire"
+      }
+    }
+  },
+  {
+    "key": "2B2F",
+    "mappings": {
+      "default": {
+        "default": "ellipse verticale blanche"
+      }
+    }
+  },
+  {
+    "key": "2B50",
+    "mappings": {
+      "default": {
+        "default": "étoile blanche moyenne"
+      }
+    }
+  },
+  {
+    "key": "2B51",
+    "mappings": {
+      "default": {
+        "default": "petite étoile noire"
+      }
+    }
+  },
+  {
+    "key": "2B52",
+    "mappings": {
+      "default": {
+        "default": "petite étoile blanche"
+      }
+    }
+  },
+  {
+    "key": "2B53",
+    "mappings": {
+      "default": {
+        "default": "pentagone noir pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2B54",
+    "mappings": {
+      "default": {
+        "default": "pentagone blanc pointant vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2B55",
+    "mappings": {
+      "default": {
+        "default": "grand cercle gras"
+      }
+    }
+  },
+  {
+    "key": "2B56",
+    "mappings": {
+      "default": {
+        "default": "ovale gras avec ovale inscrit"
+      }
+    }
+  },
+  {
+    "key": "2B57",
+    "mappings": {
+      "default": {
+        "default": "cercle gras avec cercle inscrit"
+      }
+    }
+  },
+  {
+    "key": "2B58",
+    "mappings": {
+      "default": {
+        "default": "cercle gras"
+      }
+    }
+  },
+  {
+    "key": "2B59",
+    "mappings": {
+      "default": {
+        "default": "sautoir cerclé gras"
+      }
+    }
+  }
+]

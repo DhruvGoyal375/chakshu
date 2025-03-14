@@ -1,0 +1,49 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "s",
+    "mappings": {
+      "default": {
+        "plural": "secondi",
+        "default": "secondo"
+      }
+    }
+  },
+  {
+    "key": "″",
+    "mappings": {
+      "default": {
+        "plural": "secondi",
+        "default": "secondo"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "plural": "minuti",
+        "default": "minuto"
+      }
+    }
+  },
+  {
+    "key": "°",
+    "mappings": {
+      "default": {
+        "default": "grado"
+      }
+    }
+  },
+  {
+    "key": "h",
+    "mappings": {
+      "default": {
+        "plural": "ore",
+        "default": "ora"
+      }
+    }
+  }
+]

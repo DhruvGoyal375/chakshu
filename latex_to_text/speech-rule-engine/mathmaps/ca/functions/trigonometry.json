@@ -1,0 +1,101 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "cos",
+    "mappings": {
+      "default": {
+        "default": "cosinus"
+      }
+    }
+  },
+  {
+    "key": "cot",
+    "mappings": {
+      "default": {
+        "default": "cotangent"
+      }
+    }
+  },
+  {
+    "key": "csc",
+    "mappings": {
+      "default": {
+        "default": "cosecant"
+      }
+    }
+  },
+  {
+    "key": "sec",
+    "mappings": {
+      "default": {
+        "default": "secant"
+      }
+    }
+  },
+  {
+    "key": "sin",
+    "mappings": {
+      "default": {
+        "default": "sinus"
+      }
+    }
+  },
+  {
+    "key": "tan",
+    "mappings": {
+      "default": {
+        "default": "tangent"
+      }
+    }
+  },
+  {
+    "key": "arccos",
+    "mappings": {
+      "default": {
+        "default": "arc cosinus"
+      }
+    }
+  },
+  {
+    "key": "arccot",
+    "mappings": {
+      "default": {
+        "default": "arc cotangent"
+      }
+    }
+  },
+  {
+    "key": "arccsc",
+    "mappings": {
+      "default": {
+        "default": "arc cosecant"
+      }
+    }
+  },
+  {
+    "key": "arcsec",
+    "mappings": {
+      "default": {
+        "default": "arc secant"
+      }
+    }
+  },
+  {
+    "key": "arcsin",
+    "mappings": {
+      "default": {
+        "default": "arc sinus"
+      }
+    }
+  },
+  {
+    "key": "arctan",
+    "mappings": {
+      "default": {
+        "default": "arc tangent"
+      }
+    }
+  }
+]

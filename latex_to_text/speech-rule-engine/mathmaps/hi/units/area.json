@@ -1,0 +1,70 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "sq",
+    "mappings": {
+      "default": {
+        "default": "वर्ग"
+      }
+    }
+  },
+  {
+    "key": "sq inch",
+    "mappings": {
+      "default": {
+        "default": "वर्ग इंच"
+      }
+    }
+  },
+  {
+    "key": "sq rd",
+    "mappings": {
+      "default": {
+        "default": "वर्ग रॉड"
+      }
+    }
+  },
+  {
+    "key": "sq ft",
+    "mappings": {
+      "default": {
+        "default": "वर्ग फुट",
+        "plural": "वर्ग फिट"
+      }
+    }
+  },
+  {
+    "key": "sq yd",
+    "mappings": {
+      "default": {
+        "default": "वर्ग गज"
+      }
+    }
+  },
+  {
+    "key": "sq mi",
+    "mappings": {
+      "default": {
+        "default": "वर्ग मील"
+      }
+    }
+  },
+  {
+    "key": "acr",
+    "mappings": {
+      "default": {
+        "default": "एकर"
+      }
+    }
+  },
+  {
+    "key": "ha",
+    "mappings": {
+      "default": {
+        "default": "हेक्टर"
+      }
+    }
+  }
+]

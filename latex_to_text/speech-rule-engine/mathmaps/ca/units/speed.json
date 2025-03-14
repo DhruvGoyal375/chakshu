@@ -1,0 +1,41 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "kt",
+    "mappings": {
+      "default": {
+        "default": "nus",
+        "plural": "nusos"
+      }
+    }
+  },
+  {
+    "key": "mph",
+    "mappings": {
+      "default": {
+        "default": "milla per hora",
+        "plural": "milles per hora"
+      }
+    }
+  },
+  {
+    "key": "rpm",
+    "mappings": {
+      "default": {
+        "default": "revolució per minut",
+        "plural": "revolucions per minut"
+      }
+    }
+  },
+  {
+    "key": "kmh",
+    "mappings": {
+      "default": {
+        "default": "quilòmetre per hora",
+        "plural": "quilòmetres per hora"
+      }
+    }
+  }
+]

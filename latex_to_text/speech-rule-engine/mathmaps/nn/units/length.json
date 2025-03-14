@@ -1,0 +1,85 @@
+[
+  {
+    "locale": "nn"
+  },
+  {
+    "key": "ft",
+    "mappings": {
+      "default": {
+        "default": "fot"
+      }
+    }
+  },
+  {
+    "key": "in",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "mi",
+    "mappings": {
+      "default": {
+        "default": "mil"
+      }
+    }
+  },
+  {
+    "key": "yd",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "link",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "rod",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "chain",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "furlong",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "n.m.",
+    "mappings": {
+      "default": {
+        "default": "nautisk mil"
+      }
+    }
+  },
+  {
+    "key": "m",
+    "mappings": {
+      "default": {
+        "default": "meter"
+      }
+    }
+  }
+]

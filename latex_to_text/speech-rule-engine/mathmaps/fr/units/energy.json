@@ -1,0 +1,69 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "W",
+    "mappings": {
+      "default": {
+        "default": "watt"
+      }
+    }
+  },
+  {
+    "key": "kwh",
+    "mappings": {
+      "default": {
+        "default": "kilowattheure"
+      }
+    }
+  },
+  {
+    "key": "J",
+    "mappings": {
+      "default": {
+        "default": "joule"
+      }
+    }
+  },
+  {
+    "key": "N",
+    "mappings": {
+      "default": {
+        "default": "newton"
+      }
+    }
+  },
+  {
+    "key": "A",
+    "mappings": {
+      "default": {
+        "default": "ampère"
+      }
+    }
+  },
+  {
+    "key": "V",
+    "mappings": {
+      "default": {
+        "default": "volt"
+      }
+    }
+  },
+  {
+    "key": "ohm",
+    "mappings": {
+      "default": {
+        "default": "ohm"
+      }
+    }
+  },
+  {
+    "key": "Ω",
+    "mappings": {
+      "default": {
+        "default": "ohm"
+      }
+    }
+  }
+]

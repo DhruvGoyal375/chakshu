@@ -1,0 +1,132 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "2113",
+    "mappings": {
+      "default": {
+        "default": "script l"
+      }
+    }
+  },
+  {
+    "key": "2118",
+    "mappings": {
+      "default": {
+        "default": "script cap P"
+      },
+      "mathspeak": {
+        "default": "script upper P"
+      }
+    }
+  },
+  {
+    "key": "213C",
+    "mappings": {
+      "default": {
+        "default": "double struck pi"
+      }
+    }
+  },
+  {
+    "key": "213D",
+    "mappings": {
+      "default": {
+        "default": "double struck gamma"
+      }
+    }
+  },
+  {
+    "key": "213E",
+    "mappings": {
+      "default": {
+        "default": "double struck cap Gamma"
+      },
+      "mathspeak": {
+        "default": "double struck upper Gamma"
+      }
+    }
+  },
+  {
+    "key": "213F",
+    "mappings": {
+      "default": {
+        "default": "double struck cap Pi"
+      },
+      "mathspeak": {
+        "default": "double struck upper Pi"
+      }
+    }
+  },
+  {
+    "key": "2140",
+    "mappings": {
+      "default": {
+        "default": "double struck sum"
+      },
+      "mathspeak": {
+        "default": "double struck sigma summation"
+      }
+    }
+  },
+  {
+    "key": "2145",
+    "mappings": {
+      "default": {
+        "default": "double struck italic cap D"
+      },
+      "mathspeak": {
+        "default": "double struck italic upper D"
+      }
+    }
+  },
+  {
+    "key": "2146",
+    "mappings": {
+      "default": {
+        "default": "double struck italic d"
+      }
+    }
+  },
+  {
+    "key": "2147",
+    "mappings": {
+      "default": {
+        "default": "double struck italic e"
+      }
+    }
+  },
+  {
+    "key": "2148",
+    "mappings": {
+      "default": {
+        "default": "double struck italic i"
+      }
+    }
+  },
+  {
+    "key": "2149",
+    "mappings": {
+      "default": {
+        "default": "double struck italic j"
+      }
+    }
+  },
+  {
+    "key": "1D6A4",
+    "mappings": {
+      "default": {
+        "default": "italic dotless i"
+      }
+    }
+  },
+  {
+    "key": "1D6A5",
+    "mappings": {
+      "default": {
+        "default": "italic dotless j"
+      }
+    }
+  }
+]
