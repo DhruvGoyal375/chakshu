@@ -1,4 +1,4 @@
-name: Build and Push Docker Image to Azure Blob Storage
+name: Build and Push Docker-Compose Images with Ollama + LLaVA to Azure Blob Storage
 
 on:
   push:
@@ -6,36 +6,39 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Install Docker
+    - name: Install Docker & Docker-Compose
       run: |
-        sudo apt-get -qq update
-        sudo apt-get -y -qq install \
-          docker-ce docker-ce-cli containerd.io \
-          docker-compose-plugin docker-ce-rootless-extras docker-buildx-plugin
-
-    - name: Verify Docker Installation
-      run: |
-        docker version
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sudo sh get-docker.sh
+        docker --version
         docker compose version
 
-    - name: Build Docker Image
+    - name: Build Docker-Compose Stack
       run: |
         docker compose build
 
-    - name: Save Docker Image as Tar
+    - name: List Docker Images
       run: |
-        docker save -o chakshuv1.tar chakshuv1
+        docker images
 
-    - name: Upload Docker Tar to Azure Blob Storage
+    - name: Save Docker Images to TAR
+      run: |
+        docker save -o chakshuv1.tar $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "app|ollama")
+
+    - name: Upload Docker Image to Blob Storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
-          az storage blob upload --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} --container-name docker-images --name chakshuv1.tar --file chakshuv1.tar --auth-mode key
+          az storage blob upload \
+            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+            --container-name docker-images \
+            --file chakshuv1.tar \
+            --name chakshuv1.tar
