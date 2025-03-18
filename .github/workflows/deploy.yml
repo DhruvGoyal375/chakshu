@@ -14,12 +14,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 🔥 Install Docker Compose
-    - name: Install Docker-Compose
+    # 🔥 Install Docker
+    - name: Install Docker
       run: |
         sudo apt-get update
+        sudo apt-get install -y docker.io
+        sudo systemctl start docker
+        sudo systemctl enable docker
+        docker --version  # ✅ Verify Docker installation
+
+    # 🔥 Install Docker-Compose
+    - name: Install Docker-Compose
+      run: |
         sudo apt-get install -y docker-compose-plugin
-        docker-compose version  # ✅ Verify installation
+        docker-compose version  # ✅ Verify Docker-Compose installation
 
     # 🔥 Build Docker-Compose Stack (Django + Ollama + LLaVA)
     - name: Build Docker-Compose Stack
