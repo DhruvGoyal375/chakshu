@@ -18,9 +18,9 @@ RUN poetry config virtualenvs.create false \
 COPY chakshu /app/chakshu
 
 # Run Django setup commands for the first time
-RUN python /app/chakshu/manage.py migrate \
-    && python /app/chakshu/manage.py collectstatic --noinput \
-    && python /app/chakshu/manage.py createsuperuser --noinput || echo "Superuser already exists"
+RUN python chakshu/manage.py migrate \
+    && python chakshu/manage.py collectstatic --noinput \
+    && python chakshu/manage.py createsuperuser --noinput || echo "Superuser already exists"
 
 # Run the application
 CMD ["python", "chakshu/manage.py", "runserver", "0.0.0.0:8000"]
