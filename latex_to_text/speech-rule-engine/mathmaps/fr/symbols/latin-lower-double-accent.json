@@ -1,0 +1,461 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "01D6",
+    "mappings": {
+      "default": {
+        "default": "u trémaa et macron"
+      }
+    }
+  },
+  {
+    "key": "01D8",
+    "mappings": {
+      "default": {
+        "default": "u trémaa et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "01DA",
+    "mappings": {
+      "default": {
+        "default": "u trémaa et caron"
+      }
+    }
+  },
+  {
+    "key": "01DC",
+    "mappings": {
+      "default": {
+        "default": "u trémaa et accent grave"
+      }
+    }
+  },
+  {
+    "key": "01DF",
+    "mappings": {
+      "default": {
+        "default": "a trémaa et macron"
+      }
+    }
+  },
+  {
+    "key": "01E1",
+    "mappings": {
+      "default": {
+        "default": "a point en chef et macron"
+      }
+    }
+  },
+  {
+    "key": "01ED",
+    "mappings": {
+      "default": {
+        "default": "o ogonek et macron"
+      }
+    }
+  },
+  {
+    "key": "01FB",
+    "mappings": {
+      "default": {
+        "default": "a rond en chef et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "022B",
+    "mappings": {
+      "default": {
+        "default": "o tréma et macron"
+      }
+    }
+  },
+  {
+    "key": "022D",
+    "mappings": {
+      "default": {
+        "default": "o tilde et macron"
+      }
+    }
+  },
+  {
+    "key": "0231",
+    "mappings": {
+      "default": {
+        "default": "o point en chef et macron"
+      }
+    }
+  },
+  {
+    "key": "1E09",
+    "mappings": {
+      "default": {
+        "default": "c cédille et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E15",
+    "mappings": {
+      "default": {
+        "default": "e macron et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1E17",
+    "mappings": {
+      "default": {
+        "default": "e macron et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E1D",
+    "mappings": {
+      "default": {
+        "default": "e cédille et brève"
+      }
+    }
+  },
+  {
+    "key": "1E2F",
+    "mappings": {
+      "default": {
+        "default": "i tréma et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E39",
+    "mappings": {
+      "default": {
+        "default": "l point souscrit et macron"
+      }
+    }
+  },
+  {
+    "key": "1E4D",
+    "mappings": {
+      "default": {
+        "default": "o tilde et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E4F",
+    "mappings": {
+      "default": {
+        "default": "o tilde et tréma"
+      }
+    }
+  },
+  {
+    "key": "1E51",
+    "mappings": {
+      "default": {
+        "default": "o macron et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1E53",
+    "mappings": {
+      "default": {
+        "default": "o macron et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E5D",
+    "mappings": {
+      "default": {
+        "default": "r point souscrit et macron"
+      }
+    }
+  },
+  {
+    "key": "1E65",
+    "mappings": {
+      "default": {
+        "default": "s accent aigu et point en chef"
+      }
+    }
+  },
+  {
+    "key": "1E67",
+    "mappings": {
+      "default": {
+        "default": "s caron et point en chef"
+      }
+    }
+  },
+  {
+    "key": "1E69",
+    "mappings": {
+      "default": {
+        "default": "s point souscrit et point en chef"
+      }
+    }
+  },
+  {
+    "key": "1E79",
+    "mappings": {
+      "default": {
+        "default": "u tilde et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1E7B",
+    "mappings": {
+      "default": {
+        "default": "u macron et tréma"
+      }
+    }
+  },
+  {
+    "key": "1EA5",
+    "mappings": {
+      "default": {
+        "default": "a accent circonflexe et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1EA7",
+    "mappings": {
+      "default": {
+        "default": "a accent circonflexe et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1EA9",
+    "mappings": {
+      "default": {
+        "default": "a accent circonflexe et crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1EAB",
+    "mappings": {
+      "default": {
+        "default": "a accent circonflexe et tilde"
+      }
+    }
+  },
+  {
+    "key": "1EAD",
+    "mappings": {
+      "default": {
+        "default": "a accent circonflexe et point souscrit"
+      }
+    }
+  },
+  {
+    "key": "1EAF",
+    "mappings": {
+      "default": {
+        "default": "a brève et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1EB1",
+    "mappings": {
+      "default": {
+        "default": "a brève et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1EB3",
+    "mappings": {
+      "default": {
+        "default": "a brève et crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1EB5",
+    "mappings": {
+      "default": {
+        "default": "a brève et tilde"
+      }
+    }
+  },
+  {
+    "key": "1EB7",
+    "mappings": {
+      "default": {
+        "default": "a brève et point souscrit"
+      }
+    }
+  },
+  {
+    "key": "1EBF",
+    "mappings": {
+      "default": {
+        "default": "e accent circonflexe et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1EC1",
+    "mappings": {
+      "default": {
+        "default": "e accent circonflexe et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1EC3",
+    "mappings": {
+      "default": {
+        "default": "e accent circonflexe et crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1EC5",
+    "mappings": {
+      "default": {
+        "default": "e accent circonflexe et tilde"
+      }
+    }
+  },
+  {
+    "key": "1EC7",
+    "mappings": {
+      "default": {
+        "default": "e accent circonflexe et point souscrit"
+      }
+    }
+  },
+  {
+    "key": "1ED1",
+    "mappings": {
+      "default": {
+        "default": "o accent circonflexe et accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1ED3",
+    "mappings": {
+      "default": {
+        "default": "o accent circonflexe et accent grave"
+      }
+    }
+  },
+  {
+    "key": "1ED5",
+    "mappings": {
+      "default": {
+        "default": "o accent circonflexe et crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1ED7",
+    "mappings": {
+      "default": {
+        "default": "o accent circonflexe et tilde"
+      }
+    }
+  },
+  {
+    "key": "1ED9",
+    "mappings": {
+      "default": {
+        "default": "o accent circonflexe et point souscrit"
+      }
+    }
+  },
+  {
+    "key": "1EDB",
+    "mappings": {
+      "default": {
+        "default": "o cornu accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1EDD",
+    "mappings": {
+      "default": {
+        "default": "o cornu accent grave"
+      }
+    }
+  },
+  {
+    "key": "1EDF",
+    "mappings": {
+      "default": {
+        "default": "o cornu crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1EE1",
+    "mappings": {
+      "default": {
+        "default": "o cornu tilde"
+      }
+    }
+  },
+  {
+    "key": "1EE3",
+    "mappings": {
+      "default": {
+        "default": "o cornu point souscrit"
+      }
+    }
+  },
+  {
+    "key": "1EE9",
+    "mappings": {
+      "default": {
+        "default": "u cornu accent aigu"
+      }
+    }
+  },
+  {
+    "key": "1EEB",
+    "mappings": {
+      "default": {
+        "default": "u cornu accent grave"
+      }
+    }
+  },
+  {
+    "key": "1EED",
+    "mappings": {
+      "default": {
+        "default": "u cornu crochet en chef"
+      }
+    }
+  },
+  {
+    "key": "1EEF",
+    "mappings": {
+      "default": {
+        "default": "u cornu tilde"
+      }
+    }
+  },
+  {
+    "key": "1EF1",
+    "mappings": {
+      "default": {
+        "default": "u cornu point souscrit"
+      }
+    }
+  }
+]

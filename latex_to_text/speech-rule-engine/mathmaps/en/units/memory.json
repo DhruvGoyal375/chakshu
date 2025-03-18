@@ -1,0 +1,29 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "b",
+    "mappings": {
+      "default": {
+        "default": "bit"
+      }
+    }
+  },
+  {
+    "key": "B",
+    "mappings": {
+      "default": {
+        "default": "byte"
+      }
+    }
+  },
+  {
+    "key": "KB",
+    "mappings": {
+      "default": {
+        "default": "kilobyte"
+      }
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "s",
+    "mappings": {
+      "default": {
+        "default": "segon",
+        "plural": "segons"
+      }
+    }
+  },
+  {
+    "key": "″",
+    "mappings": {
+      "default": {
+        "default": "segon",
+        "plural": "segons"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "minut",
+        "plural": "minuts"
+      }
+    }
+  },
+  {
+    "key": "°",
+    "mappings": {
+      "default": {
+        "default": "grau",
+        "plural": "graus"
+      }
+    }
+  },
+  {
+    "key": "h",
+    "mappings": {
+      "default": {
+        "default": "hora",
+        "plural": "hores"
+      }
+    }
+  }
+]

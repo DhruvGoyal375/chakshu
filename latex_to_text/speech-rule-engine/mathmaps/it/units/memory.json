@@ -1,0 +1,32 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "b",
+    "mappings": {
+      "default": {
+        "plural": "bit",
+        "default": "bit"
+      }
+    }
+  },
+  {
+    "key": "B",
+    "mappings": {
+      "default": {
+        "plural": "byte",
+        "default": "byte"
+      }
+    }
+  },
+  {
+    "key": "KB",
+    "mappings": {
+      "default": {
+        "plural": "chilobyte",
+        "default": "chilobyte"
+      }
+    }
+  }
+]

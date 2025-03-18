@@ -1,0 +1,421 @@
+[
+  {
+    "locale": "nb"
+  },
+  {
+    "key": "21BC",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun opp"
+      }
+    }
+  },
+  {
+    "key": "21BD",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun ned"
+      }
+    }
+  },
+  {
+    "key": "21BE",
+    "mappings": {
+      "default": {
+        "default": "opp-harpun høyre"
+      }
+    }
+  },
+  {
+    "key": "21BF",
+    "mappings": {
+      "default": {
+        "default": "opp-harpun venstre"
+      }
+    }
+  },
+  {
+    "key": "21C0",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun opp"
+      }
+    }
+  },
+  {
+    "key": "21C1",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun ned"
+      }
+    }
+  },
+  {
+    "key": "21C2",
+    "mappings": {
+      "default": {
+        "default": "ned-harpun høyre"
+      }
+    }
+  },
+  {
+    "key": "21C3",
+    "mappings": {
+      "default": {
+        "default": "ned-harpun venstre"
+      }
+    }
+  },
+  {
+    "key": "21CB",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun over høyre-harpun"
+      }
+    }
+  },
+  {
+    "key": "21CC",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun over venstre-harpun"
+      }
+    }
+  },
+  {
+    "key": "294A",
+    "mappings": {
+      "default": {
+        "default": "venstre pigg opp høyre pigg ned-harpun"
+      }
+    }
+  },
+  {
+    "key": "294B",
+    "mappings": {
+      "default": {
+        "default": "venstre pigg ned høyre pigg opp-harpun"
+      }
+    }
+  },
+  {
+    "key": "294C",
+    "mappings": {
+      "default": {
+        "default": "høyre pigg opp venstre pigg ned-harpun"
+      }
+    }
+  },
+  {
+    "key": "294D",
+    "mappings": {
+      "default": {
+        "default": "venstre pigg opp høyre pigg ned-harpun"
+      }
+    }
+  },
+  {
+    "key": "294E",
+    "mappings": {
+      "default": {
+        "default": "venstre pigg opp høyre pigg opp-harpun"
+      }
+    }
+  },
+  {
+    "key": "294F",
+    "mappings": {
+      "default": {
+        "default": "opp ned-harpun høyre"
+      }
+    }
+  },
+  {
+    "key": "2950",
+    "mappings": {
+      "default": {
+        "default": "venstre pigg ned høyre pigg ned-harpun"
+      }
+    }
+  },
+  {
+    "key": "2951",
+    "mappings": {
+      "default": {
+        "default": "opp ned-harpun venstre"
+      }
+    }
+  },
+  {
+    "key": "2952",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun til strek med pigg oppover"
+      }
+    }
+  },
+  {
+    "key": "2953",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun til strek med pigg oppover"
+      }
+    }
+  },
+  {
+    "key": "2954",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun til strek med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "2955",
+    "mappings": {
+      "default": {
+        "default": "nedover-harpun til strek med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "2956",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun til strek med pigg nedover"
+      }
+    }
+  },
+  {
+    "key": "2957",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun til strek med pigg nedover"
+      }
+    }
+  },
+  {
+    "key": "2958",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun til strek med pigg venstre"
+      }
+    }
+  },
+  {
+    "key": "2959",
+    "mappings": {
+      "default": {
+        "default": "nedover-harpun til strek med pigg venstre"
+      }
+    }
+  },
+  {
+    "key": "295A",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun from strek med pigg oppover"
+      }
+    }
+  },
+  {
+    "key": "295B",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun from strek med pigg oppover"
+      }
+    }
+  },
+  {
+    "key": "295C",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun from strek med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "295D",
+    "mappings": {
+      "default": {
+        "default": "nedover-harpun from strek med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "295E",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun from strek med pigg nedover"
+      }
+    }
+  },
+  {
+    "key": "295F",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun from strek med pigg nedover"
+      }
+    }
+  },
+  {
+    "key": "2960",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun from strek med pigg venstre"
+      }
+    }
+  },
+  {
+    "key": "2961",
+    "mappings": {
+      "default": {
+        "default": "nedover-harpun from strek med pigg venstre"
+      }
+    }
+  },
+  {
+    "key": "2962",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun med pigg opp above venstre-harpun med pigg ned"
+      }
+    }
+  },
+  {
+    "key": "2963",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun med pigg venstre beside oppover-harpun med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "2964",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun med pigg opp above høyre-harpun med pigg ned"
+      }
+    }
+  },
+  {
+    "key": "2965",
+    "mappings": {
+      "default": {
+        "default": "nedover-harpun med pigg venstre beside nedover-harpun med pigg høyre"
+      }
+    }
+  },
+  {
+    "key": "2966",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun med pigg opp above høyre-harpun med pigg opp"
+      }
+    }
+  },
+  {
+    "key": "2967",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun med pigg ned above høyre-harpun med pigg ned"
+      }
+    }
+  },
+  {
+    "key": "2968",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun med pigg opp above venstre-harpun med pigg opp"
+      }
+    }
+  },
+  {
+    "key": "2969",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun med pigg ned above venstre-harpun med pigg ned"
+      }
+    }
+  },
+  {
+    "key": "296A",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun over strek"
+      }
+    }
+  },
+  {
+    "key": "296B",
+    "mappings": {
+      "default": {
+        "default": "venstre-harpun under strek"
+      }
+    }
+  },
+  {
+    "key": "296C",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun over strek"
+      }
+    }
+  },
+  {
+    "key": "296D",
+    "mappings": {
+      "default": {
+        "default": "høyre-harpun under strek"
+      }
+    }
+  },
+  {
+    "key": "296E",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun til the venstre av nedover-harpun"
+      }
+    }
+  },
+  {
+    "key": "296F",
+    "mappings": {
+      "default": {
+        "default": "oppover-harpun til the høyre av nedover-harpun"
+      }
+    }
+  },
+  {
+    "key": "297C",
+    "mappings": {
+      "default": {
+        "default": "venstre fiskehale"
+      }
+    }
+  },
+  {
+    "key": "297D",
+    "mappings": {
+      "default": {
+        "default": "høyre fiskehale"
+      }
+    }
+  },
+  {
+    "key": "297E",
+    "mappings": {
+      "default": {
+        "default": "opp-fiskehale"
+      }
+    }
+  },
+  {
+    "key": "297F",
+    "mappings": {
+      "default": {
+        "default": "ned-fiskehale"
+      }
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "kt",
+    "mappings": {
+      "default": {
+        "default": "nudo"
+      }
+    }
+  },
+  {
+    "key": "mph",
+    "mappings": {
+      "default": {
+        "default": "milla por hora",
+        "plural": "millas por hora"
+      }
+    }
+  },
+  {
+    "key": "rpm",
+    "mappings": {
+      "default": {
+        "default": "revoluciones por minuto"
+      }
+    }
+  },
+  {
+    "key": "kmh",
+    "mappings": {
+      "default": {
+        "plural": "kilómetros por hora",
+        "default": "kilómetro por hora"
+      }
+    }
+  }
+]

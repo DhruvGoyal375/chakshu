@@ -1,11 +1,12 @@
 import re
 from collections import OrderedDict
 
+from captioner.image_captioner import LlavaImageCaptioner
 from django.http import JsonResponse
 from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
-from scraper.views import get_citations, get_full_content, get_short_description
+from scraper.views import get_citations, get_full_content, get_image_urls, get_short_description
 
 from .wiki_api import WikiAPI
 
@@ -94,10 +95,23 @@ class ProcessOptionView(View):
                     # return JsonResponse({"full_page_content": full_page_content})
 
                 # get captions of all images
-                # elif option == 4:
-                #     captions = "\n".join(
-                #         [img.get("alt", "No caption") for img in soup.find_all("img")])
-                #     return JsonResponse({"text": captions})
+                elif option == 4:
+                    image_urls = get_image_urls(selected_link)
+                    captions = []
+                    captioner = LlavaImageCaptioner()
+
+                    for url in image_urls:
+                        if url.startswith("//upload"):
+                            print(url)
+
+                            image_metadata_page_url = ""
+                            generated_caption = captioner.test_model_with_image_url_and_text(
+                                image_url=url, page_url=image_metadata_page_url
+                            )
+                            captions.append(generated_caption)
+
+                    captions = "\n".join(captions)
+                    return JsonResponse({"text": captions})
 
                 # get the references
                 elif option == 5:

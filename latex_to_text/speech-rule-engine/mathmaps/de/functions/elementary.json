@@ -1,0 +1,195 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "log",
+    "mappings": {
+      "default": {
+        "default": "Logarithmus"
+      }
+    }
+  },
+  {
+    "key": "ln",
+    "mappings": {
+      "default": {
+        "default": "natürlicher Logarithmus"
+      },
+      "clearspeak": {
+        "default": "l n",
+        "Log_LnAsNaturalLog": "natürlicher Logarithmus"
+      }
+    }
+  },
+  {
+    "key": "lg",
+    "mappings": {
+      "default": {
+        "default": "Logarithmus zur Basis 10"
+      }
+    }
+  },
+  {
+    "key": "exp",
+    "mappings": {
+      "default": {
+        "default": "Exponent"
+      },
+      "mathspeak": {
+        "default": "exp"
+      },
+      "clearspeak": {
+        "default": "exp"
+      }
+    }
+  },
+  {
+    "key": "gcd",
+    "mappings": {
+      "default": {
+        "default": "größter gemeinsamer Teiler"
+      },
+      "mathspeak": {
+        "default": "ggt"
+      },
+      "clearspeak": {
+        "default": "ggt"
+      }
+    },
+    "names": [
+      "ggt",
+      "ggT"
+    ]
+  },
+  {
+    "key": "lcm",
+    "mappings": {
+      "default": {
+        "default": "kleinstes gemeinsames Vielfaches"
+      },
+      "mathspeak": {
+        "default": "kgv"
+      },
+      "clearspeak": {
+        "default": "kgv"
+      }
+    },
+    "names": [
+      "kgv",
+      "kgV"
+    ]
+  },
+  {
+    "key": "arg",
+    "mappings": {
+      "default": {
+        "default": "Argument"
+      }
+    }
+  },
+  {
+    "key": "im",
+    "mappings": {
+      "default": {
+        "default": "der Imaginärteil der komplexen Zahl"
+      }
+    }
+  },
+  {
+    "key": "re",
+    "mappings": {
+      "default": {
+        "default": "der Realteil der komplexen Zahl"
+      }
+    }
+  },
+  {
+    "key": "mod",
+    "mappings": {
+      "default": {
+        "default": "modulo"
+      }
+    }
+  },
+  {
+    "key": "inf",
+    "mappings": {
+      "default": {
+        "default": "Infimum"
+      }
+    }
+  },
+  {
+    "key": "lim",
+    "mappings": {
+      "default": {
+        "default": "Limes"
+      }
+    }
+  },
+  {
+    "key": "liminf",
+    "mappings": {
+      "default": {
+        "default": "Limes inferior"
+      }
+    }
+  },
+  {
+    "key": "limsup",
+    "mappings": {
+      "default": {
+        "default": "Limes superior"
+      }
+    }
+  },
+  {
+    "key": "max",
+    "mappings": {
+      "default": {
+        "default": "Maximum"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "Minimum"
+      }
+    }
+  },
+  {
+    "key": "sup",
+    "mappings": {
+      "default": {
+        "default": "Supremum"
+      }
+    }
+  },
+  {
+    "key": "injlim",
+    "mappings": {
+      "default": {
+        "default": "Colimes"
+      }
+    }
+  },
+  {
+    "key": "projlim",
+    "mappings": {
+      "default": {
+        "default": "projektiver Limes"
+      }
+    }
+  },
+  {
+    "key": "Pr",
+    "mappings": {
+      "default": {
+        "default": "Wahrscheinlichkeit"
+      }
+    }
+  }
+]

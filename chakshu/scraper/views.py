@@ -33,17 +33,24 @@ class WikiSummaryScraper(View):
 
 def get_citations(url):
     scraper = WikipediaScraper()
-    soup = scraper.fetch_wikipedia_content(url)
+    soup = scraper.main(url)
 
-    scraper.print_structure(soup)
+    # scraper.print_structure()
 
     return scraper.citations
 
 
 def get_full_content(url):
     scraper = WikipediaScraper()
-    soup = scraper.fetch_wikipedia_content(url)
-
-    whole_content = scraper.print_structure(soup)
+    # soup = scraper.fetch_wikipedia_content(url)
+    whole_content = scraper.main(url)
 
     return whole_content
+
+
+def get_image_urls(url):
+    scraper = WikipediaScraper()
+    scraper.main(url)
+    image_urls = scraper.images
+
+    return image_urls

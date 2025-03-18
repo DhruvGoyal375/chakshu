@@ -1,0 +1,29 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "F",
+    "mappings": {
+      "default": {
+        "default": "farad"
+      }
+    }
+  },
+  {
+    "key": "C",
+    "mappings": {
+      "default": {
+        "default": "celcius"
+      }
+    }
+  },
+  {
+    "key": "K",
+    "mappings": {
+      "default": {
+        "default": "kelvin"
+      }
+    }
+  }
+]

@@ -1,0 +1,1461 @@
+[
+  {
+    "locale": "nb"
+  },
+  {
+    "key": "0028",
+    "mappings": {
+      "default": {
+        "default": "venstre parentes"
+      }
+    }
+  },
+  {
+    "key": "0029",
+    "mappings": {
+      "default": {
+        "default": "høyre parentes"
+      }
+    }
+  },
+  {
+    "key": "005B",
+    "mappings": {
+      "default": {
+        "default": "venstre hakeparentes"
+      }
+    }
+  },
+  {
+    "key": "005D",
+    "mappings": {
+      "default": {
+        "default": "høyre hakeparentes"
+      }
+    }
+  },
+  {
+    "key": "007B",
+    "mappings": {
+      "default": {
+        "default": "venstre krøllparentes"
+      }
+    }
+  },
+  {
+    "key": "007D",
+    "mappings": {
+      "default": {
+        "default": "høyre krøllparentes"
+      }
+    }
+  },
+  {
+    "key": "2045",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2046",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2308",
+    "mappings": {
+      "default": {
+        "default": "venstre ceiling"
+      }
+    }
+  },
+  {
+    "key": "2309",
+    "mappings": {
+      "default": {
+        "default": "høyre ceiling"
+      }
+    }
+  },
+  {
+    "key": "230A",
+    "mappings": {
+      "default": {
+        "default": "venstre floor"
+      }
+    }
+  },
+  {
+    "key": "230B",
+    "mappings": {
+      "default": {
+        "default": "høyre floor"
+      }
+    }
+  },
+  {
+    "key": "230C",
+    "mappings": {
+      "default": {
+        "default": "bottom høyre crop"
+      }
+    }
+  },
+  {
+    "key": "230D",
+    "mappings": {
+      "default": {
+        "default": "bottom venstre crop"
+      }
+    }
+  },
+  {
+    "key": "230E",
+    "mappings": {
+      "default": {
+        "default": "top høyre crop"
+      }
+    }
+  },
+  {
+    "key": "230F",
+    "mappings": {
+      "default": {
+        "default": "top venstre crop"
+      }
+    }
+  },
+  {
+    "key": "231C",
+    "mappings": {
+      "default": {
+        "default": "top venstre hjørne"
+      }
+    }
+  },
+  {
+    "key": "231D",
+    "mappings": {
+      "default": {
+        "default": "top høyre hjørne"
+      }
+    }
+  },
+  {
+    "key": "231E",
+    "mappings": {
+      "default": {
+        "default": "bottom venstre hjørne"
+      }
+    }
+  },
+  {
+    "key": "231F",
+    "mappings": {
+      "default": {
+        "default": "bottom høyre hjørne"
+      }
+    }
+  },
+  {
+    "key": "2320",
+    "mappings": {
+      "default": {
+        "default": "top half integral"
+      }
+    }
+  },
+  {
+    "key": "2321",
+    "mappings": {
+      "default": {
+        "default": "bottom half integral"
+      }
+    }
+  },
+  {
+    "key": "2329",
+    "mappings": {
+      "default": {
+        "default": "venstre-vendt vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "232A",
+    "mappings": {
+      "default": {
+        "default": "høyre-vendt vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "239B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "239C",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "239D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "239E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "239F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A0",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A1",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A2",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A3",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A4",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A5",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A6",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A7",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A8",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23A9",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AA",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AB",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AC",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AD",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AE",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23AF",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B0",
+    "mappings": {
+      "default": {
+        "default": "upper venstre eller lower høyre brace section"
+      }
+    }
+  },
+  {
+    "key": "23B1",
+    "mappings": {
+      "default": {
+        "default": "upper høyre eller lower venstre brace section"
+      }
+    }
+  },
+  {
+    "key": "23B2",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B3",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B4",
+    "mappings": {
+      "default": {
+        "default": "over square bracket"
+      }
+    }
+  },
+  {
+    "key": "23B5",
+    "mappings": {
+      "default": {
+        "default": "under square bracket"
+      }
+    }
+  },
+  {
+    "key": "23B6",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B7",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B8",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23B9",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "23DC",
+    "mappings": {
+      "default": {
+        "default": "top parenthesis"
+      }
+    }
+  },
+  {
+    "key": "23DD",
+    "mappings": {
+      "default": {
+        "default": "bottom parenthesis"
+      }
+    }
+  },
+  {
+    "key": "23DE",
+    "mappings": {
+      "default": {
+        "default": "top curly bracket"
+      }
+    }
+  },
+  {
+    "key": "23DF",
+    "mappings": {
+      "default": {
+        "default": "bottom curly bracket"
+      }
+    }
+  },
+  {
+    "key": "23E0",
+    "mappings": {
+      "default": {
+        "default": "top tortoise sheel bracket"
+      }
+    }
+  },
+  {
+    "key": "23E1",
+    "mappings": {
+      "default": {
+        "default": "bottom tortoise sheel bracket"
+      }
+    }
+  },
+  {
+    "key": "2768",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2769",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276A",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276C",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "276F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2770",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2771",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2772",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2773",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2774",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2775",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "27C5",
+    "mappings": {
+      "default": {
+        "default": "venstre s-shaped bag delimiter"
+      }
+    }
+  },
+  {
+    "key": "27C6",
+    "mappings": {
+      "default": {
+        "default": "høyre s-shaped bag delimiter"
+      }
+    }
+  },
+  {
+    "key": "27E6",
+    "mappings": {
+      "default": {
+        "default": "venstre hvitt square bracket"
+      }
+    }
+  },
+  {
+    "key": "27E7",
+    "mappings": {
+      "default": {
+        "default": "høyre hvitt square bracket"
+      }
+    }
+  },
+  {
+    "key": "27E8",
+    "mappings": {
+      "default": {
+        "default": "venstre vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "27E9",
+    "mappings": {
+      "default": {
+        "default": "høyre vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "27EA",
+    "mappings": {
+      "default": {
+        "default": "venstre dobbel vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "27EB",
+    "mappings": {
+      "default": {
+        "default": "høyre dobbel vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "27EC",
+    "mappings": {
+      "default": {
+        "default": "venstre hvitt tortoise shell bracket"
+      }
+    }
+  },
+  {
+    "key": "27ED",
+    "mappings": {
+      "default": {
+        "default": "høyre hvitt tortoise shell bracket"
+      }
+    }
+  },
+  {
+    "key": "27EE",
+    "mappings": {
+      "default": {
+        "default": "venstre flattened parenthesis"
+      }
+    }
+  },
+  {
+    "key": "27EF",
+    "mappings": {
+      "default": {
+        "default": "høyre flattened parenthesis"
+      }
+    }
+  },
+  {
+    "key": "2983",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2984",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2985",
+    "mappings": {
+      "default": {
+        "default": "venstre hvitt paren"
+      }
+    }
+  },
+  {
+    "key": "2986",
+    "mappings": {
+      "default": {
+        "default": "høyre hvitt paren"
+      }
+    }
+  },
+  {
+    "key": "2987",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2988",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2989",
+    "mappings": {
+      "default": {
+        "default": "z ikkeation venstre binding bracket"
+      }
+    }
+  },
+  {
+    "key": "298A",
+    "mappings": {
+      "default": {
+        "default": "z ikkeation høyre binding bracket"
+      }
+    }
+  },
+  {
+    "key": "298B",
+    "mappings": {
+      "default": {
+        "default": "venstre bracket med underbar"
+      }
+    }
+  },
+  {
+    "key": "298C",
+    "mappings": {
+      "default": {
+        "default": "høyre bracket med underbar"
+      }
+    }
+  },
+  {
+    "key": "298D",
+    "mappings": {
+      "default": {
+        "default": "venstre bracket med tick i top hjørne"
+      }
+    }
+  },
+  {
+    "key": "298E",
+    "mappings": {
+      "default": {
+        "default": "høyre bracket med tick i bottom hjørne"
+      }
+    }
+  },
+  {
+    "key": "298F",
+    "mappings": {
+      "default": {
+        "default": "venstre bracket med tick i bottom hjørne"
+      }
+    }
+  },
+  {
+    "key": "2990",
+    "mappings": {
+      "default": {
+        "default": "høyre bracket med tick i top hjørne"
+      }
+    }
+  },
+  {
+    "key": "2991",
+    "mappings": {
+      "default": {
+        "default": "venstre vinkel bracket med dot"
+      }
+    }
+  },
+  {
+    "key": "2992",
+    "mappings": {
+      "default": {
+        "default": "høyre vinkel bracket med dot"
+      }
+    }
+  },
+  {
+    "key": "2993",
+    "mappings": {
+      "default": {
+        "default": "venstre arc mindre enn bracket"
+      }
+    }
+  },
+  {
+    "key": "2994",
+    "mappings": {
+      "default": {
+        "default": "høyre arc større enn bracket"
+      }
+    }
+  },
+  {
+    "key": "2995",
+    "mappings": {
+      "default": {
+        "default": "dobbel venstre arc større enn bracket"
+      }
+    }
+  },
+  {
+    "key": "2996",
+    "mappings": {
+      "default": {
+        "default": "dobbel høyre arc mindre enn bracket"
+      }
+    }
+  },
+  {
+    "key": "2997",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2998",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "29D8",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "29D9",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "29DA",
+    "mappings": {
+      "default": {
+        "default": "reverse most positive; linje below"
+      }
+    }
+  },
+  {
+    "key": "29DB",
+    "mappings": {
+      "default": {
+        "default": "most positive; two linjes below"
+      }
+    }
+  },
+  {
+    "key": "29FC",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "29FD",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E22",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E23",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E24",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E25",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E26",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E27",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E28",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "2E29",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3008",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3009",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "300A",
+    "mappings": {
+      "default": {
+        "default": "venstre dobbel vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "300B",
+    "mappings": {
+      "default": {
+        "default": "høyre dobbel vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "300C",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "300D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "300E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "300F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3010",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3011",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3014",
+    "mappings": {
+      "default": {
+        "default": "venstre tortoise shell bracket"
+      }
+    }
+  },
+  {
+    "key": "3015",
+    "mappings": {
+      "default": {
+        "default": "høyre tortoise shell bracket"
+      }
+    }
+  },
+  {
+    "key": "3016",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3017",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3018",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "3019",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "301A",
+    "mappings": {
+      "default": {
+        "default": "venstre hvitt square bracket"
+      }
+    }
+  },
+  {
+    "key": "301B",
+    "mappings": {
+      "default": {
+        "default": "høyre hvitt square bracket"
+      }
+    }
+  },
+  {
+    "key": "301D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "301E",
+    "mappings": {
+      "default": {
+        "default": "dobbel prime quote mark"
+      }
+    }
+  },
+  {
+    "key": "301F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FD3E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FD3F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE17",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE18",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE35",
+    "mappings": {
+      "default": {
+        "default": "over paren"
+      }
+    }
+  },
+  {
+    "key": "FE36",
+    "mappings": {
+      "default": {
+        "default": "under paren"
+      }
+    }
+  },
+  {
+    "key": "FE37",
+    "mappings": {
+      "default": {
+        "default": "over curly bracket"
+      }
+    }
+  },
+  {
+    "key": "FE38",
+    "mappings": {
+      "default": {
+        "default": "under curly bracket"
+      }
+    }
+  },
+  {
+    "key": "FE39",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3A",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3C",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE3F",
+    "mappings": {
+      "default": {
+        "default": "over vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "FE40",
+    "mappings": {
+      "default": {
+        "default": "under vinkel bracket"
+      }
+    }
+  },
+  {
+    "key": "FE41",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE42",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE43",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE44",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE47",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE48",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE59",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE5A",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE5B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE5C",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE5D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FE5E",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF08",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF09",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF3B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF3D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF5B",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF5D",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF5F",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF60",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF62",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "FF63",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  }
+]

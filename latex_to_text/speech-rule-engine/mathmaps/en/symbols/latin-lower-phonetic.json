@@ -1,0 +1,1685 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "00F8",
+    "mappings": {
+      "default": {
+        "default": "o with stroke"
+      }
+    }
+  },
+  {
+    "key": "0111",
+    "mappings": {
+      "default": {
+        "default": "d with stroke"
+      }
+    }
+  },
+  {
+    "key": "0127",
+    "mappings": {
+      "default": {
+        "default": "h with stroke"
+      }
+    }
+  },
+  {
+    "key": "0142",
+    "mappings": {
+      "default": {
+        "default": "l with stroke"
+      }
+    }
+  },
+  {
+    "key": "0167",
+    "mappings": {
+      "default": {
+        "default": "t with stroke"
+      }
+    }
+  },
+  {
+    "key": "0180",
+    "mappings": {
+      "default": {
+        "default": "b with stroke"
+      }
+    }
+  },
+  {
+    "key": "019B",
+    "mappings": {
+      "default": {
+        "default": "lambda with stroke"
+      }
+    }
+  },
+  {
+    "key": "01B6",
+    "mappings": {
+      "default": {
+        "default": "z with stroke"
+      }
+    }
+  },
+  {
+    "key": "01BE",
+    "mappings": {
+      "default": {
+        "default": "latin letter inverted glottal stop with stroke"
+      }
+    }
+  },
+  {
+    "key": "01E5",
+    "mappings": {
+      "default": {
+        "default": "g with stroke"
+      }
+    }
+  },
+  {
+    "key": "01FF",
+    "mappings": {
+      "default": {
+        "default": "o with stroke and acute"
+      }
+    }
+  },
+  {
+    "key": "023C",
+    "mappings": {
+      "default": {
+        "default": "c with stroke"
+      }
+    }
+  },
+  {
+    "key": "0247",
+    "mappings": {
+      "default": {
+        "default": "e with stroke"
+      }
+    }
+  },
+  {
+    "key": "0249",
+    "mappings": {
+      "default": {
+        "default": "j with stroke"
+      }
+    }
+  },
+  {
+    "key": "024D",
+    "mappings": {
+      "default": {
+        "default": "r with stroke"
+      }
+    }
+  },
+  {
+    "key": "024F",
+    "mappings": {
+      "default": {
+        "default": "y with stroke"
+      }
+    }
+  },
+  {
+    "key": "025F",
+    "mappings": {
+      "default": {
+        "default": "dotless j with stroke"
+      }
+    }
+  },
+  {
+    "key": "0268",
+    "mappings": {
+      "default": {
+        "default": "i with stroke"
+      }
+    }
+  },
+  {
+    "key": "0284",
+    "mappings": {
+      "default": {
+        "default": "dotless j with stroke and hook"
+      }
+    }
+  },
+  {
+    "key": "02A1",
+    "mappings": {
+      "default": {
+        "default": "latin letter glottal stop with stroke"
+      }
+    }
+  },
+  {
+    "key": "02A2",
+    "mappings": {
+      "default": {
+        "default": "latin letter reversed glottal stop with stroke"
+      }
+    }
+  },
+  {
+    "key": "1D13",
+    "mappings": {
+      "default": {
+        "default": "sideways o with stroke"
+      }
+    }
+  },
+  {
+    "key": "1D7C",
+    "mappings": {
+      "default": {
+        "default": "iota with stroke"
+      }
+    }
+  },
+  {
+    "key": "1D7D",
+    "mappings": {
+      "default": {
+        "default": "p with stroke"
+      }
+    }
+  },
+  {
+    "key": "1D7F",
+    "mappings": {
+      "default": {
+        "default": "upsilon with stroke"
+      }
+    }
+  },
+  {
+    "key": "1E9C",
+    "mappings": {
+      "default": {
+        "default": "long s with diagonal stroke"
+      }
+    }
+  },
+  {
+    "key": "1E9D",
+    "mappings": {
+      "default": {
+        "default": "long s with high stroke"
+      }
+    }
+  },
+  {
+    "key": "018D",
+    "mappings": {
+      "default": {
+        "default": "turned delta"
+      }
+    }
+  },
+  {
+    "key": "1E9B",
+    "mappings": {
+      "default": {
+        "default": "long s with dot above"
+      }
+    }
+  },
+  {
+    "key": "1E9F",
+    "mappings": {
+      "default": {
+        "default": "delta"
+      }
+    }
+  },
+  {
+    "key": "0138",
+    "mappings": {
+      "default": {
+        "default": "kra"
+      }
+    }
+  },
+  {
+    "key": "017F",
+    "mappings": {
+      "default": {
+        "default": "long s"
+      }
+    }
+  },
+  {
+    "key": "0183",
+    "mappings": {
+      "default": {
+        "default": "b with topbar"
+      }
+    }
+  },
+  {
+    "key": "0185",
+    "mappings": {
+      "default": {
+        "default": "tone six"
+      }
+    }
+  },
+  {
+    "key": "0188",
+    "mappings": {
+      "default": {
+        "default": "c with hook"
+      }
+    }
+  },
+  {
+    "key": "018C",
+    "mappings": {
+      "default": {
+        "default": "d with topbar"
+      }
+    }
+  },
+  {
+    "key": "0192",
+    "mappings": {
+      "default": {
+        "default": "f with hook"
+      }
+    }
+  },
+  {
+    "key": "0195",
+    "mappings": {
+      "default": {
+        "default": "hv"
+      }
+    }
+  },
+  {
+    "key": "0199",
+    "mappings": {
+      "default": {
+        "default": "k with hook"
+      }
+    }
+  },
+  {
+    "key": "019A",
+    "mappings": {
+      "default": {
+        "default": "l with bar"
+      }
+    }
+  },
+  {
+    "key": "019E",
+    "mappings": {
+      "default": {
+        "default": "n with long right leg"
+      }
+    }
+  },
+  {
+    "key": "01A1",
+    "mappings": {
+      "default": {
+        "default": "o with horn"
+      }
+    }
+  },
+  {
+    "key": "01A3",
+    "mappings": {
+      "default": {
+        "default": "oi"
+      }
+    }
+  },
+  {
+    "key": "01A5",
+    "mappings": {
+      "default": {
+        "default": "p with hook"
+      }
+    }
+  },
+  {
+    "key": "01A8",
+    "mappings": {
+      "default": {
+        "default": "tone two"
+      }
+    }
+  },
+  {
+    "key": "01AA",
+    "mappings": {
+      "default": {
+        "default": "latin letter reversed esh loop"
+      }
+    }
+  },
+  {
+    "key": "01AB",
+    "mappings": {
+      "default": {
+        "default": "t with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "01AD",
+    "mappings": {
+      "default": {
+        "default": "t with hook"
+      }
+    }
+  },
+  {
+    "key": "01B0",
+    "mappings": {
+      "default": {
+        "default": "u with horn"
+      }
+    }
+  },
+  {
+    "key": "01B4",
+    "mappings": {
+      "default": {
+        "default": "y with hook"
+      }
+    }
+  },
+  {
+    "key": "01B9",
+    "mappings": {
+      "default": {
+        "default": "ezh reversed"
+      }
+    }
+  },
+  {
+    "key": "01BA",
+    "mappings": {
+      "default": {
+        "default": "ezh with tail"
+      }
+    }
+  },
+  {
+    "key": "01BD",
+    "mappings": {
+      "default": {
+        "default": "tone five"
+      }
+    }
+  },
+  {
+    "key": "01BF",
+    "mappings": {
+      "default": {
+        "default": "latin letter wynn"
+      }
+    }
+  },
+  {
+    "key": "01C6",
+    "mappings": {
+      "default": {
+        "default": "dz with caron"
+      }
+    }
+  },
+  {
+    "key": "01C9",
+    "mappings": {
+      "default": {
+        "default": "lj"
+      }
+    }
+  },
+  {
+    "key": "01CC",
+    "mappings": {
+      "default": {
+        "default": "nj"
+      }
+    }
+  },
+  {
+    "key": "01E3",
+    "mappings": {
+      "default": {
+        "default": "ae with macron"
+      }
+    }
+  },
+  {
+    "key": "01EF",
+    "mappings": {
+      "default": {
+        "default": "ezh with caron"
+      }
+    }
+  },
+  {
+    "key": "01F3",
+    "mappings": {
+      "default": {
+        "default": "dz"
+      }
+    }
+  },
+  {
+    "key": "021D",
+    "mappings": {
+      "default": {
+        "default": "yogh"
+      }
+    }
+  },
+  {
+    "key": "026E",
+    "mappings": {
+      "default": {
+        "default": "lezh"
+      }
+    }
+  },
+  {
+    "key": "0292",
+    "mappings": {
+      "default": {
+        "default": "ezh"
+      }
+    }
+  },
+  {
+    "key": "0293",
+    "mappings": {
+      "default": {
+        "default": "ezh with curl"
+      }
+    }
+  },
+  {
+    "key": "02A4",
+    "mappings": {
+      "default": {
+        "default": "dezh digraph"
+      }
+    }
+  },
+  {
+    "key": "01DD",
+    "mappings": {
+      "default": {
+        "default": "turned e"
+      }
+    }
+  },
+  {
+    "key": "01FD",
+    "mappings": {
+      "default": {
+        "default": "ae with acute"
+      }
+    }
+  },
+  {
+    "key": "0221",
+    "mappings": {
+      "default": {
+        "default": "d with curl"
+      }
+    }
+  },
+  {
+    "key": "0223",
+    "mappings": {
+      "default": {
+        "default": "ou"
+      }
+    }
+  },
+  {
+    "key": "0225",
+    "mappings": {
+      "default": {
+        "default": "z with hook"
+      }
+    }
+  },
+  {
+    "key": "0234",
+    "mappings": {
+      "default": {
+        "default": "l with curl"
+      }
+    }
+  },
+  {
+    "key": "0235",
+    "mappings": {
+      "default": {
+        "default": "n with curl"
+      }
+    }
+  },
+  {
+    "key": "0236",
+    "mappings": {
+      "default": {
+        "default": "t with curl"
+      }
+    }
+  },
+  {
+    "key": "0238",
+    "mappings": {
+      "default": {
+        "default": "db digraph"
+      }
+    }
+  },
+  {
+    "key": "0239",
+    "mappings": {
+      "default": {
+        "default": "qp digraph"
+      }
+    }
+  },
+  {
+    "key": "023F",
+    "mappings": {
+      "default": {
+        "default": "s with swash tail"
+      }
+    }
+  },
+  {
+    "key": "0240",
+    "mappings": {
+      "default": {
+        "default": "z with swash tail"
+      }
+    }
+  },
+  {
+    "key": "0242",
+    "mappings": {
+      "default": {
+        "default": "glottal stop"
+      }
+    }
+  },
+  {
+    "key": "024B",
+    "mappings": {
+      "default": {
+        "default": "q with hook tail"
+      }
+    }
+  },
+  {
+    "key": "0250",
+    "mappings": {
+      "default": {
+        "default": "turned a"
+      }
+    }
+  },
+  {
+    "key": "0251",
+    "mappings": {
+      "default": {
+        "default": "alpha"
+      }
+    }
+  },
+  {
+    "key": "0252",
+    "mappings": {
+      "default": {
+        "default": "turned alpha"
+      }
+    }
+  },
+  {
+    "key": "0253",
+    "mappings": {
+      "default": {
+        "default": "b with hook"
+      }
+    }
+  },
+  {
+    "key": "0254",
+    "mappings": {
+      "default": {
+        "default": "open o"
+      }
+    }
+  },
+  {
+    "key": "0255",
+    "mappings": {
+      "default": {
+        "default": "c with curl"
+      }
+    }
+  },
+  {
+    "key": "0256",
+    "mappings": {
+      "default": {
+        "default": "d with tail"
+      }
+    }
+  },
+  {
+    "key": "0257",
+    "mappings": {
+      "default": {
+        "default": "d with hook"
+      }
+    }
+  },
+  {
+    "key": "0258",
+    "mappings": {
+      "default": {
+        "default": "reversed e"
+      }
+    }
+  },
+  {
+    "key": "0259",
+    "mappings": {
+      "default": {
+        "default": "schwa"
+      }
+    }
+  },
+  {
+    "key": "025A",
+    "mappings": {
+      "default": {
+        "default": "schwa with hook"
+      }
+    }
+  },
+  {
+    "key": "025B",
+    "mappings": {
+      "default": {
+        "default": "open e"
+      }
+    }
+  },
+  {
+    "key": "025C",
+    "mappings": {
+      "default": {
+        "default": "reversed open e"
+      }
+    }
+  },
+  {
+    "key": "025D",
+    "mappings": {
+      "default": {
+        "default": "reversed open e with hook"
+      }
+    }
+  },
+  {
+    "key": "025E",
+    "mappings": {
+      "default": {
+        "default": "closed reversed open e"
+      }
+    }
+  },
+  {
+    "key": "0260",
+    "mappings": {
+      "default": {
+        "default": "g with hook"
+      }
+    }
+  },
+  {
+    "key": "0261",
+    "mappings": {
+      "default": {
+        "default": "script g"
+      }
+    }
+  },
+  {
+    "key": "0263",
+    "mappings": {
+      "default": {
+        "default": "gamma"
+      }
+    }
+  },
+  {
+    "key": "0264",
+    "mappings": {
+      "default": {
+        "default": "rams horn"
+      }
+    }
+  },
+  {
+    "key": "0265",
+    "mappings": {
+      "default": {
+        "default": "turned h"
+      }
+    }
+  },
+  {
+    "key": "0266",
+    "mappings": {
+      "default": {
+        "default": "h with hook"
+      }
+    }
+  },
+  {
+    "key": "0267",
+    "mappings": {
+      "default": {
+        "default": "heng with hook"
+      }
+    }
+  },
+  {
+    "key": "0269",
+    "mappings": {
+      "default": {
+        "default": "iota"
+      }
+    }
+  },
+  {
+    "key": "026B",
+    "mappings": {
+      "default": {
+        "default": "l with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "026C",
+    "mappings": {
+      "default": {
+        "default": "l with belt"
+      }
+    }
+  },
+  {
+    "key": "026D",
+    "mappings": {
+      "default": {
+        "default": "l with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "026F",
+    "mappings": {
+      "default": {
+        "default": "turned m"
+      }
+    }
+  },
+  {
+    "key": "0270",
+    "mappings": {
+      "default": {
+        "default": "turned m with long leg"
+      }
+    }
+  },
+  {
+    "key": "0271",
+    "mappings": {
+      "default": {
+        "default": "m with hook"
+      }
+    }
+  },
+  {
+    "key": "0272",
+    "mappings": {
+      "default": {
+        "default": "n with left hook"
+      }
+    }
+  },
+  {
+    "key": "0273",
+    "mappings": {
+      "default": {
+        "default": "n with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "0275",
+    "mappings": {
+      "default": {
+        "default": "barred o"
+      }
+    }
+  },
+  {
+    "key": "0277",
+    "mappings": {
+      "default": {
+        "default": "closed omega"
+      }
+    }
+  },
+  {
+    "key": "0278",
+    "mappings": {
+      "default": {
+        "default": "phi"
+      }
+    }
+  },
+  {
+    "key": "0279",
+    "mappings": {
+      "default": {
+        "default": "turned r"
+      }
+    }
+  },
+  {
+    "key": "027A",
+    "mappings": {
+      "default": {
+        "default": "turned r with long leg"
+      }
+    }
+  },
+  {
+    "key": "027B",
+    "mappings": {
+      "default": {
+        "default": "turned r with hook"
+      }
+    }
+  },
+  {
+    "key": "027C",
+    "mappings": {
+      "default": {
+        "default": "r with long leg"
+      }
+    }
+  },
+  {
+    "key": "027D",
+    "mappings": {
+      "default": {
+        "default": "r with tail"
+      }
+    }
+  },
+  {
+    "key": "027E",
+    "mappings": {
+      "default": {
+        "default": "r with fishhook"
+      }
+    }
+  },
+  {
+    "key": "027F",
+    "mappings": {
+      "default": {
+        "default": "reversed r with fishhook"
+      }
+    }
+  },
+  {
+    "key": "0282",
+    "mappings": {
+      "default": {
+        "default": "s with hook"
+      }
+    }
+  },
+  {
+    "key": "0283",
+    "mappings": {
+      "default": {
+        "default": "esh"
+      }
+    }
+  },
+  {
+    "key": "0285",
+    "mappings": {
+      "default": {
+        "default": "squat reversed esh"
+      }
+    }
+  },
+  {
+    "key": "0286",
+    "mappings": {
+      "default": {
+        "default": "esh with curl"
+      }
+    }
+  },
+  {
+    "key": "0287",
+    "mappings": {
+      "default": {
+        "default": "turned t"
+      }
+    }
+  },
+  {
+    "key": "0288",
+    "mappings": {
+      "default": {
+        "default": "t with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "0289",
+    "mappings": {
+      "default": {
+        "default": "u bar"
+      }
+    }
+  },
+  {
+    "key": "028A",
+    "mappings": {
+      "default": {
+        "default": "upsilon"
+      }
+    }
+  },
+  {
+    "key": "028B",
+    "mappings": {
+      "default": {
+        "default": "v with hook"
+      }
+    }
+  },
+  {
+    "key": "028C",
+    "mappings": {
+      "default": {
+        "default": "turned v"
+      }
+    }
+  },
+  {
+    "key": "028D",
+    "mappings": {
+      "default": {
+        "default": "turned w"
+      }
+    }
+  },
+  {
+    "key": "028E",
+    "mappings": {
+      "default": {
+        "default": "turned y"
+      }
+    }
+  },
+  {
+    "key": "0290",
+    "mappings": {
+      "default": {
+        "default": "z with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "0291",
+    "mappings": {
+      "default": {
+        "default": "z with curl"
+      }
+    }
+  },
+  {
+    "key": "0295",
+    "mappings": {
+      "default": {
+        "default": "latin letter pharyngeal voiced fricative"
+      }
+    }
+  },
+  {
+    "key": "0296",
+    "mappings": {
+      "default": {
+        "default": "latin letter inverted glottal stop"
+      }
+    }
+  },
+  {
+    "key": "0297",
+    "mappings": {
+      "default": {
+        "default": "latin letter stretched c"
+      }
+    }
+  },
+  {
+    "key": "0298",
+    "mappings": {
+      "default": {
+        "default": "latin letter bilabial click"
+      }
+    }
+  },
+  {
+    "key": "029A",
+    "mappings": {
+      "default": {
+        "default": "closed open e"
+      }
+    }
+  },
+  {
+    "key": "029E",
+    "mappings": {
+      "default": {
+        "default": "turned k"
+      }
+    }
+  },
+  {
+    "key": "02A0",
+    "mappings": {
+      "default": {
+        "default": "q with hook"
+      }
+    }
+  },
+  {
+    "key": "02A3",
+    "mappings": {
+      "default": {
+        "default": "dz digraph"
+      }
+    }
+  },
+  {
+    "key": "02A5",
+    "mappings": {
+      "default": {
+        "default": "dz digraph with curl"
+      }
+    }
+  },
+  {
+    "key": "02A6",
+    "mappings": {
+      "default": {
+        "default": "ts digraph"
+      }
+    }
+  },
+  {
+    "key": "02A7",
+    "mappings": {
+      "default": {
+        "default": "tesh digraph"
+      }
+    }
+  },
+  {
+    "key": "02A8",
+    "mappings": {
+      "default": {
+        "default": "tc digraph with curl"
+      }
+    }
+  },
+  {
+    "key": "02A9",
+    "mappings": {
+      "default": {
+        "default": "feng digraph"
+      }
+    }
+  },
+  {
+    "key": "02AA",
+    "mappings": {
+      "default": {
+        "default": "ls digraph"
+      }
+    }
+  },
+  {
+    "key": "02AB",
+    "mappings": {
+      "default": {
+        "default": "lz digraph"
+      }
+    }
+  },
+  {
+    "key": "02AC",
+    "mappings": {
+      "default": {
+        "default": "latin letter bilabial percussive"
+      }
+    }
+  },
+  {
+    "key": "02AD",
+    "mappings": {
+      "default": {
+        "default": "latin letter bidental percussive"
+      }
+    }
+  },
+  {
+    "key": "02AE",
+    "mappings": {
+      "default": {
+        "default": "turned h with fishhook"
+      }
+    }
+  },
+  {
+    "key": "02AF",
+    "mappings": {
+      "default": {
+        "default": "turned h with fishhook and tail"
+      }
+    }
+  },
+  {
+    "key": "1D02",
+    "mappings": {
+      "default": {
+        "default": "turned ae"
+      }
+    }
+  },
+  {
+    "key": "1D08",
+    "mappings": {
+      "default": {
+        "default": "turned open e"
+      }
+    }
+  },
+  {
+    "key": "1D09",
+    "mappings": {
+      "default": {
+        "default": "turned i"
+      }
+    }
+  },
+  {
+    "key": "1D11",
+    "mappings": {
+      "default": {
+        "default": "sideways o"
+      }
+    }
+  },
+  {
+    "key": "1D12",
+    "mappings": {
+      "default": {
+        "default": "sideways open o"
+      }
+    }
+  },
+  {
+    "key": "1D14",
+    "mappings": {
+      "default": {
+        "default": "turned oe"
+      }
+    }
+  },
+  {
+    "key": "1D16",
+    "mappings": {
+      "default": {
+        "default": "top half o"
+      }
+    }
+  },
+  {
+    "key": "1D17",
+    "mappings": {
+      "default": {
+        "default": "bottom half o"
+      }
+    }
+  },
+  {
+    "key": "1D1D",
+    "mappings": {
+      "default": {
+        "default": "sideways u"
+      }
+    }
+  },
+  {
+    "key": "1D1E",
+    "mappings": {
+      "default": {
+        "default": "sideways diaeresized u"
+      }
+    }
+  },
+  {
+    "key": "1D1F",
+    "mappings": {
+      "default": {
+        "default": "sideways turned m"
+      }
+    }
+  },
+  {
+    "key": "1D24",
+    "mappings": {
+      "default": {
+        "default": "latin letter voiced laryngeal spirant"
+      }
+    }
+  },
+  {
+    "key": "1D25",
+    "mappings": {
+      "default": {
+        "default": "latin letter ain"
+      }
+    }
+  },
+  {
+    "key": "1D6B",
+    "mappings": {
+      "default": {
+        "default": "ue"
+      }
+    }
+  },
+  {
+    "key": "1D6C",
+    "mappings": {
+      "default": {
+        "default": "b with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D6D",
+    "mappings": {
+      "default": {
+        "default": "d with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D6E",
+    "mappings": {
+      "default": {
+        "default": "f with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D6F",
+    "mappings": {
+      "default": {
+        "default": "m with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D70",
+    "mappings": {
+      "default": {
+        "default": "n with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D71",
+    "mappings": {
+      "default": {
+        "default": "p with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D72",
+    "mappings": {
+      "default": {
+        "default": "r with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D73",
+    "mappings": {
+      "default": {
+        "default": "r with fishhook and middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D74",
+    "mappings": {
+      "default": {
+        "default": "s with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D75",
+    "mappings": {
+      "default": {
+        "default": "t with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D76",
+    "mappings": {
+      "default": {
+        "default": "z with middle tilde"
+      }
+    }
+  },
+  {
+    "key": "1D77",
+    "mappings": {
+      "default": {
+        "default": "turned g"
+      }
+    }
+  },
+  {
+    "key": "1D79",
+    "mappings": {
+      "default": {
+        "default": "insular g"
+      }
+    }
+  },
+  {
+    "key": "1D7A",
+    "mappings": {
+      "default": {
+        "default": "th with strikethrough"
+      }
+    }
+  },
+  {
+    "key": "1D80",
+    "mappings": {
+      "default": {
+        "default": "b with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D81",
+    "mappings": {
+      "default": {
+        "default": "d with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D82",
+    "mappings": {
+      "default": {
+        "default": "f with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D83",
+    "mappings": {
+      "default": {
+        "default": "g with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D84",
+    "mappings": {
+      "default": {
+        "default": "k with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D85",
+    "mappings": {
+      "default": {
+        "default": "l with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D86",
+    "mappings": {
+      "default": {
+        "default": "m with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D87",
+    "mappings": {
+      "default": {
+        "default": "n with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D88",
+    "mappings": {
+      "default": {
+        "default": "p with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D89",
+    "mappings": {
+      "default": {
+        "default": "r with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8A",
+    "mappings": {
+      "default": {
+        "default": "s with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8B",
+    "mappings": {
+      "default": {
+        "default": "esh with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8C",
+    "mappings": {
+      "default": {
+        "default": "v with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8D",
+    "mappings": {
+      "default": {
+        "default": "x with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8E",
+    "mappings": {
+      "default": {
+        "default": "z with palatal hook"
+      }
+    }
+  },
+  {
+    "key": "1D8F",
+    "mappings": {
+      "default": {
+        "default": "a with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D90",
+    "mappings": {
+      "default": {
+        "default": "alpha with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D91",
+    "mappings": {
+      "default": {
+        "default": "d with hook and tail"
+      }
+    }
+  },
+  {
+    "key": "1D92",
+    "mappings": {
+      "default": {
+        "default": "e with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D93",
+    "mappings": {
+      "default": {
+        "default": "open e with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D94",
+    "mappings": {
+      "default": {
+        "default": "reversed open e with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D95",
+    "mappings": {
+      "default": {
+        "default": "schwa with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D96",
+    "mappings": {
+      "default": {
+        "default": "i with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D97",
+    "mappings": {
+      "default": {
+        "default": "open o with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D98",
+    "mappings": {
+      "default": {
+        "default": "esh with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D99",
+    "mappings": {
+      "default": {
+        "default": "u with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "1D9A",
+    "mappings": {
+      "default": {
+        "default": "ezh with retroflex hook"
+      }
+    }
+  },
+  {
+    "key": "0149",
+    "mappings": {
+      "default": {
+        "default": "n preceded by apostrophe"
+      }
+    }
+  },
+  {
+    "key": "014B",
+    "mappings": {
+      "default": {
+        "default": "eng"
+      }
+    }
+  }
+]

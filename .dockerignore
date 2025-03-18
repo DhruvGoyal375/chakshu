@@ -1,21 +1,36 @@
+# Ignore all files by default
+*
+
+# Include only necessary files
+!chakshu/
+!latex_to_text/
+
 # Python byte-code
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.so
-.pytest_cache/
-.ruff_cache/
+chakshu/__pycache__/
+chakshu/*.pyc
+chakshu/*.pyo
+chakshu/*.pyd
+chakshu/*.so
+chakshu/.pytest_cache/
+chakshu/.ruff_cache/
 
-# Django-specific
-db.sqlite3
-local_settings.py
+# Django-specific exclusions
+chakshu/db.sqlite3
+chakshu/local_settings.py
+chakshu/migrations/
+chakshu/media/
+chakshu/staticfiles/
 
-# IDE-specific
+# Node.js-specific exclusions
+latext_to_text/node_modules/
+latext_to_text/npm-debug.log
+latext_to_text/.env
+
+# IDE/editor-specific exclusions
 .idea/
 .vscode/
 
-# Testing
+# Testing and build artifacts
 *.egg-info/
 dist/
 build/
@@ -25,7 +40,24 @@ htmlcov/
 # Miscellaneous
 *.swp
 .DS_Store
+Thumbs.db
 
-# Poetry
-.venv/
-poetry.lock
+# Docker-related exclusions
+.git/
+.gitignore
+.dockerignore
+README.md
+docker-compose.yml
+Dockerfile
+docker/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,2437 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "2190",
+    "mappings": {
+      "default": {
+        "default": "flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "2191",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2192",
+    "mappings": {
+      "default": {
+        "default": "flèche droite"
+      }
+    }
+  },
+  {
+    "key": "2193",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2194",
+    "mappings": {
+      "default": {
+        "default": "flèche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "2195",
+    "mappings": {
+      "default": {
+        "default": "flèche haut et bas"
+      }
+    }
+  },
+  {
+    "key": "2196",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest"
+      }
+    }
+  },
+  {
+    "key": "2197",
+    "mappings": {
+      "default": {
+        "default": "flèche nord est"
+      }
+    }
+  },
+  {
+    "key": "2198",
+    "mappings": {
+      "default": {
+        "default": "flèche sud est"
+      }
+    }
+  },
+  {
+    "key": "2199",
+    "mappings": {
+      "default": {
+        "default": "flèche sud ouest"
+      }
+    }
+  },
+  {
+    "key": "219A",
+    "mappings": {
+      "default": {
+        "default": "flèche barrée gauche"
+      }
+    }
+  },
+  {
+    "key": "219B",
+    "mappings": {
+      "default": {
+        "default": "flèche barrée droite"
+      }
+    }
+  },
+  {
+    "key": "219C",
+    "mappings": {
+      "default": {
+        "default": "flèche ondulée gauche"
+      }
+    }
+  },
+  {
+    "key": "219D",
+    "mappings": {
+      "default": {
+        "default": "flèche ondulée droite"
+      }
+    }
+  },
+  {
+    "key": "219E",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes gauche"
+      }
+    }
+  },
+  {
+    "key": "219F",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21A0",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes droite"
+      }
+    }
+  },
+  {
+    "key": "21A1",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21A2",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée gauche"
+      }
+    }
+  },
+  {
+    "key": "21A3",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée droite"
+      }
+    }
+  },
+  {
+    "key": "21A4",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet gauche"
+      }
+    }
+  },
+  {
+    "key": "21A5",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21A6",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet droite"
+      }
+    }
+  },
+  {
+    "key": "21A7",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21A8",
+    "mappings": {
+      "default": {
+        "default": "flèche haut bas sur base"
+      }
+    }
+  },
+  {
+    "key": "21A9",
+    "mappings": {
+      "default": {
+        "default": "flèche avec crochet gauche"
+      }
+    }
+  },
+  {
+    "key": "21AA",
+    "mappings": {
+      "default": {
+        "default": "flèche avec crochet droite"
+      }
+    }
+  },
+  {
+    "key": "21AB",
+    "mappings": {
+      "default": {
+        "default": "flèche avec boucle gauche"
+      }
+    }
+  },
+  {
+    "key": "21AC",
+    "mappings": {
+      "default": {
+        "default": "flèche avec boucle droite"
+      }
+    }
+  },
+  {
+    "key": "21AD",
+    "mappings": {
+      "default": {
+        "default": "flèche ondulée bilatérale"
+      }
+    }
+  },
+  {
+    "key": "21AE",
+    "mappings": {
+      "default": {
+        "default": "flèche barrée bilatérale"
+      }
+    }
+  },
+  {
+    "key": "21AF",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas en zigzag"
+      }
+    }
+  },
+  {
+    "key": "21B0",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut avec pointe gauche"
+      }
+    }
+  },
+  {
+    "key": "21B1",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut avec pointe droite"
+      }
+    }
+  },
+  {
+    "key": "21B2",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas avec pointe gauche"
+      }
+    }
+  },
+  {
+    "key": "21B3",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas avec pointe droite"
+      }
+    }
+  },
+  {
+    "key": "21B4",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas avec coin droit"
+      }
+    }
+  },
+  {
+    "key": "21B5",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas avec coin gauche"
+      }
+    }
+  },
+  {
+    "key": "21B6",
+    "mappings": {
+      "default": {
+        "default": "flèche semi circulaire en sens positif"
+      }
+    }
+  },
+  {
+    "key": "21B7",
+    "mappings": {
+      "default": {
+        "default": "flèche semi circulaire en sens négatif"
+      }
+    }
+  },
+  {
+    "key": "21B8",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest vers une barre horizontale longue"
+      }
+    }
+  },
+  {
+    "key": "21B9",
+    "mappings": {
+      "default": {
+        "default": "flèche gauche vers un taquet sur flèche droite vers un taquet"
+      }
+    }
+  },
+  {
+    "key": "21BA",
+    "mappings": {
+      "default": {
+        "default": "flèche en sens positif à cercle ouvert"
+      }
+    }
+  },
+  {
+    "key": "21BB",
+    "mappings": {
+      "default": {
+        "default": "flèche en sens négatif à cercle ouvert"
+      }
+    }
+  },
+  {
+    "key": "21C4",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut par dessus flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "21C5",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut à gauche d'une flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21C6",
+    "mappings": {
+      "default": {
+        "default": "flèche gauche par dessus flèche droite"
+      }
+    }
+  },
+  {
+    "key": "21C7",
+    "mappings": {
+      "default": {
+        "default": "paire de flèches gauche"
+      }
+    }
+  },
+  {
+    "key": "21C8",
+    "mappings": {
+      "default": {
+        "default": "paire de flèches vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21C9",
+    "mappings": {
+      "default": {
+        "default": "paire de flèches droite"
+      }
+    }
+  },
+  {
+    "key": "21CA",
+    "mappings": {
+      "default": {
+        "default": "paire de flèches vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21CD",
+    "mappings": {
+      "default": {
+        "default": "double flèche barrée gauche"
+      }
+    }
+  },
+  {
+    "key": "21CE",
+    "mappings": {
+      "default": {
+        "default": "double flèche barrée bilatérale"
+      }
+    }
+  },
+  {
+    "key": "21CF",
+    "mappings": {
+      "default": {
+        "default": "double flèche barrée droite"
+      }
+    }
+  },
+  {
+    "key": "21D0",
+    "mappings": {
+      "default": {
+        "default": "double flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "21D1",
+    "mappings": {
+      "default": {
+        "default": "double flèche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21D2",
+    "mappings": {
+      "default": {
+        "default": "double flèche droite"
+      }
+    }
+  },
+  {
+    "key": "21D3",
+    "mappings": {
+      "default": {
+        "default": "double flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21D4",
+    "mappings": {
+      "default": {
+        "default": "double flèche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "21D5",
+    "mappings": {
+      "default": {
+        "default": "double flèche haut bas"
+      }
+    }
+  },
+  {
+    "key": "21D6",
+    "mappings": {
+      "default": {
+        "default": "double flèche nord ouest"
+      }
+    }
+  },
+  {
+    "key": "21D7",
+    "mappings": {
+      "default": {
+        "default": "double flèche nord est"
+      }
+    }
+  },
+  {
+    "key": "21D8",
+    "mappings": {
+      "default": {
+        "default": "double flèche sud est"
+      }
+    }
+  },
+  {
+    "key": "21D9",
+    "mappings": {
+      "default": {
+        "default": "double flèche sud ouest"
+      }
+    }
+  },
+  {
+    "key": "21DA",
+    "mappings": {
+      "default": {
+        "default": "triple flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "21DB",
+    "mappings": {
+      "default": {
+        "default": "triple flèche droite"
+      }
+    }
+  },
+  {
+    "key": "21DC",
+    "mappings": {
+      "default": {
+        "default": "flèche en tire bouchon gauche"
+      }
+    }
+  },
+  {
+    "key": "21DD",
+    "mappings": {
+      "default": {
+        "default": "flèche en tire bouchon droite"
+      }
+    }
+  },
+  {
+    "key": "21DE",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut avec double barre"
+      }
+    }
+  },
+  {
+    "key": "21DF",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas avec double barre"
+      }
+    }
+  },
+  {
+    "key": "21E0",
+    "mappings": {
+      "default": {
+        "default": "flèche pointillée gauche"
+      }
+    }
+  },
+  {
+    "key": "21E1",
+    "mappings": {
+      "default": {
+        "default": "flèche pointillée vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21E2",
+    "mappings": {
+      "default": {
+        "default": "flèche pointillée droite"
+      }
+    }
+  },
+  {
+    "key": "21E3",
+    "mappings": {
+      "default": {
+        "default": "flèche pointillée vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21E4",
+    "mappings": {
+      "default": {
+        "default": "flèche gauche vers un taquet"
+      }
+    }
+  },
+  {
+    "key": "21E5",
+    "mappings": {
+      "default": {
+        "default": "flèche droite vers un taquet"
+      }
+    }
+  },
+  {
+    "key": "21E6",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche gauche"
+      }
+    }
+  },
+  {
+    "key": "21E7",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21E8",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche droite"
+      }
+    }
+  },
+  {
+    "key": "21E9",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "21EA",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut à partir d'un taquet"
+      }
+    }
+  },
+  {
+    "key": "21EB",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut sur socle"
+      }
+    }
+  },
+  {
+    "key": "21EC",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut sur socle et trait horizontal"
+      }
+    }
+  },
+  {
+    "key": "21ED",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut sur socle et barre verticale"
+      }
+    }
+  },
+  {
+    "key": "21EE",
+    "mappings": {
+      "default": {
+        "default": "double flèche blanche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "21EF",
+    "mappings": {
+      "default": {
+        "default": "double flèche blanche vers le haut sur socle"
+      }
+    }
+  },
+  {
+    "key": "21F0",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers la droite appuyée sur mur"
+      }
+    }
+  },
+  {
+    "key": "21F1",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest en encoignure"
+      }
+    }
+  },
+  {
+    "key": "21F2",
+    "mappings": {
+      "default": {
+        "default": "flèche sud est en encoignure"
+      }
+    }
+  },
+  {
+    "key": "21F3",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers le haut et le bas"
+      }
+    }
+  },
+  {
+    "key": "21F4",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à petit cercle"
+      }
+    }
+  },
+  {
+    "key": "21F5",
+    "mappings": {
+      "default": {
+        "default": "flèche descendante à gauche d'une flèche montante"
+      }
+    }
+  },
+  {
+    "key": "21F6",
+    "mappings": {
+      "default": {
+        "default": "trois flèches vers la droite"
+      }
+    }
+  },
+  {
+    "key": "21F7",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "21F8",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "21F9",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite et la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "21FA",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "21FB",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "21FC",
+    "mappings": {
+      "default": {
+        "default": "flèche bilatérale barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "21FD",
+    "mappings": {
+      "default": {
+        "default": "flèche à tête creuse gauche"
+      }
+    }
+  },
+  {
+    "key": "21FE",
+    "mappings": {
+      "default": {
+        "default": "flèche à tête creuse droite"
+      }
+    }
+  },
+  {
+    "key": "21FF",
+    "mappings": {
+      "default": {
+        "default": "flèche à tête creuse bilatérale"
+      }
+    }
+  },
+  {
+    "key": "2301",
+    "mappings": {
+      "default": {
+        "default": "flèche électrique"
+      }
+    }
+  },
+  {
+    "key": "2303",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2304",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2324",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche vers le haut entre deux traits horizontaux"
+      }
+    }
+  },
+  {
+    "key": "238B",
+    "mappings": {
+      "default": {
+        "default": "cercle brisé à flèche nord ouest (échappement)"
+      }
+    }
+  },
+  {
+    "key": "2794",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse vers la droite à pointe large"
+      }
+    }
+  },
+  {
+    "key": "2798",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse sud est"
+      }
+    }
+  },
+  {
+    "key": "2799",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse vers la droite grasse"
+      }
+    }
+  },
+  {
+    "key": "279A",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse nord est"
+      }
+    }
+  },
+  {
+    "key": "279B",
+    "mappings": {
+      "default": {
+        "default": "flèche de traçage vers la droite"
+      }
+    }
+  },
+  {
+    "key": "279C",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse à pointe arrondie vers la droite"
+      }
+    }
+  },
+  {
+    "key": "279D",
+    "mappings": {
+      "default": {
+        "default": "flèche à pointe en triangle vers la droite"
+      }
+    }
+  },
+  {
+    "key": "279E",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse à pointe en triangle vers la droite"
+      }
+    }
+  },
+  {
+    "key": "279F",
+    "mappings": {
+      "default": {
+        "default": "flèche avec pointillés à pointe en triangle vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A0",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse avec pointillés à pointe en triangle vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A1",
+    "mappings": {
+      "default": {
+        "default": "flèche noire vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A2",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche vers la droite en trompe l'œil éclairée par le haut"
+      }
+    }
+  },
+  {
+    "key": "27A3",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche vers la droite en trompe l'œil éclairée par le bas"
+      }
+    }
+  },
+  {
+    "key": "27A4",
+    "mappings": {
+      "default": {
+        "default": "pointe de flèche noire vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A5",
+    "mappings": {
+      "default": {
+        "default": "flèche noire grasse courbée vers le bas et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A6",
+    "mappings": {
+      "default": {
+        "default": "flèche noire courbée vers le haut et vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A7",
+    "mappings": {
+      "default": {
+        "default": "flèche noire trapue vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A8",
+    "mappings": {
+      "default": {
+        "default": "flèche noire grasse à pointe concave vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27A9",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers la droite ombrée à l'avant"
+      }
+    }
+  },
+  {
+    "key": "27AA",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers la droite ombrée à l'arrière"
+      }
+    }
+  },
+  {
+    "key": "27AB",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers la droite penchée vers l'arrière et ombrée"
+      }
+    }
+  },
+  {
+    "key": "27AC",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche vers la droite penchée vers l'avant et ombrée"
+      }
+    }
+  },
+  {
+    "key": "27AD",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche grasse vers la droite à ombre inférieure droite"
+      }
+    }
+  },
+  {
+    "key": "27AE",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche grasse vers la droite à ombre supérieure droite"
+      }
+    }
+  },
+  {
+    "key": "27AF",
+    "mappings": {
+      "default": {
+        "default": "flèche encochée blanche vers la droite ombrée à l'avant et par dessous"
+      }
+    }
+  },
+  {
+    "key": "27B1",
+    "mappings": {
+      "default": {
+        "default": "flèche encochée blanche vers la droite ombrée à l'avant et par dessus"
+      }
+    }
+  },
+  {
+    "key": "27B2",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche grasse vers la droite à contour circulaire"
+      }
+    }
+  },
+  {
+    "key": "27B3",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée blanche vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27B4",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée noir sud est"
+      }
+    }
+  },
+  {
+    "key": "27B5",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée noir vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27B6",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée noir nord est"
+      }
+    }
+  },
+  {
+    "key": "27B7",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée gras noire sud est"
+      }
+    }
+  },
+  {
+    "key": "27B8",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée gras noire vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27B9",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée gras noire nord est"
+      }
+    }
+  },
+  {
+    "key": "27BA",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à pointe larmée"
+      }
+    }
+  },
+  {
+    "key": "27BB",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à hampe larmée"
+      }
+    }
+  },
+  {
+    "key": "27BC",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à queue en forme de coin"
+      }
+    }
+  },
+  {
+    "key": "27BD",
+    "mappings": {
+      "default": {
+        "default": "flèche grasse vers la droite à queue en forme de coin"
+      }
+    }
+  },
+  {
+    "key": "27BE",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à contour ouvert"
+      }
+    }
+  },
+  {
+    "key": "27F0",
+    "mappings": {
+      "default": {
+        "default": "quadruple flèche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "27F1",
+    "mappings": {
+      "default": {
+        "default": "quadruple flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "27F2",
+    "mappings": {
+      "default": {
+        "default": "flèche sens antihoraire entrouverte"
+      }
+    }
+  },
+  {
+    "key": "27F3",
+    "mappings": {
+      "default": {
+        "default": "flèche sens horaire entrouverte"
+      }
+    }
+  },
+  {
+    "key": "27F4",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à signe plus cerclé"
+      }
+    }
+  },
+  {
+    "key": "27F5",
+    "mappings": {
+      "default": {
+        "default": "longue flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "27F6",
+    "mappings": {
+      "default": {
+        "default": "longue flèche droite"
+      }
+    }
+  },
+  {
+    "key": "27F7",
+    "mappings": {
+      "default": {
+        "default": "longue flèche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "27F8",
+    "mappings": {
+      "default": {
+        "default": "longue double flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "27F9",
+    "mappings": {
+      "default": {
+        "default": "longue double flèche droite"
+      }
+    }
+  },
+  {
+    "key": "27FA",
+    "mappings": {
+      "default": {
+        "default": "longue double flèche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "27FB",
+    "mappings": {
+      "default": {
+        "default": "longue flèche d'un taquet vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "27FC",
+    "mappings": {
+      "default": {
+        "default": "longue flèche d'un taquet droite"
+      }
+    }
+  },
+  {
+    "key": "27FD",
+    "mappings": {
+      "default": {
+        "default": "longue double flèche d'un taquet vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "27FE",
+    "mappings": {
+      "default": {
+        "default": "longue double flèche d'un taquet vers la droite"
+      }
+    }
+  },
+  {
+    "key": "27FF",
+    "mappings": {
+      "default": {
+        "default": "longue flèche en tire bouchon droite"
+      }
+    }
+  },
+  {
+    "key": "2900",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers la droite barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2901",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers la droite barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2902",
+    "mappings": {
+      "default": {
+        "default": "double flèche vers la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2903",
+    "mappings": {
+      "default": {
+        "default": "double flèche vers la droite barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2904",
+    "mappings": {
+      "default": {
+        "default": "flèche bilatérale double barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2905",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux têtes d'un taquet droite"
+      }
+    }
+  },
+  {
+    "key": "2906",
+    "mappings": {
+      "default": {
+        "default": "double flèche d'un taquet vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2907",
+    "mappings": {
+      "default": {
+        "default": "double flèche d'un taquet vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2908",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas barrée horizontalement"
+      }
+    }
+  },
+  {
+    "key": "2909",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut barrée horizontalement"
+      }
+    }
+  },
+  {
+    "key": "290A",
+    "mappings": {
+      "default": {
+        "default": "triple flèche vers le haut"
+      }
+    }
+  },
+  {
+    "key": "290B",
+    "mappings": {
+      "default": {
+        "default": "triple flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "290C",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux traits gauche"
+      }
+    }
+  },
+  {
+    "key": "290D",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux traits droite"
+      }
+    }
+  },
+  {
+    "key": "290E",
+    "mappings": {
+      "default": {
+        "default": "flèche à trois traits gauche"
+      }
+    }
+  },
+  {
+    "key": "290F",
+    "mappings": {
+      "default": {
+        "default": "flèche à trois traits droite"
+      }
+    }
+  },
+  {
+    "key": "2910",
+    "mappings": {
+      "default": {
+        "default": "flèche à trois traits et à deux têtes droite"
+      }
+    }
+  },
+  {
+    "key": "2911",
+    "mappings": {
+      "default": {
+        "default": "flèche à fût pointillé droite"
+      }
+    }
+  },
+  {
+    "key": "2912",
+    "mappings": {
+      "default": {
+        "default": "flèche jusqu'à taquet vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2913",
+    "mappings": {
+      "default": {
+        "default": "flèche jusqu'à taquet vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2914",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée vers la droite barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2915",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée vers la droite barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2916",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes droite"
+      }
+    }
+  },
+  {
+    "key": "2917",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes vers la droite barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2918",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes vers la droite barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2919",
+    "mappings": {
+      "default": {
+        "default": "empenne gauche"
+      }
+    }
+  },
+  {
+    "key": "291A",
+    "mappings": {
+      "default": {
+        "default": "empenne vers la droite"
+      }
+    }
+  },
+  {
+    "key": "291B",
+    "mappings": {
+      "default": {
+        "default": "double empenne gauche"
+      }
+    }
+  },
+  {
+    "key": "291C",
+    "mappings": {
+      "default": {
+        "default": "double empenne droite"
+      }
+    }
+  },
+  {
+    "key": "291D",
+    "mappings": {
+      "default": {
+        "default": "flèche vers un losange noir à gauche"
+      }
+    }
+  },
+  {
+    "key": "291E",
+    "mappings": {
+      "default": {
+        "default": "flèche vers un losange noir à droite"
+      }
+    }
+  },
+  {
+    "key": "291F",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet vers un losange noir à gauche"
+      }
+    }
+  },
+  {
+    "key": "2920",
+    "mappings": {
+      "default": {
+        "default": "flèche d'un taquet vers un losange noir à droite"
+      }
+    }
+  },
+  {
+    "key": "2921",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest et sud est"
+      }
+    }
+  },
+  {
+    "key": "2922",
+    "mappings": {
+      "default": {
+        "default": "flèche nord est et sud ouest"
+      }
+    }
+  },
+  {
+    "key": "2923",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest à crochet"
+      }
+    }
+  },
+  {
+    "key": "2924",
+    "mappings": {
+      "default": {
+        "default": "flèche nord est à crochet"
+      }
+    }
+  },
+  {
+    "key": "2925",
+    "mappings": {
+      "default": {
+        "default": "flèche sud est à crochet"
+      }
+    }
+  },
+  {
+    "key": "2926",
+    "mappings": {
+      "default": {
+        "default": "flèche sud ouest à crochet"
+      }
+    }
+  },
+  {
+    "key": "2927",
+    "mappings": {
+      "default": {
+        "default": "flèches nord ouest et nord est"
+      }
+    }
+  },
+  {
+    "key": "2928",
+    "mappings": {
+      "default": {
+        "default": "flèches nord est et sud est"
+      }
+    }
+  },
+  {
+    "key": "2929",
+    "mappings": {
+      "default": {
+        "default": "flèches sud est et sud ouest"
+      }
+    }
+  },
+  {
+    "key": "292A",
+    "mappings": {
+      "default": {
+        "default": "flèches sud ouest et nord ouest"
+      }
+    }
+  },
+  {
+    "key": "292D",
+    "mappings": {
+      "default": {
+        "default": "flèche sud est sur flèche nord est"
+      }
+    }
+  },
+  {
+    "key": "292E",
+    "mappings": {
+      "default": {
+        "default": "flèche nord est sur flèche sud est"
+      }
+    }
+  },
+  {
+    "key": "292F",
+    "mappings": {
+      "default": {
+        "default": "diagonale descendante sur flèche nord est"
+      }
+    }
+  },
+  {
+    "key": "2930",
+    "mappings": {
+      "default": {
+        "default": "diagonale montante sur flèche sud est"
+      }
+    }
+  },
+  {
+    "key": "2931",
+    "mappings": {
+      "default": {
+        "default": "flèche nord est sur flèche nord ouest"
+      }
+    }
+  },
+  {
+    "key": "2932",
+    "mappings": {
+      "default": {
+        "default": "flèche nord ouest sur flèche nord est"
+      }
+    }
+  },
+  {
+    "key": "2933",
+    "mappings": {
+      "default": {
+        "default": "flèche bossue droite"
+      }
+    }
+  },
+  {
+    "key": "2934",
+    "mappings": {
+      "default": {
+        "default": "flèche courbe vers la droite puis le haut"
+      }
+    }
+  },
+  {
+    "key": "2935",
+    "mappings": {
+      "default": {
+        "default": "flèche courbe vers la droite puis le bas"
+      }
+    }
+  },
+  {
+    "key": "2936",
+    "mappings": {
+      "default": {
+        "default": "flèche courbe vers le bas puis la gauche"
+      }
+    }
+  },
+  {
+    "key": "2937",
+    "mappings": {
+      "default": {
+        "default": "flèche courbe vers le bas puis la droite"
+      }
+    }
+  },
+  {
+    "key": "2938",
+    "mappings": {
+      "default": {
+        "default": "côté droit d'arc fléché sens horaire"
+      }
+    }
+  },
+  {
+    "key": "2939",
+    "mappings": {
+      "default": {
+        "default": "côté gauche d'arc fléché sens antihoraire"
+      }
+    }
+  },
+  {
+    "key": "293A",
+    "mappings": {
+      "default": {
+        "default": "arc supérieur fléché sens antihoraire"
+      }
+    }
+  },
+  {
+    "key": "293B",
+    "mappings": {
+      "default": {
+        "default": "arc inférieur fléché sens antihoraire"
+      }
+    }
+  },
+  {
+    "key": "293C",
+    "mappings": {
+      "default": {
+        "default": "arc fléché sens horaire et signe moins souscrit"
+      }
+    }
+  },
+  {
+    "key": "293D",
+    "mappings": {
+      "default": {
+        "default": "arc fléché sens antihoraire et signe plus souscrit"
+      }
+    }
+  },
+  {
+    "key": "293E",
+    "mappings": {
+      "default": {
+        "default": "demi cercle fléché inférieur droit sens horaire"
+      }
+    }
+  },
+  {
+    "key": "293F",
+    "mappings": {
+      "default": {
+        "default": "demi cercle fléché inférieur gauche sens antihoraire"
+      }
+    }
+  },
+  {
+    "key": "2940",
+    "mappings": {
+      "default": {
+        "default": "cercle fléché sens antihoraire"
+      }
+    }
+  },
+  {
+    "key": "2941",
+    "mappings": {
+      "default": {
+        "default": "cercle fléché sens horaire"
+      }
+    }
+  },
+  {
+    "key": "2942",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite surmontant fléchette vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2943",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche surmontant fléchette vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2944",
+    "mappings": {
+      "default": {
+        "default": "fléchette vers la droite surmontant flèche vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2945",
+    "mappings": {
+      "default": {
+        "default": "flèche droite surmontant signe moins"
+      }
+    }
+  },
+  {
+    "key": "2946",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche surmontant signe plus"
+      }
+    }
+  },
+  {
+    "key": "2947",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite au travers un x"
+      }
+    }
+  },
+  {
+    "key": "2948",
+    "mappings": {
+      "default": {
+        "default": "petit cercle traversé d'une flèche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "2949",
+    "mappings": {
+      "default": {
+        "default": "petit cercle surmonté d'une flèche montante à deux têtes"
+      }
+    }
+  },
+  {
+    "key": "2970",
+    "mappings": {
+      "default": {
+        "default": "flèche en épingle à cheveu droite"
+      }
+    }
+  },
+  {
+    "key": "2971",
+    "mappings": {
+      "default": {
+        "default": "flèche droite surmontée d'un égal"
+      }
+    }
+  },
+  {
+    "key": "2972",
+    "mappings": {
+      "default": {
+        "default": "flèche droite surmontée d'un tilde"
+      }
+    }
+  },
+  {
+    "key": "2973",
+    "mappings": {
+      "default": {
+        "default": "tilde surmonté d'une flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "2974",
+    "mappings": {
+      "default": {
+        "default": "tilde surmonté d'une flèche droite"
+      }
+    }
+  },
+  {
+    "key": "2975",
+    "mappings": {
+      "default": {
+        "default": "presque égal à surmonté d'une flèche droite"
+      }
+    }
+  },
+  {
+    "key": "2976",
+    "mappings": {
+      "default": {
+        "default": "inférieur à surmonté d'une flèche gauche"
+      }
+    }
+  },
+  {
+    "key": "2977",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à travers un inférieur à"
+      }
+    }
+  },
+  {
+    "key": "2978",
+    "mappings": {
+      "default": {
+        "default": "flèche droite surmontée d'un supérieur à"
+      }
+    }
+  },
+  {
+    "key": "2979",
+    "mappings": {
+      "default": {
+        "default": "flèche droite surmontée d'un sous ensemble de"
+      }
+    }
+  },
+  {
+    "key": "297A",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche au travers d'un sous ensemble de"
+      }
+    }
+  },
+  {
+    "key": "297B",
+    "mappings": {
+      "default": {
+        "default": "flèche gauche surmontée d'un sur ensemble de"
+      }
+    }
+  },
+  {
+    "key": "29B3",
+    "mappings": {
+      "default": {
+        "default": "ensemble vide flèche droite en chef"
+      }
+    }
+  },
+  {
+    "key": "29B4",
+    "mappings": {
+      "default": {
+        "default": "ensemble vide flèche gauche en chef"
+      }
+    }
+  },
+  {
+    "key": "29BD",
+    "mappings": {
+      "default": {
+        "default": "cercle traversé d'une flèche montante"
+      }
+    }
+  },
+  {
+    "key": "29EA",
+    "mappings": {
+      "default": {
+        "default": "losange noir à flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "29EC",
+    "mappings": {
+      "default": {
+        "default": "cercle blanc à flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "29ED",
+    "mappings": {
+      "default": {
+        "default": "cercle noir à flèche vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2A17",
+    "mappings": {
+      "default": {
+        "default": "intégrale à crosse fléchée gauche"
+      }
+    }
+  },
+  {
+    "key": "2B00",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche nord est"
+      }
+    }
+  },
+  {
+    "key": "2B01",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche nord ouest"
+      }
+    }
+  },
+  {
+    "key": "2B02",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche sud est"
+      }
+    }
+  },
+  {
+    "key": "2B03",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche sud ouest"
+      }
+    }
+  },
+  {
+    "key": "2B04",
+    "mappings": {
+      "default": {
+        "default": "flèche blanche bilatérale"
+      }
+    }
+  },
+  {
+    "key": "2B05",
+    "mappings": {
+      "default": {
+        "default": "flèche noire vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B06",
+    "mappings": {
+      "default": {
+        "default": "flèche noire vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2B07",
+    "mappings": {
+      "default": {
+        "default": "flèche noire vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2B08",
+    "mappings": {
+      "default": {
+        "default": "flèche noire nord est"
+      }
+    }
+  },
+  {
+    "key": "2B09",
+    "mappings": {
+      "default": {
+        "default": "flèche noire nord ouest"
+      }
+    }
+  },
+  {
+    "key": "2B0A",
+    "mappings": {
+      "default": {
+        "default": "flèche noire sud est"
+      }
+    }
+  },
+  {
+    "key": "2B0B",
+    "mappings": {
+      "default": {
+        "default": "flèche noire sud ouest"
+      }
+    }
+  },
+  {
+    "key": "2B0C",
+    "mappings": {
+      "default": {
+        "default": "flèche noire bilatérale"
+      }
+    }
+  },
+  {
+    "key": "2B0D",
+    "mappings": {
+      "default": {
+        "default": "flèche noire haut et bas"
+      }
+    }
+  },
+  {
+    "key": "2B0E",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à pointe pliée vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2B0F",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à pointe pliée vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2B10",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à pointe pliée vers le bas"
+      }
+    }
+  },
+  {
+    "key": "2B11",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à pointe pliée vers le haut"
+      }
+    }
+  },
+  {
+    "key": "2B30",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à petit cercle"
+      }
+    }
+  },
+  {
+    "key": "2B31",
+    "mappings": {
+      "default": {
+        "default": "trois flèches vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B32",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à signe plus cerclé"
+      }
+    }
+  },
+  {
+    "key": "2B33",
+    "mappings": {
+      "default": {
+        "default": "longue flèche vers la gauche en tire bouchon"
+      }
+    }
+  },
+  {
+    "key": "2B34",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B35",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux pointes vers la gauche barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B36",
+    "mappings": {
+      "default": {
+        "default": "flèche à deux têtes d'un taquet vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B37",
+    "mappings": {
+      "default": {
+        "default": "flèche à trois traits et à deux têtes vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B38",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche à fût pointillé"
+      }
+    }
+  },
+  {
+    "key": "2B39",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée vers la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B3A",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée vers la gauche barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B3B",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B3C",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes vers la gauche barrée verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B3D",
+    "mappings": {
+      "default": {
+        "default": "flèche empennée à deux têtes vers la gauche barrée deux fois verticalement"
+      }
+    }
+  },
+  {
+    "key": "2B3E",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche au travers un x"
+      }
+    }
+  },
+  {
+    "key": "2B3F",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche bossue"
+      }
+    }
+  },
+  {
+    "key": "2B40",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche surmontée d'un égal"
+      }
+    }
+  },
+  {
+    "key": "2B41",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche surmontée d'un tilde"
+      }
+    }
+  },
+  {
+    "key": "2B42",
+    "mappings": {
+      "default": {
+        "default": "presque égal à réfléchi surmonté d'une flèche vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B43",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite à travers un inférieur à"
+      }
+    }
+  },
+  {
+    "key": "2B44",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite au travers d'un sous ensemble de"
+      }
+    }
+  },
+  {
+    "key": "2B45",
+    "mappings": {
+      "default": {
+        "default": "quadruple flèche vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B46",
+    "mappings": {
+      "default": {
+        "default": "quadruple flèche vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2B47",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite surmontée d'un opérateur tilde réfléchi"
+      }
+    }
+  },
+  {
+    "key": "2B48",
+    "mappings": {
+      "default": {
+        "default": "presque égal à réfléchi surmonté d'une flèche vers la droite"
+      }
+    }
+  },
+  {
+    "key": "2B49",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche surmontée de l'opérateur tilde"
+      }
+    }
+  },
+  {
+    "key": "2B4A",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche par dessus presque égal à"
+      }
+    }
+  },
+  {
+    "key": "2B4B",
+    "mappings": {
+      "default": {
+        "default": "tilde réfléchi surmonté d'une flèche vers la gauche"
+      }
+    }
+  },
+  {
+    "key": "2B4C",
+    "mappings": {
+      "default": {
+        "default": "ilde surmonté d'une flèche vers la droite"
+      }
+    }
+  },
+  {
+    "key": "FFE9",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la gauche demi chasse"
+      }
+    }
+  },
+  {
+    "key": "FFEA",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le haut demi chasse"
+      }
+    }
+  },
+  {
+    "key": "FFEB",
+    "mappings": {
+      "default": {
+        "default": "flèche vers la droite demi chasse"
+      }
+    }
+  },
+  {
+    "key": "FFEC",
+    "mappings": {
+      "default": {
+        "default": "flèche vers le bas demi chasse"
+      }
+    }
+  }
+]

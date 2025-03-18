@@ -1,0 +1,13 @@
+[
+  {
+    "locale": "nn"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "dusin"
+      }
+    }
+  }
+]

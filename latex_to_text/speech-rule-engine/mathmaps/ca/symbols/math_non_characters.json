@@ -1,0 +1,197 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "210F",
+    "mappings": {
+      "default": {
+        "default": "h barra"
+      }
+    }
+  },
+  {
+    "key": "2114",
+    "mappings": {
+      "default": {
+        "default": "L B símbol de barra"
+      }
+    }
+  },
+  {
+    "key": "2116",
+    "mappings": {
+      "default": {
+        "default": "signe de nombre"
+      }
+    }
+  },
+  {
+    "key": "2117",
+    "mappings": {
+      "default": {
+        "default": "drets d'autor de so"
+      }
+    }
+  },
+  {
+    "key": "211E",
+    "mappings": {
+      "default": {
+        "default": "recepta"
+      }
+    }
+  },
+  {
+    "key": "211F",
+    "mappings": {
+      "default": {
+        "default": "resposta"
+      }
+    }
+  },
+  {
+    "key": "2120",
+    "mappings": {
+      "default": {
+        "default": "marca de servei"
+      }
+    }
+  },
+  {
+    "key": "2121",
+    "mappings": {
+      "default": {
+        "default": "senyal de telèfon"
+      }
+    }
+  },
+  {
+    "key": "2122",
+    "mappings": {
+      "default": {
+        "default": "registrat"
+      }
+    }
+  },
+  {
+    "key": "2123",
+    "mappings": {
+      "default": {
+        "default": "versicle"
+      }
+    }
+  },
+  {
+    "key": "2125",
+    "mappings": {
+      "default": {
+        "default": "unça"
+      }
+    }
+  },
+  {
+    "key": "2126",
+    "mappings": {
+      "default": {
+        "default": "ohm"
+      }
+    }
+  },
+  {
+    "key": "2127",
+    "mappings": {
+      "default": {
+        "default": "ohm invertit"
+      }
+    }
+  },
+  {
+    "key": "212A",
+    "mappings": {
+      "default": {
+        "default": "graus kelvin"
+      }
+    }
+  },
+  {
+    "key": "212B",
+    "mappings": {
+      "default": {
+        "default": "angstrom"
+      }
+    }
+  },
+  {
+    "key": "212E",
+    "mappings": {
+      "default": {
+        "default": "símbol estimat"
+      }
+    }
+  },
+  {
+    "key": "2132",
+    "mappings": {
+      "default": {
+        "default": "majúscula F invertida"
+      }
+    }
+  },
+  {
+    "key": "2139",
+    "mappings": {
+      "default": {
+        "default": "font d'informació"
+      }
+    }
+  },
+  {
+    "key": "213A",
+    "mappings": {
+      "default": {
+        "default": "capital rotat Q"
+      }
+    }
+  },
+  {
+    "key": "213B",
+    "mappings": {
+      "default": {
+        "default": "signe de fax"
+      }
+    }
+  },
+  {
+    "key": "2141",
+    "mappings": {
+      "default": {
+        "default": "convertit sans serif majúscula G"
+      }
+    }
+  },
+  {
+    "key": "2142",
+    "mappings": {
+      "default": {
+        "default": "convertit sans serif majúscula L"
+      }
+    }
+  },
+  {
+    "key": "2143",
+    "mappings": {
+      "default": {
+        "default": "invertit sans serif majúscula L"
+      }
+    }
+  },
+  {
+    "key": "2144",
+    "mappings": {
+      "default": {
+        "default": "convertit sans serif majúscula Y"
+      }
+    }
+  }
+]

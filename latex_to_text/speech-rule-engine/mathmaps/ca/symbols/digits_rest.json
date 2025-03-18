@@ -1,0 +1,257 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "00B2",
+    "mappings": {
+      "default": {
+        "default": "al quadrat"
+      },
+      "mathspeak": {
+        "default": "al cuadrado"
+      },
+      "clearspeak": {
+        "default": "al cuadrado"
+      }
+    }
+  },
+  {
+    "key": "00B3",
+    "mappings": {
+      "default": {
+        "default": "al cub"
+      },
+      "mathspeak": {
+        "default": "al cubo"
+      },
+      "clearspeak": {
+        "default": "al cubo"
+      }
+    }
+  },
+  {
+    "key": "00BC",
+    "mappings": {
+      "default": {
+        "default": "un quart"
+      }
+    }
+  },
+  {
+    "key": "00BD",
+    "mappings": {
+      "default": {
+        "default": "un mig"
+      }
+    }
+  },
+  {
+    "key": "00BE",
+    "mappings": {
+      "default": {
+        "default": "tres quarts"
+      }
+    }
+  },
+  {
+    "key": "2150",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un setè"
+      }
+    }
+  },
+  {
+    "key": "2151",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un novè"
+      }
+    }
+  },
+  {
+    "key": "2152",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un desè"
+      }
+    }
+  },
+  {
+    "key": "2153",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un terç"
+      }
+    }
+  },
+  {
+    "key": "2154",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar dos terços"
+      }
+    }
+  },
+  {
+    "key": "2155",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un cinquè"
+      }
+    }
+  },
+  {
+    "key": "2156",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar dos cinquens"
+      }
+    }
+  },
+  {
+    "key": "2157",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar tres cinquens"
+      }
+    }
+  },
+  {
+    "key": "2158",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar quatre cinquens"
+      }
+    }
+  },
+  {
+    "key": "2159",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un sisè"
+      }
+    }
+  },
+  {
+    "key": "215A",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar cinc sisens"
+      }
+    }
+  },
+  {
+    "key": "215B",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar un vuitè"
+      }
+    }
+  },
+  {
+    "key": "215C",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar tres vuitens"
+      }
+    }
+  },
+  {
+    "key": "215D",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar cinc vuitens"
+      }
+    }
+  },
+  {
+    "key": "215E",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar set vuitens"
+      }
+    }
+  },
+  {
+    "key": "215F",
+    "mappings": {
+      "default": {
+        "default": "Numerador de fraccions un"
+      }
+    }
+  },
+  {
+    "key": "2189",
+    "mappings": {
+      "default": {
+        "default": "Fracció vulgar zero terç"
+      }
+    }
+  },
+  {
+    "key": "3248",
+    "mappings": {
+      "default": {
+        "default": "Nombre deu en un cercle a la plaça negra"
+      }
+    }
+  },
+  {
+    "key": "3249",
+    "mappings": {
+      "default": {
+        "default": "Nombre vint en un cercle a la plaça negra"
+      }
+    }
+  },
+  {
+    "key": "324A",
+    "mappings": {
+      "default": {
+        "default": "Nombre circumdat trenta en quadrat negre"
+      }
+    }
+  },
+  {
+    "key": "324B",
+    "mappings": {
+      "default": {
+        "default": "Nombre circumdat quaranta en quadrat negre"
+      }
+    }
+  },
+  {
+    "key": "324C",
+    "mappings": {
+      "default": {
+        "default": "Cercle nombre cinquanta a la plaça negra"
+      }
+    }
+  },
+  {
+    "key": "324D",
+    "mappings": {
+      "default": {
+        "default": "Cercle nombre seixanta a la plaça negra"
+      }
+    }
+  },
+  {
+    "key": "324E",
+    "mappings": {
+      "default": {
+        "default": "Nombre setanta en un cercle a la plaça negra"
+      }
+    }
+  },
+  {
+    "key": "324F",
+    "mappings": {
+      "default": {
+        "default": "Cercle nombre vuitanta en quadrat negre"
+      }
+    }
+  }
+]

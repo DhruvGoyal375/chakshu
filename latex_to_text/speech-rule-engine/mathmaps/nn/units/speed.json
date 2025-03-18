@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "nn"
+  },
+  {
+    "key": "kt",
+    "mappings": {
+      "default": {
+        "default": "knop"
+      }
+    }
+  },
+  {
+    "key": "mph",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "rpm",
+    "mappings": {
+      "default": {
+        "default": "omdreiing per minutt"
+      }
+    }
+  },
+  {
+    "key": "kmh",
+    "mappings": {
+      "default": {
+        "default": "kilometer per time"
+      }
+    }
+  }
+]

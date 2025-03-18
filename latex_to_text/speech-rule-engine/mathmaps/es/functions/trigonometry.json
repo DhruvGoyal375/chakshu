@@ -1,0 +1,107 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "cos",
+    "mappings": {
+      "default": {
+        "default": "coseno"
+      }
+    }
+  },
+  {
+    "key": "cot",
+    "mappings": {
+      "default": {
+        "default": "cotangente"
+      }
+    }
+  },
+  {
+    "key": "csc",
+    "mappings": {
+      "default": {
+        "default": "cosecante"
+      }
+    }
+  },
+  {
+    "key": "sec",
+    "mappings": {
+      "default": {
+        "default": "secant"
+      }
+    }
+  },
+  {
+    "key": "sin",
+    "mappings": {
+      "default": {
+        "default": "seno"
+      }
+    },
+    "names": [
+      "sen"
+    ]
+  },
+  {
+    "key": "tan",
+    "mappings": {
+      "default": {
+        "default": "tangente"
+      }
+    }
+  },
+  {
+    "key": "arccos",
+    "mappings": {
+      "default": {
+        "default": "arco coseno"
+      }
+    }
+  },
+  {
+    "key": "arccot",
+    "mappings": {
+      "default": {
+        "default": "arco cotangente"
+      }
+    }
+  },
+  {
+    "key": "arccsc",
+    "mappings": {
+      "default": {
+        "default": "arco cosecante"
+      }
+    }
+  },
+  {
+    "key": "arcsec",
+    "mappings": {
+      "default": {
+        "default": "arco secante"
+      }
+    }
+  },
+  {
+    "key": "arcsin",
+    "mappings": {
+      "default": {
+        "default": "arco seno"
+      }
+    },
+    "names": [
+      "arcsen"
+    ]
+  },
+  {
+    "key": "arctan",
+    "mappings": {
+      "default": {
+        "default": "arco tangente"
+      }
+    }
+  }
+]

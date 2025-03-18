@@ -1,0 +1,140 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "cu",
+    "mappings": {
+      "default": {
+        "default": "cúbic",
+        "plural": "cúbics"
+      }
+    }
+  },
+  {
+    "key": "cu inch",
+    "mappings": {
+      "default": {
+        "default": "polzada cúbica",
+        "plural": "plozades cúbiques"
+      }
+    }
+  },
+  {
+    "key": "cu ft",
+    "mappings": {
+      "default": {
+        "default": "peu cúbic",
+        "plural": "peus cúbics"
+      }
+    }
+  },
+  {
+    "key": "cu yd",
+    "mappings": {
+      "default": {
+        "default": "iarda cúbica",
+        "plural": "iardes cúbiques"
+      }
+    }
+  },
+  {
+    "key": "bbl",
+    "mappings": {
+      "default": {
+        "default": "barril",
+        "plural": "barrils"
+      }
+    }
+  },
+  {
+    "key": "fl. oz.",
+    "mappings": {
+      "default": {
+        "default": "unça líquida",
+        "plural": "unces líquides"
+      }
+    }
+  },
+  {
+    "key": "gal",
+    "mappings": {
+      "default": {
+        "default": "galó",
+        "plural": "galons"
+      }
+    }
+  },
+  {
+    "key": "pt",
+    "mappings": {
+      "default": {
+        "default": "pinta",
+        "plural": "pintes"
+      }
+    }
+  },
+  {
+    "key": "qt",
+    "mappings": {
+      "default": {
+        "default": "quart",
+        "plural": "quarts"
+      }
+    }
+  },
+  {
+    "key": "fluid dram",
+    "mappings": {
+      "default": {
+        "default": "dracma líquida",
+        "plural": "dracmes líquides"
+      }
+    }
+  },
+  {
+    "key": "tbsp",
+    "mappings": {
+      "default": {
+        "default": "cullerada",
+        "plural": "cullerades"
+      }
+    }
+  },
+  {
+    "key": "tsp",
+    "mappings": {
+      "default": {
+        "default": "culleradeta",
+        "plural": "culleradetes"
+      }
+    }
+  },
+  {
+    "key": "cup",
+    "mappings": {
+      "default": {
+        "default": "tassa",
+        "plural": "tasses"
+      }
+    }
+  },
+  {
+    "key": "cc",
+    "mappings": {
+      "default": {
+        "default": "centímetre cúbic",
+        "plural": "centímetres cúbics"
+      }
+    }
+  },
+  {
+    "key": "l",
+    "mappings": {
+      "default": {
+        "default": "litre",
+        "plural": "litres"
+      }
+    }
+  }
+]

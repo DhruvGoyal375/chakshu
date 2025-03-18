@@ -1,0 +1,169 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "log",
+    "mappings": {
+      "default": {
+        "default": "लघुगणक"
+      }
+    }
+  },
+  {
+    "key": "ln",
+    "mappings": {
+      "default": {
+        "default": "प्राकृतिक लघुगणक"
+      },
+      "clearspeak": {
+        "default": "एल एन",
+        "Log_LnAsNaturalLog": "प्राकृतिक लघुगणक"
+      }
+    }
+  },
+  {
+    "key": "lg",
+    "mappings": {
+      "default": {
+        "default": "दस आधारित लघुगणक"
+      }
+    }
+  },
+  {
+    "key": "exp",
+    "mappings": {
+      "default": {
+        "default": "चरघातांकी"
+      }
+    }
+  },
+  {
+    "key": "gcd",
+    "mappings": {
+      "default": {
+        "default": "महत्तम समापवर्तक"
+      }
+    }
+  },
+  {
+    "key": "lcm",
+    "mappings": {
+      "default": {
+        "default": "लघुत्तम समापवर्त्य"
+      }
+    }
+  },
+  {
+    "key": "arg",
+    "mappings": {
+      "default": {
+        "default": "तर्क (Argument)"
+      }
+    }
+  },
+  {
+    "key": "im",
+    "mappings": {
+      "default": {
+        "default": "काल्पनिक (Imaginary)"
+      }
+    }
+  },
+  {
+    "key": "re",
+    "mappings": {
+      "default": {
+        "default": "वास्तविक (Real)"
+      }
+    }
+  },
+  {
+    "key": "inf",
+    "mappings": {
+      "default": {
+        "default": "अधिकतम निम्न परिबद्ध"
+      }
+    }
+  },
+  {
+    "key": "lim",
+    "mappings": {
+      "default": {
+        "default": "सीमा"
+      }
+    }
+  },
+  {
+    "key": "liminf",
+    "mappings": {
+      "default": {
+        "default": "निम्न सीमा"
+      }
+    }
+  },
+  {
+    "key": "limsup",
+    "mappings": {
+      "default": {
+        "default": "उच्च सीमा"
+      }
+    }
+  },
+  {
+    "key": "max",
+    "mappings": {
+      "default": {
+        "default": "महत्तम"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "न्यूनतम"
+      }
+    }
+  },
+  {
+    "key": "sup",
+    "mappings": {
+      "default": {
+        "default": "लघुत्तम उच्च परिबद्ध"
+      }
+    }
+  },
+  {
+    "key": "injlim",
+    "mappings": {
+      "default": {
+        "default": "सह सीमा"
+      }
+    }
+  },
+  {
+    "key": "projlim",
+    "mappings": {
+      "default": {
+        "default": "व्युत्क्रम सीमा"
+      }
+    }
+  },
+  {
+    "key": "mod",
+    "mappings": {
+      "default": {
+        "default": "मापांक (modulus)"
+      }
+    }
+  },
+  {
+    "key": "Pr",
+    "mappings": {
+      "default": {
+        "default": "प्रायिकता"
+      }
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "sq",
+    "mappings": {
+      "default": {
+        "default": "kvadrat",
+        "plural": "kvadrat"
+      }
+    }
+  },
+  {
+    "key": "sq inch",
+    "mappings": {
+      "default": {
+        "default": "kvadrattum",
+        "plural": "kvadrattum"
+      }
+    }
+  },
+  {
+    "key": "sq rd",
+    "mappings": {
+      "default": {
+        "default": "kvadrat-rod",
+        "plural": "kvadrat-rods"
+      }
+    }
+  },
+  {
+    "key": "sq ft",
+    "mappings": {
+      "default": {
+        "default": "kvadrat fot",
+        "plural": "kvadrat fot"
+      }
+    }
+  },
+  {
+    "key": "sq yd",
+    "mappings": {
+      "default": {
+        "default": "kvadrat yard",
+        "plural": "kvadrat yards"
+      }
+    }
+  },
+  {
+    "key": "sq mi",
+    "mappings": {
+      "default": {
+        "default": "kvadrat mile",
+        "plural": "kvadrat miles"
+      }
+    }
+  },
+  {
+    "key": "acr",
+    "mappings": {
+      "default": {
+        "default": "tunnland",
+        "plural": "tunnland"
+      }
+    }
+  },
+  {
+    "key": "ha",
+    "mappings": {
+      "default": {
+        "default": "hektar",
+        "plural": "hektar"
+      }
+    }
+  }
+]

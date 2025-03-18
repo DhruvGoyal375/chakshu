@@ -1,0 +1,36 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "b",
+    "mappings": {
+      "default": {
+        "default": "bit"
+      }
+    }
+  },
+  {
+    "key": "B",
+    "mappings": {
+      "default": {
+        "default": "octet"
+      }
+    },
+    "si": true,
+    "names": [
+      "o"
+    ]
+  },
+  {
+    "key": "KB",
+    "mappings": {
+      "default": {
+        "default": "kilooctet"
+      }
+    },
+    "names": [
+      "Ko"
+    ]
+  }
+]

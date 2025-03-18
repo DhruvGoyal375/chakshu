@@ -1,0 +1,119 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "cosh",
+    "mappings": {
+      "default": {
+        "default": "coseno iperbolico"
+      }
+    }
+  },
+  {
+    "key": "coth",
+    "mappings": {
+      "default": {
+        "default": "cotangente iperbolica"
+      }
+    }
+  },
+  {
+    "key": "csch",
+    "mappings": {
+      "default": {
+        "default": "cosecante iperbolica"
+      }
+    }
+  },
+  {
+    "key": "sech",
+    "mappings": {
+      "default": {
+        "default": "secante iperbolica"
+      }
+    }
+  },
+  {
+    "key": "sinh",
+    "mappings": {
+      "default": {
+        "default": "seno iperbolico"
+      }
+    }
+  },
+  {
+    "key": "tanh",
+    "mappings": {
+      "default": {
+        "default": "tangente iperbolica"
+      }
+    }
+  },
+  {
+    "key": "arcosh",
+    "mappings": {
+      "default": {
+        "default": "settore coseno iperbolico"
+      }
+    },
+    "names": [
+      "settcosh"
+    ]
+  },
+  {
+    "key": "arcoth",
+    "mappings": {
+      "default": {
+        "default": "settore co-tangente iperbolica"
+      }
+    },
+    "names": [
+      "settcoth"
+    ]
+  },
+  {
+    "key": "arcsch",
+    "mappings": {
+      "default": {
+        "default": "settore co-secante iperbolica"
+      }
+    },
+    "names": [
+      "settcsch"
+    ]
+  },
+  {
+    "key": "arsech",
+    "mappings": {
+      "default": {
+        "default": "settore secante iperbolica"
+      }
+    },
+    "names": [
+      "settsech"
+    ]
+  },
+  {
+    "key": "arsinh",
+    "mappings": {
+      "default": {
+        "default": "settore seno iperbolico"
+      }
+    },
+    "names": [
+      "settsinh"
+    ]
+  },
+  {
+    "key": "artanh",
+    "mappings": {
+      "default": {
+        "default": "settore tangente iperbolica"
+      }
+    },
+    "names": [
+      "settanh"
+    ]
+  }
+]

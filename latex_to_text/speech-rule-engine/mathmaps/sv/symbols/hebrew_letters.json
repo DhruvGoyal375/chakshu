@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "2135",
+    "mappings": {
+      "default": {
+        "default": "alef"
+      }
+    }
+  },
+  {
+    "key": "2136",
+    "mappings": {
+      "default": {
+        "default": "bet"
+      }
+    }
+  },
+  {
+    "key": "2137",
+    "mappings": {
+      "default": {
+        "default": "gimel"
+      }
+    }
+  },
+  {
+    "key": "2138",
+    "mappings": {
+      "default": {
+        "default": "dalet"
+      }
+    }
+  }
+]

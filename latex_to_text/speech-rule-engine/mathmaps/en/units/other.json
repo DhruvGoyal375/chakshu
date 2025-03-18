@@ -1,0 +1,14 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "dozen",
+        "plural": "dozen"
+      }
+    }
+  }
+]

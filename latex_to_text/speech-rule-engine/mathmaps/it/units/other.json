@@ -1,0 +1,14 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "plural": "dozzine",
+        "default": "dozzina"
+      }
+    }
+  }
+]

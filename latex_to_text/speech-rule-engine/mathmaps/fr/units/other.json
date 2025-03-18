@@ -1,0 +1,17 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "douzaine"
+      }
+    },
+    "names": [
+      "douz",
+      "douz."
+    ]
+  }
+]

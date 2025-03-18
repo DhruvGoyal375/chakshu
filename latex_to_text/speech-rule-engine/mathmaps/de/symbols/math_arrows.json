@@ -1,0 +1,2437 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "2190",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2191",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil"
+      }
+    }
+  },
+  {
+    "key": "2192",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2193",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "2194",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2195",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "2196",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "2197",
+    "mappings": {
+      "default": {
+        "default": "Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2198",
+    "mappings": {
+      "default": {
+        "default": "Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2199",
+    "mappings": {
+      "default": {
+        "default": "Südwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "219A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Strich"
+      }
+    }
+  },
+  {
+    "key": "219B",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Strich"
+      }
+    }
+  },
+  {
+    "key": "219C",
+    "mappings": {
+      "default": {
+        "default": "Wellenpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "219D",
+    "mappings": {
+      "default": {
+        "default": "Wellenpfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "219E",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit zwei Spitzen"
+      }
+    }
+  },
+  {
+    "key": "219F",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts zwei Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21A0",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit zwei Köpfen"
+      }
+    }
+  },
+  {
+    "key": "21A1",
+    "mappings": {
+      "default": {
+        "default": "Abwärts zwei Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21A2",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Schwanz"
+      }
+    }
+  },
+  {
+    "key": "21A3",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Schwanz"
+      }
+    }
+  },
+  {
+    "key": "21A4",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links von der Bar"
+      }
+    }
+  },
+  {
+    "key": "21A5",
+    "mappings": {
+      "default": {
+        "default": "Pfeil von der Bar nach oben"
+      }
+    }
+  },
+  {
+    "key": "21A6",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts von der Bar"
+      }
+    }
+  },
+  {
+    "key": "21A7",
+    "mappings": {
+      "default": {
+        "default": "Pfeil von der Bar nach unten"
+      }
+    }
+  },
+  {
+    "key": "21A8",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten mit Basis"
+      }
+    }
+  },
+  {
+    "key": "21A9",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Haken"
+      }
+    }
+  },
+  {
+    "key": "21AA",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Haken"
+      }
+    }
+  },
+  {
+    "key": "21AB",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Schleife"
+      }
+    }
+  },
+  {
+    "key": "21AC",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Schleife"
+      }
+    }
+  },
+  {
+    "key": "21AD",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Wellenpfeil"
+      }
+    }
+  },
+  {
+    "key": "21AE",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil mit Strich"
+      }
+    }
+  },
+  {
+    "key": "21AF",
+    "mappings": {
+      "default": {
+        "default": "Zickzack-Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21B0",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil mit Spitze nach links"
+      }
+    }
+  },
+  {
+    "key": "21B1",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil mit Spitze nach rechts"
+      }
+    }
+  },
+  {
+    "key": "21B2",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten mit Spitze nach links"
+      }
+    }
+  },
+  {
+    "key": "21B3",
+    "mappings": {
+      "default": {
+        "default": "Abwärtspfeil mit Spitze nach rechts"
+      }
+    }
+  },
+  {
+    "key": "21B4",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Ecke nach unten"
+      }
+    }
+  },
+  {
+    "key": "21B5",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten mit Ecke nach links"
+      }
+    }
+  },
+  {
+    "key": "21B6",
+    "mappings": {
+      "default": {
+        "default": "Gegen den Uhrzeigersinn oberer halbkreisförmiger Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21B7",
+    "mappings": {
+      "default": {
+        "default": "Halbkreis im Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "21B8",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeil zur langen Bar"
+      }
+    }
+  },
+  {
+    "key": "21B9",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links zum Überfahren Pfeil nach rechts zum Überfahren"
+      }
+    }
+  },
+  {
+    "key": "21BA",
+    "mappings": {
+      "default": {
+        "default": "Offener Kreispfeil gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "21BB",
+    "mappings": {
+      "default": {
+        "default": "Kreispfeil im Uhrzeigersinn öffnen"
+      }
+    }
+  },
+  {
+    "key": "21C4",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts über Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "21C5",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil nach links von Abwärtspfeil"
+      }
+    }
+  },
+  {
+    "key": "21C6",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links über Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "21C7",
+    "mappings": {
+      "default": {
+        "default": "Links gepaarte Pfeile"
+      }
+    }
+  },
+  {
+    "key": "21C8",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts gepaarte Pfeile"
+      }
+    }
+  },
+  {
+    "key": "21C9",
+    "mappings": {
+      "default": {
+        "default": "Rechts gepaarte Pfeile"
+      }
+    }
+  },
+  {
+    "key": "21CA",
+    "mappings": {
+      "default": {
+        "default": "Abwärts gepaarte Pfeile"
+      }
+    }
+  },
+  {
+    "key": "21CD",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links mit Strich"
+      }
+    }
+  },
+  {
+    "key": "21CE",
+    "mappings": {
+      "default": {
+        "default": "Links Rechts Doppelpfeil mit Strich"
+      }
+    }
+  },
+  {
+    "key": "21CF",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach rechts mit Strich"
+      }
+    }
+  },
+  {
+    "key": "21D0",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "21D1",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "21D2",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "21D3",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21D4",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21D5",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21D6",
+    "mappings": {
+      "default": {
+        "default": "Nordwest-Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21D7",
+    "mappings": {
+      "default": {
+        "default": "Nordost-Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21D8",
+    "mappings": {
+      "default": {
+        "default": "Südost Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21D9",
+    "mappings": {
+      "default": {
+        "default": "Südwest-Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21DA",
+    "mappings": {
+      "default": {
+        "default": "Dreifacher Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "21DB",
+    "mappings": {
+      "default": {
+        "default": "Dreifacher Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "21DC",
+    "mappings": {
+      "default": {
+        "default": "Linker Squiggle-Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21DD",
+    "mappings": {
+      "default": {
+        "default": "Nach rechts gekrümmter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21DE",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil mit Doppelstrich"
+      }
+    }
+  },
+  {
+    "key": "21DF",
+    "mappings": {
+      "default": {
+        "default": "Abwärtspfeil mit Doppelstrich"
+      }
+    }
+  },
+  {
+    "key": "21E0",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links nach links"
+      }
+    }
+  },
+  {
+    "key": "21E1",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach oben gestrichen"
+      }
+    }
+  },
+  {
+    "key": "21E2",
+    "mappings": {
+      "default": {
+        "default": "Rechts gestrichener Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21E3",
+    "mappings": {
+      "default": {
+        "default": "Abwärts gestrichelter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21E4",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links zur Bar"
+      }
+    }
+  },
+  {
+    "key": "21E5",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts zur Bar"
+      }
+    }
+  },
+  {
+    "key": "21E6",
+    "mappings": {
+      "default": {
+        "default": "Weißer Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "21E7",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21E8",
+    "mappings": {
+      "default": {
+        "default": "Rechts weißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21E9",
+    "mappings": {
+      "default": {
+        "default": "Abwärts weißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "21EA",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Pfeil von der Stange"
+      }
+    }
+  },
+  {
+    "key": "21EB",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Pfeil auf Sockel"
+      }
+    }
+  },
+  {
+    "key": "21EC",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Pfeil auf Sockel mit horizontaler Stange"
+      }
+    }
+  },
+  {
+    "key": "21ED",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Pfeil auf Sockel mit vertikaler Stange"
+      }
+    }
+  },
+  {
+    "key": "21EE",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "21EF",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts weißer doppelter Pfeil auf Sockel"
+      }
+    }
+  },
+  {
+    "key": "21F0",
+    "mappings": {
+      "default": {
+        "default": "Rechts weißer Pfeil von der Wand"
+      }
+    }
+  },
+  {
+    "key": "21F1",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeil zur Ecke"
+      }
+    }
+  },
+  {
+    "key": "21F2",
+    "mappings": {
+      "default": {
+        "default": "Südostpfeil zur Ecke"
+      }
+    }
+  },
+  {
+    "key": "21F3",
+    "mappings": {
+      "default": {
+        "default": "Weißer Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "21F4",
+    "mappings": {
+      "default": {
+        "default": "rechter Pfeil mit kleinem Kreis"
+      }
+    }
+  },
+  {
+    "key": "21F5",
+    "mappings": {
+      "default": {
+        "default": "Abwärtspfeil nach links von Aufwärtspfeil"
+      }
+    }
+  },
+  {
+    "key": "21F6",
+    "mappings": {
+      "default": {
+        "default": "Drei nach rechts gerichtete Pfeile"
+      }
+    }
+  },
+  {
+    "key": "21F7",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21F8",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21F9",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21FA",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21FB",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21FC",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "21FD",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit offenem Kopf"
+      }
+    }
+  },
+  {
+    "key": "21FE",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit offenem Kopf"
+      }
+    }
+  },
+  {
+    "key": "21FF",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil mit offenem Kopf"
+      }
+    }
+  },
+  {
+    "key": "2301",
+    "mappings": {
+      "default": {
+        "default": "Elektrischer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2303",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "2304",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "2324",
+    "mappings": {
+      "default": {
+        "default": "Pfeilspitze zwischen zwei horizontalen Balken"
+      }
+    }
+  },
+  {
+    "key": "238B",
+    "mappings": {
+      "default": {
+        "default": "Gebrochener Kreis mit Nordwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "2794",
+    "mappings": {
+      "default": {
+        "default": "Schwerer, nach rechts gerichteter Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2798",
+    "mappings": {
+      "default": {
+        "default": "Schwerer Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2799",
+    "mappings": {
+      "default": {
+        "default": "Schwerer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "279A",
+    "mappings": {
+      "default": {
+        "default": "Schwerer Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "279B",
+    "mappings": {
+      "default": {
+        "default": "Zeichnungspunkt Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "279C",
+    "mappings": {
+      "default": {
+        "default": "Schwerer runder Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "279D",
+    "mappings": {
+      "default": {
+        "default": "Dreieckköpfiger Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "279E",
+    "mappings": {
+      "default": {
+        "default": "Schwerer Dreieckspfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "279F",
+    "mappings": {
+      "default": {
+        "default": "Dreieckköpfiger Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A0",
+    "mappings": {
+      "default": {
+        "default": "Schwerer, gestrichelter Dreieckspfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A1",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A2",
+    "mappings": {
+      "default": {
+        "default": "Dreidimensionale, nach oben beleuchtete Pfeilspitze"
+      }
+    }
+  },
+  {
+    "key": "27A3",
+    "mappings": {
+      "default": {
+        "default": "Dreidimensionale, von unten beleuchtete Pfeilspitze nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A4",
+    "mappings": {
+      "default": {
+        "default": "Schwarze Pfeilspitze nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A5",
+    "mappings": {
+      "default": {
+        "default": "Schwerer schwarzer Pfeil nach unten und rechts gebogen"
+      }
+    }
+  },
+  {
+    "key": "27A6",
+    "mappings": {
+      "default": {
+        "default": "Schwerer schwarzer Pfeil nach oben und rechts gebogen"
+      }
+    }
+  },
+  {
+    "key": "27A7",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer nach rechts gerichteter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "27A8",
+    "mappings": {
+      "default": {
+        "default": "Schwerer konkaver Spitze-Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27A9",
+    "mappings": {
+      "default": {
+        "default": "Rechts geschatteter weißer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AA",
+    "mappings": {
+      "default": {
+        "default": "Links schattierter weißer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AB",
+    "mappings": {
+      "default": {
+        "default": "Zurückgekippter, beschatteter weißer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AC",
+    "mappings": {
+      "default": {
+        "default": "Vorne geneigter, beschatteter weißer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AD",
+    "mappings": {
+      "default": {
+        "default": "Schwerer unterer rechter Schatten mit weißem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AE",
+    "mappings": {
+      "default": {
+        "default": "Schwerer oberer rechter Schatten mit weißem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27AF",
+    "mappings": {
+      "default": {
+        "default": "Gekerbter Pfeil nach rechts unten rechts"
+      }
+    }
+  },
+  {
+    "key": "27B1",
+    "mappings": {
+      "default": {
+        "default": "Weißer Pfeil nach rechts oben gekerbt"
+      }
+    }
+  },
+  {
+    "key": "27B2",
+    "mappings": {
+      "default": {
+        "default": "Eingekreister schwerer weißer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27B3",
+    "mappings": {
+      "default": {
+        "default": "Pfeil mit weißer Feder nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27B4",
+    "mappings": {
+      "default": {
+        "default": "Schwarz-gefiederter Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "27B5",
+    "mappings": {
+      "default": {
+        "default": "Pfeil mit schwarzer Feder nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27B6",
+    "mappings": {
+      "default": {
+        "default": "Schwarzgefiederter Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "27B7",
+    "mappings": {
+      "default": {
+        "default": "Schwerer schwarzgefiederter Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "27B8",
+    "mappings": {
+      "default": {
+        "default": "Schwerer schwarzgefiederter Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27B9",
+    "mappings": {
+      "default": {
+        "default": "Schwerer schwarzgefiederter Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "27BA",
+    "mappings": {
+      "default": {
+        "default": "Teardrop-Barbed-Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27BB",
+    "mappings": {
+      "default": {
+        "default": "Schwerer Tropfen-Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27BC",
+    "mappings": {
+      "default": {
+        "default": "Keil-Schwanz nach rechts Pfeil"
+      }
+    }
+  },
+  {
+    "key": "27BD",
+    "mappings": {
+      "default": {
+        "default": "Schwerer, nach rechts gekeilter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "27BE",
+    "mappings": {
+      "default": {
+        "default": "Offener Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27F0",
+    "mappings": {
+      "default": {
+        "default": "Vierfachpfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "27F1",
+    "mappings": {
+      "default": {
+        "default": "Vierfacher Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "27F2",
+    "mappings": {
+      "default": {
+        "default": "Kreispfeil gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "27F3",
+    "mappings": {
+      "default": {
+        "default": "Kreispfeil im Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "27F4",
+    "mappings": {
+      "default": {
+        "default": "rechter Pfeil mit Circled Plus"
+      }
+    }
+  },
+  {
+    "key": "27F5",
+    "mappings": {
+      "default": {
+        "default": "Langer Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "27F6",
+    "mappings": {
+      "default": {
+        "default": "Langer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27F7",
+    "mappings": {
+      "default": {
+        "default": "Langer linker rechter Pfeil"
+      }
+    }
+  },
+  {
+    "key": "27F8",
+    "mappings": {
+      "default": {
+        "default": "Langer Doppelpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "27F9",
+    "mappings": {
+      "default": {
+        "default": "Langer Doppelpfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "27FA",
+    "mappings": {
+      "default": {
+        "default": "Langer linker rechter Doppelpfeil"
+      }
+    }
+  },
+  {
+    "key": "27FB",
+    "mappings": {
+      "default": {
+        "default": "Langer Pfeil nach links von der Bar"
+      }
+    }
+  },
+  {
+    "key": "27FC",
+    "mappings": {
+      "default": {
+        "default": "Langer Rechtspfeil von der Bar"
+      }
+    }
+  },
+  {
+    "key": "27FD",
+    "mappings": {
+      "default": {
+        "default": "Langer Doppelpfeil nach links von der Bar"
+      }
+    }
+  },
+  {
+    "key": "27FE",
+    "mappings": {
+      "default": {
+        "default": "Langer Doppelpfeil nach rechts von der Bar"
+      }
+    }
+  },
+  {
+    "key": "27FF",
+    "mappings": {
+      "default": {
+        "default": "Langer nach rechts gerichteter Squiggle-Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2900",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit senkrechtem Strich"
+      }
+    }
+  },
+  {
+    "key": "2901",
+    "mappings": {
+      "default": {
+        "default": "Zwei Pfeil nach rechts mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2902",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2903",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach rechts mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2904",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Doppelpfeil mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2905",
+    "mappings": {
+      "default": {
+        "default": "Zwei Pfeil nach rechts von der Bar"
+      }
+    }
+  },
+  {
+    "key": "2906",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links von der Bar"
+      }
+    }
+  },
+  {
+    "key": "2907",
+    "mappings": {
+      "default": {
+        "default": "Doppelter Pfeil nach rechts von der Bar"
+      }
+    }
+  },
+  {
+    "key": "2908",
+    "mappings": {
+      "default": {
+        "default": "Abwärtspfeil mit horizontalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2909",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil mit horizontalem Anschlag"
+      }
+    }
+  },
+  {
+    "key": "290A",
+    "mappings": {
+      "default": {
+        "default": "Dreifachpfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "290B",
+    "mappings": {
+      "default": {
+        "default": "Dreifacher Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "290C",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "290D",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "290E",
+    "mappings": {
+      "default": {
+        "default": "Dreifacher Strichpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "290F",
+    "mappings": {
+      "default": {
+        "default": "Dreifacher Bindestrich nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2910",
+    "mappings": {
+      "default": {
+        "default": "Dreipoliger Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2911",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit gepunktetem Stamm"
+      }
+    }
+  },
+  {
+    "key": "2912",
+    "mappings": {
+      "default": {
+        "default": "Aufwärtspfeil zur Bar"
+      }
+    }
+  },
+  {
+    "key": "2913",
+    "mappings": {
+      "default": {
+        "default": "Abwärtspfeil zur Bar"
+      }
+    }
+  },
+  {
+    "key": "2914",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Schwanz mit senkrechtem Anschlag"
+      }
+    }
+  },
+  {
+    "key": "2915",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Schwanz mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2916",
+    "mappings": {
+      "default": {
+        "default": "Nach rechts gerichteter zweiköpfiger Pfeil mit Schwanz"
+      }
+    }
+  },
+  {
+    "key": "2917",
+    "mappings": {
+      "default": {
+        "default": "Nach rechts gerichteter Doppelpfeil mit Schwanz mit senkrechtem Anschlag"
+      }
+    }
+  },
+  {
+    "key": "2918",
+    "mappings": {
+      "default": {
+        "default": "Nach rechts gerichteter Doppelpfeil mit Schwanz mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2919",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links nach links"
+      }
+    }
+  },
+  {
+    "key": "291A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts nach rechts"
+      }
+    }
+  },
+  {
+    "key": "291B",
+    "mappings": {
+      "default": {
+        "default": "Doppelter Pfeilschwanz nach links"
+      }
+    }
+  },
+  {
+    "key": "291C",
+    "mappings": {
+      "default": {
+        "default": "Doppelter Pfeilschwanz nach rechts"
+      }
+    }
+  },
+  {
+    "key": "291D",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links zu Black Diamond"
+      }
+    }
+  },
+  {
+    "key": "291E",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts zu Black Diamond"
+      }
+    }
+  },
+  {
+    "key": "291F",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links von Bar zu Black Diamond"
+      }
+    }
+  },
+  {
+    "key": "2920",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts von Bar zu Black Diamond"
+      }
+    }
+  },
+  {
+    "key": "2921",
+    "mappings": {
+      "default": {
+        "default": "Nordwest- und Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2922",
+    "mappings": {
+      "default": {
+        "default": "Nordost- und Südwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "2923",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeil mit Haken"
+      }
+    }
+  },
+  {
+    "key": "2924",
+    "mappings": {
+      "default": {
+        "default": "Nordostpfeil mit Haken"
+      }
+    }
+  },
+  {
+    "key": "2925",
+    "mappings": {
+      "default": {
+        "default": "Südostpfeil mit Haken"
+      }
+    }
+  },
+  {
+    "key": "2926",
+    "mappings": {
+      "default": {
+        "default": "Südwestpfeil mit Haken"
+      }
+    }
+  },
+  {
+    "key": "2927",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeil und Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2928",
+    "mappings": {
+      "default": {
+        "default": "Nordostpfeil und Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2929",
+    "mappings": {
+      "default": {
+        "default": "Südostpfeil und Südwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "292A",
+    "mappings": {
+      "default": {
+        "default": "Südwestpfeil und Nordwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "292D",
+    "mappings": {
+      "default": {
+        "default": "Südostpfeil Kreuzung Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "292E",
+    "mappings": {
+      "default": {
+        "default": "Nordostpfeil Kreuzung Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "292F",
+    "mappings": {
+      "default": {
+        "default": "Fallende Diagonale, die Nordostpfeil kreuzt"
+      }
+    }
+  },
+  {
+    "key": "2930",
+    "mappings": {
+      "default": {
+        "default": "Steigende Diagonale, die Südostpfeil kreuzt"
+      }
+    }
+  },
+  {
+    "key": "2931",
+    "mappings": {
+      "default": {
+        "default": "Nordostpfeilüberquerung Nordwestpfeil"
+      }
+    }
+  },
+  {
+    "key": "2932",
+    "mappings": {
+      "default": {
+        "default": "Nordwestpfeilüberquerung Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2933",
+    "mappings": {
+      "default": {
+        "default": "Wellenpfeil, der direkt nach rechts zeigt"
+      }
+    }
+  },
+  {
+    "key": "2934",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts, dann nach oben gekrümmt"
+      }
+    }
+  },
+  {
+    "key": "2935",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts, dann nach unten gekrümmt"
+      }
+    }
+  },
+  {
+    "key": "2936",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten, dann nach links gekrümmt"
+      }
+    }
+  },
+  {
+    "key": "2937",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach unten, dann nach rechts gekrümmt"
+      }
+    }
+  },
+  {
+    "key": "2938",
+    "mappings": {
+      "default": {
+        "default": "Rechtsseitiger Bogen im Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "2939",
+    "mappings": {
+      "default": {
+        "default": "Bogen der linken Seite gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "293A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil oben gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "293B",
+    "mappings": {
+      "default": {
+        "default": "Pfeil unten gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "293C",
+    "mappings": {
+      "default": {
+        "default": "Pfeil oben im Uhrzeigersinn mit Minus"
+      }
+    }
+  },
+  {
+    "key": "293D",
+    "mappings": {
+      "default": {
+        "default": "Pfeil oben gegen den Uhrzeigersinn mit Plus"
+      }
+    }
+  },
+  {
+    "key": "293E",
+    "mappings": {
+      "default": {
+        "default": "Rechts unten halbkreisförmig im Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "293F",
+    "mappings": {
+      "default": {
+        "default": "Linker halbkreisförmiger Pfeil gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "2940",
+    "mappings": {
+      "default": {
+        "default": "Geschlossener Kreispfeil gegen den Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "2941",
+    "mappings": {
+      "default": {
+        "default": "Geschlossener Kreispfeil im Uhrzeigersinn"
+      }
+    }
+  },
+  {
+    "key": "2942",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts über Kurzer Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2943",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links über Kurzer Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2944",
+    "mappings": {
+      "default": {
+        "default": "Kurzer Pfeil nach rechts Über Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2945",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Plus unten"
+      }
+    }
+  },
+  {
+    "key": "2946",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Plus unten"
+      }
+    }
+  },
+  {
+    "key": "2947",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts durch X"
+      }
+    }
+  },
+  {
+    "key": "2948",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter Pfeil durch kleinen Kreis"
+      }
+    }
+  },
+  {
+    "key": "2949",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts zweiköpfiger Pfeil vom kleinen Kreis"
+      }
+    }
+  },
+  {
+    "key": "2970",
+    "mappings": {
+      "default": {
+        "default": "round implies"
+      }
+    }
+  },
+  {
+    "key": "2971",
+    "mappings": {
+      "default": {
+        "default": "Gleichheitszeichen über dem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2972",
+    "mappings": {
+      "default": {
+        "default": "Tilde-Operator über dem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2973",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links über Tilde-Operator"
+      }
+    }
+  },
+  {
+    "key": "2974",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts über Tilde-Operator"
+      }
+    }
+  },
+  {
+    "key": "2975",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts fast gleich"
+      }
+    }
+  },
+  {
+    "key": "2976",
+    "mappings": {
+      "default": {
+        "default": "Weniger als oben Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2977",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links durch weniger als"
+      }
+    }
+  },
+  {
+    "key": "2978",
+    "mappings": {
+      "default": {
+        "default": "Größer als über dem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2979",
+    "mappings": {
+      "default": {
+        "default": "Untersatz über dem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "297A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links durch Teilmenge"
+      }
+    }
+  },
+  {
+    "key": "297B",
+    "mappings": {
+      "default": {
+        "default": "Superset über dem Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "29B3",
+    "mappings": {
+      "default": {
+        "default": "Leeres Set mit Pfeil rechts oben"
+      }
+    }
+  },
+  {
+    "key": "29B4",
+    "mappings": {
+      "default": {
+        "default": "Leeres Set mit linkem Pfeil oben"
+      }
+    }
+  },
+  {
+    "key": "29BD",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach oben durch Kreis"
+      }
+    }
+  },
+  {
+    "key": "29EA",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Diamant mit Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "29EC",
+    "mappings": {
+      "default": {
+        "default": "Weißer Kreis mit Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "29ED",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Kreis mit Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "2A17",
+    "mappings": {
+      "default": {
+        "default": "Integral mit Pfeil nach links mit Haken"
+      }
+    }
+  },
+  {
+    "key": "2B00",
+    "mappings": {
+      "default": {
+        "default": "North East White Arrow"
+      }
+    }
+  },
+  {
+    "key": "2B01",
+    "mappings": {
+      "default": {
+        "default": "Nordwestlicher weißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B02",
+    "mappings": {
+      "default": {
+        "default": "Südostweißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B03",
+    "mappings": {
+      "default": {
+        "default": "Südwestweißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B04",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter weißer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B05",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2B06",
+    "mappings": {
+      "default": {
+        "default": "Aufwärts schwarzer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B07",
+    "mappings": {
+      "default": {
+        "default": "Abwärts schwarzer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B08",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Nordostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2B09",
+    "mappings": {
+      "default": {
+        "default": "Nordwestlicher schwarzer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B0A",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Südostpfeil"
+      }
+    }
+  },
+  {
+    "key": "2B0B",
+    "mappings": {
+      "default": {
+        "default": "Südwestlicher schwarzer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B0C",
+    "mappings": {
+      "default": {
+        "default": "Linker rechter schwarzer Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B0D",
+    "mappings": {
+      "default": {
+        "default": "Schwarzer Pfeil nach unten"
+      }
+    }
+  },
+  {
+    "key": "2B0E",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Spitze nach unten"
+      }
+    }
+  },
+  {
+    "key": "2B0F",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts mit Spitze nach oben"
+      }
+    }
+  },
+  {
+    "key": "2B10",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Spitze nach unten"
+      }
+    }
+  },
+  {
+    "key": "2B11",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Spitze nach oben"
+      }
+    }
+  },
+  {
+    "key": "2B30",
+    "mappings": {
+      "default": {
+        "default": "Linker Pfeil mit kleinem Kreis"
+      }
+    }
+  },
+  {
+    "key": "2B31",
+    "mappings": {
+      "default": {
+        "default": "Drei nach links gerichtete Pfeile"
+      }
+    }
+  },
+  {
+    "key": "2B32",
+    "mappings": {
+      "default": {
+        "default": "Linker Pfeil mit Circled Plus"
+      }
+    }
+  },
+  {
+    "key": "2B33",
+    "mappings": {
+      "default": {
+        "default": "Langer nach links gerichteter Squiggle-Pfeil"
+      }
+    }
+  },
+  {
+    "key": "2B34",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit senkrechtem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B35",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B36",
+    "mappings": {
+      "default": {
+        "default": "Doppelpfeil nach links von der Bar"
+      }
+    }
+  },
+  {
+    "key": "2B37",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit zwei Köpfen"
+      }
+    }
+  },
+  {
+    "key": "2B38",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit gepunktetem Stamm"
+      }
+    }
+  },
+  {
+    "key": "2B39",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Schwanz mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B3A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links mit Schwanz mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B3B",
+    "mappings": {
+      "default": {
+        "default": "Nach links gerichteter zweiköpfiger Pfeil mit Schwanz"
+      }
+    }
+  },
+  {
+    "key": "2B3C",
+    "mappings": {
+      "default": {
+        "default": "Nach links gerichteter zweiköpfiger Pfeil mit Schwanz mit vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B3D",
+    "mappings": {
+      "default": {
+        "default": "Nach links gerichteter zweiköpfiger Pfeil mit Schwanz mit doppeltem vertikalem Strich"
+      }
+    }
+  },
+  {
+    "key": "2B3E",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links durch X"
+      }
+    }
+  },
+  {
+    "key": "2B3F",
+    "mappings": {
+      "default": {
+        "default": "Wellenpfeil, der direkt nach links zeigt"
+      }
+    }
+  },
+  {
+    "key": "2B40",
+    "mappings": {
+      "default": {
+        "default": "Gleichheitszeichen über dem Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2B41",
+    "mappings": {
+      "default": {
+        "default": "Reverse-Tilde-Operator Über Linkspfeil"
+      }
+    }
+  },
+  {
+    "key": "2B42",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links über der Rückseite fast gleich"
+      }
+    }
+  },
+  {
+    "key": "2B43",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts durch mehr als"
+      }
+    }
+  },
+  {
+    "key": "2B44",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts durch Superset"
+      }
+    }
+  },
+  {
+    "key": "2B45",
+    "mappings": {
+      "default": {
+        "default": "Vierfachpfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2B46",
+    "mappings": {
+      "default": {
+        "default": "Vierfachpfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2B47",
+    "mappings": {
+      "default": {
+        "default": "Reverse-Tilde-Operator über dem Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "2B48",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts oben fast gleich"
+      }
+    }
+  },
+  {
+    "key": "2B49",
+    "mappings": {
+      "default": {
+        "default": "Tilde-Operator über dem Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "2B4A",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links oben fast gleich"
+      }
+    }
+  },
+  {
+    "key": "2B4B",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach links über Reverse-Tilde-Operator"
+      }
+    }
+  },
+  {
+    "key": "2B4C",
+    "mappings": {
+      "default": {
+        "default": "Pfeil nach rechts über Reverse-Tilde-Operator"
+      }
+    }
+  },
+  {
+    "key": "FFE9",
+    "mappings": {
+      "default": {
+        "default": "Halbbreiter Pfeil nach links"
+      }
+    }
+  },
+  {
+    "key": "FFEA",
+    "mappings": {
+      "default": {
+        "default": "Halbbreiter Pfeil nach oben"
+      }
+    }
+  },
+  {
+    "key": "FFEB",
+    "mappings": {
+      "default": {
+        "default": "Halbbreiter Pfeil nach rechts"
+      }
+    }
+  },
+  {
+    "key": "FFEC",
+    "mappings": {
+      "default": {
+        "default": "Halbbreiter Pfeil nach unten"
+      }
+    }
+  }
+]

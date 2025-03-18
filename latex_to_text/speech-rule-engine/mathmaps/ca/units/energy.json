@@ -1,0 +1,76 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "W",
+    "mappings": {
+      "default": {
+        "default": "watt",
+        "plural": "watts"
+      }
+    }
+  },
+  {
+    "key": "kwh",
+    "mappings": {
+      "default": {
+        "default": "quilowatt hora",
+        "plural": "quilowatts hora"
+      }
+    }
+  },
+  {
+    "key": "J",
+    "mappings": {
+      "default": {
+        "default": "joule",
+        "plural": "joules"
+      }
+    }
+  },
+  {
+    "key": "N",
+    "mappings": {
+      "default": {
+        "default": "newton",
+        "plural": "newtons"
+      }
+    }
+  },
+  {
+    "key": "A",
+    "mappings": {
+      "default": {
+        "default": "ampere",
+        "plural": "amperes"
+      }
+    }
+  },
+  {
+    "key": "V",
+    "mappings": {
+      "default": {
+        "default": "volt",
+        "plural": "volts"
+      }
+    }
+  },
+  {
+    "key": "ohm",
+    "mappings": {
+      "default": {
+        "default": ""
+      }
+    }
+  },
+  {
+    "key": "Ω",
+    "mappings": {
+      "default": {
+        "default": "ohm",
+        "plural": "ohms"
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "locale": "ca"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "dotzena",
+        "plural": "dotzenes"
+      }
+    }
+  }
+]

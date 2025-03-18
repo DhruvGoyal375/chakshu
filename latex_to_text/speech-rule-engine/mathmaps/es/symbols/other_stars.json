@@ -1,0 +1,469 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "23E8",
+    "mappings": {
+      "default": {
+        "default": "símbolo exponente decimal"
+      }
+    }
+  },
+  {
+    "key": "2605",
+    "mappings": {
+      "default": {
+        "default": "estrella rellena"
+      }
+    }
+  },
+  {
+    "key": "2606",
+    "mappings": {
+      "default": {
+        "default": "estrella vacía"
+      }
+    }
+  },
+  {
+    "key": "26AA",
+    "mappings": {
+      "default": {
+        "default": "círculo blanco medio"
+      }
+    }
+  },
+  {
+    "key": "26AB",
+    "mappings": {
+      "default": {
+        "default": "círculo negro medio"
+      }
+    }
+  },
+  {
+    "key": "2705",
+    "mappings": {
+      "default": {
+        "default": "marca de verificación pesada blanca"
+      }
+    }
+  },
+  {
+    "key": "2713",
+    "mappings": {
+      "default": {
+        "default": "check mark"
+      }
+    }
+  },
+  {
+    "key": "2714",
+    "mappings": {
+      "default": {
+        "default": "marca de verificación pesada"
+      }
+    }
+  },
+  {
+    "key": "2715",
+    "mappings": {
+      "default": {
+        "default": "multiplicación x"
+      }
+    }
+  },
+  {
+    "key": "2716",
+    "mappings": {
+      "default": {
+        "default": "multiplicación pesada X"
+      }
+    }
+  },
+  {
+    "key": "2717",
+    "mappings": {
+      "default": {
+        "default": "ballot x"
+      }
+    }
+  },
+  {
+    "key": "2718",
+    "mappings": {
+      "default": {
+        "default": "boleta pesada X"
+      }
+    }
+  },
+  {
+    "key": "271B",
+    "mappings": {
+      "default": {
+        "default": "centro abierto de la cruz"
+      }
+    }
+  },
+  {
+    "key": "271C",
+    "mappings": {
+      "default": {
+        "default": "pesado centro abierto cruz"
+      }
+    }
+  },
+  {
+    "key": "2720",
+    "mappings": {
+      "default": {
+        "default": "cruz de Malta"
+      }
+    }
+  },
+  {
+    "key": "2721",
+    "mappings": {
+      "default": {
+        "default": "estrella de David"
+      }
+    }
+  },
+  {
+    "key": "2722",
+    "mappings": {
+      "default": {
+        "default": "cuatro asterisco de lágrima"
+      }
+    }
+  },
+  {
+    "key": "2723",
+    "mappings": {
+      "default": {
+        "default": "cuatro asterisco de globo"
+      }
+    }
+  },
+  {
+    "key": "2724",
+    "mappings": {
+      "default": {
+        "default": "pesado Cuatro asterisco impulsado por globo"
+      }
+    }
+  },
+  {
+    "key": "2725",
+    "mappings": {
+      "default": {
+        "default": "cuatro asterisco de club-spoked"
+      }
+    }
+  },
+  {
+    "key": "2726",
+    "mappings": {
+      "default": {
+        "default": "estrella de cuatro puntas negra"
+      }
+    }
+  },
+  {
+    "key": "2727",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca de cuatro puntas"
+      }
+    }
+  },
+  {
+    "key": "2728",
+    "mappings": {
+      "default": {
+        "default": "destellos"
+      }
+    }
+  },
+  {
+    "key": "2729",
+    "mappings": {
+      "default": {
+        "default": "estrés subrayado estrella blanca"
+      }
+    }
+  },
+  {
+    "key": "272A",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca circulada"
+      }
+    }
+  },
+  {
+    "key": "272B",
+    "mappings": {
+      "default": {
+        "default": "centro Abierto Estrella Negra"
+      }
+    }
+  },
+  {
+    "key": "272C",
+    "mappings": {
+      "default": {
+        "default": "centro negro estrella blanca"
+      }
+    }
+  },
+  {
+    "key": "272D",
+    "mappings": {
+      "default": {
+        "default": "contorneado negro estrella"
+      }
+    }
+  },
+  {
+    "key": "272E",
+    "mappings": {
+      "default": {
+        "default": "estrella negra contorneada pesada"
+      }
+    }
+  },
+  {
+    "key": "272F",
+    "mappings": {
+      "default": {
+        "default": "pinwheel Star"
+      }
+    }
+  },
+  {
+    "key": "2730",
+    "mappings": {
+      "default": {
+        "default": "estrella blanca sombreada"
+      }
+    }
+  },
+  {
+    "key": "2731",
+    "mappings": {
+      "default": {
+        "default": "asterisco pesado"
+      }
+    }
+  },
+  {
+    "key": "2732",
+    "mappings": {
+      "default": {
+        "default": "centro abierto de asterisco"
+      }
+    }
+  },
+  {
+    "key": "2733",
+    "mappings": {
+      "default": {
+        "default": "ocho asterisco hablado"
+      }
+    }
+  },
+  {
+    "key": "2734",
+    "mappings": {
+      "default": {
+        "default": "ocho estrellas negras puntiagudas"
+      }
+    }
+  },
+  {
+    "key": "2735",
+    "mappings": {
+      "default": {
+        "default": "ocho estrellas de molinete en punta"
+      }
+    }
+  },
+  {
+    "key": "2736",
+    "mappings": {
+      "default": {
+        "default": "estrella rellena de seis puntas"
+      }
+    }
+  },
+  {
+    "key": "2739",
+    "mappings": {
+      "default": {
+        "default": "doce estrellas negras puntiagudas"
+      }
+    }
+  },
+  {
+    "key": "273A",
+    "mappings": {
+      "default": {
+        "default": "dieciséis asteriscos en punta"
+      }
+    }
+  },
+  {
+    "key": "273B",
+    "mappings": {
+      "default": {
+        "default": "asterisco con efecto de lágrima"
+      }
+    }
+  },
+  {
+    "key": "273C",
+    "mappings": {
+      "default": {
+        "default": "centro abierto con asterisco con forma de lágrima"
+      }
+    }
+  },
+  {
+    "key": "273D",
+    "mappings": {
+      "default": {
+        "default": "heavy teardrop spoked asterisk"
+      }
+    }
+  },
+  {
+    "key": "273E",
+    "mappings": {
+      "default": {
+        "default": "seis pétalos de florette en blanco y negro"
+      }
+    }
+  },
+  {
+    "key": "273F",
+    "mappings": {
+      "default": {
+        "default": "florette negro"
+      }
+    }
+  },
+  {
+    "key": "2740",
+    "mappings": {
+      "default": {
+        "default": "florette blanco"
+      }
+    }
+  },
+  {
+    "key": "2741",
+    "mappings": {
+      "default": {
+        "default": "ocho Petalled Outlined Black Florette"
+      }
+    }
+  },
+  {
+    "key": "2742",
+    "mappings": {
+      "default": {
+        "default": "círculo abierto centro ocho estrellas señaladas"
+      }
+    }
+  },
+  {
+    "key": "2743",
+    "mappings": {
+      "default": {
+        "default": "asterisco pesado del molinillo de viento"
+      }
+    }
+  },
+  {
+    "key": "2744",
+    "mappings": {
+      "default": {
+        "default": "copo de nieve"
+      }
+    }
+  },
+  {
+    "key": "2745",
+    "mappings": {
+      "default": {
+        "default": "copo de nieve trifolio apretado"
+      }
+    }
+  },
+  {
+    "key": "2746",
+    "mappings": {
+      "default": {
+        "default": "copo de nieve pesado de Chevron"
+      }
+    }
+  },
+  {
+    "key": "2747",
+    "mappings": {
+      "default": {
+        "default": "brillar"
+      }
+    }
+  },
+  {
+    "key": "2748",
+    "mappings": {
+      "default": {
+        "default": "chispa pesada"
+      }
+    }
+  },
+  {
+    "key": "2749",
+    "mappings": {
+      "default": {
+        "default": "asterisco de globo"
+      }
+    }
+  },
+  {
+    "key": "274A",
+    "mappings": {
+      "default": {
+        "default": "ocho asterisco de hélice con efecto de lágrima"
+      }
+    }
+  },
+  {
+    "key": "274B",
+    "mappings": {
+      "default": {
+        "default": "heavy eight asterisk de hélice en forma de lágrima"
+      }
+    }
+  },
+  {
+    "key": "274C",
+    "mappings": {
+      "default": {
+        "default": "marca de la cruz"
+      }
+    }
+  },
+  {
+    "key": "274D",
+    "mappings": {
+      "default": {
+        "default": "círculo blanco sombreado"
+      }
+    }
+  }
+]

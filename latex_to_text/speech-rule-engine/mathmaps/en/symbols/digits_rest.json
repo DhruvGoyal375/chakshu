@@ -1,0 +1,257 @@
+[
+  {
+    "locale": "en"
+  },
+  {
+    "key": "00B2",
+    "mappings": {
+      "default": {
+        "default": "squared"
+      },
+      "mathspeak": {
+        "default": "squared"
+      },
+      "clearspeak": {
+        "default": "squared"
+      }
+    }
+  },
+  {
+    "key": "00B3",
+    "mappings": {
+      "default": {
+        "default": "cubed"
+      },
+      "mathspeak": {
+        "default": "cubed"
+      },
+      "clearspeak": {
+        "default": "cubed"
+      }
+    }
+  },
+  {
+    "key": "00BC",
+    "mappings": {
+      "default": {
+        "default": "one quarter"
+      }
+    }
+  },
+  {
+    "key": "00BD",
+    "mappings": {
+      "default": {
+        "default": "one half"
+      }
+    }
+  },
+  {
+    "key": "00BE",
+    "mappings": {
+      "default": {
+        "default": "three quarters"
+      }
+    }
+  },
+  {
+    "key": "2150",
+    "mappings": {
+      "default": {
+        "default": "one seventh"
+      }
+    }
+  },
+  {
+    "key": "2151",
+    "mappings": {
+      "default": {
+        "default": "one ninth"
+      }
+    }
+  },
+  {
+    "key": "2152",
+    "mappings": {
+      "default": {
+        "default": "one tenth"
+      }
+    }
+  },
+  {
+    "key": "2153",
+    "mappings": {
+      "default": {
+        "default": "one third"
+      }
+    }
+  },
+  {
+    "key": "2154",
+    "mappings": {
+      "default": {
+        "default": "two thirds"
+      }
+    }
+  },
+  {
+    "key": "2155",
+    "mappings": {
+      "default": {
+        "default": "one fifth"
+      }
+    }
+  },
+  {
+    "key": "2156",
+    "mappings": {
+      "default": {
+        "default": "two fifths"
+      }
+    }
+  },
+  {
+    "key": "2157",
+    "mappings": {
+      "default": {
+        "default": "three fifths"
+      }
+    }
+  },
+  {
+    "key": "2158",
+    "mappings": {
+      "default": {
+        "default": "four fifths"
+      }
+    }
+  },
+  {
+    "key": "2159",
+    "mappings": {
+      "default": {
+        "default": "one sixth"
+      }
+    }
+  },
+  {
+    "key": "215A",
+    "mappings": {
+      "default": {
+        "default": "five sixths"
+      }
+    }
+  },
+  {
+    "key": "215B",
+    "mappings": {
+      "default": {
+        "default": "one eighth"
+      }
+    }
+  },
+  {
+    "key": "215C",
+    "mappings": {
+      "default": {
+        "default": "three eighths"
+      }
+    }
+  },
+  {
+    "key": "215D",
+    "mappings": {
+      "default": {
+        "default": "five eighths"
+      }
+    }
+  },
+  {
+    "key": "215E",
+    "mappings": {
+      "default": {
+        "default": "seven eighths"
+      }
+    }
+  },
+  {
+    "key": "215F",
+    "mappings": {
+      "default": {
+        "default": "numerator one"
+      }
+    }
+  },
+  {
+    "key": "2189",
+    "mappings": {
+      "default": {
+        "default": "zero thirds"
+      }
+    }
+  },
+  {
+    "key": "3248",
+    "mappings": {
+      "default": {
+        "default": "circled ten on black square"
+      }
+    }
+  },
+  {
+    "key": "3249",
+    "mappings": {
+      "default": {
+        "default": "circled twenty on black square"
+      }
+    }
+  },
+  {
+    "key": "324A",
+    "mappings": {
+      "default": {
+        "default": "circled thirty on black square"
+      }
+    }
+  },
+  {
+    "key": "324B",
+    "mappings": {
+      "default": {
+        "default": "circled forty on black square"
+      }
+    }
+  },
+  {
+    "key": "324C",
+    "mappings": {
+      "default": {
+        "default": "circled fifty on black square"
+      }
+    }
+  },
+  {
+    "key": "324D",
+    "mappings": {
+      "default": {
+        "default": "circled sixty on black square"
+      }
+    }
+  },
+  {
+    "key": "324E",
+    "mappings": {
+      "default": {
+        "default": "circled seventy on black square"
+      }
+    }
+  },
+  {
+    "key": "324F",
+    "mappings": {
+      "default": {
+        "default": "circled eighty on black square"
+      }
+    }
+  }
+]

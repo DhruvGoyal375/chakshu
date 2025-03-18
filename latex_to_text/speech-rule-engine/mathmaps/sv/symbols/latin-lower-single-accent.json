@@ -1,0 +1,1533 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "00E0",
+    "mappings": {
+      "default": {
+        "default": "a med grav"
+      }
+    }
+  },
+  {
+    "key": "00E1",
+    "mappings": {
+      "default": {
+        "default": "a med akut"
+      }
+    }
+  },
+  {
+    "key": "00E2",
+    "mappings": {
+      "default": {
+        "default": "a med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "00E3",
+    "mappings": {
+      "default": {
+        "default": "a med tilde"
+      }
+    }
+  },
+  {
+    "key": "00E4",
+    "mappings": {
+      "default": {
+        "default": "a med dieresis"
+      }
+    }
+  },
+  {
+    "key": "00E5",
+    "mappings": {
+      "default": {
+        "default": "litet å"
+      }
+    }
+  },
+  {
+    "key": "00E7",
+    "mappings": {
+      "default": {
+        "default": "c med cedilj"
+      }
+    }
+  },
+  {
+    "key": "00E8",
+    "mappings": {
+      "default": {
+        "default": "e med grav"
+      }
+    }
+  },
+  {
+    "key": "00E9",
+    "mappings": {
+      "default": {
+        "default": "e med akut"
+      }
+    }
+  },
+  {
+    "key": "00EA",
+    "mappings": {
+      "default": {
+        "default": "e med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "00EB",
+    "mappings": {
+      "default": {
+        "default": "e med dieresis"
+      }
+    }
+  },
+  {
+    "key": "00EC",
+    "mappings": {
+      "default": {
+        "default": "i med grav"
+      }
+    }
+  },
+  {
+    "key": "00ED",
+    "mappings": {
+      "default": {
+        "default": "i med akut"
+      }
+    }
+  },
+  {
+    "key": "00EE",
+    "mappings": {
+      "default": {
+        "default": "i med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "00EF",
+    "mappings": {
+      "default": {
+        "default": "i med dieresis"
+      }
+    }
+  },
+  {
+    "key": "00F1",
+    "mappings": {
+      "default": {
+        "default": "n med tilde"
+      }
+    }
+  },
+  {
+    "key": "00F2",
+    "mappings": {
+      "default": {
+        "default": "o med grav"
+      }
+    }
+  },
+  {
+    "key": "00F3",
+    "mappings": {
+      "default": {
+        "default": "o med akut"
+      }
+    }
+  },
+  {
+    "key": "00F4",
+    "mappings": {
+      "default": {
+        "default": "o med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "00F5",
+    "mappings": {
+      "default": {
+        "default": "o med tilde"
+      }
+    }
+  },
+  {
+    "key": "00F6",
+    "mappings": {
+      "default": {
+        "default": "o med dieresis"
+      }
+    }
+  },
+  {
+    "key": "00F9",
+    "mappings": {
+      "default": {
+        "default": "u med grav"
+      }
+    }
+  },
+  {
+    "key": "00FA",
+    "mappings": {
+      "default": {
+        "default": "u med akut"
+      }
+    }
+  },
+  {
+    "key": "00FB",
+    "mappings": {
+      "default": {
+        "default": "u med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "00FC",
+    "mappings": {
+      "default": {
+        "default": "u med dieresis"
+      }
+    }
+  },
+  {
+    "key": "00FD",
+    "mappings": {
+      "default": {
+        "default": "y med akut"
+      }
+    }
+  },
+  {
+    "key": "00FF",
+    "mappings": {
+      "default": {
+        "default": "y med dieresis"
+      }
+    }
+  },
+  {
+    "key": "0101",
+    "mappings": {
+      "default": {
+        "default": "a med streck"
+      }
+    }
+  },
+  {
+    "key": "0103",
+    "mappings": {
+      "default": {
+        "default": "a med brevis"
+      }
+    }
+  },
+  {
+    "key": "0105",
+    "mappings": {
+      "default": {
+        "default": "a med svans"
+      }
+    }
+  },
+  {
+    "key": "0107",
+    "mappings": {
+      "default": {
+        "default": "c med akut"
+      }
+    }
+  },
+  {
+    "key": "0109",
+    "mappings": {
+      "default": {
+        "default": "c med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "010B",
+    "mappings": {
+      "default": {
+        "default": "c med punkt över"
+      }
+    }
+  },
+  {
+    "key": "010D",
+    "mappings": {
+      "default": {
+        "default": "c med hake"
+      }
+    }
+  },
+  {
+    "key": "010F",
+    "mappings": {
+      "default": {
+        "default": "d med hake"
+      }
+    }
+  },
+  {
+    "key": "0113",
+    "mappings": {
+      "default": {
+        "default": "e med streck"
+      }
+    }
+  },
+  {
+    "key": "0115",
+    "mappings": {
+      "default": {
+        "default": "e med brevis"
+      }
+    }
+  },
+  {
+    "key": "0117",
+    "mappings": {
+      "default": {
+        "default": "e med punkt över"
+      }
+    }
+  },
+  {
+    "key": "0119",
+    "mappings": {
+      "default": {
+        "default": "e med svans"
+      }
+    }
+  },
+  {
+    "key": "011B",
+    "mappings": {
+      "default": {
+        "default": "e med hake"
+      }
+    }
+  },
+  {
+    "key": "011D",
+    "mappings": {
+      "default": {
+        "default": "g med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "011F",
+    "mappings": {
+      "default": {
+        "default": "g med brevis"
+      }
+    }
+  },
+  {
+    "key": "0121",
+    "mappings": {
+      "default": {
+        "default": "g med punkt över"
+      }
+    }
+  },
+  {
+    "key": "0123",
+    "mappings": {
+      "default": {
+        "default": "g med cedilj"
+      }
+    }
+  },
+  {
+    "key": "0125",
+    "mappings": {
+      "default": {
+        "default": "h med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "0129",
+    "mappings": {
+      "default": {
+        "default": "i med tilde"
+      }
+    }
+  },
+  {
+    "key": "012B",
+    "mappings": {
+      "default": {
+        "default": "i med streck"
+      }
+    }
+  },
+  {
+    "key": "012D",
+    "mappings": {
+      "default": {
+        "default": "i med brevis"
+      }
+    }
+  },
+  {
+    "key": "012F",
+    "mappings": {
+      "default": {
+        "default": "i med svans"
+      }
+    }
+  },
+  {
+    "key": "0131",
+    "mappings": {
+      "default": {
+        "default": "i utan punkt"
+      }
+    }
+  },
+  {
+    "key": "0135",
+    "mappings": {
+      "default": {
+        "default": "j med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "0137",
+    "mappings": {
+      "default": {
+        "default": "k med cedilj"
+      }
+    }
+  },
+  {
+    "key": "013A",
+    "mappings": {
+      "default": {
+        "default": "l med akut"
+      }
+    }
+  },
+  {
+    "key": "013C",
+    "mappings": {
+      "default": {
+        "default": "l med cedilj"
+      }
+    }
+  },
+  {
+    "key": "013E",
+    "mappings": {
+      "default": {
+        "default": "l med hake"
+      }
+    }
+  },
+  {
+    "key": "0140",
+    "mappings": {
+      "default": {
+        "default": "l med mellanpunkt"
+      }
+    }
+  },
+  {
+    "key": "0144",
+    "mappings": {
+      "default": {
+        "default": "n med akut"
+      }
+    }
+  },
+  {
+    "key": "0146",
+    "mappings": {
+      "default": {
+        "default": "n med cedilj"
+      }
+    }
+  },
+  {
+    "key": "0148",
+    "mappings": {
+      "default": {
+        "default": "n med hake"
+      }
+    }
+  },
+  {
+    "key": "014D",
+    "mappings": {
+      "default": {
+        "default": "o med streck"
+      }
+    }
+  },
+  {
+    "key": "014F",
+    "mappings": {
+      "default": {
+        "default": "o med brevis"
+      }
+    }
+  },
+  {
+    "key": "0151",
+    "mappings": {
+      "default": {
+        "default": "o med dubbel akut"
+      }
+    }
+  },
+  {
+    "key": "0155",
+    "mappings": {
+      "default": {
+        "default": "r med akut"
+      }
+    }
+  },
+  {
+    "key": "0157",
+    "mappings": {
+      "default": {
+        "default": "r med cedilj"
+      }
+    }
+  },
+  {
+    "key": "0159",
+    "mappings": {
+      "default": {
+        "default": "r med hake"
+      }
+    }
+  },
+  {
+    "key": "015B",
+    "mappings": {
+      "default": {
+        "default": "s med akut"
+      }
+    }
+  },
+  {
+    "key": "015D",
+    "mappings": {
+      "default": {
+        "default": "s med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "015F",
+    "mappings": {
+      "default": {
+        "default": "s med cedilj"
+      }
+    }
+  },
+  {
+    "key": "0161",
+    "mappings": {
+      "default": {
+        "default": "s med hake"
+      }
+    }
+  },
+  {
+    "key": "0163",
+    "mappings": {
+      "default": {
+        "default": "t med cedilj"
+      }
+    }
+  },
+  {
+    "key": "0165",
+    "mappings": {
+      "default": {
+        "default": "t med hake"
+      }
+    }
+  },
+  {
+    "key": "0169",
+    "mappings": {
+      "default": {
+        "default": "u med tilde"
+      }
+    }
+  },
+  {
+    "key": "016B",
+    "mappings": {
+      "default": {
+        "default": "u med streck"
+      }
+    }
+  },
+  {
+    "key": "016D",
+    "mappings": {
+      "default": {
+        "default": "u med brevis"
+      }
+    }
+  },
+  {
+    "key": "016F",
+    "mappings": {
+      "default": {
+        "default": "u med ring över"
+      }
+    }
+  },
+  {
+    "key": "0171",
+    "mappings": {
+      "default": {
+        "default": "u med dubbel akut"
+      }
+    }
+  },
+  {
+    "key": "0173",
+    "mappings": {
+      "default": {
+        "default": "u med svans"
+      }
+    }
+  },
+  {
+    "key": "0175",
+    "mappings": {
+      "default": {
+        "default": "w med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "0177",
+    "mappings": {
+      "default": {
+        "default": "y med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "017A",
+    "mappings": {
+      "default": {
+        "default": "z med akut"
+      }
+    }
+  },
+  {
+    "key": "017C",
+    "mappings": {
+      "default": {
+        "default": "z med punkt över"
+      }
+    }
+  },
+  {
+    "key": "017E",
+    "mappings": {
+      "default": {
+        "default": "z med hake"
+      }
+    }
+  },
+  {
+    "key": "01CE",
+    "mappings": {
+      "default": {
+        "default": "a med hake"
+      }
+    }
+  },
+  {
+    "key": "01D0",
+    "mappings": {
+      "default": {
+        "default": "i med hake"
+      }
+    }
+  },
+  {
+    "key": "01D2",
+    "mappings": {
+      "default": {
+        "default": "o med hake"
+      }
+    }
+  },
+  {
+    "key": "01D4",
+    "mappings": {
+      "default": {
+        "default": "u med hake"
+      }
+    }
+  },
+  {
+    "key": "01E7",
+    "mappings": {
+      "default": {
+        "default": "g med hake"
+      }
+    }
+  },
+  {
+    "key": "01E9",
+    "mappings": {
+      "default": {
+        "default": "k med hake"
+      }
+    }
+  },
+  {
+    "key": "01EB",
+    "mappings": {
+      "default": {
+        "default": "o med svans"
+      }
+    }
+  },
+  {
+    "key": "01F0",
+    "mappings": {
+      "default": {
+        "default": "j med hake"
+      }
+    }
+  },
+  {
+    "key": "01F5",
+    "mappings": {
+      "default": {
+        "default": "g med akut"
+      }
+    }
+  },
+  {
+    "key": "01F9",
+    "mappings": {
+      "default": {
+        "default": "n med grav accent"
+      }
+    }
+  },
+  {
+    "key": "0201",
+    "mappings": {
+      "default": {
+        "default": "a med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "0203",
+    "mappings": {
+      "default": {
+        "default": "a med omvänd brevis"
+      }
+    }
+  },
+  {
+    "key": "0205",
+    "mappings": {
+      "default": {
+        "default": "e med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "0207",
+    "mappings": {
+      "default": {
+        "default": "e med omvänd brevis"
+      }
+    }
+  },
+  {
+    "key": "0209",
+    "mappings": {
+      "default": {
+        "default": "i med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "020B",
+    "mappings": {
+      "default": {
+        "default": "i med omvänd brevis"
+      }
+    }
+  },
+  {
+    "key": "020D",
+    "mappings": {
+      "default": {
+        "default": "o med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "020F",
+    "mappings": {
+      "default": {
+        "default": "o med omvänd brevis"
+      }
+    }
+  },
+  {
+    "key": "0211",
+    "mappings": {
+      "default": {
+        "default": "r med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "0213",
+    "mappings": {
+      "default": {
+        "default": "r med omvänd breve"
+      }
+    }
+  },
+  {
+    "key": "0215",
+    "mappings": {
+      "default": {
+        "default": "u med dubbel grav accent"
+      }
+    }
+  },
+  {
+    "key": "0217",
+    "mappings": {
+      "default": {
+        "default": "u med omvänd brevis"
+      }
+    }
+  },
+  {
+    "key": "0219",
+    "mappings": {
+      "default": {
+        "default": "s med komma under"
+      }
+    }
+  },
+  {
+    "key": "021B",
+    "mappings": {
+      "default": {
+        "default": "t med komma under"
+      }
+    }
+  },
+  {
+    "key": "021F",
+    "mappings": {
+      "default": {
+        "default": "h med hake"
+      }
+    }
+  },
+  {
+    "key": "0227",
+    "mappings": {
+      "default": {
+        "default": "a med punkt över"
+      }
+    }
+  },
+  {
+    "key": "0229",
+    "mappings": {
+      "default": {
+        "default": "e med cedilj"
+      }
+    }
+  },
+  {
+    "key": "022F",
+    "mappings": {
+      "default": {
+        "default": "o med punkt över"
+      }
+    }
+  },
+  {
+    "key": "0233",
+    "mappings": {
+      "default": {
+        "default": "y med streck"
+      }
+    }
+  },
+  {
+    "key": "0237",
+    "mappings": {
+      "default": {
+        "default": "j utan punkt"
+      }
+    }
+  },
+  {
+    "key": "1E01",
+    "mappings": {
+      "default": {
+        "default": "a med ring under"
+      }
+    }
+  },
+  {
+    "key": "1E03",
+    "mappings": {
+      "default": {
+        "default": "b med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E05",
+    "mappings": {
+      "default": {
+        "default": "b med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E07",
+    "mappings": {
+      "default": {
+        "default": "b med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E0B",
+    "mappings": {
+      "default": {
+        "default": "d med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E0D",
+    "mappings": {
+      "default": {
+        "default": "d med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E0F",
+    "mappings": {
+      "default": {
+        "default": "d med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E11",
+    "mappings": {
+      "default": {
+        "default": "d med cedilj"
+      }
+    }
+  },
+  {
+    "key": "1E13",
+    "mappings": {
+      "default": {
+        "default": "d med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E19",
+    "mappings": {
+      "default": {
+        "default": "e med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E1B",
+    "mappings": {
+      "default": {
+        "default": "e med tilde under"
+      }
+    }
+  },
+  {
+    "key": "1E1F",
+    "mappings": {
+      "default": {
+        "default": "f med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E21",
+    "mappings": {
+      "default": {
+        "default": "g med streck"
+      }
+    }
+  },
+  {
+    "key": "1E23",
+    "mappings": {
+      "default": {
+        "default": "h med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E25",
+    "mappings": {
+      "default": {
+        "default": "h med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E27",
+    "mappings": {
+      "default": {
+        "default": "h med dieresis"
+      }
+    }
+  },
+  {
+    "key": "1E29",
+    "mappings": {
+      "default": {
+        "default": "h med cedilj"
+      }
+    }
+  },
+  {
+    "key": "1E2B",
+    "mappings": {
+      "default": {
+        "default": "h med brevis under"
+      }
+    }
+  },
+  {
+    "key": "1E2D",
+    "mappings": {
+      "default": {
+        "default": "i med tilde under"
+      }
+    }
+  },
+  {
+    "key": "1E31",
+    "mappings": {
+      "default": {
+        "default": "k med akut"
+      }
+    }
+  },
+  {
+    "key": "1E33",
+    "mappings": {
+      "default": {
+        "default": "k med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E35",
+    "mappings": {
+      "default": {
+        "default": "k med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E37",
+    "mappings": {
+      "default": {
+        "default": "l med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E3B",
+    "mappings": {
+      "default": {
+        "default": "l med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E3D",
+    "mappings": {
+      "default": {
+        "default": "l med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E3F",
+    "mappings": {
+      "default": {
+        "default": "m med akut"
+      }
+    }
+  },
+  {
+    "key": "1E41",
+    "mappings": {
+      "default": {
+        "default": "m med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E43",
+    "mappings": {
+      "default": {
+        "default": "m med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E45",
+    "mappings": {
+      "default": {
+        "default": "n med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E47",
+    "mappings": {
+      "default": {
+        "default": "n med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E49",
+    "mappings": {
+      "default": {
+        "default": "n med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E4B",
+    "mappings": {
+      "default": {
+        "default": "n med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E55",
+    "mappings": {
+      "default": {
+        "default": "p med akut"
+      }
+    }
+  },
+  {
+    "key": "1E57",
+    "mappings": {
+      "default": {
+        "default": "p med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E59",
+    "mappings": {
+      "default": {
+        "default": "r med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E5B",
+    "mappings": {
+      "default": {
+        "default": "r med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E5F",
+    "mappings": {
+      "default": {
+        "default": "r med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E61",
+    "mappings": {
+      "default": {
+        "default": "s med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E63",
+    "mappings": {
+      "default": {
+        "default": "s med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E6B",
+    "mappings": {
+      "default": {
+        "default": "t med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E6D",
+    "mappings": {
+      "default": {
+        "default": "t med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E6F",
+    "mappings": {
+      "default": {
+        "default": "t med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E71",
+    "mappings": {
+      "default": {
+        "default": "t med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E73",
+    "mappings": {
+      "default": {
+        "default": "u med dieresis under"
+      }
+    }
+  },
+  {
+    "key": "1E75",
+    "mappings": {
+      "default": {
+        "default": "u med tilde under"
+      }
+    }
+  },
+  {
+    "key": "1E77",
+    "mappings": {
+      "default": {
+        "default": "u med cirkumflex under"
+      }
+    }
+  },
+  {
+    "key": "1E7D",
+    "mappings": {
+      "default": {
+        "default": "v med tilde"
+      }
+    }
+  },
+  {
+    "key": "1E7F",
+    "mappings": {
+      "default": {
+        "default": "v med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E81",
+    "mappings": {
+      "default": {
+        "default": "w med grav"
+      }
+    }
+  },
+  {
+    "key": "1E83",
+    "mappings": {
+      "default": {
+        "default": "w med akut"
+      }
+    }
+  },
+  {
+    "key": "1E85",
+    "mappings": {
+      "default": {
+        "default": "w med dieresis"
+      }
+    }
+  },
+  {
+    "key": "1E87",
+    "mappings": {
+      "default": {
+        "default": "w med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E89",
+    "mappings": {
+      "default": {
+        "default": "w med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E8B",
+    "mappings": {
+      "default": {
+        "default": "x med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E8D",
+    "mappings": {
+      "default": {
+        "default": "x med dieresis"
+      }
+    }
+  },
+  {
+    "key": "1E8F",
+    "mappings": {
+      "default": {
+        "default": "y med punkt över"
+      }
+    }
+  },
+  {
+    "key": "1E91",
+    "mappings": {
+      "default": {
+        "default": "z med cirkumflex"
+      }
+    }
+  },
+  {
+    "key": "1E93",
+    "mappings": {
+      "default": {
+        "default": "z med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1E95",
+    "mappings": {
+      "default": {
+        "default": "z med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E96",
+    "mappings": {
+      "default": {
+        "default": "h med streck under"
+      }
+    }
+  },
+  {
+    "key": "1E97",
+    "mappings": {
+      "default": {
+        "default": "t med dieresis"
+      }
+    }
+  },
+  {
+    "key": "1E98",
+    "mappings": {
+      "default": {
+        "default": "w med ring över"
+      }
+    }
+  },
+  {
+    "key": "1E99",
+    "mappings": {
+      "default": {
+        "default": "y med ring över"
+      }
+    }
+  },
+  {
+    "key": "1E9A",
+    "mappings": {
+      "default": {
+        "default": "a med höger halv ring"
+      }
+    }
+  },
+  {
+    "key": "1EA1",
+    "mappings": {
+      "default": {
+        "default": "a med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1EA3",
+    "mappings": {
+      "default": {
+        "default": "a med krok över"
+      }
+    }
+  },
+  {
+    "key": "1EB9",
+    "mappings": {
+      "default": {
+        "default": "e med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1EBB",
+    "mappings": {
+      "default": {
+        "default": "e med krok över"
+      }
+    }
+  },
+  {
+    "key": "1EBD",
+    "mappings": {
+      "default": {
+        "default": "e med tilde"
+      }
+    }
+  },
+  {
+    "key": "1EC9",
+    "mappings": {
+      "default": {
+        "default": "i med krok över"
+      }
+    }
+  },
+  {
+    "key": "1ECB",
+    "mappings": {
+      "default": {
+        "default": "i med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1ECD",
+    "mappings": {
+      "default": {
+        "default": "o med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1ECF",
+    "mappings": {
+      "default": {
+        "default": "o med krok över"
+      }
+    }
+  },
+  {
+    "key": "1EE5",
+    "mappings": {
+      "default": {
+        "default": "u med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1EE7",
+    "mappings": {
+      "default": {
+        "default": "u med krok över"
+      }
+    }
+  },
+  {
+    "key": "1EF3",
+    "mappings": {
+      "default": {
+        "default": "y med grav"
+      }
+    }
+  },
+  {
+    "key": "1EF5",
+    "mappings": {
+      "default": {
+        "default": "y med punkt under"
+      }
+    }
+  },
+  {
+    "key": "1EF7",
+    "mappings": {
+      "default": {
+        "default": "y med krok över"
+      }
+    }
+  },
+  {
+    "key": "1EF9",
+    "mappings": {
+      "default": {
+        "default": "y med tilde"
+      }
+    }
+  }
+]

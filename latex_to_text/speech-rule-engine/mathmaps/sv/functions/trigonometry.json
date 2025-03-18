@@ -1,0 +1,119 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "cos",
+    "mappings": {
+      "default": {
+        "default": "cosinus"
+      }
+    }
+  },
+  {
+    "key": "cot",
+    "mappings": {
+      "default": {
+        "default": "kotangent"
+      }
+    }
+  },
+  {
+    "key": "csc",
+    "mappings": {
+      "default": {
+        "default": "kosekant"
+      }
+    }
+  },
+  {
+    "key": "sec",
+    "mappings": {
+      "default": {
+        "default": "sekant"
+      }
+    }
+  },
+  {
+    "key": "sin",
+    "mappings": {
+      "default": {
+        "default": "sinus"
+      }
+    }
+  },
+  {
+    "key": "tan",
+    "mappings": {
+      "default": {
+        "default": "tangens"
+      }
+    }
+  },
+  {
+    "key": "arccos",
+    "mappings": {
+      "default": {
+        "default": "arcus cosinus"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "cosinus invers"
+      }
+    }
+  },
+  {
+    "key": "arccot",
+    "mappings": {
+      "default": {
+        "default": "arcus cotangens"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "cotangens invers"
+      }
+    }
+  },
+  {
+    "key": "arccsc",
+    "mappings": {
+      "default": {
+        "default": "arcus cosecans"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "cosecans invers"
+      }
+    }
+  },
+  {
+    "key": "arcsec",
+    "mappings": {
+      "default": {
+        "default": "arcus secans"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "secans invers"
+      }
+    }
+  },
+  {
+    "key": "arcsin",
+    "mappings": {
+      "default": {
+        "default": "arcus sinus"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "sinus invers"
+      }
+    }
+  },
+  {
+    "key": "arctan",
+    "mappings": {
+      "default": {
+        "default": "arcus tangens"
+      },
+      "clearspeak": {
+        "Trig_TrigInverse": "tangens invers"
+      }
+    }
+  }
+]
