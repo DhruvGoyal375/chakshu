@@ -1,4 +1,4 @@
-name: Build and Push Docker Images
+name: Build and Push Docker-Compose Images with Ollama + LLaVA to Azure Blob Storage
 
 on:
   push:
@@ -6,53 +6,39 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      # Install Docker CLI and Docker Compose
-      - name: Install Docker and Docker Compose
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io docker-compose
+    - name: Install Docker & Docker-Compose
+      run: |
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sudo sh get-docker.sh
+        docker --version
+        docker compose version
 
-      # Login to Azure Blob Storage using environment secrets
-      - name: Login to Azure CLI
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Build Docker-Compose Stack
+      run: |
+        docker compose build
 
-      # Build Docker images with Docker Compose
-      - name: Build Docker images
-        run: |
-          docker compose build
+    - name: List Docker Images
+      run: |
+        docker images
 
-      # List Docker images to verify
-      - name: List Docker images
-        run: docker images
+    - name: Save Docker Images to TAR
+      run: |
+        docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "chakshu|ollama|latex_to_text"
 
-      # Save all Docker images as a .tar file
-      - name: Save Docker images to tar
-        run: |
-          docker save -o chakshuv1.tar \
-            $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "chakshu|ollama|latex_to_text")
-
-      # Verify the .tar file
-      - name: Verify saved Docker image
-        run: |
-          ls -lh chakshuv1.tar
-
-      # Upload the .tar file to Azure Blob Storage
-      - name: Upload image to Azure Blob Storage
-        run: |
+    - name: Upload Docker Image to Blob Storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
           az storage blob upload \
             --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-            --container-name ${{ secrets.AZURE_CONTAINER_NAME }} \
-            --name chakshuv1.tar \
+            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+            --container-name docker-images \
             --file chakshuv1.tar \
-            --auth-mode key \
-            --overwrite
+            --name chakshuv1.tar
