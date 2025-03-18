@@ -1,0 +1,49 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "s",
+    "mappings": {
+      "default": {
+        "default": "Sekunde",
+        "plural": "Sekunden"
+      }
+    }
+  },
+  {
+    "key": "″",
+    "mappings": {
+      "default": {
+        "default": "Sekunde",
+        "plural": "Sekunden"
+      }
+    }
+  },
+  {
+    "key": "min",
+    "mappings": {
+      "default": {
+        "default": "Minute",
+        "plural": "Minuten"
+      }
+    }
+  },
+  {
+    "key": "°",
+    "mappings": {
+      "default": {
+        "default": "Grad"
+      }
+    }
+  },
+  {
+    "key": "h",
+    "mappings": {
+      "default": {
+        "default": "Stunde",
+        "plural": "Stunden"
+      }
+    }
+  }
+]

@@ -1,6 +1,7 @@
 import re
 from collections import OrderedDict
 
+from captioner.image_captioner import LlavaImageCaptioner
 from django.http import JsonResponse
 from django.views import View
 from googlesearch import search

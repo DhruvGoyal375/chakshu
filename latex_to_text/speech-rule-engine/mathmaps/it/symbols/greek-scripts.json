@@ -1,0 +1,101 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "1D26",
+    "mappings": {
+      "default": {
+        "default": "Gamma maiuscola piccola"
+      }
+    }
+  },
+  {
+    "key": "1D27",
+    "mappings": {
+      "default": {
+        "default": "Lamda maiuscola piccola"
+      }
+    }
+  },
+  {
+    "key": "1D28",
+    "mappings": {
+      "default": {
+        "default": "Pi greca maiuscola piccola"
+      }
+    }
+  },
+  {
+    "key": "1D29",
+    "mappings": {
+      "default": {
+        "default": "Rho maiuscola piccola"
+      }
+    }
+  },
+  {
+    "key": "1D2A",
+    "mappings": {
+      "default": {
+        "default": "Psi maiuscola piccola"
+      }
+    }
+  },
+  {
+    "key": "1D5E",
+    "mappings": {
+      "default": {
+        "default": "gamma apice"
+      }
+    }
+  },
+  {
+    "key": "1D60",
+    "mappings": {
+      "default": {
+        "default": "phi apice"
+      }
+    }
+  },
+  {
+    "key": "1D66",
+    "mappings": {
+      "default": {
+        "default": "beta apice"
+      }
+    }
+  },
+  {
+    "key": "1D67",
+    "mappings": {
+      "default": {
+        "default": "gamma pedice"
+      }
+    }
+  },
+  {
+    "key": "1D68",
+    "mappings": {
+      "default": {
+        "default": "rho pedice"
+      }
+    }
+  },
+  {
+    "key": "1D69",
+    "mappings": {
+      "default": {
+        "default": "phi pedice"
+      }
+    }
+  },
+  {
+    "key": "1D6A",
+    "mappings": {
+      "default": {
+        "default": "chi pedice"
+      }
+    }
+  }
+]

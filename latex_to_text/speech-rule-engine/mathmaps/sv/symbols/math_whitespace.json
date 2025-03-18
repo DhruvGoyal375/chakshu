@@ -1,0 +1,333 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "0020",
+    "mappings": {
+      "default": {
+        "default": "blanksteg"
+      }
+    }
+  },
+  {
+    "key": "00A0",
+    "mappings": {
+      "default": {
+        "default": " "
+      }
+    }
+  },
+  {
+    "key": "00AD",
+    "mappings": {
+      "default": {
+        "default": "mjukt bindestreck"
+      }
+    }
+  },
+  {
+    "key": "2000",
+    "mappings": {
+      "default": {
+        "default": "en quad"
+      }
+    }
+  },
+  {
+    "key": "2001",
+    "mappings": {
+      "default": {
+        "default": "em quad"
+      }
+    }
+  },
+  {
+    "key": "2002",
+    "mappings": {
+      "default": {
+        "default": "en-mellanslag"
+      }
+    }
+  },
+  {
+    "key": "2003",
+    "mappings": {
+      "default": {
+        "default": "em-mellanslag"
+      }
+    }
+  },
+  {
+    "key": "2004",
+    "mappings": {
+      "default": {
+        "default": "tre per em-mellanslag"
+      }
+    }
+  },
+  {
+    "key": "2005",
+    "mappings": {
+      "default": {
+        "default": "fyra per em-mellanslag"
+      }
+    }
+  },
+  {
+    "key": "2006",
+    "mappings": {
+      "default": {
+        "default": "sex per em-mellanslag"
+      }
+    }
+  },
+  {
+    "key": "2007",
+    "mappings": {
+      "default": {
+        "default": "numeriskt blanksteg"
+      }
+    }
+  },
+  {
+    "key": "2008",
+    "mappings": {
+      "default": {
+        "default": "punktblanksteg"
+      }
+    }
+  },
+  {
+    "key": "2009",
+    "mappings": {
+      "default": {
+        "default": "tunt blanksteg"
+      }
+    }
+  },
+  {
+    "key": "200A",
+    "mappings": {
+      "default": {
+        "default": "hårtunt blanksteg"
+      }
+    }
+  },
+  {
+    "key": "200B",
+    "mappings": {
+      "default": {
+        "default": "blanksteg utan bredd"
+      }
+    }
+  },
+  {
+    "key": "200C",
+    "mappings": {
+      "default": {
+        "default": "noll bredd utan sammanslagning"
+      }
+    }
+  },
+  {
+    "key": "200D",
+    "mappings": {
+      "default": {
+        "default": "sammanslagning utan bredd"
+      }
+    }
+  },
+  {
+    "key": "200E",
+    "mappings": {
+      "default": {
+        "default": "vänster till höger tecken"
+      }
+    }
+  },
+  {
+    "key": "200F",
+    "mappings": {
+      "default": {
+        "default": "höger till vänster tecken"
+      }
+    }
+  },
+  {
+    "key": "2028",
+    "mappings": {
+      "default": {
+        "default": "linjeavskiljare"
+      }
+    }
+  },
+  {
+    "key": "2029",
+    "mappings": {
+      "default": {
+        "default": "paragrafavskiljare"
+      }
+    }
+  },
+  {
+    "key": "202A",
+    "mappings": {
+      "default": {
+        "default": "inbäddning vänster till höger"
+      }
+    }
+  },
+  {
+    "key": "202B",
+    "mappings": {
+      "default": {
+        "default": "inbäddning höger till vänster"
+      }
+    }
+  },
+  {
+    "key": "202C",
+    "mappings": {
+      "default": {
+        "default": "begränsad riktningsformatering"
+      }
+    }
+  },
+  {
+    "key": "202D",
+    "mappings": {
+      "default": {
+        "default": "skriv över vänster till höger"
+      }
+    }
+  },
+  {
+    "key": "202E",
+    "mappings": {
+      "default": {
+        "default": "skriv över höger till vänster"
+      }
+    }
+  },
+  {
+    "key": "202F",
+    "mappings": {
+      "default": {
+        "default": "smalt blanksteg utan radbrytning"
+      }
+    }
+  },
+  {
+    "key": "205F",
+    "mappings": {
+      "default": {
+        "default": "medelstort matematiskt blanksteg"
+      }
+    }
+  },
+  {
+    "key": "2060",
+    "mappings": {
+      "default": {
+        "default": "ordsammansättningstecken"
+      }
+    }
+  },
+  {
+    "key": "2061",
+    "mappings": {
+      "default": {
+        "default": "av"
+      }
+    }
+  },
+  {
+    "key": "2062",
+    "mappings": {
+      "default": {
+        "default": "gånger"
+      }
+    }
+  },
+  {
+    "key": "2063",
+    "mappings": {
+      "default": {
+        "default": "avskiljare"
+      }
+    }
+  },
+  {
+    "key": "2064",
+    "mappings": {
+      "default": {
+        "default": "plus"
+      }
+    }
+  },
+  {
+    "key": "206A",
+    "mappings": {
+      "default": {
+        "default": "hindra symmetriskt byte"
+      }
+    }
+  },
+  {
+    "key": "206B",
+    "mappings": {
+      "default": {
+        "default": "aktivera symmetriskt byte"
+      }
+    }
+  },
+  {
+    "key": "206E",
+    "mappings": {
+      "default": {
+        "default": "nationella sifferformer"
+      }
+    }
+  },
+  {
+    "key": "206F",
+    "mappings": {
+      "default": {
+        "default": "nominella sifferformer"
+      }
+    }
+  },
+  {
+    "key": "FEFF",
+    "mappings": {
+      "default": {
+        "default": "mellanslag utan bredd och radbrytning"
+      }
+    }
+  },
+  {
+    "key": "FFF9",
+    "mappings": {
+      "default": {
+        "default": "interlinjärt tecken för början på annotering"
+      }
+    }
+  },
+  {
+    "key": "FFFA",
+    "mappings": {
+      "default": {
+        "default": "interlinjärt tecken för avskiljning av annotering"
+      }
+    }
+  },
+  {
+    "key": "FFFB",
+    "mappings": {
+      "default": {
+        "default": "interlinjärt tecken för slut på annotering"
+      }
+    }
+  }
+]

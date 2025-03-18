@@ -1,0 +1,14 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "dussin",
+        "plural": "dussin"
+      }
+    }
+  }
+]

@@ -1,0 +1,1533 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "00E0",
+    "mappings": {
+      "default": {
+        "default": "a con accento grave"
+      }
+    }
+  },
+  {
+    "key": "00E1",
+    "mappings": {
+      "default": {
+        "default": "a con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00E2",
+    "mappings": {
+      "default": {
+        "default": "a con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "00E3",
+    "mappings": {
+      "default": {
+        "default": "a con tilde"
+      }
+    }
+  },
+  {
+    "key": "00E4",
+    "mappings": {
+      "default": {
+        "default": "a con dieresi"
+      }
+    }
+  },
+  {
+    "key": "00E5",
+    "mappings": {
+      "default": {
+        "default": "a con anello sopra"
+      }
+    }
+  },
+  {
+    "key": "00E7",
+    "mappings": {
+      "default": {
+        "default": "c con cediglia"
+      }
+    }
+  },
+  {
+    "key": "00E8",
+    "mappings": {
+      "default": {
+        "default": "e con accento grave"
+      }
+    }
+  },
+  {
+    "key": "00E9",
+    "mappings": {
+      "default": {
+        "default": "e con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00EA",
+    "mappings": {
+      "default": {
+        "default": "e con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "00EB",
+    "mappings": {
+      "default": {
+        "default": "e con dieresi"
+      }
+    }
+  },
+  {
+    "key": "00EC",
+    "mappings": {
+      "default": {
+        "default": "i con accento grave"
+      }
+    }
+  },
+  {
+    "key": "00ED",
+    "mappings": {
+      "default": {
+        "default": "i con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00EE",
+    "mappings": {
+      "default": {
+        "default": "i con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "00EF",
+    "mappings": {
+      "default": {
+        "default": "i con dieresi"
+      }
+    }
+  },
+  {
+    "key": "00F1",
+    "mappings": {
+      "default": {
+        "default": "n con tilde"
+      }
+    }
+  },
+  {
+    "key": "00F2",
+    "mappings": {
+      "default": {
+        "default": "o con accento grave"
+      }
+    }
+  },
+  {
+    "key": "00F3",
+    "mappings": {
+      "default": {
+        "default": "o con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00F4",
+    "mappings": {
+      "default": {
+        "default": "o con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "00F5",
+    "mappings": {
+      "default": {
+        "default": "o con tilde"
+      }
+    }
+  },
+  {
+    "key": "00F6",
+    "mappings": {
+      "default": {
+        "default": "o con dieresi"
+      }
+    }
+  },
+  {
+    "key": "00F9",
+    "mappings": {
+      "default": {
+        "default": "u con accento grave"
+      }
+    }
+  },
+  {
+    "key": "00FA",
+    "mappings": {
+      "default": {
+        "default": "u con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00FB",
+    "mappings": {
+      "default": {
+        "default": "u con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "00FC",
+    "mappings": {
+      "default": {
+        "default": "u con dieresi"
+      }
+    }
+  },
+  {
+    "key": "00FD",
+    "mappings": {
+      "default": {
+        "default": "y con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "00FF",
+    "mappings": {
+      "default": {
+        "default": "y con dieresi"
+      }
+    }
+  },
+  {
+    "key": "0101",
+    "mappings": {
+      "default": {
+        "default": "a con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "0103",
+    "mappings": {
+      "default": {
+        "default": "a con segno di vocale corta"
+      }
+    }
+  },
+  {
+    "key": "0105",
+    "mappings": {
+      "default": {
+        "default": "a con ogonek"
+      }
+    }
+  },
+  {
+    "key": "0107",
+    "mappings": {
+      "default": {
+        "default": "c con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "0109",
+    "mappings": {
+      "default": {
+        "default": "c con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "010B",
+    "mappings": {
+      "default": {
+        "default": "c con un punto sopra"
+      }
+    }
+  },
+  {
+    "key": "010D",
+    "mappings": {
+      "default": {
+        "default": "c con caron"
+      }
+    }
+  },
+  {
+    "key": "010F",
+    "mappings": {
+      "default": {
+        "default": "d con caron"
+      }
+    }
+  },
+  {
+    "key": "0113",
+    "mappings": {
+      "default": {
+        "default": "e con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "0115",
+    "mappings": {
+      "default": {
+        "default": "piccola lettera latina E con Breve"
+      }
+    }
+  },
+  {
+    "key": "0117",
+    "mappings": {
+      "default": {
+        "default": "e con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "0119",
+    "mappings": {
+      "default": {
+        "default": "e con ogonek"
+      }
+    }
+  },
+  {
+    "key": "011B",
+    "mappings": {
+      "default": {
+        "default": "e con caron"
+      }
+    }
+  },
+  {
+    "key": "011D",
+    "mappings": {
+      "default": {
+        "default": "g con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "011F",
+    "mappings": {
+      "default": {
+        "default": "g con segno di vocale corta"
+      }
+    }
+  },
+  {
+    "key": "0121",
+    "mappings": {
+      "default": {
+        "default": "g con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "0123",
+    "mappings": {
+      "default": {
+        "default": "latina piccola lettera G con Cedilla"
+      }
+    }
+  },
+  {
+    "key": "0125",
+    "mappings": {
+      "default": {
+        "default": "h con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "0129",
+    "mappings": {
+      "default": {
+        "default": "i con tilde"
+      }
+    }
+  },
+  {
+    "key": "012B",
+    "mappings": {
+      "default": {
+        "default": "i con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "012D",
+    "mappings": {
+      "default": {
+        "default": "piccola lettera latina I con breve"
+      }
+    }
+  },
+  {
+    "key": "012F",
+    "mappings": {
+      "default": {
+        "default": "i con ogonek"
+      }
+    }
+  },
+  {
+    "key": "0131",
+    "mappings": {
+      "default": {
+        "default": "i senza puntino"
+      }
+    }
+  },
+  {
+    "key": "0135",
+    "mappings": {
+      "default": {
+        "default": "gei con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "0137",
+    "mappings": {
+      "default": {
+        "default": "k con cediglia"
+      }
+    }
+  },
+  {
+    "key": "013A",
+    "mappings": {
+      "default": {
+        "default": "l con accento"
+      }
+    }
+  },
+  {
+    "key": "013C",
+    "mappings": {
+      "default": {
+        "default": "l con cediglia"
+      }
+    }
+  },
+  {
+    "key": "013E",
+    "mappings": {
+      "default": {
+        "default": "l con caron"
+      }
+    }
+  },
+  {
+    "key": "0140",
+    "mappings": {
+      "default": {
+        "default": "l con punto nel mezzo"
+      }
+    }
+  },
+  {
+    "key": "0144",
+    "mappings": {
+      "default": {
+        "default": "n con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "0146",
+    "mappings": {
+      "default": {
+        "default": "n con cediglia"
+      }
+    }
+  },
+  {
+    "key": "0148",
+    "mappings": {
+      "default": {
+        "default": "n con caron"
+      }
+    }
+  },
+  {
+    "key": "014D",
+    "mappings": {
+      "default": {
+        "default": "o con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "014F",
+    "mappings": {
+      "default": {
+        "default": "lettera minuscola latina O con Breve"
+      }
+    }
+  },
+  {
+    "key": "0151",
+    "mappings": {
+      "default": {
+        "default": "o con doppio accento acuto"
+      }
+    }
+  },
+  {
+    "key": "0155",
+    "mappings": {
+      "default": {
+        "default": "r con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "0157",
+    "mappings": {
+      "default": {
+        "default": "r con cediglia"
+      }
+    }
+  },
+  {
+    "key": "0159",
+    "mappings": {
+      "default": {
+        "default": "r con caron"
+      }
+    }
+  },
+  {
+    "key": "015B",
+    "mappings": {
+      "default": {
+        "default": "s con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "015D",
+    "mappings": {
+      "default": {
+        "default": "s con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "015F",
+    "mappings": {
+      "default": {
+        "default": "s con cediglia"
+      }
+    }
+  },
+  {
+    "key": "0161",
+    "mappings": {
+      "default": {
+        "default": "s con caron"
+      }
+    }
+  },
+  {
+    "key": "0163",
+    "mappings": {
+      "default": {
+        "default": "t con cediglia"
+      }
+    }
+  },
+  {
+    "key": "0165",
+    "mappings": {
+      "default": {
+        "default": "t con caron"
+      }
+    }
+  },
+  {
+    "key": "0169",
+    "mappings": {
+      "default": {
+        "default": "u con tilde"
+      }
+    }
+  },
+  {
+    "key": "016B",
+    "mappings": {
+      "default": {
+        "default": "u con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "016D",
+    "mappings": {
+      "default": {
+        "default": "u con segno di vocale corta"
+      }
+    }
+  },
+  {
+    "key": "016F",
+    "mappings": {
+      "default": {
+        "default": "u con anello sopra"
+      }
+    }
+  },
+  {
+    "key": "0171",
+    "mappings": {
+      "default": {
+        "default": "u con doppio accento acuto"
+      }
+    }
+  },
+  {
+    "key": "0173",
+    "mappings": {
+      "default": {
+        "default": "u con ogonek"
+      }
+    }
+  },
+  {
+    "key": "0175",
+    "mappings": {
+      "default": {
+        "default": "w con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "0177",
+    "mappings": {
+      "default": {
+        "default": "y con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "017A",
+    "mappings": {
+      "default": {
+        "default": "z con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "017C",
+    "mappings": {
+      "default": {
+        "default": "z con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "017E",
+    "mappings": {
+      "default": {
+        "default": "z con caron"
+      }
+    }
+  },
+  {
+    "key": "01CE",
+    "mappings": {
+      "default": {
+        "default": "a con caron"
+      }
+    }
+  },
+  {
+    "key": "01D0",
+    "mappings": {
+      "default": {
+        "default": "i con caron"
+      }
+    }
+  },
+  {
+    "key": "01D2",
+    "mappings": {
+      "default": {
+        "default": "o con caron"
+      }
+    }
+  },
+  {
+    "key": "01D4",
+    "mappings": {
+      "default": {
+        "default": "u con caron"
+      }
+    }
+  },
+  {
+    "key": "01E7",
+    "mappings": {
+      "default": {
+        "default": "g con caron"
+      }
+    }
+  },
+  {
+    "key": "01E9",
+    "mappings": {
+      "default": {
+        "default": "k con caron"
+      }
+    }
+  },
+  {
+    "key": "01EB",
+    "mappings": {
+      "default": {
+        "default": "o con uncino"
+      }
+    }
+  },
+  {
+    "key": "01F0",
+    "mappings": {
+      "default": {
+        "default": "j con caron"
+      }
+    }
+  },
+  {
+    "key": "01F5",
+    "mappings": {
+      "default": {
+        "default": "g con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "01F9",
+    "mappings": {
+      "default": {
+        "default": "n con accento grave"
+      }
+    }
+  },
+  {
+    "key": "0201",
+    "mappings": {
+      "default": {
+        "default": "a con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "0203",
+    "mappings": {
+      "default": {
+        "default": "a con accento breve inverso"
+      }
+    }
+  },
+  {
+    "key": "0205",
+    "mappings": {
+      "default": {
+        "default": "e con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "0207",
+    "mappings": {
+      "default": {
+        "default": "e con accento breve inverso"
+      }
+    }
+  },
+  {
+    "key": "0209",
+    "mappings": {
+      "default": {
+        "default": "I con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "020B",
+    "mappings": {
+      "default": {
+        "default": "i con accento breve inverso"
+      }
+    }
+  },
+  {
+    "key": "020D",
+    "mappings": {
+      "default": {
+        "default": "o con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "020F",
+    "mappings": {
+      "default": {
+        "default": "o con accento breve inverso"
+      }
+    }
+  },
+  {
+    "key": "0211",
+    "mappings": {
+      "default": {
+        "default": "r con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "0213",
+    "mappings": {
+      "default": {
+        "default": "r con accento breve"
+      }
+    }
+  },
+  {
+    "key": "0215",
+    "mappings": {
+      "default": {
+        "default": "u con doppio accento grave"
+      }
+    }
+  },
+  {
+    "key": "0217",
+    "mappings": {
+      "default": {
+        "default": "u con accento breve inverso"
+      }
+    }
+  },
+  {
+    "key": "0219",
+    "mappings": {
+      "default": {
+        "default": "s con virgola in basso"
+      }
+    }
+  },
+  {
+    "key": "021B",
+    "mappings": {
+      "default": {
+        "default": "t con virgola in basso"
+      }
+    }
+  },
+  {
+    "key": "021F",
+    "mappings": {
+      "default": {
+        "default": "h con caron"
+      }
+    }
+  },
+  {
+    "key": "0227",
+    "mappings": {
+      "default": {
+        "default": "a con punto in alto"
+      }
+    }
+  },
+  {
+    "key": "0229",
+    "mappings": {
+      "default": {
+        "default": "e con cediglia"
+      }
+    }
+  },
+  {
+    "key": "022F",
+    "mappings": {
+      "default": {
+        "default": "o con punto in alto"
+      }
+    }
+  },
+  {
+    "key": "0233",
+    "mappings": {
+      "default": {
+        "default": "y con macron"
+      }
+    }
+  },
+  {
+    "key": "0237",
+    "mappings": {
+      "default": {
+        "default": "j senza punto"
+      }
+    }
+  },
+  {
+    "key": "1E01",
+    "mappings": {
+      "default": {
+        "default": "a con anello sotto"
+      }
+    }
+  },
+  {
+    "key": "1E03",
+    "mappings": {
+      "default": {
+        "default": "b con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E05",
+    "mappings": {
+      "default": {
+        "default": "b con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E07",
+    "mappings": {
+      "default": {
+        "default": "b con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E0B",
+    "mappings": {
+      "default": {
+        "default": "d con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E0D",
+    "mappings": {
+      "default": {
+        "default": "d con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E0F",
+    "mappings": {
+      "default": {
+        "default": "d con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E11",
+    "mappings": {
+      "default": {
+        "default": "d con cediglia"
+      }
+    }
+  },
+  {
+    "key": "1E13",
+    "mappings": {
+      "default": {
+        "default": "d con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E19",
+    "mappings": {
+      "default": {
+        "default": "e con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E1B",
+    "mappings": {
+      "default": {
+        "default": "e con tilde sotto"
+      }
+    }
+  },
+  {
+    "key": "1E1F",
+    "mappings": {
+      "default": {
+        "default": "f con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E21",
+    "mappings": {
+      "default": {
+        "default": "g con barra sopra"
+      }
+    }
+  },
+  {
+    "key": "1E23",
+    "mappings": {
+      "default": {
+        "default": "h con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E25",
+    "mappings": {
+      "default": {
+        "default": "h con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E27",
+    "mappings": {
+      "default": {
+        "default": "h con dieresi"
+      }
+    }
+  },
+  {
+    "key": "1E29",
+    "mappings": {
+      "default": {
+        "default": "h con cediglia"
+      }
+    }
+  },
+  {
+    "key": "1E2B",
+    "mappings": {
+      "default": {
+        "default": "h con segno di vocale corta sotto"
+      }
+    }
+  },
+  {
+    "key": "1E2D",
+    "mappings": {
+      "default": {
+        "default": "i con tilde sotto"
+      }
+    }
+  },
+  {
+    "key": "1E31",
+    "mappings": {
+      "default": {
+        "default": "k con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "1E33",
+    "mappings": {
+      "default": {
+        "default": "k con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E35",
+    "mappings": {
+      "default": {
+        "default": "k con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E37",
+    "mappings": {
+      "default": {
+        "default": "l con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E3B",
+    "mappings": {
+      "default": {
+        "default": "l con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E3D",
+    "mappings": {
+      "default": {
+        "default": "l con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E3F",
+    "mappings": {
+      "default": {
+        "default": "m con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "1E41",
+    "mappings": {
+      "default": {
+        "default": "m con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E43",
+    "mappings": {
+      "default": {
+        "default": "m con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E45",
+    "mappings": {
+      "default": {
+        "default": "n con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E47",
+    "mappings": {
+      "default": {
+        "default": "n con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E49",
+    "mappings": {
+      "default": {
+        "default": "n con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E4B",
+    "mappings": {
+      "default": {
+        "default": "n con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E55",
+    "mappings": {
+      "default": {
+        "default": "p con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "1E57",
+    "mappings": {
+      "default": {
+        "default": "p con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E59",
+    "mappings": {
+      "default": {
+        "default": "r con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E5B",
+    "mappings": {
+      "default": {
+        "default": "r con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E5F",
+    "mappings": {
+      "default": {
+        "default": "r con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E61",
+    "mappings": {
+      "default": {
+        "default": "s con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E63",
+    "mappings": {
+      "default": {
+        "default": "s con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E6B",
+    "mappings": {
+      "default": {
+        "default": "t con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E6D",
+    "mappings": {
+      "default": {
+        "default": "t con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E6F",
+    "mappings": {
+      "default": {
+        "default": "t con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E71",
+    "mappings": {
+      "default": {
+        "default": "t con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E73",
+    "mappings": {
+      "default": {
+        "default": "u con dieresi sotto"
+      }
+    }
+  },
+  {
+    "key": "1E75",
+    "mappings": {
+      "default": {
+        "default": "u con tilde sotto"
+      }
+    }
+  },
+  {
+    "key": "1E77",
+    "mappings": {
+      "default": {
+        "default": "u con accento circonflesso sotto"
+      }
+    }
+  },
+  {
+    "key": "1E7D",
+    "mappings": {
+      "default": {
+        "default": "v con tilde"
+      }
+    }
+  },
+  {
+    "key": "1E7F",
+    "mappings": {
+      "default": {
+        "default": "v con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E81",
+    "mappings": {
+      "default": {
+        "default": "w con accento grave"
+      }
+    }
+  },
+  {
+    "key": "1E83",
+    "mappings": {
+      "default": {
+        "default": "w con accento acuto"
+      }
+    }
+  },
+  {
+    "key": "1E85",
+    "mappings": {
+      "default": {
+        "default": "w con dieresi"
+      }
+    }
+  },
+  {
+    "key": "1E87",
+    "mappings": {
+      "default": {
+        "default": "w con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E89",
+    "mappings": {
+      "default": {
+        "default": "w con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E8B",
+    "mappings": {
+      "default": {
+        "default": "x con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E8D",
+    "mappings": {
+      "default": {
+        "default": "x con dieresi"
+      }
+    }
+  },
+  {
+    "key": "1E8F",
+    "mappings": {
+      "default": {
+        "default": "y con punto sopra"
+      }
+    }
+  },
+  {
+    "key": "1E91",
+    "mappings": {
+      "default": {
+        "default": "z con accento circonflesso"
+      }
+    }
+  },
+  {
+    "key": "1E93",
+    "mappings": {
+      "default": {
+        "default": "z con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1E95",
+    "mappings": {
+      "default": {
+        "default": "z con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E96",
+    "mappings": {
+      "default": {
+        "default": "h con linea sotto"
+      }
+    }
+  },
+  {
+    "key": "1E97",
+    "mappings": {
+      "default": {
+        "default": "t con dieresi"
+      }
+    }
+  },
+  {
+    "key": "1E98",
+    "mappings": {
+      "default": {
+        "default": "w con anello sopra"
+      }
+    }
+  },
+  {
+    "key": "1E99",
+    "mappings": {
+      "default": {
+        "default": "y con anello sopra"
+      }
+    }
+  },
+  {
+    "key": "1E9A",
+    "mappings": {
+      "default": {
+        "default": "a con metà anello destro"
+      }
+    }
+  },
+  {
+    "key": "1EA1",
+    "mappings": {
+      "default": {
+        "default": "a con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1EA3",
+    "mappings": {
+      "default": {
+        "default": "a con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1EB9",
+    "mappings": {
+      "default": {
+        "default": "e con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1EBB",
+    "mappings": {
+      "default": {
+        "default": "e con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1EBD",
+    "mappings": {
+      "default": {
+        "default": "e con tilde"
+      }
+    }
+  },
+  {
+    "key": "1EC9",
+    "mappings": {
+      "default": {
+        "default": "i con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1ECB",
+    "mappings": {
+      "default": {
+        "default": "i con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1ECD",
+    "mappings": {
+      "default": {
+        "default": "o con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1ECF",
+    "mappings": {
+      "default": {
+        "default": "o con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1EE5",
+    "mappings": {
+      "default": {
+        "default": "u con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1EE7",
+    "mappings": {
+      "default": {
+        "default": "u con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1EF3",
+    "mappings": {
+      "default": {
+        "default": "y con accento grave"
+      }
+    }
+  },
+  {
+    "key": "1EF5",
+    "mappings": {
+      "default": {
+        "default": "y con punto sotto"
+      }
+    }
+  },
+  {
+    "key": "1EF7",
+    "mappings": {
+      "default": {
+        "default": "y con gancio sopra"
+      }
+    }
+  },
+  {
+    "key": "1EF9",
+    "mappings": {
+      "default": {
+        "default": "y con tilde"
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "2135",
+    "mappings": {
+      "default": {
+        "default": "Alef-Symbol"
+      }
+    }
+  },
+  {
+    "key": "2136",
+    "mappings": {
+      "default": {
+        "default": "Bet-Symbol"
+      }
+    }
+  },
+  {
+    "key": "2137",
+    "mappings": {
+      "default": {
+        "default": "Gimel-Symbol"
+      }
+    }
+  },
+  {
+    "key": "2138",
+    "mappings": {
+      "default": {
+        "default": "Dalet-Symbol"
+      }
+    }
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "lb",
+    "mappings": {
+      "default": {
+        "default": "Pfund"
+      }
+    }
+  },
+  {
+    "key": "oz",
+    "mappings": {
+      "default": {
+        "plural": "Unzen",
+        "default": "Unze"
+      }
+    }
+  },
+  {
+    "key": "LT",
+    "mappings": {
+      "default": {
+        "default": "Long ton"
+      }
+    }
+  },
+  {
+    "key": "gr",
+    "mappings": {
+      "default": {
+        "default": "Gramm"
+      }
+    }
+  },
+  {
+    "key": "g",
+    "mappings": {
+      "default": {
+        "default": "Gramm"
+      }
+    }
+  },
+  {
+    "key": "mcg",
+    "mappings": {
+      "default": {
+        "default": "Mikrogramm"
+      }
+    }
+  },
+  {
+    "key": "t",
+    "mappings": {
+      "default": {
+        "plural": "Tonnen",
+        "default": "Tonne"
+      }
+    }
+  },
+  {
+    "key": "dram",
+    "mappings": {
+      "default": {
+        "plural": "Drachmen",
+        "default": "Drachme"
+      }
+    }
+  },
+  {
+    "key": "st",
+    "mappings": {
+      "default": {
+        "default": "Stone"
+      }
+    }
+  },
+  {
+    "key": "qtr",
+    "mappings": {
+      "default": {
+        "default": "Viertelzentner"
+      }
+    }
+  },
+  {
+    "key": "cwt",
+    "mappings": {
+      "default": {
+        "default": "Zentner"
+      }
+    },
+    "names": [
+      "Ztr.",
+      "Ctr."
+    ]
+  }
+]

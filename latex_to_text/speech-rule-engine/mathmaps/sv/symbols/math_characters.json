@@ -1,0 +1,117 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "2113",
+    "mappings": {
+      "default": {
+        "default": "skript l"
+      }
+    }
+  },
+  {
+    "key": "2118",
+    "mappings": {
+      "default": {
+        "default": "weierstrass p"
+      }
+    }
+  },
+  {
+    "key": "213C",
+    "mappings": {
+      "default": {
+        "default": "pi med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "213D",
+    "mappings": {
+      "default": {
+        "default": "gamma med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "213E",
+    "mappings": {
+      "default": {
+        "default": "stort Gamma med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "213F",
+    "mappings": {
+      "default": {
+        "default": "stort Pi med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "2140",
+    "mappings": {
+      "default": {
+        "default": "summatecken med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "2145",
+    "mappings": {
+      "default": {
+        "default": "stort d"
+      }
+    }
+  },
+  {
+    "key": "2146",
+    "mappings": {
+      "default": {
+        "default": "d"
+      }
+    }
+  },
+  {
+    "key": "2147",
+    "mappings": {
+      "default": {
+        "default": "e"
+      }
+    }
+  },
+  {
+    "key": "2148",
+    "mappings": {
+      "default": {
+        "default": "i"
+      }
+    }
+  },
+  {
+    "key": "2149",
+    "mappings": {
+      "default": {
+        "default": "kursivt j med dubbelstreck"
+      }
+    }
+  },
+  {
+    "key": "1D6A4",
+    "mappings": {
+      "default": {
+        "default": "kursivt i utan prick"
+      }
+    }
+  },
+  {
+    "key": "1D6A5",
+    "mappings": {
+      "default": {
+        "default": "kursivt j utan prick"
+      }
+    }
+  }
+]

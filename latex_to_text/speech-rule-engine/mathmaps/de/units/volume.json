@@ -1,0 +1,131 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "cu",
+    "mappings": {
+      "default": {
+        "default": "Kubik"
+      }
+    }
+  },
+  {
+    "key": "cu inch",
+    "mappings": {
+      "default": {
+        "default": "Kubikinch"
+      }
+    }
+  },
+  {
+    "key": "cu ft",
+    "mappings": {
+      "default": {
+        "default": "Kubikfuß"
+      }
+    }
+  },
+  {
+    "key": "cu yd",
+    "mappings": {
+      "default": {
+        "default": "Kubikyard",
+        "plural": "Kubikyards"
+      }
+    }
+  },
+  {
+    "key": "bbl",
+    "mappings": {
+      "default": {
+        "default": "Fass"
+      }
+    }
+  },
+  {
+    "key": "fl. oz.",
+    "mappings": {
+      "default": {
+        "default": "Fluid ounce",
+        "plural": "Fluid ounces"
+      }
+    }
+  },
+  {
+    "key": "gal",
+    "mappings": {
+      "default": {
+        "plural": "Gallonen",
+        "default": "Gallone"
+      }
+    }
+  },
+  {
+    "key": "pt",
+    "mappings": {
+      "default": {
+        "default": "Pint"
+      }
+    }
+  },
+  {
+    "key": "qt",
+    "mappings": {
+      "default": {
+        "plural": "Quarts",
+        "default": "Quart"
+      }
+    }
+  },
+  {
+    "key": "tbsp",
+    "mappings": {
+      "default": {
+        "default": "Esslöffel"
+      }
+    }
+  },
+  {
+    "key": "tsp",
+    "mappings": {
+      "default": {
+        "default": "Teelöffel"
+      }
+    }
+  },
+  {
+    "key": "fluid dram",
+    "mappings": {
+      "default": {
+        "plural": "Flüssigdrachmen",
+        "default": "Flüssigdrachme"
+      }
+    }
+  },
+  {
+    "key": "cup",
+    "mappings": {
+      "default": {
+        "plural": "Tassen",
+        "default": "Tasse"
+      }
+    }
+  },
+  {
+    "key": "cc",
+    "mappings": {
+      "default": {
+        "default": "Kubikzentimeter"
+      }
+    }
+  },
+  {
+    "key": "l",
+    "mappings": {
+      "default": {
+        "default": "Liter"
+      }
+    }
+  }
+]

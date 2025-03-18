@@ -1,0 +1,13 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "doz",
+    "mappings": {
+      "default": {
+        "default": "डज़न"
+      }
+    }
+  }
+]

@@ -1,0 +1,35 @@
+services:
+  # Django Application
+  chakshu:
+    build:
+      context: .
+      dockerfile: chakshu/Dockerfile
+    container_name: chakshu
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+    environment:
+      DJANGO_SETTINGS_MODULE: chakshu.settings
+    restart: unless-stopped
+
+  # Ollama Container
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  # Node.js Application
+  node:
+    build:
+      context: .
+      dockerfile: latex_to_text/Dockerfile
+    container_name: latex_to_text
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./latex_to_text:/app/latex_to_text
+    working_dir: /app/latex_to_text
+    restart: unless-stopped

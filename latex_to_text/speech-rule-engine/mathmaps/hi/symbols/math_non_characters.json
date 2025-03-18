@@ -1,0 +1,197 @@
+[
+  {
+    "locale": "hi"
+  },
+  {
+    "key": "210F",
+    "mappings": {
+      "default": {
+        "default": "प्लैंक कॉन्स्टेंट ओवर दो पाई"
+      }
+    }
+  },
+  {
+    "key": "2114",
+    "mappings": {
+      "default": {
+        "default": "पौंड"
+      }
+    }
+  },
+  {
+    "key": "2116",
+    "mappings": {
+      "default": {
+        "default": "न्यूमेरो साइन"
+      }
+    }
+  },
+  {
+    "key": "2117",
+    "mappings": {
+      "default": {
+        "default": "ध्वनि रिकॉर्डिंग कॉपीराइट"
+      }
+    }
+  },
+  {
+    "key": "211E",
+    "mappings": {
+      "default": {
+        "default": "पर्चे लेना"
+      }
+    }
+  },
+  {
+    "key": "211F",
+    "mappings": {
+      "default": {
+        "default": "प्रतिक्रिया"
+      }
+    }
+  },
+  {
+    "key": "2120",
+    "mappings": {
+      "default": {
+        "default": "सेवा चिन्ह"
+      }
+    }
+  },
+  {
+    "key": "2121",
+    "mappings": {
+      "default": {
+        "default": "टेलीफोन साइन"
+      }
+    }
+  },
+  {
+    "key": "2122",
+    "mappings": {
+      "default": {
+        "default": "ट्रेड मार्क साइन"
+      }
+    }
+  },
+  {
+    "key": "2123",
+    "mappings": {
+      "default": {
+        "default": "छोटा पद्य"
+      }
+    }
+  },
+  {
+    "key": "2125",
+    "mappings": {
+      "default": {
+        "default": "ऊँ संकेत"
+      }
+    }
+  },
+  {
+    "key": "2126",
+    "mappings": {
+      "default": {
+        "default": "ओम का चिन्ह"
+      }
+    }
+  },
+  {
+    "key": "2127",
+    "mappings": {
+      "default": {
+        "default": "उलटा ओम का चिन्ह"
+      }
+    }
+  },
+  {
+    "key": "212A",
+    "mappings": {
+      "default": {
+        "default": "केल्विन साइन"
+      }
+    }
+  },
+  {
+    "key": "212B",
+    "mappings": {
+      "default": {
+        "default": "एंगस्ट्रॉम साइन"
+      }
+    }
+  },
+  {
+    "key": "212E",
+    "mappings": {
+      "default": {
+        "default": "अनुमानित प्रतीक"
+      }
+    }
+  },
+  {
+    "key": "2132",
+    "mappings": {
+      "default": {
+        "default": "टर्नड कैपिटल एफ"
+      }
+    }
+  },
+  {
+    "key": "2139",
+    "mappings": {
+      "default": {
+        "default": "जानकारी का श्रोत"
+      }
+    }
+  },
+  {
+    "key": "213A",
+    "mappings": {
+      "default": {
+        "default": "घुमाई गई पूंजी Q"
+      }
+    }
+  },
+  {
+    "key": "213B",
+    "mappings": {
+      "default": {
+        "default": "फेशियल साइन"
+      }
+    }
+  },
+  {
+    "key": "2141",
+    "mappings": {
+      "default": {
+        "default": "सन्स-सेरिफ़ कैपिटल जी"
+      }
+    }
+  },
+  {
+    "key": "2142",
+    "mappings": {
+      "default": {
+        "default": "सन्स-सेरिफ़ कैपिटल एल"
+      }
+    }
+  },
+  {
+    "key": "2143",
+    "mappings": {
+      "default": {
+        "default": "उलटा सैंस-सेरिफ़ कैपिटल एल"
+      }
+    }
+  },
+  {
+    "key": "2144",
+    "mappings": {
+      "default": {
+        "default": "सन्स-सेरिफ़ कैपिटल वाई"
+      }
+    }
+  }
+]

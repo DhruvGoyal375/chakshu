@@ -1,0 +1,73 @@
+[
+  {
+    "locale": "es"
+  },
+  {
+    "key": "sq",
+    "mappings": {
+      "default": {
+        "default": "cuadrado"
+      }
+    }
+  },
+  {
+    "key": "sq inch",
+    "mappings": {
+      "default": {
+        "default": "pulgada cuadrada",
+        "plural": "pulgadas cuadrada"
+      }
+    }
+  },
+  {
+    "key": "sq rd",
+    "mappings": {
+      "default": {
+        "default": "rod cuadrado",
+        "plural": "rods cuadrado"
+      }
+    }
+  },
+  {
+    "key": "sq ft",
+    "mappings": {
+      "default": {
+        "default": "pie cuadrado",
+        "plural": "pies cuadrado"
+      }
+    }
+  },
+  {
+    "key": "sq yd",
+    "mappings": {
+      "default": {
+        "default": "yarda cuadrada",
+        "plural": "yardas cuadrada"
+      }
+    }
+  },
+  {
+    "key": "sq mi",
+    "mappings": {
+      "default": {
+        "default": "milla cuadrada"
+      }
+    }
+  },
+  {
+    "key": "acr",
+    "mappings": {
+      "default": {
+        "default": "acre"
+      }
+    }
+  },
+  {
+    "key": "ha",
+    "mappings": {
+      "default": {
+        "default": "hectarea"
+      }
+    }
+  }
+]

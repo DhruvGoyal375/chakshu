@@ -1,0 +1,29 @@
+[
+  {
+    "locale": "de"
+  },
+  {
+    "key": "F",
+    "mappings": {
+      "default": {
+        "default": "Grad Fahrenheit"
+      }
+    }
+  },
+  {
+    "key": "C",
+    "mappings": {
+      "default": {
+        "default": "Grad Celsius"
+      }
+    }
+  },
+  {
+    "key": "K",
+    "mappings": {
+      "default": {
+        "default": "Kelvin"
+      }
+    }
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "locale": "it"
+  },
+  {
+    "key": "ft",
+    "mappings": {
+      "default": {
+        "plural": "piedi",
+        "default": "piede"
+      }
+    }
+  },
+  {
+    "key": "in",
+    "mappings": {
+      "default": {
+        "plural": "pollici",
+        "default": "pollice"
+      }
+    }
+  },
+  {
+    "key": "mi",
+    "mappings": {
+      "default": {
+        "plural": "miglia",
+        "default": "miglio"
+      }
+    }
+  },
+  {
+    "key": "yd",
+    "mappings": {
+      "default": {
+        "plural": "iarde",
+        "default": "iarda"
+      }
+    }
+  },
+  {
+    "key": "link",
+    "mappings": {
+      "default": {
+        "plural": "links",
+        "default": "link"
+      }
+    }
+  },
+  {
+    "key": "rod",
+    "mappings": {
+      "default": {
+        "plural": "pertiche",
+        "default": "pertica"
+      }
+    }
+  },
+  {
+    "key": "chain",
+    "mappings": {
+      "default": {
+        "plural": "catene",
+        "default": "catena"
+      }
+    }
+  },
+  {
+    "key": "furlong",
+    "mappings": {
+      "default": {
+        "plural": "furlong",
+        "default": "furlong"
+      }
+    }
+  },
+  {
+    "key": "n.m.",
+    "mappings": {
+      "default": {
+        "plural": "miglia nautiche",
+        "default": "miglio nautico"
+      }
+    }
+  },
+  {
+    "key": "m",
+    "mappings": {
+      "default": {
+        "plural": "metri",
+        "default": "metro"
+      }
+    }
+  }
+]

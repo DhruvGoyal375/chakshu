@@ -1,0 +1,127 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "bbl",
+    "mappings": {
+      "default": {
+        "default": "baril"
+      }
+    }
+  },
+  {
+    "key": "gal",
+    "mappings": {
+      "default": {
+        "default": "gallon"
+      }
+    }
+  },
+  {
+    "key": "pt",
+    "mappings": {
+      "default": {
+        "default": "pinte"
+      }
+    }
+  },
+  {
+    "key": "qt",
+    "mappings": {
+      "default": {
+        "default": "quart"
+      }
+    }
+  },
+  {
+    "key": "tbsp",
+    "mappings": {
+      "default": {
+        "plural": "cuillères à soupe",
+        "default": "cuillèe à soupe"
+      }
+    }
+  },
+  {
+    "key": "tsp",
+    "mappings": {
+      "default": {
+        "plural": "cuillères à thé",
+        "default": "cuillère à thé"
+      }
+    }
+  },
+  {
+    "key": "l",
+    "mappings": {
+      "default": {
+        "default": "litre"
+      }
+    }
+  },
+  {
+    "key": "cu",
+    "mappings": {
+      "default": {
+        "default": "cubique"
+      }
+    }
+  },
+  {
+    "key": "cu inch",
+    "mappings": {
+      "default": {
+        "default": "pouce cube"
+      }
+    }
+  },
+  {
+    "key": "cu ft",
+    "mappings": {
+      "default": {
+        "default": "pied cube"
+      }
+    }
+  },
+  {
+    "key": "cu yd",
+    "mappings": {
+      "default": {
+        "default": "yard cube"
+      }
+    }
+  },
+  {
+    "key": "fl. oz.",
+    "mappings": {
+      "default": {
+        "default": "once liquide"
+      }
+    }
+  },
+  {
+    "key": "fluid dram",
+    "mappings": {
+      "default": {
+        "default": "drachme liquide"
+      }
+    }
+  },
+  {
+    "key": "cup",
+    "mappings": {
+      "default": {
+        "default": "tasse"
+      }
+    }
+  },
+  {
+    "key": "cc",
+    "mappings": {
+      "default": {
+        "default": "centimètre cube"
+      }
+    }
+  }
+]

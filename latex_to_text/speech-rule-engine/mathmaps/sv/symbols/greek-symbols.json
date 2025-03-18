@@ -1,0 +1,45 @@
+[
+  {
+    "locale": "sv"
+  },
+  {
+    "key": "03D0",
+    "mappings": {
+      "default": {
+        "default": "grekiskt beta"
+      }
+    }
+  },
+  {
+    "key": "03D7",
+    "mappings": {
+      "default": {
+        "default": "grav accentnt kai"
+      }
+    }
+  },
+  {
+    "key": "03F6",
+    "mappings": {
+      "default": {
+        "default": "bakvänt epsilon"
+      }
+    }
+  },
+  {
+    "key": "1D7CA",
+    "mappings": {
+      "default": {
+        "default": "fet versal Digamma"
+      }
+    }
+  },
+  {
+    "key": "1D7CB",
+    "mappings": {
+      "default": {
+        "default": "fet digamma"
+      }
+    }
+  }
+]

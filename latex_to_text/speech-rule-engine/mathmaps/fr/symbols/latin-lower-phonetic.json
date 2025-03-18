@@ -1,0 +1,1685 @@
+[
+  {
+    "locale": "fr"
+  },
+  {
+    "key": "00F8",
+    "mappings": {
+      "default": {
+        "default": "o barré"
+      }
+    }
+  },
+  {
+    "key": "0111",
+    "mappings": {
+      "default": {
+        "default": "d barré"
+      }
+    }
+  },
+  {
+    "key": "0127",
+    "mappings": {
+      "default": {
+        "default": "h barré"
+      }
+    }
+  },
+  {
+    "key": "0142",
+    "mappings": {
+      "default": {
+        "default": "l barré"
+      }
+    }
+  },
+  {
+    "key": "0167",
+    "mappings": {
+      "default": {
+        "default": "t barré"
+      }
+    }
+  },
+  {
+    "key": "0180",
+    "mappings": {
+      "default": {
+        "default": "b barré"
+      }
+    }
+  },
+  {
+    "key": "019B",
+    "mappings": {
+      "default": {
+        "default": "lambda barré"
+      }
+    }
+  },
+  {
+    "key": "01B6",
+    "mappings": {
+      "default": {
+        "default": "z barré"
+      }
+    }
+  },
+  {
+    "key": "01BE",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte barré culbuté"
+      }
+    }
+  },
+  {
+    "key": "01E5",
+    "mappings": {
+      "default": {
+        "default": "g barré"
+      }
+    }
+  },
+  {
+    "key": "01FF",
+    "mappings": {
+      "default": {
+        "default": "o barré accent aigu"
+      }
+    }
+  },
+  {
+    "key": "023C",
+    "mappings": {
+      "default": {
+        "default": "c barré"
+      }
+    }
+  },
+  {
+    "key": "0247",
+    "mappings": {
+      "default": {
+        "default": "e barré"
+      }
+    }
+  },
+  {
+    "key": "0249",
+    "mappings": {
+      "default": {
+        "default": "j barré"
+      }
+    }
+  },
+  {
+    "key": "024D",
+    "mappings": {
+      "default": {
+        "default": "r barré"
+      }
+    }
+  },
+  {
+    "key": "024F",
+    "mappings": {
+      "default": {
+        "default": "y barré"
+      }
+    }
+  },
+  {
+    "key": "025F",
+    "mappings": {
+      "default": {
+        "default": "j sans point barré"
+      }
+    }
+  },
+  {
+    "key": "0268",
+    "mappings": {
+      "default": {
+        "default": "i barré"
+      }
+    }
+  },
+  {
+    "key": "0284",
+    "mappings": {
+      "default": {
+        "default": "j sans point barré crosse"
+      }
+    }
+  },
+  {
+    "key": "02A1",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte barré"
+      }
+    }
+  },
+  {
+    "key": "02A2",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte barré réfléchi"
+      }
+    }
+  },
+  {
+    "key": "1D13",
+    "mappings": {
+      "default": {
+        "default": "o couché barré obliquement"
+      }
+    }
+  },
+  {
+    "key": "1D7C",
+    "mappings": {
+      "default": {
+        "default": "iota barré"
+      }
+    }
+  },
+  {
+    "key": "1D7D",
+    "mappings": {
+      "default": {
+        "default": "p barré"
+      }
+    }
+  },
+  {
+    "key": "1D7F",
+    "mappings": {
+      "default": {
+        "default": "upsilon barré"
+      }
+    }
+  },
+  {
+    "key": "1E9C",
+    "mappings": {
+      "default": {
+        "default": "s long à barre diagonale"
+      }
+    }
+  },
+  {
+    "key": "1E9D",
+    "mappings": {
+      "default": {
+        "default": "s long à barre haute"
+      }
+    }
+  },
+  {
+    "key": "018D",
+    "mappings": {
+      "default": {
+        "default": "delta culbutée"
+      }
+    }
+  },
+  {
+    "key": "1E9B",
+    "mappings": {
+      "default": {
+        "default": "s long point en chef"
+      }
+    }
+  },
+  {
+    "key": "1E9F",
+    "mappings": {
+      "default": {
+        "default": "delta"
+      }
+    }
+  },
+  {
+    "key": "0138",
+    "mappings": {
+      "default": {
+        "default": "kra"
+      }
+    }
+  },
+  {
+    "key": "017F",
+    "mappings": {
+      "default": {
+        "default": "s long"
+      }
+    }
+  },
+  {
+    "key": "0183",
+    "mappings": {
+      "default": {
+        "default": "b potence"
+      }
+    }
+  },
+  {
+    "key": "0185",
+    "mappings": {
+      "default": {
+        "default": "sixiéme ton"
+      }
+    }
+  },
+  {
+    "key": "0188",
+    "mappings": {
+      "default": {
+        "default": "c crosse"
+      }
+    }
+  },
+  {
+    "key": "018C",
+    "mappings": {
+      "default": {
+        "default": "d potence"
+      }
+    }
+  },
+  {
+    "key": "0192",
+    "mappings": {
+      "default": {
+        "default": "f cursif"
+      }
+    }
+  },
+  {
+    "key": "0195",
+    "mappings": {
+      "default": {
+        "default": "hv (Hwair)"
+      }
+    }
+  },
+  {
+    "key": "0199",
+    "mappings": {
+      "default": {
+        "default": "k crosse"
+      }
+    }
+  },
+  {
+    "key": "019A",
+    "mappings": {
+      "default": {
+        "default": "l rayé"
+      }
+    }
+  },
+  {
+    "key": "019E",
+    "mappings": {
+      "default": {
+        "default": "n à long jambage de droite"
+      }
+    }
+  },
+  {
+    "key": "01A1",
+    "mappings": {
+      "default": {
+        "default": "o cornu"
+      }
+    }
+  },
+  {
+    "key": "01A3",
+    "mappings": {
+      "default": {
+        "default": "gha"
+      }
+    }
+  },
+  {
+    "key": "01A5",
+    "mappings": {
+      "default": {
+        "default": "p crosse"
+      }
+    }
+  },
+  {
+    "key": "01A8",
+    "mappings": {
+      "default": {
+        "default": "deuxiéme ton"
+      }
+    }
+  },
+  {
+    "key": "01AA",
+    "mappings": {
+      "default": {
+        "default": "ech réfléchi bouclé"
+      }
+    }
+  },
+  {
+    "key": "01AB",
+    "mappings": {
+      "default": {
+        "default": "t hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "01AD",
+    "mappings": {
+      "default": {
+        "default": "t crosse"
+      }
+    }
+  },
+  {
+    "key": "01B0",
+    "mappings": {
+      "default": {
+        "default": "u cornu"
+      }
+    }
+  },
+  {
+    "key": "01B4",
+    "mappings": {
+      "default": {
+        "default": "y crosse"
+      }
+    }
+  },
+  {
+    "key": "01B9",
+    "mappings": {
+      "default": {
+        "default": "ej réfléchi"
+      }
+    }
+  },
+  {
+    "key": "01BA",
+    "mappings": {
+      "default": {
+        "default": "ej hameçon"
+      }
+    }
+  },
+  {
+    "key": "01BD",
+    "mappings": {
+      "default": {
+        "default": "cinquiéme tun"
+      }
+    }
+  },
+  {
+    "key": "01BF",
+    "mappings": {
+      "default": {
+        "default": "wynn"
+      }
+    }
+  },
+  {
+    "key": "01C6",
+    "mappings": {
+      "default": {
+        "default": "dz caron"
+      }
+    }
+  },
+  {
+    "key": "01C9",
+    "mappings": {
+      "default": {
+        "default": "lj"
+      }
+    }
+  },
+  {
+    "key": "01CC",
+    "mappings": {
+      "default": {
+        "default": "nj"
+      }
+    }
+  },
+  {
+    "key": "01E3",
+    "mappings": {
+      "default": {
+        "default": "ae macron"
+      }
+    }
+  },
+  {
+    "key": "01EF",
+    "mappings": {
+      "default": {
+        "default": "ej caron"
+      }
+    }
+  },
+  {
+    "key": "01F3",
+    "mappings": {
+      "default": {
+        "default": "dz"
+      }
+    }
+  },
+  {
+    "key": "021D",
+    "mappings": {
+      "default": {
+        "default": "yogh"
+      }
+    }
+  },
+  {
+    "key": "026E",
+    "mappings": {
+      "default": {
+        "default": "lej"
+      }
+    }
+  },
+  {
+    "key": "0292",
+    "mappings": {
+      "default": {
+        "default": "ej"
+      }
+    }
+  },
+  {
+    "key": "0293",
+    "mappings": {
+      "default": {
+        "default": "ej bouclé"
+      }
+    }
+  },
+  {
+    "key": "02A4",
+    "mappings": {
+      "default": {
+        "default": "digramme Dej"
+      }
+    }
+  },
+  {
+    "key": "01DD",
+    "mappings": {
+      "default": {
+        "default": "e culbuté"
+      }
+    }
+  },
+  {
+    "key": "01FD",
+    "mappings": {
+      "default": {
+        "default": "ae accent aigu (ash)"
+      }
+    }
+  },
+  {
+    "key": "0221",
+    "mappings": {
+      "default": {
+        "default": "d bouclé"
+      }
+    }
+  },
+  {
+    "key": "0223",
+    "mappings": {
+      "default": {
+        "default": "ou"
+      }
+    }
+  },
+  {
+    "key": "0225",
+    "mappings": {
+      "default": {
+        "default": "z crochet"
+      }
+    }
+  },
+  {
+    "key": "0234",
+    "mappings": {
+      "default": {
+        "default": "l bouclé"
+      }
+    }
+  },
+  {
+    "key": "0235",
+    "mappings": {
+      "default": {
+        "default": "n bouclé"
+      }
+    }
+  },
+  {
+    "key": "0236",
+    "mappings": {
+      "default": {
+        "default": "t bouclé"
+      }
+    }
+  },
+  {
+    "key": "0238",
+    "mappings": {
+      "default": {
+        "default": "Ligature minuscule latine Db"
+      }
+    }
+  },
+  {
+    "key": "0239",
+    "mappings": {
+      "default": {
+        "default": "Ligature minuscule latine Qp"
+      }
+    }
+  },
+  {
+    "key": "023F",
+    "mappings": {
+      "default": {
+        "default": "s à paraphe"
+      }
+    }
+  },
+  {
+    "key": "0240",
+    "mappings": {
+      "default": {
+        "default": "z à paraphe"
+      }
+    }
+  },
+  {
+    "key": "0242",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte"
+      }
+    }
+  },
+  {
+    "key": "024B",
+    "mappings": {
+      "default": {
+        "default": "q avec hameçon"
+      }
+    }
+  },
+  {
+    "key": "0250",
+    "mappings": {
+      "default": {
+        "default": "a culbuté"
+      }
+    }
+  },
+  {
+    "key": "0251",
+    "mappings": {
+      "default": {
+        "default": "alpha"
+      }
+    }
+  },
+  {
+    "key": "0252",
+    "mappings": {
+      "default": {
+        "default": "alpha culbuté"
+      }
+    }
+  },
+  {
+    "key": "0253",
+    "mappings": {
+      "default": {
+        "default": "b crosse"
+      }
+    }
+  },
+  {
+    "key": "0254",
+    "mappings": {
+      "default": {
+        "default": "o ouvert"
+      }
+    }
+  },
+  {
+    "key": "0255",
+    "mappings": {
+      "default": {
+        "default": "c bouclé"
+      }
+    }
+  },
+  {
+    "key": "0256",
+    "mappings": {
+      "default": {
+        "default": "d hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0257",
+    "mappings": {
+      "default": {
+        "default": "d crosse"
+      }
+    }
+  },
+  {
+    "key": "0258",
+    "mappings": {
+      "default": {
+        "default": "e réfléchi"
+      }
+    }
+  },
+  {
+    "key": "0259",
+    "mappings": {
+      "default": {
+        "default": "schwa"
+      }
+    }
+  },
+  {
+    "key": "025A",
+    "mappings": {
+      "default": {
+        "default": "schwa crochet"
+      }
+    }
+  },
+  {
+    "key": "025B",
+    "mappings": {
+      "default": {
+        "default": "e ouvert"
+      }
+    }
+  },
+  {
+    "key": "025C",
+    "mappings": {
+      "default": {
+        "default": "epsilon réfléchi"
+      }
+    }
+  },
+  {
+    "key": "025D",
+    "mappings": {
+      "default": {
+        "default": "epsilon réfléchi crochet"
+      }
+    }
+  },
+  {
+    "key": "025E",
+    "mappings": {
+      "default": {
+        "default": "epsilon réfléchi fermé"
+      }
+    }
+  },
+  {
+    "key": "0260",
+    "mappings": {
+      "default": {
+        "default": "g crosse"
+      }
+    }
+  },
+  {
+    "key": "0261",
+    "mappings": {
+      "default": {
+        "default": "g cursif"
+      }
+    }
+  },
+  {
+    "key": "0263",
+    "mappings": {
+      "default": {
+        "default": "gamma"
+      }
+    }
+  },
+  {
+    "key": "0264",
+    "mappings": {
+      "default": {
+        "default": "petit gamma"
+      }
+    }
+  },
+  {
+    "key": "0265",
+    "mappings": {
+      "default": {
+        "default": "h culbuté"
+      }
+    }
+  },
+  {
+    "key": "0266",
+    "mappings": {
+      "default": {
+        "default": "h crosse"
+      }
+    }
+  },
+  {
+    "key": "0267",
+    "mappings": {
+      "default": {
+        "default": "eng crosse"
+      }
+    }
+  },
+  {
+    "key": "0269",
+    "mappings": {
+      "default": {
+        "default": "iota"
+      }
+    }
+  },
+  {
+    "key": "026B",
+    "mappings": {
+      "default": {
+        "default": "l tilde médian"
+      }
+    }
+  },
+  {
+    "key": "026C",
+    "mappings": {
+      "default": {
+        "default": "l sanglé"
+      }
+    }
+  },
+  {
+    "key": "026D",
+    "mappings": {
+      "default": {
+        "default": "l hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "026F",
+    "mappings": {
+      "default": {
+        "default": "m culbuté"
+      }
+    }
+  },
+  {
+    "key": "0270",
+    "mappings": {
+      "default": {
+        "default": "m hampé culbuté"
+      }
+    }
+  },
+  {
+    "key": "0271",
+    "mappings": {
+      "default": {
+        "default": "m hameçon"
+      }
+    }
+  },
+  {
+    "key": "0272",
+    "mappings": {
+      "default": {
+        "default": "n hameçon à gauche"
+      }
+    }
+  },
+  {
+    "key": "0273",
+    "mappings": {
+      "default": {
+        "default": "n hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0275",
+    "mappings": {
+      "default": {
+        "default": "o barré"
+      }
+    }
+  },
+  {
+    "key": "0277",
+    "mappings": {
+      "default": {
+        "default": "oméga fermé"
+      }
+    }
+  },
+  {
+    "key": "0278",
+    "mappings": {
+      "default": {
+        "default": "phi"
+      }
+    }
+  },
+  {
+    "key": "0279",
+    "mappings": {
+      "default": {
+        "default": "r culbuté"
+      }
+    }
+  },
+  {
+    "key": "027A",
+    "mappings": {
+      "default": {
+        "default": "r prolongé culbuté"
+      }
+    }
+  },
+  {
+    "key": "027B",
+    "mappings": {
+      "default": {
+        "default": "r crosse culbuté"
+      }
+    }
+  },
+  {
+    "key": "027C",
+    "mappings": {
+      "default": {
+        "default": "r prolongé"
+      }
+    }
+  },
+  {
+    "key": "027D",
+    "mappings": {
+      "default": {
+        "default": "r hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "027E",
+    "mappings": {
+      "default": {
+        "default": "r sans obit"
+      }
+    }
+  },
+  {
+    "key": "027F",
+    "mappings": {
+      "default": {
+        "default": "r sans obit réfléchi"
+      }
+    }
+  },
+  {
+    "key": "0282",
+    "mappings": {
+      "default": {
+        "default": "s hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0283",
+    "mappings": {
+      "default": {
+        "default": "ech"
+      }
+    }
+  },
+  {
+    "key": "0285",
+    "mappings": {
+      "default": {
+        "default": "r sans obit réfléchi hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0286",
+    "mappings": {
+      "default": {
+        "default": "ech bouclé"
+      }
+    }
+  },
+  {
+    "key": "0287",
+    "mappings": {
+      "default": {
+        "default": "t culbuté"
+      }
+    }
+  },
+  {
+    "key": "0288",
+    "mappings": {
+      "default": {
+        "default": "t hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0289",
+    "mappings": {
+      "default": {
+        "default": "u barré"
+      }
+    }
+  },
+  {
+    "key": "028A",
+    "mappings": {
+      "default": {
+        "default": "upsilon"
+      }
+    }
+  },
+  {
+    "key": "028B",
+    "mappings": {
+      "default": {
+        "default": "v de ronde"
+      }
+    }
+  },
+  {
+    "key": "028C",
+    "mappings": {
+      "default": {
+        "default": "v culbuté"
+      }
+    }
+  },
+  {
+    "key": "028D",
+    "mappings": {
+      "default": {
+        "default": "w culbuté"
+      }
+    }
+  },
+  {
+    "key": "028E",
+    "mappings": {
+      "default": {
+        "default": "y culbuté"
+      }
+    }
+  },
+  {
+    "key": "0290",
+    "mappings": {
+      "default": {
+        "default": "z hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0291",
+    "mappings": {
+      "default": {
+        "default": "z bouclé"
+      }
+    }
+  },
+  {
+    "key": "0295",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte réfléchi"
+      }
+    }
+  },
+  {
+    "key": "0296",
+    "mappings": {
+      "default": {
+        "default": "coup de glotte culbuté"
+      }
+    }
+  },
+  {
+    "key": "0297",
+    "mappings": {
+      "default": {
+        "default": "C étiré"
+      }
+    }
+  },
+  {
+    "key": "0298",
+    "mappings": {
+      "default": {
+        "default": "clic bilabial"
+      }
+    }
+  },
+  {
+    "key": "029A",
+    "mappings": {
+      "default": {
+        "default": "epsilon fermé"
+      }
+    }
+  },
+  {
+    "key": "029E",
+    "mappings": {
+      "default": {
+        "default": "k culbuté"
+      }
+    }
+  },
+  {
+    "key": "02A0",
+    "mappings": {
+      "default": {
+        "default": "q crosse"
+      }
+    }
+  },
+  {
+    "key": "02A3",
+    "mappings": {
+      "default": {
+        "default": "digramme Dz"
+      }
+    }
+  },
+  {
+    "key": "02A5",
+    "mappings": {
+      "default": {
+        "default": "digramme Dz bouclé"
+      }
+    }
+  },
+  {
+    "key": "02A6",
+    "mappings": {
+      "default": {
+        "default": "digramme Ts"
+      }
+    }
+  },
+  {
+    "key": "02A7",
+    "mappings": {
+      "default": {
+        "default": "digramme Tech"
+      }
+    }
+  },
+  {
+    "key": "02A8",
+    "mappings": {
+      "default": {
+        "default": "digramme Tc bouclé"
+      }
+    }
+  },
+  {
+    "key": "02A9",
+    "mappings": {
+      "default": {
+        "default": "digramme Feng"
+      }
+    }
+  },
+  {
+    "key": "02AA",
+    "mappings": {
+      "default": {
+        "default": "digramme Ls"
+      }
+    }
+  },
+  {
+    "key": "02AB",
+    "mappings": {
+      "default": {
+        "default": "digramme Lz"
+      }
+    }
+  },
+  {
+    "key": "02AC",
+    "mappings": {
+      "default": {
+        "default": "percussion bilabiale"
+      }
+    }
+  },
+  {
+    "key": "02AD",
+    "mappings": {
+      "default": {
+        "default": "percussion bidentale"
+      }
+    }
+  },
+  {
+    "key": "02AE",
+    "mappings": {
+      "default": {
+        "default": "h culbuté crosse réfléchie"
+      }
+    }
+  },
+  {
+    "key": "02AF",
+    "mappings": {
+      "default": {
+        "default": "h culbuté crosse réfléchie et hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D02",
+    "mappings": {
+      "default": {
+        "default": "ae culbuté"
+      }
+    }
+  },
+  {
+    "key": "1D08",
+    "mappings": {
+      "default": {
+        "default": "epsilon culbuté"
+      }
+    }
+  },
+  {
+    "key": "1D09",
+    "mappings": {
+      "default": {
+        "default": "i culbuté"
+      }
+    }
+  },
+  {
+    "key": "1D11",
+    "mappings": {
+      "default": {
+        "default": "o couché"
+      }
+    }
+  },
+  {
+    "key": "1D12",
+    "mappings": {
+      "default": {
+        "default": "o ouvert couché"
+      }
+    }
+  },
+  {
+    "key": "1D14",
+    "mappings": {
+      "default": {
+        "default": "oe culbuté"
+      }
+    }
+  },
+  {
+    "key": "1D16",
+    "mappings": {
+      "default": {
+        "default": "moitié supérieure de o"
+      }
+    }
+  },
+  {
+    "key": "1D17",
+    "mappings": {
+      "default": {
+        "default": "moitié inférieure de o"
+      }
+    }
+  },
+  {
+    "key": "1D1D",
+    "mappings": {
+      "default": {
+        "default": "u couché"
+      }
+    }
+  },
+  {
+    "key": "1D1E",
+    "mappings": {
+      "default": {
+        "default": "u tréma couché"
+      }
+    }
+  },
+  {
+    "key": "1D1F",
+    "mappings": {
+      "default": {
+        "default": "m couché"
+      }
+    }
+  },
+  {
+    "key": "1D24",
+    "mappings": {
+      "default": {
+        "default": "fricative pharyngale voisée"
+      }
+    }
+  },
+  {
+    "key": "1D25",
+    "mappings": {
+      "default": {
+        "default": "aïn"
+      }
+    }
+  },
+  {
+    "key": "1D6B",
+    "mappings": {
+      "default": {
+        "default": "ue"
+      }
+    }
+  },
+  {
+    "key": "1D6C",
+    "mappings": {
+      "default": {
+        "default": "b tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D6D",
+    "mappings": {
+      "default": {
+        "default": "d tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D6E",
+    "mappings": {
+      "default": {
+        "default": "f tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D6F",
+    "mappings": {
+      "default": {
+        "default": "m tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D70",
+    "mappings": {
+      "default": {
+        "default": "n tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D71",
+    "mappings": {
+      "default": {
+        "default": "p tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D72",
+    "mappings": {
+      "default": {
+        "default": "r tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D73",
+    "mappings": {
+      "default": {
+        "default": "r sans obit tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D74",
+    "mappings": {
+      "default": {
+        "default": "s tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D75",
+    "mappings": {
+      "default": {
+        "default": "t tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D76",
+    "mappings": {
+      "default": {
+        "default": "z tilde médian"
+      }
+    }
+  },
+  {
+    "key": "1D77",
+    "mappings": {
+      "default": {
+        "default": "g culbuté"
+      }
+    }
+  },
+  {
+    "key": "1D79",
+    "mappings": {
+      "default": {
+        "default": "g insulaire"
+      }
+    }
+  },
+  {
+    "key": "1D7A",
+    "mappings": {
+      "default": {
+        "default": "th barré diagonalement"
+      }
+    }
+  },
+  {
+    "key": "1D80",
+    "mappings": {
+      "default": {
+        "default": "b hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D81",
+    "mappings": {
+      "default": {
+        "default": "d hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D82",
+    "mappings": {
+      "default": {
+        "default": "f hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D83",
+    "mappings": {
+      "default": {
+        "default": "g hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D84",
+    "mappings": {
+      "default": {
+        "default": "k hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D85",
+    "mappings": {
+      "default": {
+        "default": "l hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D86",
+    "mappings": {
+      "default": {
+        "default": "m hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D87",
+    "mappings": {
+      "default": {
+        "default": "n hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D88",
+    "mappings": {
+      "default": {
+        "default": "p hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D89",
+    "mappings": {
+      "default": {
+        "default": "r hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8A",
+    "mappings": {
+      "default": {
+        "default": "s hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8B",
+    "mappings": {
+      "default": {
+        "default": "ech hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8C",
+    "mappings": {
+      "default": {
+        "default": "v hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8D",
+    "mappings": {
+      "default": {
+        "default": "x hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8E",
+    "mappings": {
+      "default": {
+        "default": "z hameçon palatal"
+      }
+    }
+  },
+  {
+    "key": "1D8F",
+    "mappings": {
+      "default": {
+        "default": "a hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D90",
+    "mappings": {
+      "default": {
+        "default": "alpha hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D91",
+    "mappings": {
+      "default": {
+        "default": "d crosse et hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D92",
+    "mappings": {
+      "default": {
+        "default": "e hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D93",
+    "mappings": {
+      "default": {
+        "default": "epsilon hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D94",
+    "mappings": {
+      "default": {
+        "default": "epsilon réfléchi hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D95",
+    "mappings": {
+      "default": {
+        "default": "schwa hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D96",
+    "mappings": {
+      "default": {
+        "default": "i hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D97",
+    "mappings": {
+      "default": {
+        "default": "o ouvert hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D98",
+    "mappings": {
+      "default": {
+        "default": "ech hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D99",
+    "mappings": {
+      "default": {
+        "default": "u hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "1D9A",
+    "mappings": {
+      "default": {
+        "default": "ej hameçon rétroflexe"
+      }
+    }
+  },
+  {
+    "key": "0149",
+    "mappings": {
+      "default": {
+        "default": "n précédée d'une apostrophe"
+      }
+    }
+  },
+  {
+    "key": "014B",
+    "mappings": {
+      "default": {
+        "default": "eng"
+      }
+    }
+  }
+]
