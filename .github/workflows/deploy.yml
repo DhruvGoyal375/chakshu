@@ -10,11 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 🔥 Checkout the GitHub repository
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 🔥 Install Docker
     - name: Install Docker
       run: |
         sudo apt-get update
@@ -23,23 +21,19 @@ jobs:
         sudo systemctl enable docker
         docker --version  # ✅ Verify Docker installation
 
-    # 🔥 Install Docker-Compose
     - name: Install Docker-Compose
       run: |
         sudo apt-get install -y docker-compose-plugin
         docker-compose version  # ✅ Verify Docker-Compose installation
 
-    # 🔥 Build Docker-Compose Stack (Django + Ollama + LLaVA)
     - name: Build Docker-Compose Stack
       run: |
         docker-compose build
 
-    # 🔥 Save the entire Docker-Compose Stack as TAR
     - name: Save Docker Images to TAR
       run: |
         docker save -o chakshuv1.tar chakshuv1:latest ollama:latest
 
-    # 🔥 Upload Docker Image to Azure Blob Storage
     - name: Upload Docker Image to Blob Storage
       uses: azure/CLI@v1
       with:
