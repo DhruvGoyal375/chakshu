@@ -30,7 +30,8 @@ jobs:
 
     - name: Save Docker Images to TAR
       run: |
-        docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "chakshu|ollama|latex_to_text"
+        docker save -o chakshuv1.tar $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "chakshu|ollama|latex_to_text")
+
 
     - name: Upload Docker Image to Blob Storage
       uses: azure/CLI@v1
