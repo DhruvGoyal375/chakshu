@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-22.04-16core  # Larger runner with more disk space
 
     steps:
     # 1️⃣ Checkout the code
