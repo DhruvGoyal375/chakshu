@@ -1,0 +1,37 @@
+name: Build and Push Docker-Compose Images with Ollama + LLaVA to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 🔥 Checkout the GitHub repository
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 🔥 Build Docker-Compose Stack (Django + Ollama + LLaVA)
+    - name: Build Docker-Compose Stack
+      run: |
+        docker-compose build
+
+    # 🔥 Save the entire Docker-Compose Stack as TAR
+    - name: Save Docker Images to TAR
+      run: |
+        docker save -o chakshuv1.tar chakshuv1:latest ollama:latest
+
+    # 🔥 Upload Docker Image to Azure Blob Storage
+    - name: Upload Docker Image to Blob Storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az storage blob upload \
+            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+            --container-name docker-images \
+            --file chakshuv1.tar \
+            --name chakshuv1.tar
