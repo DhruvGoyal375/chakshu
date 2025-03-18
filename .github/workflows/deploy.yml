@@ -25,7 +25,6 @@ jobs:
     # 3️⃣ Build Docker Images
     - name: Build Docker Images
       run: |
-        docker compose pull    # Pull external images (Ollama)
         docker compose build   # Build local images (Django, Node)
 
     # 4️⃣ List Docker Images (for verification)
@@ -47,7 +46,6 @@ jobs:
         # Tag each image with Docker Hub repo
         docker tag chakshu-chakshu:latest $USERNAME/chakshu-chakshu:latest
         docker tag chakshu-node:latest $USERNAME/chakshu-node:latest
-        docker tag ollama/ollama:latest $USERNAME/ollama:latest
 
     # 7️⃣ Push Docker Images to Docker Hub
     - name: Push Docker Images to Docker Hub
@@ -57,7 +55,6 @@ jobs:
         # Push each image to Docker Hub
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
-        docker push $USERNAME/ollama:latest
 
     # 8️⃣ Tag Docker Images with Version (Optional)
     - name: Tag Docker Images with Version
@@ -68,12 +65,10 @@ jobs:
         # Tag images with version
         docker tag $USERNAME/chakshu-chakshu:latest $USERNAME/chakshu-chakshu:$VERSION
         docker tag $USERNAME/chakshu-node:latest $USERNAME/chakshu-node:$VERSION
-        docker tag $USERNAME/ollama:latest $USERNAME/ollama:$VERSION
         
         # Push versioned tags
         docker push $USERNAME/chakshu-chakshu:$VERSION
         docker push $USERNAME/chakshu-node:$VERSION
-        docker push $USERNAME/ollama:$VERSION
 
     # 9️⃣ Clean up Docker Cache (optional)
     - name: Cleanup Docker Cache

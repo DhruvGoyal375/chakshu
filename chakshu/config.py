@@ -1,5 +1,5 @@
 # Captioner
-MODEL_URL = "http://localhost:11434/api/generate"
+MODEL_URL = "http://20.244.71.17:11434/api/generate"
 
 MODEL_NAME = "llava"
 
