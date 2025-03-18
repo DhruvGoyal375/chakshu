@@ -10,12 +10,17 @@ RUN pip install --upgrade pip poetry
 # Copy only the necessary files for dependency installation
 COPY chakshu/pyproject.toml chakshu/README.md /app/
 
-# Project initialization
+# Project initialization (First-time setup)
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-root
 
 # Copy the rest of the application code
 COPY chakshu /app/chakshu
+
+# Run Django setup commands for the first time
+RUN python manage.py migrate \
+    && python manage.py collectstatic --noinput \
+    && python manage.py createsuperuser --noinput || echo "Superuser already exists"
 
 # Run the application
 CMD ["python", "chakshu/manage.py", "runserver", "0.0.0.0:8000"]
