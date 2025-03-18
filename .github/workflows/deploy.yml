@@ -10,26 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
     - name: Checkout code
       uses: actions/checkout@v4
 
-    
-    - name: Install Docker-Compose
+    - name: Install Docker & Docker-Compose
       run: |
-        sudo apt-get update
-        sudo apt-get install -y docker-compose-plugin
-        docker-compose version 
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sudo sh get-docker.sh
+        docker --version
+        docker-compose version
 
-    
     - name: Build Docker-Compose Stack
       run: |
         docker-compose build
 
+    - name: List Docker Images
+      run: |
+        docker images
 
     - name: Save Docker Images to TAR
       run: |
-        docker save -o chakshuv1.tar chakshuv1:latest ollama:latest
+        docker save -o chakshuv1.tar $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "app|ollama")
 
     - name: Upload Docker Image to Blob Storage
       uses: azure/CLI@v1
