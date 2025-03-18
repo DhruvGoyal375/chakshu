@@ -1,4 +1,4 @@
-name: Build and Push Docker-Compose Images with Ollama + LLaVA to Azure Blob Storage
+name: Build and Push Docker Image to Azure Blob Storage
 
 on:
   push:
@@ -6,39 +6,36 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install Docker & Docker-Compose
+    - name: Install Docker
       run: |
-        curl -fsSL https://get.docker.com -o get-docker.sh
-        sudo sh get-docker.sh
-        docker --version
-        docker-compose version
+        sudo apt-get -qq update
+        sudo apt-get -y -qq install \
+          docker-ce docker-ce-cli containerd.io \
+          docker-compose-plugin docker-ce-rootless-extras docker-buildx-plugin
 
-    - name: Build Docker-Compose Stack
+    - name: Verify Docker Installation
       run: |
-        docker-compose build
+        docker version
+        docker compose version
 
-    - name: List Docker Images
+    - name: Build Docker Image
       run: |
-        docker images
+        docker compose build
 
-    - name: Save Docker Images to TAR
+    - name: Save Docker Image as Tar
       run: |
-        docker save -o chakshuv1.tar $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "app|ollama")
+        docker save -o chakshuv1.tar chakshuv1
 
-    - name: Upload Docker Image to Blob Storage
+    - name: Upload Docker Tar to Azure Blob Storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az storage blob upload \
-            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
-            --container-name docker-images \
-            --file chakshuv1.tar \
-            --name chakshuv1.tar
+          az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+          az storage blob upload --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} --container-name docker-images --name chakshuv1.tar --file chakshuv1.tar --auth-mode key
