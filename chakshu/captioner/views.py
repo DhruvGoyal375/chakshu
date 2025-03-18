@@ -7,7 +7,7 @@ from io import BytesIO
 import base64
 import re
 from bs4 import BeautifulSoup
-from chakshu.config import MODEL_NAME, MODEL_URL
+from config import MODEL_NAME, MODEL_URL
 
 
 from django.core.cache import cache
@@ -115,7 +115,6 @@ def fetch_image(image_url):
 
 def generate_llava_caption(encoded_image, title_caption, caption, description):
     """Generates a detailed caption for an image tailored for visually impaired individuals."""
-
     # Ensure valid image encoding
     if not encoded_image:
         print("Image encoding failed.")
@@ -154,28 +153,22 @@ def generate_llava_caption(encoded_image, title_caption, caption, description):
 
     # Prepare the payload for the remote API request with system message included
     payload = {
-        "model": MODEL_NAME,   # Specify the model name running on the server
-        "messages": [
-            {
-                "role": "system",
-                "content": (
-                    "Forget all previous messages. Focus only on the given image and its specific context. "
-                    "You are an AI generating precise, descriptive captions for visually impaired individuals, "
-                    "ensuring accuracy and clarity. Always prioritize accuracy over assumption."
-                )
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ],
-        "images": [encoded_image],  # Send the image in base64 format
+        "model": MODEL_NAME,   # Specify the model name running on the server (e.g., "llava")
+        "prompt": (
+            "[System message]: Forget all previous messages. Focus only on the given image and its specific context. "
+            "You are an AI generating precise, descriptive captions for visually impaired individuals, "
+            "ensuring accuracy and clarity. Always prioritize accuracy over assumption.\n\n"
+            "[User]: " + prompt  # Append the user message
+        ),
+        "images": [encoded_image],   # Send the image in base64 format
+        "stream": False,             # Disable streaming to get the full response at once
         "options": {
             "temperature": 0, 
             "top_p": 0.1, 
             "top_k": 1
         }
     }
+
 
     # Send the request to the remote LLaVA server
     try:
@@ -191,7 +184,7 @@ def generate_llava_caption(encoded_image, title_caption, caption, description):
         if response.status_code == 200:
             result = response.json()
             print(f"Time taken to generate caption: {end_time - start_time:.2f} seconds")
-            return result.get("message", {}).get("content")
+            return result.get("response",{})
         else:
             print(f"Failed to generate caption. Status code: {response.status_code}")
             return None
