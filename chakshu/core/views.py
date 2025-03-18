@@ -6,7 +6,7 @@ from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
 from scraper.views import get_citations, get_full_content, get_short_description
-
+from captioner.views import fetch_and_process_images
 from .wiki_api import WikiAPI
 
 mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
@@ -94,10 +94,9 @@ class ProcessOptionView(View):
                     # return JsonResponse({"full_page_content": full_page_content})
 
                 # get captions of all images
-                # elif option == 4:
-                #     captions = "\n".join(
-                #         [img.get("alt", "No caption") for img in soup.find_all("img")])
-                #     return JsonResponse({"text": captions})
+                elif option == 4:
+                    ls_captions=fetch_and_process_images(selected_link)
+                    return JsonResponse({"text": ls_captions})
 
                 # get the references
                 elif option == 5:
