@@ -1,4 +1,4 @@
-name: Build and Push Docker-Compose Images with Ollama + LLaVA to Azure Blob Storage
+name: Build and Push Multiple Docker Images to Docker Hub
 
 on:
   push:
@@ -7,12 +7,14 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04-16core  # Larger runner with more disk space
 
     steps:
+    # 1️⃣ Checkout the code
     - name: Checkout code
       uses: actions/checkout@v4
 
+    # 2️⃣ Install Docker and Docker-Compose
     - name: Install Docker & Docker-Compose
       run: |
         curl -fsSL https://get.docker.com -o get-docker.sh
@@ -20,26 +22,60 @@ jobs:
         docker --version
         docker compose version
 
-    - name: Build Docker-Compose Stack
+    # 3️⃣ Build Docker Images
+    - name: Build Docker Images
       run: |
-        docker compose build
+        docker compose pull    # Pull external images (Ollama)
+        docker compose build   # Build local images (Django, LaTeX, etc.)
 
+    # 4️⃣ List Docker Images (for verification)
     - name: List Docker Images
       run: |
         docker images
 
-    - name: Save Docker Images to TAR
+    # 5️⃣ Log in to Docker Hub
+    - name: Log in to Docker Hub
       run: |
-        docker save -o chakshuv1.tar $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -E "chakshu|ollama|latex_to_text")
+        echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
+    # 6️⃣ Tag Docker Images for Docker Hub
+    - name: Tag Docker Images
+      run: |
+        # Define Docker Hub username
+        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
+        
+        # Tag each image with Docker Hub repo
+        docker tag ollama:latest $USERNAME/ollama:latest
+        docker tag chakshuv1:latest $USERNAME/chakshuv1:latest
+        docker tag latex_to_text:latest $USERNAME/latex_to_text:latest
 
-    - name: Upload Docker Image to Blob Storage
-      uses: azure/CLI@v1
-      with:
-        inlineScript: |
-          az storage blob upload \
-            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
-            --container-name docker-images \
-            --file chakshuv1.tar \
-            --name chakshuv1.tar
+    # 7️⃣ Push Docker Images to Docker Hub
+    - name: Push Docker Images to Docker Hub
+      run: |
+        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
+        
+        # Push each image to Docker Hub
+        docker push $USERNAME/ollama:latest
+        docker push $USERNAME/chakshuv1:latest
+        docker push $USERNAME/latex_to_text:latest
+
+    # 8️⃣ Tag Docker Images with Version (Optional)
+    - name: Tag Docker Images with Version
+      run: |
+        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
+        VERSION="$(date +%Y%m%d%H%M%S)"
+        
+        # Tag images with version
+        docker tag $USERNAME/ollama:latest $USERNAME/ollama:$VERSION
+        docker tag $USERNAME/chakshuv1:latest $USERNAME/chakshuv1:$VERSION
+        docker tag $USERNAME/latex_to_text:latest $USERNAME/latex_to_text:$VERSION
+        
+        # Push versioned tags
+        docker push $USERNAME/ollama:$VERSION
+        docker push $USERNAME/chakshuv1:$VERSION
+        docker push $USERNAME/latex_to_text:$VERSION
+
+    # 9️⃣ Clean up Docker Cache (optional)
+    - name: Cleanup Docker Cache
+      run: |
+        docker system prune -af
