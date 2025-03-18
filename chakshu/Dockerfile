@@ -8,7 +8,7 @@ WORKDIR /app
 RUN pip install --upgrade pip poetry
 
 # Copy only the necessary files for dependency installation
-COPY chakshu/pyproject.toml chakshu/poetry.lock* chakshu/README.md /app/
+COPY chakshu/pyproject.toml chakshu/README.md /app/
 
 # Project initialization
 RUN poetry config virtualenvs.create false \
