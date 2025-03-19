@@ -97,53 +97,54 @@ jobs:
         CONTAINER_FQDN="chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io"
 
         # Check if Front Door exists
-        if az network front-door show --name "$FRONTDOOR_NAME" --resource-group "$RESOURCE_GROUP" &> /dev/null; then
+        if az afd profile show --resource-group "$RESOURCE_GROUP" --profile-name "$FRONTDOOR_NAME" &> /dev/null; then
           echo "Azure Front Door $FRONTDOOR_NAME already exists. Skipping creation."
         else
           echo "Creating Azure Front Door..."
 
-          az network front-door profile create \
+          az afd profile create \
             --resource-group "$RESOURCE_GROUP" \
-            --name "$FRONTDOOR_NAME" \
+            --profile-name "$FRONTDOOR_NAME" \
             --sku Premium_AzureFrontDoor
 
-         
-          az network front-door frontend-endpoint create \
+          # ✅ Create Frontend Endpoint
+          az afd endpoint create \
             --resource-group "$RESOURCE_GROUP" \
-            --front-door-name "$FRONTDOOR_NAME" \
-            --name "chakshu-frontend" \
+            --profile-name "$FRONTDOOR_NAME" \
+            --endpoint-name "chakshu-frontend" \
+            --enabled-state "Enabled"
+
+          # ✅ Create Backend Pool
+          az afd origin-group create \
+            --resource-group "$RESOURCE_GROUP" \
+            --profile-name "$FRONTDOOR_NAME" \
+            --origin-group-name "chakshu-backend-pool" \
+            --probe-request-type "GET" \
+            --probe-protocol "Http" \
+            --probe-interval-in-seconds 30 \
+            --probe-path "/"
+
+          az afd origin create \
+            --resource-group "$RESOURCE_GROUP" \
+            --profile-name "$FRONTDOOR_NAME" \
+            --origin-group-name "chakshu-backend-pool" \
+            --origin-name "chakshu-origin" \
             --host-name "$CONTAINER_FQDN" \
-            --session-affinity-enabled false
+            --http-port 80 \
+            --https-port 443 \
+            --priority 1 \
+            --weight 100
 
-       
-          az network front-door backend-pool create \
+          # ✅ Add Routing Rule
+          az afd route create \
             --resource-group "$RESOURCE_GROUP" \
-            --front-door-name "$FRONTDOOR_NAME" \
-            --name "chakshu-backend-pool" \
-            --load-balancing-enabled true \
-            --enforce-backend-pool-certificate-name-check false \
-            --backends "host=$CONTAINER_FQDN httpPort=80 httpsPort=443"
-
- 
-          az network front-door routing-rule create \
-            --resource-group "$RESOURCE_GROUP" \
-            --front-door-name "$FRONTDOOR_NAME" \
-            --name "chakshu-rule" \
-            --frontend-endpoints "chakshu-frontend" \
-            --accepted-protocols "Http Https" \
-            --patterns-to-match "/*" \
-            --route-type "Forward" \
-            --backend-pool-name "chakshu-backend-pool"
-
-          az network front-door probe create \
-            --resource-group "$RESOURCE_GROUP" \
-            --front-door-name "$FRONTDOOR_NAME" \
-            --name "chakshu-health-probe" \
-            --path "/" \
-            --protocol "Http" \
-            --interval-in-seconds 30 \
-            --request-type "GET" \
-            --health-check-path "/"
+            --profile-name "$FRONTDOOR_NAME" \
+            --endpoint-name "chakshu-frontend" \
+            --route-name "chakshu-route" \
+            --origin-group-name "chakshu-backend-pool" \
+            --forwarding-protocol "MatchRequest" \
+            --supported-protocols "Http Https" \
+            --patterns-to-match "/*"
 
           echo "Azure Front Door created successfully."
 
