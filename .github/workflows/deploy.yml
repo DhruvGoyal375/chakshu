@@ -59,27 +59,42 @@ jobs:
 
     - name: Deploy to Azure ACI
       run: |
+        # Login to Azure using Service Principal
         az login --service-principal \
           --username "${{ secrets.AZURE_CLIENT_ID }}" \
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-        # Deploy container with environment variables
+        # Check if the container exists
+        CONTAINER_NAME="chakshu-container"
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+
+        # Check for existing container and delete if it exists
+        if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
+          echo "Container $CONTAINER_NAME exists. Deleting..."
+          az container delete --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" --yes
+        else
+          echo "Container $CONTAINER_NAME does not exist. Creating a new one..."
+        fi
+
+        # Deploy new container with latest image
         az container create \
-          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
-          --name chakshu-container \
-          --image ${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest \
+          --resource-group "$RESOURCE_GROUP" \
+          --name "$CONTAINER_NAME" \
+          --image "${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest" \
           --cpu 4 --memory 16 \
-          --dns-name-label chakshu-demo \
+          --dns-name-label "chakshu-demo" \
           --ports 8000 80 \
           --os-type Linux \
+          --restart-policy Always \
           --environment-variables \
-            DB_NAME=${{ secrets.DB_NAME }} \
-            DB_USER=${{ secrets.DB_USER }} \
-            DB_PASSWORD=${{ secrets.DB_PASSWORD }} \
-            DB_HOST=${{ secrets.DB_HOST }} \
-            DB_PORT=${{ secrets.DB_PORT }} \
-            DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}
+            DB_NAME="${{ secrets.DB_NAME }}" \
+            DB_USER="${{ secrets.DB_USER }}" \
+            DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
+            DB_HOST="${{ secrets.DB_HOST }}" \
+            DB_PORT="${{ secrets.DB_PORT }}" \
+            DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+
 
     - name: Cleanup Docker Cache
       run: |
