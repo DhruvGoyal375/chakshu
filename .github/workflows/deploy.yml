@@ -72,6 +72,7 @@ jobs:
           --cpu 4 --memory 16 \
           --dns-name-label chakshu-demo \
           --ports 8000 80 \
+          --os-type Linux \
           --environment-variables \
             DB_NAME=${{ secrets.DB_NAME }} \
             DB_USER=${{ secrets.DB_USER }} \
