@@ -293,7 +293,7 @@ def fetch_and_process_images(page_url):
             break
 
     # Cache the results
-    cache.set(cache_key, processed_captions, timeout=60 * 60)  # Cache for 1 hour
+    cache.set(cache_key, processed_captions, timeout=60 * 60* 24)  # Cache for 1 day
 
     return processed_captions
 
