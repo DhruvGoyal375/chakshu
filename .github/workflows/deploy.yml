@@ -64,16 +64,34 @@ jobs:
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-        # Create or retrieve the static IP
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+        CONTAINER_NAME="chakshu-container"
+        IP_NAME="chakshu-public-ip"
+        DNS_LABEL="chakshu-demo"
+
+        # Check if the static IP exists, if not create it
+        if ! az network public-ip show --resource-group "$RESOURCE_GROUP" --name "$IP_NAME" &> /dev/null; then
+          echo "Static IP not found. Creating..."
+          az network public-ip create \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$IP_NAME" \
+            --sku Standard \
+            --allocation-method Static \
+            --dns-name "$DNS_LABEL"
+        else
+          echo "Static IP already exists."
+        fi
+
+        # Get Static IP and FQDN
         STATIC_IP=$(az network public-ip show \
-          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
-          --name chakshu-public-ip \
+          --resource-group "$RESOURCE_GROUP" \
+          --name "$IP_NAME" \
           --query "ipAddress" \
           --output tsv)
 
         FQDN=$(az network public-ip show \
-          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
-          --name chakshu-public-ip \
+          --resource-group "$RESOURCE_GROUP" \
+          --name "$IP_NAME" \
           --query "dnsSettings.fqdn" \
           --output tsv)
 
@@ -81,9 +99,6 @@ jobs:
         echo "FQDN: $FQDN"
 
         # Delete existing container if it exists
-        CONTAINER_NAME="chakshu-container"
-        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
-
         if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
           echo "Container $CONTAINER_NAME exists. Deleting..."
           az container delete --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" --yes
@@ -101,7 +116,7 @@ jobs:
           --os-type Linux \
           --restart-policy Always \
           --ip-address Public \
-          --dns-name-label "chakshu-demo" \
+          --dns-name-label "$DNS_LABEL" \
           --environment-variables \
             DB_NAME="${{ secrets.DB_NAME }}" \
             DB_USER="${{ secrets.DB_USER }}" \
@@ -109,6 +124,7 @@ jobs:
             DB_HOST="${{ secrets.DB_HOST }}" \
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+
 
 
 
