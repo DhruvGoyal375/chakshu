@@ -296,7 +296,3 @@ def fetch_and_process_images(page_url):
     cache.set(cache_key, processed_captions, timeout=60 * 60* 24)  # Cache for 1 day
 
     return processed_captions
-
-# # Example Wikipedia page
-# wiki_url = "https://en.wikipedia.org/wiki/Python_(programming_language)"
-# fetch_and_process_images(wiki_url)

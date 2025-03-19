@@ -1,4 +1,4 @@
-name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI + Front Door
+name: Build, Push Docker Images & Deploy with Static IP + HTTPS on Azure ACI
 
 on:
   push:
@@ -49,16 +49,47 @@ jobs:
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
-    # ✅ Deploy to Azure ACI (Full Resources)
-    - name: Deploy to Azure ACI
+    - name: Azure Login
       run: |
         az login --service-principal \
           --username "${{ secrets.AZURE_CLIENT_ID }}" \
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
+    - name: Check or Create Static IP
+      run: |
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+        STATIC_IP_NAME="chakshu-static-ip"
+
+        # Check if Static IP exists
+        IP_EXISTS=$(az network public-ip show --resource-group "$RESOURCE_GROUP" --name "$STATIC_IP_NAME" --query "ipAddress" --output tsv || echo "")
+
+        if [ -z "$IP_EXISTS" ]; then
+          echo "Static IP not found. Creating..."
+          az network public-ip create \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$STATIC_IP_NAME" \
+            --sku Standard \
+            --allocation-method Static \
+            --query "publicIp.ipAddress" --output tsv
+
+          # Wait for the IP to be provisioned
+          sleep 30
+
+          STATIC_IP=$(az network public-ip show --resource-group "$RESOURCE_GROUP" --name "$STATIC_IP_NAME" --query "ipAddress" --output tsv)
+          echo "Static IP created: $STATIC_IP"
+        else
+          STATIC_IP="$IP_EXISTS"
+          echo "Using existing Static IP: $STATIC_IP"
+        fi
+
+        echo "STATIC_IP=$STATIC_IP" >> $GITHUB_ENV
+
+    - name: Deploy to Azure ACI with Static IP
+      run: |
         CONTAINER_NAME="chakshu-container"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+        STATIC_IP="${{ env.STATIC_IP }}"
 
         # Delete existing container if it exists
         if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
@@ -68,7 +99,7 @@ jobs:
           echo "No existing container found."
         fi
 
-        # Deploy with Full Resources (4 CPU, 16 GB RAM)
+        # Deploy with Static IP
         az container create \
           --resource-group "$RESOURCE_GROUP" \
           --name "$CONTAINER_NAME" \
@@ -81,6 +112,7 @@ jobs:
           --registry-login-server "index.docker.io" \
           --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
           --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+          --public-ip-address "$STATIC_IP_NAME" \
           --environment-variables \
             DB_NAME="${{ secrets.DB_NAME }}" \
             DB_USER="${{ secrets.DB_USER }}" \
@@ -88,7 +120,6 @@ jobs:
             DB_HOST="${{ secrets.DB_HOST }}" \
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
-
 
     - name: Cleanup Docker Cache
       run: |
