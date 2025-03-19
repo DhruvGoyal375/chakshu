@@ -57,27 +57,25 @@ jobs:
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
-    - name: Deploy to Azure ACI
+    - name: Deploy to Azure ACI with Docker Hub Authentication
       run: |
-        # Login to Azure using Service Principal
         az login --service-principal \
           --username "${{ secrets.AZURE_CLIENT_ID }}" \
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-        # Check if the container exists
+        # Delete existing container if it exists
         CONTAINER_NAME="chakshu-container"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
 
-        # Check for existing container and delete if it exists
         if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
           echo "Container $CONTAINER_NAME exists. Deleting..."
           az container delete --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" --yes
         else
-          echo "Container $CONTAINER_NAME does not exist. Creating a new one..."
+          echo "No existing container found."
         fi
 
-        # Deploy new container with latest image
+        # Deploy new container with Docker Hub authentication
         az container create \
           --resource-group "$RESOURCE_GROUP" \
           --name "$CONTAINER_NAME" \
@@ -87,6 +85,9 @@ jobs:
           --ports 8000 80 \
           --os-type Linux \
           --restart-policy Always \
+          --registry-login-server "index.docker.io" \
+          --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
+          --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
           --environment-variables \
             DB_NAME="${{ secrets.DB_NAME }}" \
             DB_USER="${{ secrets.DB_USER }}" \
@@ -94,6 +95,7 @@ jobs:
             DB_HOST="${{ secrets.DB_HOST }}" \
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+
 
 
     - name: Cleanup Docker Cache
