@@ -4,6 +4,10 @@ FROM python:3.10-slim
 # Set work directory
 WORKDIR /app
 
+# Install PostgreSQL client and build tools
+RUN apt-get update && apt-get install -y \
+    libpq-dev gcc python3-dev musl-dev
+
 # Upgrade pip and install Poetry in one layer
 RUN pip install --upgrade pip poetry
 
