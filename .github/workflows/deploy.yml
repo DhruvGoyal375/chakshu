@@ -1,4 +1,4 @@
-name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI
+name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI + Front Door
 
 on:
   push:
@@ -49,6 +49,7 @@ jobs:
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
+    # ✅ Deploy to Azure ACI (Full Resources)
     - name: Deploy to Azure ACI
       run: |
         az login --service-principal \
@@ -56,10 +57,10 @@ jobs:
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-        # Delete existing container if it exists
         CONTAINER_NAME="chakshu-container"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
 
+        # Delete existing container if it exists
         if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
           echo "Container $CONTAINER_NAME exists. Deleting..."
           az container delete --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" --yes
@@ -67,7 +68,7 @@ jobs:
           echo "No existing container found."
         fi
 
-        # Deploy new ACI container
+        # Deploy with Full Resources (4 CPU, 16 GB RAM)
         az container create \
           --resource-group "$RESOURCE_GROUP" \
           --name "$CONTAINER_NAME" \
@@ -88,43 +89,63 @@ jobs:
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
 
-    - name: Check if Azure Front Door Exists
+    # ✅ Configure Full-Fledged Azure Front Door (Not Free Tier)
+    - name: Configure Azure Front Door
       run: |
         FRONTDOOR_NAME="chakshu-frontdoor"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+        CONTAINER_FQDN="chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io"
 
-        # Check if the Front Door exists
+        # Check if Front Door exists
         if az network front-door show --name "$FRONTDOOR_NAME" --resource-group "$RESOURCE_GROUP" &> /dev/null; then
           echo "Azure Front Door $FRONTDOOR_NAME already exists. Skipping creation."
         else
-          echo "Creating new Azure Front Door..."
-          
-          # Create Front Door
-          az network front-door create \
+          echo "Creating Azure Front Door..."
+
+          az network front-door profile create \
             --resource-group "$RESOURCE_GROUP" \
             --name "$FRONTDOOR_NAME" \
-            --routing-rule-name "chakshu-rule" \
-            --backend-pool-name "chakshu-backend-pool" \
-            --frontend-endpoint-name "chakshu-frontend" \
+            --sku Premium_AzureFrontDoor
+
+         
+          az network front-door frontend-endpoint create \
+            --resource-group "$RESOURCE_GROUP" \
+            --front-door-name "$FRONTDOOR_NAME" \
+            --name "chakshu-frontend" \
+            --host-name "$CONTAINER_FQDN" \
+            --session-affinity-enabled false
+
+       
+          az network front-door backend-pool create \
+            --resource-group "$RESOURCE_GROUP" \
+            --front-door-name "$FRONTDOOR_NAME" \
+            --name "chakshu-backend-pool" \
+            --load-balancing-enabled true \
+            --enforce-backend-pool-certificate-name-check false \
+            --backends "host=$CONTAINER_FQDN httpPort=80 httpsPort=443"
+
+ 
+          az network front-door routing-rule create \
+            --resource-group "$RESOURCE_GROUP" \
+            --front-door-name "$FRONTDOOR_NAME" \
+            --name "chakshu-rule" \
+            --frontend-endpoints "chakshu-frontend" \
             --accepted-protocols "Http Https" \
             --patterns-to-match "/*" \
-            --forwarding-protocol "MatchRequest" \
-            --backend-address "chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io" \
-            --backend-host-header "chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io" \
-            --backend-http-port 80 \
-            --backend-https-port 443 \
-            --certificate-type "ManagedCertificate" \
-            --ssl-protocol "TLS12" \
-            --probe-name "health-probe" \
-            --probe-interval 30 \
-            --probe-path "/" \
-            --probe-protocol "Http" \
-            --probe-request-type "GET" \
-            --probe-timeout 5 \
-            --probe-unhealthy-threshold 3
+            --route-type "Forward" \
+            --backend-pool-name "chakshu-backend-pool"
+
+          az network front-door probe create \
+            --resource-group "$RESOURCE_GROUP" \
+            --front-door-name "$FRONTDOOR_NAME" \
+            --name "chakshu-health-probe" \
+            --path "/" \
+            --protocol "Http" \
+            --interval-in-seconds 30 \
+            --request-type "GET" \
+            --health-check-path "/"
 
           echo "Azure Front Door created successfully."
-        fi
 
     - name: Cleanup Docker Cache
       run: |
