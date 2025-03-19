@@ -26,6 +26,9 @@ COPY chakshu/pyproject.toml chakshu/README.md /app/
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-root
 
+# Install summarizer with pip bypassing PEP 517
+RUN pip install --no-use-pep517 summarizer==0.0.7
+
 # Copy the rest of the application code
 COPY chakshu /app/chakshu
 
