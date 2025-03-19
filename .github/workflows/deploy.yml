@@ -1,4 +1,4 @@
-name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI + Front Door
+name: Build, Push Docker Images & Deploy with HTTPS on Azure Container Apps
 
 on:
   push:
@@ -56,71 +56,70 @@ jobs:
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-    - name: Check or Create Static IP
+    - name: Deploy to Azure Container Apps with Docker Hub Auth
       run: |
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
-        STATIC_IP_NAME="chakshu-static-ip"
+        ACA_ENV="chakshu-env"
+        APP_NAME="chakshu-app"
 
-        # Check if Static IP exists
-        IP_EXISTS=$(az network public-ip show --resource-group "$RESOURCE_GROUP" --name "$STATIC_IP_NAME" --query "ipAddress" --output tsv || echo "")
+        # Check if the ACA environment exists
+        ENV_EXISTS=$(az containerapp env show --name "$ACA_ENV" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv || echo "")
 
-        if [ -z "$IP_EXISTS" ]; then
-          echo "Static IP not found. Creating..."
-          az network public-ip create \
+        if [ -z "$ENV_EXISTS" ]; then
+          echo "Creating Azure Container App Environment..."
+          az containerapp env create \
+            --name "$ACA_ENV" \
             --resource-group "$RESOURCE_GROUP" \
-            --name "$STATIC_IP_NAME" \
-            --sku Standard \
-            --allocation-method Static \
-            --query "publicIp.ipAddress" --output tsv
-
-          # Wait for the IP to be provisioned
-          sleep 30
-
-          STATIC_IP=$(az network public-ip show --resource-group "$RESOURCE_GROUP" --name "$STATIC_IP_NAME" --query "ipAddress" --output tsv)
-          echo "Static IP created: $STATIC_IP"
+            --location "eastus" # Change to your preferred region
         else
-          STATIC_IP="$IP_EXISTS"
-          echo "Using existing Static IP: $STATIC_IP"
+          echo "Using existing ACA environment: $ACA_ENV"
         fi
 
-        echo "STATIC_IP=$STATIC_IP" >> $GITHUB_ENV
+        # Check if the app already exists
+        APP_EXISTS=$(az containerapp show --name "$APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv || echo "")
 
-    - name: Deploy to Azure ACI with Static IP
-      run: |
-        CONTAINER_NAME="chakshu-container"
-        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
-        STATIC_IP="${{ env.STATIC_IP }}"
-
-        # Delete existing container if it exists
-        if az container show --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" &> /dev/null; then
-          echo "Container $CONTAINER_NAME exists. Deleting..."
-          az container delete --resource-group "$RESOURCE_GROUP" --name "$CONTAINER_NAME" --yes
+        if [ -n "$APP_EXISTS" ]; then
+          echo "App exists. Updating..."
+          az containerapp update \
+            --name "$APP_NAME" \
+            --resource-group "$RESOURCE_GROUP" \
+            --image "${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest" \
+            --cpu 4 --memory 16Gi \
+            --registry-server "index.docker.io" \
+            --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
+            --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+            --environment-variables \
+              DB_NAME="${{ secrets.DB_NAME }}" \
+              DB_USER="${{ secrets.DB_USER }}" \
+              DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
+              DB_HOST="${{ secrets.DB_HOST }}" \
+              DB_PORT="${{ secrets.DB_PORT }}" \
+              DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}" \
+            --ingress external --target-port 8000
         else
-          echo "No existing container found."
+          echo "Creating new Container App..."
+          az containerapp create \
+            --name "$APP_NAME" \
+            --resource-group "$RESOURCE_GROUP" \
+            --environment "$ACA_ENV" \
+            --image "${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest" \
+            --cpu 4 --memory 16Gi \
+            --registry-server "index.docker.io" \
+            --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
+            --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+            --environment-variables \
+              DB_NAME="${{ secrets.DB_NAME }}" \
+              DB_USER="${{ secrets.DB_USER }}" \
+              DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
+              DB_HOST="${{ secrets.DB_HOST }}" \
+              DB_PORT="${{ secrets.DB_PORT }}" \
+              DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}" \
+            --ingress external --target-port 8000
         fi
 
-        # Deploy with Static IP
-        az container create \
-          --resource-group "$RESOURCE_GROUP" \
-          --name "$CONTAINER_NAME" \
-          --image "${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest" \
-          --cpu 4 --memory 16 \
-          --dns-name-label "chakshu-demo" \
-          --ports 8000 80 \
-          --os-type Linux \
-          --restart-policy Always \
-          --registry-login-server "index.docker.io" \
-          --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
-          --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
-          --public-ip-address "$STATIC_IP_NAME" \
-          --environment-variables \
-            DB_NAME="${{ secrets.DB_NAME }}" \
-            DB_USER="${{ secrets.DB_USER }}" \
-            DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
-            DB_HOST="${{ secrets.DB_HOST }}" \
-            DB_PORT="${{ secrets.DB_PORT }}" \
-            DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
-
+        # Get ACA URL
+        ACA_URL=$(az containerapp show --name "$APP_NAME" --resource-group "$RESOURCE_GROUP" --query "properties.configuration.ingress.fqdn" --output tsv)
+        echo "Deployed to: https://$ACA_URL"
 
     - name: Cleanup Docker Cache
       run: |
