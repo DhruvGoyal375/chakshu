@@ -120,35 +120,19 @@ def generate_llava_caption(encoded_image, title_caption, caption, description):
         print("Image encoding failed.")
         return None
 
-    
-    # Build the prompt with detailed instructions
     prompt = (
-        f"Forget all previous messages and context. Focus **only** on the provided image.\n\n"
-        f"You are an AI specialized in generating **highly descriptive yet concise captions** for images, "
-        f"designed to help **visually impaired individuals** understand the scene with clarity.\n\n"
-
-        f"### **Key Instructions:**\n"
-        f"1. **Use Provided Context for Identification (If Certain):**\n"
-        f"   - If the **Title, Caption, or Description** mentions a **specific person, object, or place**, use the name **instead of generic terms**.\n"
-        f"   - If uncertain, describe the object or person as seen without assumption.\n"
-        f"2. **Describe Actions and Positions Clearly:**\n"
-        f"   - Identify what each person is doing.\n"
-        f"   - Specify relative positioning (who is sitting, standing, or interacting how).\n"
-        f"3. **Include Background Elements Only If Relevant:**\n"
-        f"   - Mention key visible details but avoid adding details that are not evident.\n"
-        f"4. **Concise Yet Detailed:** Use structured, vivid descriptions while keeping it short and natural.\n\n"
-
-        f"### **Context Provided (Use Only If It Matches What Is Seen):**\n"
-        f"- **Title:** {title_caption.strip()}\n"
-        f"- **Caption:** {caption.strip()}\n"
-        f"- **Description:** {description.strip()}\n\n"
-
-        f"### **Your Task:**\n"
-        f"Generate a **short but structured paragraph** that accurately describes:\n"
-        f"- **The main subjects and their actions.**\n"
-        f"- **Their spatial arrangement (who is sitting, standing, or interacting how).**\n"
-        f"- **Any relevant background elements.**\n"
-        f"- **Ensure clarity while keeping it brief.**\n"
+        f"Analyze and describe the content of the image based on the metadata provided. Use the following guidelines:\n\n"
+        f"1. Identify and name any individuals, places, or objects mentioned in the metadata.\n"
+        f"2. Describe their positions and actions within the scene (e.g., who is on the left, right, etc.).\n"
+        f"3. Include any notable interactions or movements.\n"
+        f"4. Provide a detailed overview of the image that a blind person could understand, including visual cues like colors, lighting, and emotions where possible.\n\n"
+        f"Use the following metadata to guide your description:\n\n"
+        f"Image Metadata:\n"
+        f"Title: {title_caption.strip()}\n"
+        f"Caption: {caption.strip()}\n"
+        f"Description: {description.strip()}\n\n"
+        f"Ensure the description incorporates the names of people or places mentioned, along with their actions and relationships in the scene suitable for a blind person. "
+        f"Do not include any technical details like links, metadata, etc. The description should focus on helping a blind person understand the visual content.\n"
     )
 
     # Prepare the payload for the remote API request with system message included
@@ -296,7 +280,7 @@ def fetch_and_process_images(page_url):
                                         final_caption=llava_caption
                                     )
 
-                                    # Add to processed captions list
+                                    #Add to processed captions list
                                     processed_captions.append({
                                         'image_url': high_res_img_url,
                                         'final_caption': llava_caption

@@ -1,4 +1,4 @@
-name: Build and Push Multiple Docker Images to Docker Hub
+name: Build, Push Docker Images & Deploy to Azure ACI
 
 on:
   push:
@@ -6,15 +6,13 @@ on:
       - main
 
 jobs:
-  build-and-push:
-    runs-on: ubuntu-latest # Larger runner with more disk space
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
     steps:
-    # 1️⃣ Checkout the code
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 2️⃣ Install Docker and Docker-Compose
     - name: Install Docker & Docker-Compose
       run: |
         curl -fsSL https://get.docker.com -o get-docker.sh
@@ -22,32 +20,35 @@ jobs:
         docker --version
         docker compose version
 
-    # 3️⃣ Build Docker Images
+    - name: Create .env file
+      run: |
+        echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env
+        echo "DB_USER=${{ secrets.DB_USER }}" >> .env
+        echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+        echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env
+        echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env
+        echo "DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}" >> .env
+
     - name: Build Docker Images
       run: |
-        docker compose build   # Build local images (Django, Node)
+        docker compose build
 
-    # 4️⃣ List Docker Images (for verification)
     - name: List Docker Images
       run: |
         docker images
 
-    # 5️⃣ Log in to Docker Hub
     - name: Log in to Docker Hub
       run: |
         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    # 6️⃣ Tag Docker Images for Docker Hub
     - name: Tag Docker Images
       run: |
-        # Define Docker Hub username
         USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
         
         # Tag each image with Docker Hub repo
         docker tag chakshu-chakshu:latest $USERNAME/chakshu-chakshu:latest
         docker tag chakshu-node:latest $USERNAME/chakshu-node:latest
 
-    # 7️⃣ Push Docker Images to Docker Hub
     - name: Push Docker Images to Docker Hub
       run: |
         USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
@@ -56,21 +57,29 @@ jobs:
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
-    # 8️⃣ Tag Docker Images with Version (Optional)
-    - name: Tag Docker Images with Version
+    - name: Deploy to Azure ACI
       run: |
-        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
-        VERSION="$(date +%Y%m%d%H%M%S)"
-        
-        # Tag images with version
-        docker tag $USERNAME/chakshu-chakshu:latest $USERNAME/chakshu-chakshu:$VERSION
-        docker tag $USERNAME/chakshu-node:latest $USERNAME/chakshu-node:$VERSION
-        
-        # Push versioned tags
-        docker push $USERNAME/chakshu-chakshu:$VERSION
-        docker push $USERNAME/chakshu-node:$VERSION
+        az login --service-principal \
+          --username "${{ secrets.AZURE_CLIENT_ID }}" \
+          --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
+          --tenant "${{ secrets.AZURE_TENANT_ID }}"
 
-    # 9️⃣ Clean up Docker Cache (optional)
+        # Deploy container with environment variables
+        az container create \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --name chakshu-container \
+          --image ${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest \
+          --cpu 4 --memory 16 \
+          --dns-name-label chakshu-demo \
+          --ports 8000 80 \
+          --environment-variables \
+            DB_NAME=${{ secrets.DB_NAME }} \
+            DB_USER=${{ secrets.DB_USER }} \
+            DB_PASSWORD=${{ secrets.DB_PASSWORD }} \
+            DB_HOST=${{ secrets.DB_HOST }} \
+            DB_PORT=${{ secrets.DB_PORT }} \
+            DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}
+
     - name: Cleanup Docker Cache
       run: |
         docker system prune -af
