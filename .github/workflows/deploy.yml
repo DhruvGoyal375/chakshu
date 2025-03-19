@@ -57,12 +57,28 @@ jobs:
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
-    - name: Deploy to Azure ACI with Docker Hub Authentication
+    - name: Deploy to Azure ACI with Static IP and FQDN
       run: |
         az login --service-principal \
           --username "${{ secrets.AZURE_CLIENT_ID }}" \
           --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
           --tenant "${{ secrets.AZURE_TENANT_ID }}"
+
+        # Create or retrieve the static IP
+        STATIC_IP=$(az network public-ip show \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --name chakshu-public-ip \
+          --query "ipAddress" \
+          --output tsv)
+
+        FQDN=$(az network public-ip show \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --name chakshu-public-ip \
+          --query "dnsSettings.fqdn" \
+          --output tsv)
+
+        echo "Static IP: $STATIC_IP"
+        echo "FQDN: $FQDN"
 
         # Delete existing container if it exists
         CONTAINER_NAME="chakshu-container"
@@ -75,19 +91,17 @@ jobs:
           echo "No existing container found."
         fi
 
-        # Deploy new container with Docker Hub authentication
+        # Deploy the container with Static IP and FQDN
         az container create \
           --resource-group "$RESOURCE_GROUP" \
           --name "$CONTAINER_NAME" \
           --image "${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest" \
           --cpu 4 --memory 16 \
-          --dns-name-label "chakshu-demo" \
           --ports 8000 80 \
           --os-type Linux \
           --restart-policy Always \
-          --registry-login-server "index.docker.io" \
-          --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
-          --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+          --ip-address Public \
+          --dns-name-label "chakshu-demo" \
           --environment-variables \
             DB_NAME="${{ secrets.DB_NAME }}" \
             DB_USER="${{ secrets.DB_USER }}" \
@@ -95,6 +109,7 @@ jobs:
             DB_HOST="${{ secrets.DB_HOST }}" \
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+
 
 
 
