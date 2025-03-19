@@ -1,4 +1,4 @@
-name: Build, Push Docker Images & Deploy to Azure ACI
+name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI
 
 on:
   push:
@@ -33,31 +33,23 @@ jobs:
       run: |
         docker compose build
 
-    - name: List Docker Images
-      run: |
-        docker images
-
     - name: Log in to Docker Hub
       run: |
         echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    - name: Tag Docker Images
+    - name: Tag and Push Docker Images
       run: |
         USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
         
-        # Tag each image with Docker Hub repo
+        # Tag images
         docker tag chakshu-chakshu:latest $USERNAME/chakshu-chakshu:latest
         docker tag chakshu-node:latest $USERNAME/chakshu-node:latest
 
-    - name: Push Docker Images to Docker Hub
-      run: |
-        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
-        
-        # Push each image to Docker Hub
+        # Push images to Docker Hub
         docker push $USERNAME/chakshu-chakshu:latest
         docker push $USERNAME/chakshu-node:latest
 
-    - name: Deploy to Azure ACI with Docker Hub Authentication
+    - name: Deploy to Azure ACI
       run: |
         az login --service-principal \
           --username "${{ secrets.AZURE_CLIENT_ID }}" \
@@ -75,7 +67,7 @@ jobs:
           echo "No existing container found."
         fi
 
-        # Deploy new container with Docker Hub authentication
+        # Deploy new ACI container
         az container create \
           --resource-group "$RESOURCE_GROUP" \
           --name "$CONTAINER_NAME" \
@@ -96,7 +88,43 @@ jobs:
             DB_PORT="${{ secrets.DB_PORT }}" \
             DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
 
+    - name: Check if Azure Front Door Exists
+      run: |
+        FRONTDOOR_NAME="chakshu-frontdoor"
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
 
+        # Check if the Front Door exists
+        if az network front-door show --name "$FRONTDOOR_NAME" --resource-group "$RESOURCE_GROUP" &> /dev/null; then
+          echo "Azure Front Door $FRONTDOOR_NAME already exists. Skipping creation."
+        else
+          echo "Creating new Azure Front Door..."
+          
+          # Create Front Door
+          az network front-door create \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$FRONTDOOR_NAME" \
+            --routing-rule-name "chakshu-rule" \
+            --backend-pool-name "chakshu-backend-pool" \
+            --frontend-endpoint-name "chakshu-frontend" \
+            --accepted-protocols "Http Https" \
+            --patterns-to-match "/*" \
+            --forwarding-protocol "MatchRequest" \
+            --backend-address "chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io" \
+            --backend-host-header "chakshu-demo.${{ secrets.AZURE_REGION }}.azurecontainer.io" \
+            --backend-http-port 80 \
+            --backend-https-port 443 \
+            --certificate-type "ManagedCertificate" \
+            --ssl-protocol "TLS12" \
+            --probe-name "health-probe" \
+            --probe-interval 30 \
+            --probe-path "/" \
+            --probe-protocol "Http" \
+            --probe-request-type "GET" \
+            --probe-timeout 5 \
+            --probe-unhealthy-threshold 3
+
+          echo "Azure Front Door created successfully."
+        fi
 
     - name: Cleanup Docker Cache
       run: |
