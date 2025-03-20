@@ -71,6 +71,15 @@ jobs:
         CONTAINER_APP_NAME="${{ secrets.AZURE_CONTAINER_APP_NAME }}"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
         IMAGE_NAME="${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest"
+        ACA_ENV_NAME="${{ secrets.AZURE_ENV_NAME }}"  # Ensure the environment name is defined
+
+        if [ -z "$ACA_ENV_NAME" ]; then
+          echo "Error: ACA_ENV_NAME is not set."
+          exit 1
+        fi
+
+        # Check if the container app exists
+        APP_EXISTS=$(az containerapp show --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv || echo "")
 
         if [ -z "$APP_EXISTS" ]; then
           echo "Creating new container app..."
@@ -100,6 +109,7 @@ jobs:
             --ingress external --target-port 8000 \
             --env-vars DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
         fi
+
 
     - name: Cleanup Docker Cache
       run: |
