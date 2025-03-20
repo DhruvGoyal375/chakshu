@@ -111,6 +111,7 @@ jobs:
               DB_HOST="${{ secrets.DB_HOST }}" \
               DB_PORT="${{ secrets.DB_PORT }}" \
               DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+        fi
 
     - name: Cleanup Docker Cache
       run: |
