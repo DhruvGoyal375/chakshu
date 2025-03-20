@@ -80,12 +80,11 @@ jobs:
             --resource-group "$RESOURCE_GROUP" \
             --environment "$ACA_ENV_NAME" \
             --image "$IMAGE_NAME" \
-            --target-port 8000 80 \
             --cpu 4 --memory 16 \
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
-            --ingress external --target-port $PORT \
+            --ingress external --target-port 8000 80 \
             --environment-variables \
               DB_NAME="${{ secrets.DB_NAME }}" \
               DB_USER="${{ secrets.DB_USER }}" \
@@ -100,12 +99,11 @@ jobs:
             --name "$CONTAINER_APP_NAME" \
             --resource-group "$RESOURCE_GROUP" \
             --image "$IMAGE_NAME" \
-            --target-port 8000 80 \
             --cpu 4 --memory 16 \
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
-            --ingress external --target-port $PORT \
+            --ingress external --target-port 8000 80 \
             --environment-variables \
               DB_NAME="${{ secrets.DB_NAME }}" \
               DB_USER="${{ secrets.DB_USER }}" \
