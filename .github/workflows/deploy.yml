@@ -84,7 +84,7 @@ jobs:
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
-            --ingress external --target-port 8000 80 \
+            --ingress external --target-port 8000 \
             --environment-variables \
               DB_NAME="${{ secrets.DB_NAME }}" \
               DB_USER="${{ secrets.DB_USER }}" \
@@ -103,7 +103,7 @@ jobs:
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
-            --ingress external --target-port 8000 80 \
+            --ingress external --target-port 8000 \
             --environment-variables \
               DB_NAME="${{ secrets.DB_NAME }}" \
               DB_USER="${{ secrets.DB_USER }}" \
