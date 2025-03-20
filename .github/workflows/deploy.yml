@@ -100,7 +100,7 @@ jobs:
             --resource-group "$RESOURCE_GROUP" \
             --environment "$ENVIRONMENT_ID" \
             --image "$IMAGE_NAME" \
-            --cpu 4 --memory 16 \
+            --cpu 4 --memory 8Gi \
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
@@ -112,7 +112,7 @@ jobs:
             --name "$CONTAINER_APP_NAME" \
             --resource-group "$RESOURCE_GROUP" \
             --image "$IMAGE_NAME" \
-            --cpu 4 --memory 16 \
+            --cpu 4 --memory 8Gi
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
