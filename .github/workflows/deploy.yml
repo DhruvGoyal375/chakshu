@@ -85,7 +85,7 @@ jobs:
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
             --ingress external --target-port 8000 \
-            --environment-variables DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+            --env-vars DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
         else
           echo "Updating existing container app with new image..."
           # Update the existing container app with the new image
@@ -98,7 +98,7 @@ jobs:
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
             --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
             --ingress external --target-port 8000 \
-            --environment-variables DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+            --env-vars DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
         fi
 
     - name: Cleanup Docker Cache
