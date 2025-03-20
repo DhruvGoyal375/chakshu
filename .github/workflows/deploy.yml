@@ -54,15 +54,17 @@ jobs:
         CONTAINER_APP_NAME="${{ secrets.AZURE_CONTAINER_APP_NAME }}"
         RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
 
-        # Check if the Azure Container App already exists
-        APP_EXISTS=$(az containerapp show --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv)
+        # Check if the Azure Container App exists and suppress the error
+        APP_EXISTS=$(az containerapp show --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv 2>/dev/null || echo "")
 
         echo "Container app exists: $APP_EXISTS"
+        
         if [ -z "$APP_EXISTS" ]; then
           echo "Container app does not exist, creating..."
         else
           echo "Container app exists, preparing to update image..."
         fi
+
 
     - name: Deploy or Update Azure Container App
       run: |
