@@ -80,6 +80,7 @@ jobs:
             --resource-group "$RESOURCE_GROUP" \
             --environment "$ACA_ENV_NAME" \
             --image "$IMAGE_NAME" \
+            --target-port 8000 80 \
             --cpu 4 --memory 16 \
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
@@ -99,6 +100,7 @@ jobs:
             --name "$CONTAINER_APP_NAME" \
             --resource-group "$RESOURCE_GROUP" \
             --image "$IMAGE_NAME" \
+            --target-port 8000 80 \
             --cpu 4 --memory 16 \
             --registry-server "index.docker.io" \
             --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
