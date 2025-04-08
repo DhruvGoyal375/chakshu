@@ -30,11 +30,13 @@ onnxruntime = "^1.7.0"
 phonemizer = "^2.2.1"
 joblib = "^1.4.2"
 summarizer = "^0.0.7"
-torch = { version = "*", source = "pytorch" }
+torch = "2.6.0"
 django-cors-headers = "^4.4.0"
 googlesearch-python = "^1.2.5"
 ollama = "^0.3.3"
 pillow = "^10.4.0"
+psycopg2 = "^2.9.10"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

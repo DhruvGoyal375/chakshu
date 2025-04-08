@@ -6,8 +6,8 @@ from django.http import JsonResponse
 from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
-from scraper.views import get_citations, get_full_content, get_image_urls, get_short_description
-
+from scraper.views import get_citations, get_full_content, get_short_description
+from captioner.views import fetch_and_process_images
 from .wiki_api import WikiAPI
 
 mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
@@ -96,22 +96,8 @@ class ProcessOptionView(View):
 
                 # get captions of all images
                 elif option == 4:
-                    image_urls = get_image_urls(selected_link)
-                    captions = []
-                    captioner = LlavaImageCaptioner()
-
-                    for url in image_urls:
-                        if url.startswith("//upload"):
-                            print(url)
-
-                            image_metadata_page_url = ""
-                            generated_caption = captioner.test_model_with_image_url_and_text(
-                                image_url=url, page_url=image_metadata_page_url
-                            )
-                            captions.append(generated_caption)
-
-                    captions = "\n".join(captions)
-                    return JsonResponse({"text": captions})
+                    ls_captions=fetch_and_process_images(selected_link)
+                    return JsonResponse({"text": ls_captions})
 
                 # get the references
                 elif option == 5:

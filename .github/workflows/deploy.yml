@@ -1,0 +1,128 @@
+name: Build, Push Docker Images & Deploy with HTTPS on Azure ACI + Front Door
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install Azure CLI
+      run: |
+        curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+        az --version
+
+    - name: Azure Login
+      run: |
+        az login --service-principal \
+          --username "${{ secrets.AZURE_CLIENT_ID }}" \
+          --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
+          --tenant "${{ secrets.AZURE_TENANT_ID }}"
+
+    - name: Register Microsoft.App Resource Provider
+      run: |
+        az provider register --namespace Microsoft.App --wait
+
+    - name: Build Docker Images
+      run: |
+        docker compose build
+
+    - name: Log in to Docker Hub
+      run: |
+        echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+    - name: Tag and Push Docker Images
+      run: |
+        USERNAME="${{ secrets.DOCKERHUB_USERNAME }}"
+        
+        # Tag images
+        docker tag chakshu-chakshu:latest $USERNAME/chakshu-chakshu:latest
+        docker tag chakshu-node:latest $USERNAME/chakshu-node:latest
+
+        # Push images to Docker Hub
+        docker push $USERNAME/chakshu-chakshu:latest
+        docker push $USERNAME/chakshu-node:latest
+
+    - name: Check if Container App Exists
+      run: |
+        CONTAINER_APP_NAME="${{ secrets.AZURE_CONTAINER_APP_NAME }}"
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+
+        # Check if the Azure Container App exists and suppress the error
+        APP_EXISTS=$(az containerapp show --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv 2>/dev/null || echo "")
+
+        echo "Container app exists: $APP_EXISTS"
+        
+        if [ -z "$APP_EXISTS" ]; then
+          echo "Container app does not exist, creating..."
+        else
+          echo "Container app exists, preparing to update image..."
+        fi
+
+
+    - name: Deploy or Update Azure Container App
+      run: |
+        CONTAINER_APP_NAME="${{ secrets.AZURE_CONTAINER_APP_NAME }}"
+        RESOURCE_GROUP="${{ secrets.AZURE_RESOURCE_GROUP }}"
+        IMAGE_NAME="${{ secrets.DOCKERHUB_USERNAME }}/chakshu-chakshu:latest"
+        ENV_NAME="${{ secrets.AZURE_ENV_NAME }}"
+        LOCATION="${{ secrets.AZURE_LOCATION }}"  # Add Azure location (e.g., eastus, westus)
+
+        # Check if the environment exists
+        ENV_EXISTS=$(az containerapp env show --name "$ENV_NAME" --resource-group "$RESOURCE_GROUP" --query "id" --output tsv || echo "")
+
+        if [ -z "$ENV_EXISTS" ]; then
+          echo "ACA environment does not exist. Creating a new one..."
+          az containerapp env create \
+            --name "$ENV_NAME" \
+            --resource-group "$RESOURCE_GROUP" \
+            --location "$LOCATION"
+        else
+          echo "Using existing environment: $ENV_NAME"
+        fi
+
+        # Retrieve the full environment ID
+        ENVIRONMENT_ID=$(az containerapp env show --name "$ENV_NAME" --resource-group "$RESOURCE_GROUP" --query "id" --output tsv)
+
+        # Check if the container app exists
+        APP_EXISTS=$(az containerapp show --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --query "name" --output tsv || echo "")
+
+        if [ -z "$APP_EXISTS" ]; then
+          echo "Creating new container app..."
+          az containerapp create \
+            --name "$CONTAINER_APP_NAME" \
+            --resource-group "$RESOURCE_GROUP" \
+            --environment "$ENVIRONMENT_ID" \
+            --image "$IMAGE_NAME" \
+            --cpu 4 --memory 8Gi \
+            --registry-server "index.docker.io" \
+            --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
+            --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+            --ingress external --target-port 8000 \
+            --env-vars DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+        else
+          echo "Updating existing container app with new image..."
+          az containerapp update \
+            --name "$CONTAINER_APP_NAME" \
+            --resource-group "$RESOURCE_GROUP" \
+            --image "$IMAGE_NAME" \
+            --cpu 4 --memory 8Gi
+            --registry-server "index.docker.io" \
+            --registry-username "${{ secrets.DOCKERHUB_USERNAME }}" \
+            --registry-password "${{ secrets.DOCKERHUB_PASSWORD }}" \
+            --ingress external --target-port 8000 \
+            --env-vars DB_NAME="${{ secrets.DB_NAME }}" DB_USER="${{ secrets.DB_USER }}" DB_PASSWORD="${{ secrets.DB_PASSWORD }}" DB_HOST="${{ secrets.DB_HOST }}" DB_PORT="${{ secrets.DB_PORT }}" DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+        fi
+
+
+
+    - name: Cleanup Docker Cache
+      run: |
+        docker system prune -af
+        
