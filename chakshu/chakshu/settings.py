@@ -136,7 +136,7 @@ CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
         "LOCATION": "image_captions_cache",
-        "TIMEOUT": 86400  # Cache for 1 day
+        "TIMEOUT": 86400,  # Cache for 1 day
     }
 }
 
