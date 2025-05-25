@@ -1,13 +1,14 @@
+import datetime
 import re
 from collections import OrderedDict
 
-from captioner.image_captioner import LlavaImageCaptioner
+from captioner.views import fetch_and_process_images
 from django.http import JsonResponse
 from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
 from scraper.views import get_citations, get_full_content, get_short_description
-from captioner.views import fetch_and_process_images
+
 from .wiki_api import WikiAPI
 
 mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")
@@ -19,15 +20,16 @@ class SearchResultsView(View):
         query.replace("%20", " ")
         query_for_wiki = query + " site:en.wikipedia.org"
         if query:
-            search_results_list = list(search(query_for_wiki, num_results=10))
+            search_results_list = list(search(query_for_wiki, num_results=5))
             print(search_results_list)
+            print("SEARCH RESULTS FETCHED at, ", datetime.datetime.now())
 
             # Remove duplicates by converting the list to an OrderedDict, which maintains order
             search_results_list = list(OrderedDict.fromkeys(search_results_list))
 
             # Fetch descriptions in parallel for the filtered results
             short_descriptions = Parallel(n_jobs=-1)(delayed(get_short_description)(url) for url in search_results_list)
-
+            print("SHORT DESCRIPTIONS FETCHED at, ", datetime.datetime.now())
             # Format the results into a response-friendly structure
             results = [
                 {
@@ -96,7 +98,7 @@ class ProcessOptionView(View):
 
                 # get captions of all images
                 elif option == 4:
-                    ls_captions=fetch_and_process_images(selected_link)
+                    ls_captions = fetch_and_process_images(selected_link)
                     return JsonResponse({"text": ls_captions})
 
                 # get the references

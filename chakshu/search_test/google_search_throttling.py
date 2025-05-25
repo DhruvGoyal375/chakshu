@@ -1,6 +1,8 @@
 import random
 import time
+
 from googlesearch import search
+
 
 def perform_search(queries, max_requests_per_minute):
     results = []
@@ -20,7 +22,7 @@ def perform_search(queries, max_requests_per_minute):
             for result in search(query, num_results=10):
                 results.append(result)
                 print(result)  # Output the result URL
-            
+
             processed_count += 1  # Increment the counter after a successful search
             last_request_time = time.time()  # Update the timestamp
         except Exception as e:
@@ -29,6 +31,7 @@ def perform_search(queries, max_requests_per_minute):
 
     print(f"Total queries processed: {processed_count}")
     return results, processed_count
+
 
 # Base topics for generating queries
 base_topics = [
@@ -51,7 +54,10 @@ base_topics = [
 
 # Generate 1000 random queries
 num_queries = 1000
-queries = [f"{random.choice(base_topics)} {random.choice(['2024', 'trends', 'guide', 'introduction', 'overview'])}" for _ in range(num_queries)]
+queries = [
+    f"{random.choice(base_topics)} {random.choice(['2024', 'trends', 'guide', 'introduction', 'overview'])}"
+    for _ in range(num_queries)
+]
 
 # Set the maximum number of requests per minute (throttling limit)
 max_requests_per_minute = 25  # 10 requests per minute
@@ -64,5 +70,5 @@ with open("search_results.txt", "w") as f:
     for result in search_results:
         f.write(result + "\n")
 
-print(f"Search completed. Results saved to 'search_results.txt'.")
+print("Search completed. Results saved to 'search_results.txt'.")
 print(f"Total requests successfully processed: {total_processed}")
