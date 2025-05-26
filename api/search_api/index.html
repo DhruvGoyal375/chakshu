@@ -12,9 +12,13 @@
         <meta name="author" content="Chakshu Developers">
       
       
-        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/api/endpoints/">
+        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/api/search_api/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../processing_api/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>API Endpoints - Chakshu Backend Documentation</title>
+        <title>Search Endpoint - Chakshu Backend Documentation</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-endpoints" class="md-skip">
+        <a href="#search-endpoint" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Endpoints
+              Search Endpoint
             
           </span>
         </div>
@@ -295,10 +299,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -489,26 +495,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -521,7 +532,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             API Reference
@@ -555,10 +566,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../search_api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Search Endpoint
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -569,6 +602,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-apisearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /api/search/
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /api/search/">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-success-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response (Success - 200 OK)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-error-400-bad-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response (Error - 400 Bad Request)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -810,52 +923,70 @@
   
 
 
-<h1 id="api-endpoints">API Endpoints</h1>
-<h2 id="apisearch"><code>/api/search/</code></h2>
+<h1 id="search-endpoint">Search Endpoint</h1>
+<p>This endpoint allows clients to search for Wikipedia articles based on a query.</p>
+<h2 id="get-apisearch"><code>GET /api/search/</code></h2>
+<p>Searches for Wikipedia articles matching the provided query string.</p>
+<h3 id="request">Request</h3>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>q=your+query</code>  </li>
-<li><strong>Function:</strong><br />
-  Performs a Google search restricted to Wikipedia.<br />
-  Returns top 5 links with short descriptions parsed in parallel.</li>
+<li><strong>Method</strong>: <code>GET</code></li>
+<li><strong>URL</strong>: <code>/api/search/</code></li>
+<li><strong>Query Parameters</strong>:<ul>
+<li><code>q</code> (string, required): The search query. Spaces should be URL-encoded (e.g., <code>%20</code>).</li>
 </ul>
-<hr />
-<h2 id="apiselect"><code>/api/select/</code></h2>
-<ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>link=selected_wiki_url</code>  </li>
-<li>
-<p><strong>Function:</strong><br />
-  Accepts a selected Wikipedia link and returns available processing options:</p>
 </li>
-<li>
-<p>Short description  </p>
-</li>
-<li>Summary  </li>
-<li>Full content  </li>
-<li>Image captions  </li>
-<li>References</li>
 </ul>
-<hr />
-<h2 id="apiprocess"><code>/api/process/</code></h2>
+<h3 id="example-request">Example Request</h3>
+<p>GET http://127.0.0.1:8000/api/search/?q=artificial%20intelligence</p>
+<h3 id="response-success-200-ok">Response (Success - <code>200 OK</code>)</h3>
+<p>Returns a JSON object containing a message and a list of search results.</p>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query params:</strong>  </li>
-<li><code>link=wiki_url</code>  </li>
-<li>
-<p><code>option=1</code> to <code>5</code></p>
+<li><strong>Body</strong>:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Select the article you want to read&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">&quot;index&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en.wikipedia.org/wiki/Artificial_intelligence&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Artificial intelligence&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="nt">&quot;short_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Intelligence demonstrated by machines, as opposed to natural intelligence displayed by animals including humans.&quot;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="nt">&quot;index&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Applications of artificial intelligence&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">            </span><span class="nt">&quot;short_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Overview of the various applications of artificial intelligence (AI)&quot;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="c1">// ... more results up to 5</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
+</code></pre></div><ul>
+<li><code>message</code>: A guiding message for the user/client.</li>
+<li><code>results</code>: A list of article objects.<ul>
+<li><code>index</code>: A 1-based index for the result.</li>
+<li><code>url</code>: The URL of the Wikipedia article.</li>
+<li><code>title</code>: The title of the Wikipedia article, derived from the URL.</li>
+<li><code>short_description</code>: A brief description of the article, fetched from the Wikipedia page.</li>
+</ul>
 </li>
-<li>
-<p><strong>Function:</strong><br />
-  Depending on the selected option:</p>
+</ul>
 </li>
-<li>
-<p>Short description (from page HTML)  </p>
-</li>
-<li>Summary (via MediaWiki API)  </li>
-<li>Full content (via HTML scraping)  </li>
-<li>All image captions on the page  </li>
-<li>Citations/references from the page</li>
+</ul>
+<h3 id="response-error-400-bad-request">Response (Error - <code>400 Bad Request</code>)</h3>
+<p>If the <code>q</code> parameter is missing or empty.</p>
+<ul>
+<li><strong>Body</strong>:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Please provide a search query using the &#39;q&#39; parameter.&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<h3 id="implementation-details">Implementation Details</h3>
+<ul>
+<li>Located in <code>core.views.SearchResultsView</code>.</li>
+<li>Uses the <code>googlesearch</code> library to perform a site-specific search on <code>en.wikipedia.org</code> (limited to 5 results).</li>
+<li>Removes duplicate URLs.</li>
+<li>Fetches short descriptions for each unique URL in parallel using <code>joblib</code> and the <code>scraper.views.get_short_description</code> function.</li>
 </ul>
 
 

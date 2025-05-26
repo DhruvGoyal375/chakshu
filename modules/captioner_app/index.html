@@ -12,13 +12,13 @@
         <meta name="author" content="Chakshu Developers">
       
       
-        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/modules/core/">
+        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/modules/captioner_app/">
       
       
-        <link rel="prev" href="../../api/scraper/">
+        <link rel="prev" href="../scraper_app/">
       
       
-        <link rel="next" href="../captioner/">
+        <link rel="next" href="../api_app/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Core - Chakshu Backend Documentation</title>
+        <title>Captioner App - Chakshu Backend Documentation</title>
       
     
     
@@ -52,8 +52,6 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -66,10 +64,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core-module" class="md-skip">
+        <a href="#captioner-app-captioner" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Core
+              Captioner App
             
           </span>
         </div>
@@ -120,7 +120,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -148,6 +174,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -216,7 +244,45 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../structure/" class="md-tabs__link">
+      <a href="../../project_overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Project Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../setup_guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Setup Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../project_structure/" class="md-tabs__link">
         
   
   
@@ -237,11 +303,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../api/endpoints/" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
   
-  API Overview
+  API Reference
 
         </a>
       </li>
@@ -259,11 +325,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
-  Internal Modules
+  Modules
 
         </a>
       </li>
@@ -277,13 +343,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../faq/" class="md-tabs__link">
+      <a href="../../configuration/" class="md-tabs__link">
         
   
   
     
   
-  FAQ
+  Configuration
 
       </a>
     </li>
@@ -366,7 +432,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../../structure/" class="md-nav__link">
+      <a href="../../project_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_structure/" class="md-nav__link">
         
   
   
@@ -401,15 +511,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    API Overview
+    API Reference
     
   </span>
   
@@ -417,10 +527,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            API Overview
+            API Reference
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -431,12 +541,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/endpoints/" class="md-nav__link">
+      <a href="../../api/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Endpoints
+    Introduction
     
   </span>
   
@@ -454,12 +564,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/views/" class="md-nav__link">
+      <a href="../../api/search_api/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Views
+    Search Endpoint
     
   </span>
   
@@ -477,12 +587,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/scraper/" class="md-nav__link">
+      <a href="../../api/processing_api/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Scraper
+    Content Processing Endpoints
     
   </span>
   
@@ -525,15 +635,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    Internal Modules
+    Modules
     
   </span>
   
@@ -541,12 +651,81 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Internal Modules
+            Modules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scraper_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scraper App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -569,7 +748,7 @@
   
   
   <span class="md-ellipsis">
-    Core
+    Captioner App
     
   </span>
   
@@ -582,7 +761,7 @@
   
   
   <span class="md-ellipsis">
-    Core
+    Captioner App
     
   </span>
   
@@ -605,18 +784,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#views" class="md-nav__link">
+  <a href="#responsibilities" class="md-nav__link">
     <span class="md-ellipsis">
-      Views
+      Responsibilities
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#helper-module" class="md-nav__link">
+  <a href="#key-files-and-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Helper Module
+      Key Files and Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction-with-other-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interaction with Other Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Considerations
     </span>
   </a>
   
@@ -638,12 +835,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../captioner/" class="md-nav__link">
+      <a href="../api_app/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Captioner
+    API App
     
   </span>
   
@@ -668,12 +865,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../configuration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    FAQ
+    Configuration
     
   </span>
   
@@ -702,17 +899,94 @@
   
 
 
-<h1 id="core-module">Core Module<a class="headerlink" href="#core-module" title="Permanent link">&para;</a></h1>
-<p>The <code>core</code> app acts as the entry point for user search interaction.</p>
-<h3 id="views">Views<a class="headerlink" href="#views" title="Permanent link">&para;</a></h3>
+<h1 id="captioner-app-captioner">Captioner App (<code>captioner</code>)</h1>
+<p>The <code>captioner</code> app is responsible for providing captions for images found on Wikipedia pages.</p>
+<h2 id="responsibilities">Responsibilities</h2>
 <ul>
-<li><code>SearchResultsView</code></li>
-<li><code>SelectLinkView</code></li>
-<li><code>ProcessOptionView</code></li>
+<li><strong>Image Identification</strong>: Potentially identifying images on a page (though image URLs might be passed from the <code>scraper</code> app).</li>
+<li><strong>Caption Retrieval/Generation</strong>:<ul>
+<li>Fetching existing captions (e.g., from HTML <code>alt</code> text, <code>figcaption</code> elements, or surrounding text).</li>
+<li>Utilizing metadata associated with images, if available (as suggested by <code>metadata_image_captioner.py</code>).</li>
+<li>Possibly integrating with AI models for generating captions if no explicit captions are found (though this is an advanced feature not explicitly shown).</li>
 </ul>
-<h3 id="helper-module">Helper Module<a class="headerlink" href="#helper-module" title="Permanent link">&para;</a></h3>
+</li>
+<li><strong>Data Formatting</strong>: Presenting the captions in a usable format.</li>
+</ul>
+<h2 id="key-files-and-components">Key Files and Components</h2>
 <ul>
-<li><code>wiki_api.py</code>: Wrapper for MediaWiki API to fetch summaries.</li>
+<li>
+<p><strong><code>views.py</code></strong>:</p>
+<ul>
+<li><code>Workspace_and_process_images(selected_link)</code>:<ul>
+<li>This is the primary function exposed by the <code>captioner</code> app, called by <code>core.views.ProcessOptionView</code> when <code>option=4</code> is selected.</li>
+<li>The exact implementation is not provided, but it would involve:<ol>
+<li>Getting image URLs for the <code>selected_link</code> (likely by calling a function from the <code>scraper</code> app, e.g., <code>scraper.views.get_image_urls()</code>).</li>
+<li>For each image, attempting to find or generate a caption using logic from <code>image_captioner.py</code> and/or <code>metadata_image_captioner.py</code>.</li>
+<li>Aggregating these captions and returning them. The return format is <code>ls_captions</code>, which is then passed to <code>JsonResponse</code> in <code>core.views</code>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>image_captioner.py</code></strong>:</p>
+<ul>
+<li>This file is expected to contain the core logic for deriving captions from image context or simple attributes.</li>
+<li>This might involve:<ul>
+<li>Scraping the HTML around an image tag.</li>
+<li>Looking for <code>&lt;figcaption&gt;</code> elements.</li>
+<li>Using <code>alt</code> text or <code>title</code> attributes of <code>&lt;img&gt;</code> tags.</li>
+<li>Basic heuristics based on surrounding text.</li>
+</ul>
+</li>
+<li><em>Developer Note: The specific strategies used in this file will determine the quality and source of the captions.</em></li>
+</ul>
+</li>
+<li>
+<p><strong><code>metadata_image_captioner.py</code></strong>:</p>
+<ul>
+<li>This file suggests an alternative or supplementary approach to captioning, focusing on metadata.</li>
+<li>This could involve:<ul>
+<li>Fetching image metadata if images are hosted on platforms like Wikimedia Commons, which often have structured descriptions.</li>
+<li>Parsing EXIF data if accessible (less likely in a web context).</li>
+</ul>
+</li>
+<li><em>Developer Note: Understanding how this module complements or differs from <code>image_captioner.py</code> is important.</em></li>
+</ul>
+</li>
+<li>
+<p><strong><code>models.py</code></strong>:</p>
+<ul>
+<li>The file structure shows <code>captioner/models.py</code> and a migration <code>0001_initial.py</code>. This implies that the <code>captioner</code> app might store data, such as:<ul>
+<li>Cached captions to avoid re-processing.</li>
+<li>Associations between image URLs and their captions.</li>
+</ul>
+</li>
+<li>Developers should inspect the current models to understand what data is persisted.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>admin.py</code>, <code>apps.py</code>, <code>tests.py</code></strong>: Standard Django app files. <code>admin.py</code> would be used to register any <code>captioner</code> models with the Django admin interface.</p>
+</li>
+</ul>
+<h2 id="interaction-with-other-modules">Interaction with Other Modules</h2>
+<ul>
+<li><strong><code>core</code> app</strong>: The <code>core.views.ProcessOptionView</code> calls <code>captioner.views.fetch_and_process_images</code>.</li>
+<li><strong><code>scraper</code> app (Likely)</strong>: The <code>captioner</code> app will likely need image URLs from the <code>scraper</code> app to know which images to process. This could be a direct function call (e.g., <code>captioner.views</code> calling <code>scraper.views.get_image_urls()</code>) or image URLs could be passed into <code>Workspace_and_process_images</code>.</li>
+</ul>
+<h2 id="development-considerations">Development Considerations</h2>
+<ul>
+<li><strong>Caption Sources</strong>: Determine the priority and reliability of different caption sources (alt text, figcaption, metadata, generated).</li>
+<li><strong>Accuracy</strong>: The accuracy of captions is crucial. If generating captions, the quality of the model or heuristics will be important.</li>
+<li><strong>Performance</strong>: Captioning multiple images can be time-consuming. Consider:<ul>
+<li>Batch processing.</li>
+<li>Caching results in <code>captioner.models</code>.</li>
+<li>Asynchronous processing if caption generation is slow (though the current <code>core.views</code> call is synchronous).</li>
+</ul>
+</li>
+<li><strong>Handling Missing Captions</strong>: Define a clear strategy for images where no caption can be found.</li>
+<li><strong>External Libraries/Services</strong>: If using advanced AI captioning models, manage those dependencies and any associated API keys or model files. The current snippets do not show such advanced features.</li>
 </ul>
 
 
@@ -731,8 +1005,16 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -762,7 +1044,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>

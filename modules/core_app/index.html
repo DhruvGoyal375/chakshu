@@ -12,9 +12,13 @@
         <meta name="author" content="Chakshu Developers">
       
       
-        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/api/endpoints/">
+        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/modules/core_app/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../scraper_app/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>API Endpoints - Chakshu Backend Documentation</title>
+        <title>Core App - Chakshu Backend Documentation</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-endpoints" class="md-skip">
+        <a href="#core-app-core" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Endpoints
+              Core App
             
           </span>
         </div>
@@ -299,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
   
@@ -315,11 +319,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../modules/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -535,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../api/" class="md-nav__link">
         
   
   
@@ -558,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../search_api/" class="md-nav__link">
+      <a href="../../api/search_api/" class="md-nav__link">
         
   
   
@@ -581,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../processing_api/" class="md-nav__link">
+      <a href="../../api/processing_api/" class="md-nav__link">
         
   
   
@@ -608,26 +614,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -640,7 +651,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Modules
@@ -654,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -674,10 +685,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../modules/core_app/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core App
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -688,6 +721,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-files-and-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Files and Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction-with-other-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interaction with Other Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Considerations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -700,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/scraper_app/" class="md-nav__link">
+      <a href="../scraper_app/" class="md-nav__link">
         
   
   
@@ -723,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/captioner_app/" class="md-nav__link">
+      <a href="../captioner_app/" class="md-nav__link">
         
   
   
@@ -746,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/api_app/" class="md-nav__link">
+      <a href="../api_app/" class="md-nav__link">
         
   
   
@@ -810,52 +899,96 @@
   
 
 
-<h1 id="api-endpoints">API Endpoints</h1>
-<h2 id="apisearch"><code>/api/search/</code></h2>
+<h1 id="core-app-core">Core App (<code>core</code>)</h1>
+<p>The <code>core</code> app is central to the Chakshu application's functionality. It orchestrates the main business logic, handles API requests for searching and processing Wikipedia articles, and interacts with other apps and external services.</p>
+<h2 id="responsibilities">Responsibilities</h2>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>q=your+query</code>  </li>
-<li><strong>Function:</strong><br />
-  Performs a Google search restricted to Wikipedia.<br />
-  Returns top 5 links with short descriptions parsed in parallel.</li>
+<li><strong>API Endpoint Handling</strong>: Defines and manages the primary API endpoints (<code>/search/</code>, <code>/select/</code>, <code>/process/</code>) through its views.</li>
+<li><strong>Workflow Orchestration</strong>: Coordinates the flow of data and actions, such as receiving a search query, fetching results, allowing selection, and then delegating processing tasks to appropriate modules (scraper, captioner, WikiAPI).</li>
+<li><strong>External API Interaction</strong>: Contains <code>wiki_api.py</code>, a dedicated client for communicating with the MediaWiki API to fetch structured data like page summaries.</li>
+<li><strong>Data Formatting</strong>: Prepares and structures the JSON responses sent back to the client.</li>
 </ul>
-<hr />
-<h2 id="apiselect"><code>/api/select/</code></h2>
+<h2 id="key-files-and-components">Key Files and Components</h2>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>link=selected_wiki_url</code>  </li>
 <li>
-<p><strong>Function:</strong><br />
-  Accepts a selected Wikipedia link and returns available processing options:</p>
-</li>
-<li>
-<p>Short description  </p>
-</li>
-<li>Summary  </li>
-<li>Full content  </li>
-<li>Image captions  </li>
-<li>References</li>
+<p><strong><code>views.py</code></strong>:</p>
+<ul>
+<li><code>SearchResultsView</code>:<ul>
+<li>Handles <code>GET /api/search/</code>.</li>
+<li>Takes a search query <code>q</code>.</li>
+<li>Uses <code>googlesearch.search</code> to find Wikipedia articles.</li>
+<li>Employs <code>joblib.Parallel</code> and <code>joblib.delayed</code> for concurrent fetching of short descriptions via <code>scraper.views.get_short_description</code>.</li>
+<li>Formats and returns search results.</li>
 </ul>
-<hr />
-<h2 id="apiprocess"><code>/api/process/</code></h2>
+</li>
+<li><code>SelectLinkView</code>:<ul>
+<li>Handles <code>GET /api/select/</code>.</li>
+<li>Takes a Wikipedia article <code>link</code>.</li>
+<li>Returns a predefined list of processing options.</li>
+</ul>
+</li>
+<li><code>ProcessOptionView</code>:<ul>
+<li>Handles <code>GET /api/process/</code>.</li>
+<li>Takes a <code>link</code> and a numeric <code>option</code>.</li>
+<li>Acts as a dispatcher based on the <code>option</code>:<ul>
+<li><strong>Option 1 (Short Description)</strong>: Calls <code>scraper.views.get_short_description()</code>.</li>
+<li><strong>Option 2 (Summary)</strong>: Calls <code>mediawiki_api.get_page_summary()</code> (from <code>core.wiki_api.WikiAPI</code>).</li>
+<li><strong>Option 3 (Full Content)</strong>: Calls <code>scraper.views.get_full_content()</code>.</li>
+<li><strong>Option 4 (Image Captions)</strong>: Calls <code>captioner.views.fetch_and_process_images()</code>.</li>
+<li><strong>Option 5 (Citations)</strong>: Calls <code>scraper.views.get_citations()</code>.</li>
+</ul>
+</li>
+<li>Formats and returns the processed data.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>urls.py</code></strong>:</p>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query params:</strong>  </li>
-<li><code>link=wiki_url</code>  </li>
-<li>
-<p><code>option=1</code> to <code>5</code></p>
+<li>Defines the URL patterns for the views mentioned above:<ul>
+<li><code>path("search/", SearchResultsView.as_view(), name="search_results")</code></li>
+<li><code>path("select/", SelectLinkView.as_view(), name="select_link")</code></li>
+<li><code>path("process/", ProcessOptionView.as_view(), name="process_option")</code></li>
+</ul>
+</li>
+<li>These URLs are included under the <code>/api/</code> namespace via <code>api/urls.py</code>.</li>
+</ul>
 </li>
 <li>
-<p><strong>Function:</strong><br />
-  Depending on the selected option:</p>
+<p><strong><code>wiki_api.py</code></strong>:</p>
+<ul>
+<li>Contains the <code>WikiAPI</code> class.</li>
+<li>This class is responsible for making requests to the MediaWiki API (e.g., <code>action=query&amp;format=json&amp;prop=extracts&amp;exintro=true&amp;explaintext=true</code> for summaries).</li>
+<li>The instance <code>mediawiki_api = WikiAPI(user_agent="Chakshu (chakshu@pec.edu.in)")</code> is used by <code>ProcessOptionView</code>.</li>
+<li><em>Developer Note: The exact implementation details of <code>WikiAPI</code> (methods, error handling, request construction) should be examined by developers working on this module.</em></li>
+</ul>
 </li>
 <li>
-<p>Short description (from page HTML)  </p>
+<p><strong><code>models.py</code></strong>:</p>
+<ul>
+<li>The provided file structure shows <code>models.py</code>. While the views don't explicitly interact with <code>core</code> models in the snippets, this file would define any database tables specific to the <code>core</code> app's needs (e.g., logging API requests, storing user preferences if features expand).</li>
+<li>The migrations history (<code>0001_initial</code> to <code>0008_delete_imagecaption_delete_wikipediapage</code>) indicates that models related to <code>WikipediaImageCaption</code>, <code>ImageCaption</code>, and <code>WikipediaPage</code> have existed in this app at various points. Developers should check the current <code>models.py</code> to understand the active data schema.</li>
+</ul>
 </li>
-<li>Summary (via MediaWiki API)  </li>
-<li>Full content (via HTML scraping)  </li>
-<li>All image captions on the page  </li>
-<li>Citations/references from the page</li>
+<li>
+<p><strong><code>hyperlinks.py</code></strong>:</p>
+<ul>
+<li>The purpose and content of this file are unknown from the provided information. It might contain utility functions for manipulating or generating URLs.</li>
+</ul>
+</li>
+</ul>
+<h2 id="interaction-with-other-modules">Interaction with Other Modules</h2>
+<ul>
+<li><strong><code>scraper</code> app</strong>: <code>core.views</code> calls functions in <code>scraper.views</code> to get scraped data like short descriptions, full content, and citations.</li>
+<li><strong><code>captioner</code> app</strong>: <code>core.views</code> calls <code>captioner.views.fetch_and_process_images</code> for image captioning.</li>
+</ul>
+<h2 id="development-considerations">Development Considerations</h2>
+<ul>
+<li><strong>Error Handling</strong>: Ensure robust error handling within views, especially for external calls (Google Search, WikiAPI, other apps).</li>
+<li><strong>Performance</strong>: The use of <code>joblib</code> in <code>SearchResultsView</code> is a good practice. Evaluate other areas for potential performance bottlenecks, especially in <code>ProcessOptionView</code> when dealing with large pages or many images.</li>
+<li><strong>Extensibility</strong>: Design views and services in a way that allows new processing options or data sources to be added with relative ease.</li>
+<li><strong>Configuration</strong>: API keys or sensitive parameters for external services (like a more specific User-Agent for WikiAPI if needed) should ideally be managed via <code>settings.py</code> or <code>config.py</code> rather than being hardcoded.</li>
 </ul>
 
 

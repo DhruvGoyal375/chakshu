@@ -12,9 +12,13 @@
         <meta name="author" content="Chakshu Developers">
       
       
-        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/api/endpoints/">
+        <link rel="canonical" href="https://DhruvGoyal375.github.io/chakshu/modules/api_app/">
       
       
+        <link rel="prev" href="../captioner_app/">
+      
+      
+        <link rel="next" href="../../configuration/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>API Endpoints - Chakshu Backend Documentation</title>
+        <title>API App - Chakshu Backend Documentation</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-endpoints" class="md-skip">
+        <a href="#api-app-api" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Endpoints
+              API App
             
           </span>
         </div>
@@ -299,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
   
@@ -315,11 +319,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../modules/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -535,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../api/" class="md-nav__link">
         
   
   
@@ -558,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../search_api/" class="md-nav__link">
+      <a href="../../api/search_api/" class="md-nav__link">
         
   
   
@@ -581,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../processing_api/" class="md-nav__link">
+      <a href="../../api/processing_api/" class="md-nav__link">
         
   
   
@@ -608,26 +614,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -640,7 +651,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Modules
@@ -654,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -677,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/core_app/" class="md-nav__link">
+      <a href="../core_app/" class="md-nav__link">
         
   
   
@@ -700,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/scraper_app/" class="md-nav__link">
+      <a href="../scraper_app/" class="md-nav__link">
         
   
   
@@ -723,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modules/captioner_app/" class="md-nav__link">
+      <a href="../captioner_app/" class="md-nav__link">
         
   
   
@@ -743,10 +754,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../modules/api_app/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    API App
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -757,6 +790,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-files-and-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Files and Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-fits-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Fits In
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Considerations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -810,52 +899,67 @@
   
 
 
-<h1 id="api-endpoints">API Endpoints</h1>
-<h2 id="apisearch"><code>/api/search/</code></h2>
+<h1 id="api-app-api">API App (<code>api</code>)</h1>
+<p>The <code>api</code> app in the Chakshu project primarily serves as a routing and namespacing layer for the various API endpoints provided by the application.</p>
+<h2 id="responsibilities">Responsibilities</h2>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>q=your+query</code>  </li>
-<li><strong>Function:</strong><br />
-  Performs a Google search restricted to Wikipedia.<br />
-  Returns top 5 links with short descriptions parsed in parallel.</li>
+<li><strong>API URL Aggregation</strong>: It groups API-related URL patterns from other apps under a common prefix (e.g., <code>/api/</code>).</li>
+<li><strong>Versioning (Potential)</strong>: While not explicitly shown, an app like this is often used to implement API versioning (e.g., <code>/api/v1/</code>, <code>/api/v2/</code>).</li>
+<li><strong>Global API Configuration (Potential)</strong>: Could house middleware or settings specific to the API, although most of this seems to be handled at the project level in <code>chakshu/settings.py</code>.</li>
 </ul>
-<hr />
-<h2 id="apiselect"><code>/api/select/</code></h2>
+<h2 id="key-files-and-components">Key Files and Components</h2>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query param:</strong> <code>link=selected_wiki_url</code>  </li>
 <li>
-<p><strong>Function:</strong><br />
-  Accepts a selected Wikipedia link and returns available processing options:</p>
-</li>
-<li>
-<p>Short description  </p>
-</li>
-<li>Summary  </li>
-<li>Full content  </li>
-<li>Image captions  </li>
-<li>References</li>
+<p><strong><code>urls.py</code></strong>:</p>
+<ul>
+<li>This is the most important file in the <code>api</code> app based on the provided information.</li>
+<li>Its <code>urlpatterns</code> include URL configurations from other apps:
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">include</span><span class="p">,</span> <span class="n">path</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;core.urls&quot;</span><span class="p">)),</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;scraper.urls&quot;</span><span class="p">)),</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">]</span>
+</code></pre></div></li>
+<li>This means that any URLs defined in <code>core.urls.py</code> and <code>scraper.urls.py</code> will be accessible under the path where <code>api.urls</code> is itself included (which is <code>/api/</code> as defined in <code>chakshu/urls.py</code>).</li>
+<li>For example, if <code>core.urls</code> has <code>path("search/", ...)</code>, the full path becomes <code>/api/search/</code>.</li>
 </ul>
-<hr />
-<h2 id="apiprocess"><code>/api/process/</code></h2>
+</li>
+<li>
+<p><strong><code>views.py</code></strong>:</p>
 <ul>
-<li><strong>Method:</strong> <code>GET</code>  </li>
-<li><strong>Query params:</strong>  </li>
-<li><code>link=wiki_url</code>  </li>
-<li>
-<p><code>option=1</code> to <code>5</code></p>
+<li>The provided file structure lists <code>api/views.py</code>.</li>
+<li>It's possible this file is empty or contains minimal views if the app's primary role is routing.</li>
+<li>Alternatively, it could contain high-level API views, such as an API root view that lists available endpoints, or views related to API-wide concerns like authentication if that were managed here.</li>
+</ul>
 </li>
 <li>
-<p><strong>Function:</strong><br />
-  Depending on the selected option:</p>
+<p><strong><code>models.py</code>, <code>admin.py</code>, <code>apps.py</code>, <code>tests.py</code></strong>:</p>
+<ul>
+<li>These are standard Django app files.</li>
+<li><code>models.py</code>: Unlikely to contain significant models if the app is purely for routing, but could be used for API logging or metadata.</li>
+<li>The other files would serve their standard purposes.</li>
+</ul>
 </li>
-<li>
-<p>Short description (from page HTML)  </p>
-</li>
-<li>Summary (via MediaWiki API)  </li>
-<li>Full content (via HTML scraping)  </li>
-<li>All image captions on the page  </li>
-<li>Citations/references from the page</li>
+</ul>
+<h2 id="how-it-fits-in">How It Fits In</h2>
+<ol>
+<li>A request comes to the Django project (e.g., <code>http://127.0.0.1:8000/api/search/?q=test</code>).</li>
+<li>The main <code>chakshu/urls.py</code> matches the <code>api/</code> prefix and passes the rest of the path (<code>search/?q=test</code>) to <code>api.urls</code>.
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># chakshu/urls.py</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;admin/&quot;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;api.urls&quot;</span><span class="p">)),</span> <span class="c1"># &lt;--- Match</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">]</span>
+</code></pre></div></li>
+<li><code>api/urls.py</code> then tries to match the remaining path. In this example, <code>path("", include("core.urls"))</code> would delegate the <code>search/</code> part to <code>core.urls.py</code>.</li>
+<li><code>core.urls.py</code> finally matches <code>search/</code> to <code>SearchResultsView</code>.</li>
+</ol>
+<h2 id="development-considerations">Development Considerations</h2>
+<ul>
+<li><strong>Clarity of Routing</strong>: Ensure that the includes in <code>api/urls.py</code> are clear and don't lead to ambiguous or conflicting URL patterns.</li>
+<li><strong>API Versioning</strong>: If the API is expected to evolve significantly, consider implementing a versioning strategy using this app (e.g., by creating sub-namespaces like <code>path("v1/", include("core.v1.urls"))</code>).</li>
+<li><strong>Minimal Logic</strong>: Generally, an app dedicated to API routing should contain minimal business logic itself, delegating that to the apps providing the actual features.</li>
 </ul>
 
 
