@@ -42,7 +42,6 @@ npm-debug.log
 .latext_to_text.env
 
 # Environment variables and secrets
-.env
 .env.local
 .env.*
 !.env.example

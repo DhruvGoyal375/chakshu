@@ -1,0 +1,65 @@
+=== TABLE ANALYSIS RESULTS ===
+
+--- TABLE 1 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 2 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 3 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 4 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 5 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 6 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 7 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 8 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+
+--- TABLE 9 ---
+Image: Unknown
+Status: Failed
+Error: Ollama or Qwen2.5-VL not available
+
+================================================================================
+

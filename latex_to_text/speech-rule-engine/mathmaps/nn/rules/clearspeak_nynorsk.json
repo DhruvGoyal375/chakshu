@@ -1,8 +1,0 @@
-{
-  "locale": "nn",
-  "domain": "clearspeak",
-  "modality": "speech",
-  "inherits": "base",
-  "rules": [
-    ]
-}

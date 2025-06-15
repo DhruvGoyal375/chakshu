@@ -1,16 +1,21 @@
 import base64
 import re
-import time  # Import the time module
+import time
 import urllib.parse
 from io import BytesIO
 
 import requests
 from bs4 import BeautifulSoup
-from config import MODEL_NAME, MODEL_URL
+from config import IMAGE_CAPTIONING_PROMPT, MODEL_NAME
+from core.logger import setup_logger
+from core.utils import get_env_variable
 from django.core.cache import cache
 from PIL import Image, UnidentifiedImageError
 
 from .models import ImageCaption, WikipediaPage
+
+# Initialize module-level logger
+logger = setup_logger(__name__)
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -70,7 +75,7 @@ def get_high_resolution_image_url(image_url):
             if "imageinfo" in page:
                 return page["imageinfo"][0]["url"]
     except Exception as e:
-        print(f"Error fetching high-resolution image: {e}")
+        logger.error(f"Error fetching high-resolution image: {e}", exc_info=True)
     return image_url
 
 
@@ -84,7 +89,7 @@ def fetch_image(image_url):
     try:
         response = requests.get(image_url, headers=headers, stream=True)
         if response.status_code != 200:
-            print(f"Failed to download image: {image_url}, status code: {response.status_code}")
+            logger.warning(f"Failed to download image: {image_url}, status code: {response.status_code}")
             return None
 
         image_bytes = BytesIO(response.content)
@@ -111,10 +116,10 @@ def fetch_image(image_url):
             return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
         except UnidentifiedImageError:
-            print(f"UnidentifiedImageError: Cannot open {image_url}")
+            logger.warning(f"UnidentifiedImageError: Cannot open {image_url}")
             return None
     except Exception as e:
-        print(f"Error fetching image {image_url}: {e}")
+        logger.error(f"Error fetching image {image_url}: {e}", exc_info=True)
         return None
 
 
@@ -122,45 +127,18 @@ def generate_llava_caption(encoded_image, title_caption, caption, description):
     """Generates a detailed caption for an image tailored for visually impaired individuals."""
     # Ensure valid image encoding
     if not encoded_image:
-        print("Image encoding failed.")
+        logger.error("Image encoding failed.")
         return None
 
     # Build the prompt with detailed instructions
-    prompt = (
-        f"Forget all previous messages and context. Focus **only** on the provided image.\n\n"
-        f"You are an AI specialized in generating **highly descriptive yet concise captions** for images, "
-        f"designed to help **visually impaired individuals** understand the scene with clarity.\n\n"
-        f"### **Key Instructions:**\n"
-        f"1. **Use Provided Context for Identification (If Certain):**\n"
-        f"   - If the **Title, Caption, or Description** mentions a **specific person, object, or place**, use the name **instead of generic terms**.\n"
-        f"   - If uncertain, describe the object or person as seen without assumption.\n"
-        f"2. **Describe Actions and Positions Clearly:**\n"
-        f"   - Identify what each person is doing.\n"
-        f"   - Specify relative positioning (who is sitting, standing, or interacting how).\n"
-        f"3. **Include Background Elements Only If Relevant:**\n"
-        f"   - Mention key visible details but avoid adding details that are not evident.\n"
-        f"4. **Concise Yet Detailed:** Use structured, vivid descriptions while keeping it short and natural.\n\n"
-        f"### **Context Provided (Use Only If It Matches What Is Seen):**\n"
-        f"- **Title:** {title_caption.strip()}\n"
-        f"- **Caption:** {caption.strip()}\n"
-        f"- **Description:** {description.strip()}\n\n"
-        f"### **Your Task:**\n"
-        f"Generate a **short but structured paragraph** that accurately describes:\n"
-        f"- **The main subjects and their actions.**\n"
-        f"- **Their spatial arrangement (who is sitting, standing, or interacting how).**\n"
-        f"- **Any relevant background elements.**\n"
-        f"- **Ensure clarity while keeping it brief.**\n"
+    prompt = IMAGE_CAPTIONING_PROMPT.format(
+        Title=title_caption.strip(), Caption=caption.strip(), Description=description.strip()
     )
 
     # Prepare the payload for the remote API request with system message included
     payload = {
         "model": MODEL_NAME,  # Specify the model name running on the server (e.g., "llava")
-        "prompt": (
-            "[System message]: Forget all previous messages. Focus only on the given image and its specific context. "
-            "You are an AI generating precise, descriptive captions for visually impaired individuals, "
-            "ensuring accuracy and clarity. Always prioritize accuracy over assumption.\n\n"
-            "[User]: " + prompt  # Append the user message
-        ),
+        "prompt": prompt,
         "images": [encoded_image],  # Send the image in base64 format
         "stream": False,  # Disable streaming to get the full response at once
         "options": {"temperature": 0, "top_p": 0.1, "top_k": 1},
@@ -170,37 +148,39 @@ def generate_llava_caption(encoded_image, title_caption, caption, description):
     try:
         # Start timer
         start_time = time.time()
-
-        response = requests.post(MODEL_URL, json=payload)
-
+        ollama_url = f"{get_env_variable('OLLAMA_BASE_URL', 'http://localhost:11434')}/api/generate"
+        logger.debug(f"Sending request to LLaVA server at {ollama_url}")
+        response = requests.post(ollama_url, json=payload)
+        logger.debug(f"LLaVA server response status: {response.status_code}")
         # Stop timer
         end_time = time.time()
 
         # Check the response status
         if response.status_code == 200:
             result = response.json()
-            print(f"Time taken to generate caption: {end_time - start_time:.2f} seconds")
+            logger.info(f"Time taken to generate caption: {end_time - start_time:.2f} seconds")
             return result.get("response", {})
         else:
-            print(f"Failed to generate caption. Status code: {response.status_code}")
+            logger.warning(f"Failed to generate caption. Status code: {response.status_code}")
             return None
 
     except Exception as e:
-        print(f"Error: {e}")
+        logger.error(f"Error generating caption: {e}", exc_info=True)
         return None
 
 
 def process_image(image_url, title, caption, description):
     encoded_image = fetch_image(image_url)
     if encoded_image is None:
-        print("Image processing failed.")
+        logger.error("Image processing failed.")
         return
-    print(image_url, title, caption, description)
+    logger.debug(
+        f"Processing image with URL: {image_url}, title: {title}, caption: {caption}, description: {description}"
+    )
     llava_caption = generate_llava_caption(encoded_image, title, caption, description)
 
-    print(f"Image URL: {image_url}")
-    print(f"LLaVA Caption: {llava_caption}")
-    print("------")
+    logger.debug(f"Image URL: {image_url}")
+    logger.debug(f"LLaVA Caption: {llava_caption}")
     return llava_caption
 
 
@@ -212,7 +192,7 @@ def fetch_and_process_images(page_url):
     cached_captions = cache.get(cache_key)
 
     if cached_captions:
-        print("Cache hit. Returning cached captions.")
+        logger.info("Cache hit. Returning cached captions.")
         return cached_captions
 
     # Check if captions are in the database
@@ -223,16 +203,16 @@ def fetch_and_process_images(page_url):
         db_captions = list(ImageCaption.objects.filter(page=page).values("image_url", "final_caption"))
 
         if db_captions:
-            print("DB hit. Returning stored captions.")
+            logger.info("DB hit. Returning stored captions.")
 
             # Store in cache before returning
             cache.set(cache_key, db_captions, timeout=60 * 60)  # Cache for 1 hour
             return db_captions
 
     # Otherwise, process the page
-    print("No cache or DB hit. Fetching and processing.")
+    logger.info("No cache or DB hit. Fetching and processing.")
     page_title = urllib.parse.unquote(page_url.split("/")[-1])
-    page, created = WikipediaPage.objects.get_or_create(url=page_url, defaults={"title": page_title})
+    page, _ = WikipediaPage.objects.get_or_create(url=page_url, defaults={"title": page_title})
     # Fetch images and process captions
     processed_captions = []
 
@@ -302,6 +282,7 @@ def fetch_and_process_images(page_url):
     return processed_captions
 
 
-# # Example Wikipedia page
-# wiki_url = "https://en.wikipedia.org/wiki/Python_(programming_language)"
-# fetch_and_process_images(wiki_url)
+# Example Wikipedia page
+if __name__ == "__main__":
+    wiki_url = "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    fetch_and_process_images(wiki_url)
