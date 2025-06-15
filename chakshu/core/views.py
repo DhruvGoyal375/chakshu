@@ -3,16 +3,16 @@ from collections import OrderedDict
 from functools import wraps
 from urllib.parse import unquote
 
-from captioner.views import fetch_and_process_images
+from captioner.views import fetch_and_process_page_images
 from core.logger import setup_logger
 from core.utils import get_env_variable
 from django.core.cache import cache
-from django.http import JsonResponse
 from django.utils.decorators import method_decorator
-from django.views import View
 from googlesearch import search
 from joblib import Parallel, delayed
 from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from scraper.views import get_citations, get_full_content, get_short_description, get_tables
 
 from .wiki_api import WikiAPI
@@ -40,7 +40,7 @@ def validate_query_param(param_name, required=True, max_length=None):
 
             if required and not param_value:
                 logger.warning(f"Missing required parameter: {param_name}")
-                return JsonResponse(
+                return Response(
                     {"status": "error", "message": f"Missing required parameter: {param_name}"},
                     status=status.HTTP_400_BAD_REQUEST,
                 )
@@ -49,7 +49,7 @@ def validate_query_param(param_name, required=True, max_length=None):
                 logger.warning(
                     f"Parameter {param_name} too long: {len(param_value)} characters. Max allowed: {max_length}"
                 )
-                return JsonResponse(
+                return Response(
                     {"status": "error", "message": f"{param_name} is too long (max {max_length} characters)"},
                     status=status.HTTP_400_BAD_REQUEST,
                 )
@@ -66,7 +66,7 @@ def validate_query_param(param_name, required=True, max_length=None):
     return decorator
 
 
-class SearchResultsView(View):
+class SearchResultsView(APIView):
     @method_decorator(validate_query_param("q", required=True, max_length=255))
     def get(self, request):
         """Handle GET request for searching Wikipedia articles."""
@@ -77,7 +77,7 @@ class SearchResultsView(View):
         cached_results = cache.get(cache_key)
         if cached_results:
             logger.info(f"Serving search results from cache for query: '{query}'")
-            return JsonResponse(cached_results)
+            return Response(cached_results)
 
         try:
             query_for_wiki = f"{query} site:en.wikipedia.org"
@@ -86,7 +86,7 @@ class SearchResultsView(View):
             logger.info(f"Found {len(search_results_objects)} raw search results for query: '{query}'")
 
             if not search_results_objects:
-                return JsonResponse(
+                return Response(
                     {
                         "status": "success",
                         "message": "No results found.",
@@ -132,17 +132,17 @@ class SearchResultsView(View):
             }
             cache.set(cache_key, response_data, CACHE_TIMEOUT)
             logger.info(f"Cached search results for query: '{query}'")
-            return JsonResponse(response_data)
+            return Response(response_data)
 
         except Exception as e:
             logger.error(f"Search error for query '{query}': {str(e)}", exc_info=True)
-            return JsonResponse(
+            return Response(
                 {"status": "error", "message": "An error occurred while processing your search request."},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
 
 
-class SelectLinkView(View):
+class SelectLinkView(APIView):
     @method_decorator(validate_query_param("link", required=True, max_length=500))
     def get(self, request):
         """Handle GET request for getting available options for a Wikipedia article."""
@@ -151,7 +151,7 @@ class SelectLinkView(View):
 
         if not re.match(r"^https://en\.wikipedia\.org/wiki/.+$", selected_link):
             logger.warning(f"Invalid Wikipedia URL format: {selected_link}")
-            return JsonResponse(
+            return Response(
                 {
                     "status": "error",
                     "message": "Invalid Wikipedia URL format. Must be a full 'https://en.wikipedia.org/wiki/...' URL.",
@@ -176,16 +176,16 @@ class SelectLinkView(View):
                 "article_url": selected_link,
                 "article_title": article_title,
             }
-            return JsonResponse(response_data)
+            return Response(response_data)
         except Exception as e:
             logger.error(f"Error in SelectLinkView for link '{selected_link}': {str(e)}", exc_info=True)
-            return JsonResponse(
+            return Response(
                 {"status": "error", "message": "An error occurred while fetching options for the article."},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
 
 
-class ProcessOptionView(View):
+class ProcessOptionView(APIView):
     @method_decorator(validate_query_param("link", required=True, max_length=500))
     @method_decorator(validate_query_param("option", required=True, max_length=1))
     def get(self, request):
@@ -198,7 +198,7 @@ class ProcessOptionView(View):
 
         if not re.match(r"^https://en\.wikipedia\.org/wiki/.+$", selected_link):
             logger.warning(f"Invalid Wikipedia URL format: {selected_link}")
-            return JsonResponse(
+            return Response(
                 {
                     "status": "error",
                     "message": "Invalid Wikipedia URL format. Must be a full 'https://en.wikipedia.org/wiki/...' URL.",
@@ -210,13 +210,13 @@ class ProcessOptionView(View):
             option = int(option_str)
             if not (1 <= option <= 6):
                 logger.warning(f"Invalid option value: {option}. Must be between 1 and 6.")
-                return JsonResponse(
+                return Response(
                     {"status": "error", "message": "Invalid option. Please select a valid option (1-6)."},
                     status=status.HTTP_400_BAD_REQUEST,
                 )
         except ValueError:
             logger.warning(f"Invalid option format: '{option_str}'. Must be an integer.")
-            return JsonResponse(
+            return Response(
                 {"status": "error", "message": "Invalid option format. Option must be a number (1-5)."},
                 status=status.HTTP_400_BAD_REQUEST,
             )
@@ -226,7 +226,7 @@ class ProcessOptionView(View):
         cached_response = cache.get(cache_key)
         if cached_response:
             logger.info(f"Serving processed option from cache for key: {cache_key}")
-            return JsonResponse(cached_response)
+            return Response(cached_response)
 
         try:
             content = None
@@ -248,7 +248,7 @@ class ProcessOptionView(View):
                 content = content if content else "Full content not available."
             elif option == 4:  # Image captions
                 content_type = "image_captions"
-                content = fetch_and_process_images(selected_link)
+                content = fetch_and_process_page_images(article_title, selected_link)
                 additional_meta["image_count"] = len(content) if isinstance(content, list) else 0
                 content = content if content else []  # Ensure it's a list
             elif option == 5:  # Tables
@@ -273,11 +273,11 @@ class ProcessOptionView(View):
 
             cache.set(cache_key, response_data, CACHE_TIMEOUT)
             logger.info(f"Cached processed option for key: {cache_key}")
-            return JsonResponse(response_data)
+            return Response(response_data)
 
         except Exception as e:
             logger.error(f"Error processing option {option} for '{selected_link}': {str(e)}", exc_info=True)
-            return JsonResponse(
+            return Response(
                 {
                     "status": "error",
                     "message": f"Failed to process your request for option {option}. Please try again later.",
