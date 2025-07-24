@@ -2,78 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/configuration/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/faq/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <loc>https://DhruvGoyal375.github.io/chakshu/installation/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/project_overview/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/project_structure/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/setup_guide/</loc>
-         <lastmod>2025-05-26</lastmod>
-    </url>
-    <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/structure/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/api/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/api/endpoints/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <loc>https://DhruvGoyal375.github.io/chakshu/api/error_handling/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/api/processing_api/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/api/scraper/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <loc>https://DhruvGoyal375.github.io/chakshu/api/response_examples/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/api/search_api/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/api/views/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <loc>https://DhruvGoyal375.github.io/chakshu/features/content_processing/</loc>
+         <lastmod>2025-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://DhruvGoyal375.github.io/chakshu/features/image_captioning/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/modules/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/modules/api_app/</loc>
-         <lastmod>2025-05-26</lastmod>
-    </url>
-    <url>
-         <loc>https://DhruvGoyal375.github.io/chakshu/modules/captioner/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/modules/captioner_app/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/modules/core_app/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://DhruvGoyal375.github.io/chakshu/modules/scraper_app/</loc>
-         <lastmod>2025-05-26</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
 </urlset>
