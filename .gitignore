@@ -43,7 +43,7 @@ npm-debug.log
 
 # Environment variables and secrets
 .env.local
-.env.*
+.env
 !.env.example
 
 # Log and temporary files
@@ -52,4 +52,4 @@ npm-debug.log
 *.bak
 
 # Build artifacts
-*.sqlite3
+*.sqlite3chakshu/site/
