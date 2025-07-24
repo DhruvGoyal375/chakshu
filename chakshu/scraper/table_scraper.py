@@ -3,19 +3,13 @@ import os
 import time
 
 import requests
+from config import TABLE_ACCESSIBILITY_PROMPT, TABLE_SCREENSHOT_PATH
 from core.logger import setup_logger
+from core.utils import get_env_variable
 from playwright.sync_api import sync_playwright
 
 # Initialize logger
 logger = setup_logger(__name__)
-
-OLLAMA_BASE_URL = "http://ollama.hjd8bbdabzbkctgw.centralindia.azurecontainer.io:11434/"
-MODEL_NAME = "qwen2.5vl"
-TABLE_SCREENSHOT_PATH = "screenshots/"
-TABLE_ACCESSIBILITY_PROMPT = """
-    Describe the table in the image in a way that is easily readable by a screen reader or text-to-speech application for a blind person.
-    Clearly state the table's purpose, column headers, and each row's data.
-    """
 
 
 class PlaywrightTableCapture:
@@ -74,112 +68,78 @@ class PlaywrightTableCapture:
 # Integration with Qwen2.5-VL via Ollama
 class Qwen2VLIntegration:
     """
-    Integration with Qwen2.5-VL running in Ollama
+    Integration with Qwen2.5-VL running in Ollama, proxied by a FastAPI server.
     """
 
     def __init__(self):
-        self.ollama_base_url = OLLAMA_BASE_URL
-        self.model_name = MODEL_NAME
+        self.ollama_api_url = get_env_variable("OLLAMA_BASE_URL", "http://localhost:11434/api")
+        self.model_name = get_env_variable("MODEL_NAME", "qwen2.5vl")
         self.table_analysis_prompt = TABLE_ACCESSIBILITY_PROMPT
 
     def encode_image_base64(self, image_path):
-        """Convert image to base64 for API calls"""
+        """Convert image to base64 for API calls (kept for potential other uses)"""
         with open(image_path, "rb") as image_file:
             return base64.b64encode(image_file.read()).decode("utf-8")
 
-    def check_ollama_status(self):
-        """Check if Ollama is running and model is available"""
-        try:
-            response = requests.get(f"{self.ollama_base_url}/api/tags")
-            if response.status_code == 200:
-                models = response.json().get("models", [])
-                model_names = [model["name"] for model in models]
-
-                if any(self.model_name in name for name in model_names):
-                    return True
-                else:
-                    logger.warning(
-                        f"Model {self.model_name} not found. Available models: {model_names}. "
-                        f"Please install it with: ollama pull {self.model_name}"
-                    )
-                    return False
-            else:
-                logger.error(f"Ollama not responding. Status code: {response.status_code}")
-                return False
-        except requests.exceptions.ConnectionError:
-            logger.error(
-                f"Cannot connect to Ollama at {self.ollama_base_url}. " "Make sure it's running with: ollama serve"
-            )
-            return False
-        except Exception:
-            logger.error("Error checking Ollama status", exc_info=True)
-            return False
-
     def process_table_with_qwen2vl(self, image_path, custom_prompt=None):
         """
-        Send table image to Qwen2.5-VL via Ollama
+        Sends a table image and a prompt to the FastAPI server as multipart/form-data.
 
         Args:
-            image_path: Path to the table screenshot
-            custom_prompt: Optional custom prompt (uses default if None)
+            image_path: Path to the table screenshot.
+            custom_prompt: Optional custom prompt to override the default.
 
         Returns:
-            Dictionary with analysis results
+            A dictionary containing the analysis results.
         """
+        prompt = custom_prompt if custom_prompt else self.table_analysis_prompt
+        service_url = (
+            f"{self.ollama_api_url}/query-file/"  # The log shows a double slash, ensure this is correct in your env var
+        )
+
+        logger.info(f"Analyzing table image via FastAPI proxy: {os.path.basename(image_path)}")
+
         try:
-            # Check if Ollama is available
-            if not self.check_ollama_status():
-                return {"error": "Ollama or Qwen2.5-VL not available"}
+            # Prepare the multipart/form-data payload
+            form_data = {"prompt": prompt}
 
-            # Encode image
-            base64_image = self.encode_image_base64(image_path)
+            with open(image_path, "rb") as image_file:
+                # The key 'file' must match the parameter name in the FastAPI endpoint
+                files = {"file": (os.path.basename(image_path), image_file, "image/png")}
 
-            # Use custom prompt or default
-            prompt = custom_prompt if custom_prompt else self.table_analysis_prompt
+                # Make the API call using 'data' for form fields and 'files' for the file part
+                response = requests.post(
+                    service_url,
+                    data=form_data,
+                    files=files,
+                    timeout=240,  # 4-minute timeout for vision processing
+                )
 
-            # Prepare request payload for Ollama
-            payload = {
-                "model": self.model_name,
-                "prompt": prompt,
-                "images": [base64_image],
-                "stream": False,
+            response.raise_for_status()
+
+            result = response.json()
+            analysis = result.get("response", "")
+
+            return {
+                "success": True,
+                "analysis": analysis,
             }
-
-            logger.info(f"Analyzing table image: {os.path.basename(image_path)}")
-
-            # Make API call to Ollama
-            response = requests.post(
-                f"{self.ollama_base_url}/api/generate",
-                json=payload,
-                timeout=1000,  # 2 minute timeout for vision processing
-            )
-
-            if response.status_code == 200:
-                result = response.json()
-                analysis = result.get("response", "")
-
-                return {
-                    "success": True,
-                    "image_path": image_path,
-                    "analysis": analysis,
-                    "model": self.model_name,
-                    "prompt_tokens": result.get("prompt_eval_count", 0),
-                    "completion_tokens": result.get("eval_count", 0),
-                }
-            else:
-                return {
-                    "success": False,
-                    "error": f"API call failed with status {response.status_code}",
-                    "response": response.text,
-                }
 
         except requests.exceptions.Timeout:
             return {
                 "success": False,
-                "error": "Request timed out - vision processing took too long",
+                "error": "Request timed out: The FastAPI server did not respond in time.",
+            }
+        except requests.exceptions.RequestException as e:
+            error_message = f"Failed to communicate with the FastAPI server at {service_url}: {e}"
+            if e.response is not None:
+                error_message += f"\nResponse: {e.response.text}"
+            return {
+                "success": False,
+                "error": error_message,
             }
         except Exception as e:
-            return {"success": False, "error": f"Error processing image: {str(e)}"}
+            return {"success": False, "error": f"An unexpected error occurred during processing: {e}"}
 
     def batch_analyze_tables(self, image_paths, custom_prompt=None):
         """

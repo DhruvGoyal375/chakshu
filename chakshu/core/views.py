@@ -3,7 +3,7 @@ from collections import OrderedDict
 from functools import wraps
 from urllib.parse import unquote
 
-from captioner.views import fetch_and_process_page_images
+from captioner.views import fetch_and_process_images
 from core.logger import setup_logger
 from core.utils import get_env_variable
 from django.core.cache import cache
@@ -21,7 +21,7 @@ from .wiki_api import WikiAPI
 logger = setup_logger(__name__)
 
 # Get configuration from environment variables
-WIKI_USER_AGENT = get_env_variable("WIKI_USER_AGENT", "Chakshu/1.0 (chakshu@example.com)")
+WIKI_USER_AGENT = get_env_variable("WIKI_USER_AGENT", "Chakshu/1.0 (chakshu@pec.edu.in)")
 CACHE_TIMEOUT = int(get_env_variable("CACHE_TIMEOUT", "3600"))  # 1 hour default
 
 # Initialize WikiAPI with proper user agent from environment variables
@@ -82,7 +82,7 @@ class SearchResultsView(APIView):
         try:
             query_for_wiki = f"{query} site:en.wikipedia.org"
             # Using advanced=True to get more structured results if available from the library
-            search_results_objects = list(search(query_for_wiki, num_results=5, advanced=True))
+            search_results_objects = list(search(query_for_wiki, num_results=9, advanced=True))
             logger.info(f"Found {len(search_results_objects)} raw search results for query: '{query}'")
 
             if not search_results_objects:
@@ -115,7 +115,7 @@ class SearchResultsView(APIView):
 
             results = [
                 {
-                    "index": index + 1,
+                    "id": index + 1,
                     "url": url,
                     "title": unquote(url.split("/")[-1].replace("_", " ")),
                     "short_description": desc,
@@ -248,7 +248,7 @@ class ProcessOptionView(APIView):
                 content = content if content else "Full content not available."
             elif option == 4:  # Image captions
                 content_type = "image_captions"
-                content = fetch_and_process_page_images(article_title, selected_link)
+                content = fetch_and_process_images(article_title, selected_link)
                 additional_meta["image_count"] = len(content) if isinstance(content, list) else 0
                 content = content if content else []  # Ensure it's a list
             elif option == 5:  # Tables

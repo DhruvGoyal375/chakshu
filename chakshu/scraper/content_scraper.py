@@ -4,8 +4,8 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 from core.logger import setup_logger
-from joblib import Parallel, delayed
 from core.utils import get_env_variable
+from joblib import Parallel, delayed
 
 # logger = setup_logger(__name__)
 logger = setup_logger(__name__)
@@ -126,7 +126,7 @@ class WikipediaScraper:
 
     def _render_latex(self, latex: str) -> str:
         """Calls the LaTeX rendering API for a single LaTeX string."""
-        url = f"{get_env_variable("LATEX_TO_TEXT_BASE_URL", "http://localhost")}:8080/api"
+        url = get_env_variable("LATEX_TO_TEXT_BASE_URL", "http://localhost:8080/api")
         data = {"latexInput": latex}
         try:
             response = requests.post(url, json=data, timeout=15)
@@ -259,10 +259,10 @@ class WikipediaScraper:
     def process_structure(self, soup):
         try:
             self.content = []
-            for element in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p", "table", "ul", "cite", "figure"]):
+            for element in soup.find_all(["h1", "h2", "h3", "h4", "h5", "h6", "p", "table", "ul", "ol", "figure"]):
                 try:
                     if element.name in ["h1", "h2", "h3", "h4", "h5", "h6"]:
-                        if element.get("id") in ["Bibliography", "External_links", "References"]:
+                        if element.get("id") in ["Bibliography", "External_links"]:
                             break
                         self.extract_links_images(element)
                         text = element.get_text(strip=True)
@@ -282,18 +282,16 @@ class WikipediaScraper:
                         self.extract_links_images(element)
                         self.process_ul(element)
 
+                    elif element.name == "ol":
+                        # get all the references
+                        if "references" in element.get("class", []):
+                            for li in element.find_all("li"):
+                                self.citations.append(li.get_text(strip=True))
+
                     elif element.name == "figure":
                         if element.img and element.img.get("src"):
                             figcaption = element.figcaption.get_text() if element.figcaption else ""
                             self.figure.append([element.img.get("src"), figcaption])
-
-                    elif element.name == "cite":
-                        for a in element.find_all("a"):
-                            if isinstance(a.get_text(), str):
-                                self.link[a.get_text()] = a.get("href")
-                        for img in element.find_all("img"):
-                            self.images.append([img.get("src"), img.get("alt")])
-                        self.citations.append(element.get_text())
 
                 except Exception as inner_e:
                     logger.error(f"Error processing element: {inner_e}")

@@ -1,7 +1,5 @@
-from django.urls import path
-
-from .views import CaptionGenerationView
+# from .views import CaptionGenerationView
 
 urlpatterns = [
-    path("generate-captions/", CaptionGenerationView.as_view(), name="generate_captions"),
+    # path("generate-captions/", CaptionGenerationView.as_view(), name="generate_captions"),
 ]

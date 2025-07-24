@@ -1,19 +1,16 @@
-import base64
 import re
 import time
 import urllib.parse
 from functools import wraps
-from io import BytesIO
 
 import requests
 from bs4 import BeautifulSoup
-from config import IMAGE_CAPTIONING_PROMPT, MODEL_NAME
+from config import IMAGE_CAPTIONING_PROMPT
 from core.logger import setup_logger
 from core.utils import get_env_variable
 from django.core.cache import cache
 from django_ratelimit.decorators import ratelimit
 from joblib import Parallel, delayed
-from PIL import Image, UnidentifiedImageError
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -24,9 +21,7 @@ from .models import ImageCaption, WikipediaPage
 logger = setup_logger(__name__)
 
 # Standard headers for requests
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-}
+HEADERS = {"User-Agent": get_env_variable("WIKI_USER_AGENT", "Chakshu/1.0 (chakshu@pec.edu.in)")}
 
 
 def validate_url_param(param_name="link", required=True):
@@ -148,55 +143,39 @@ def clean_html(raw_html):
     return re.sub(r"<[^>]*>", "", raw_html) if raw_html else ""
 
 
-def fetch_image_as_base64(image_url):
-    """Downloads an image, processes it, and returns a base64-encoded string."""
-    try:
-        response = requests.get(image_url, headers=HEADERS, stream=True, timeout=20)
-        response.raise_for_status()
-
-        image_bytes = BytesIO(response.content)
-        with Image.open(image_bytes) as image:
-            if image.mode == "RGBA":
-                background = Image.new("RGB", image.size, (128, 128, 128))
-                background.paste(image, (0, 0), image)
-                image = background
-
-            image = image.resize((512, 512), Image.LANCZOS)
-            image_format = image.format or "JPEG"
-
-            buffered = BytesIO()
-            image.save(buffered, format=image_format)
-            return base64.b64encode(buffered.getvalue()).decode("utf-8")
-
-    except (OSError, requests.exceptions.RequestException, UnidentifiedImageError) as e:
-        logger.warning(f"Failed to fetch or process image {image_url}: {e}")
-        return None
-
-
-def generate_image_caption(encoded_image, title, caption, description):
-    """Generates a detailed caption for an image using a remote image captioning model."""
-    if not encoded_image:
+def generate_image_caption(image_url, title, caption, description):
+    """Generates a detailed caption by sending an image URL to a remote captioning service."""
+    if not image_url:
         return None
 
     prompt = IMAGE_CAPTIONING_PROMPT.format(Title=title, Caption=caption, Description=description)
-    payload = {
-        "model": MODEL_NAME,
-        "prompt": prompt,
-        "images": [encoded_image],
-        "stream": False,
-        "options": {"temperature": 0, "top_p": 0.1, "top_k": 1},
-    }
+    payload = {"prompt": prompt, "image_url": image_url}
 
     try:
         start_time = time.time()
-        ollama_url = f"{get_env_variable('OLLAMA_BASE_URL', 'http://localhost:11434')}/api/generate"
-        response = requests.post(ollama_url, json=payload, timeout=60)
+        # The OLLAMA_BASE_URL should point to the FastAPI wrapper's /query/ endpoint
+        service_url = get_env_variable("OLLAMA_BASE_URL") + "/query"
+        if not service_url:
+            logger.error("OLLAMA_BASE_URL environment variable not set.")
+            return None
+
+        response = requests.post(service_url, json=payload, timeout=90)  # Increased timeout
         response.raise_for_status()
         end_time = time.time()
+
         logger.info(f"Image caption generated in {end_time - start_time:.2f}s.")
-        return response.json().get("response")
+        # The FastAPI wrapper returns the full JSON response from the Ollama server
+        ollama_response = response.json()
+        return ollama_response.get("response")
+
     except requests.exceptions.RequestException as e:
-        logger.error(f"Image captioning server request failed: {e}", exc_info=True)
+        if isinstance(e, requests.exceptions.HTTPError) and e.response is not None:
+            logger.error(
+                f"Image captioning server request failed with status {e.response.status_code}. Response: {e.response.text}",
+                exc_info=True,
+            )
+        else:
+            logger.error(f"Image captioning server request failed: {e}", exc_info=True)
         return None
 
 
@@ -210,8 +189,9 @@ def _process_single_image(img_info, all_captions):
         logger.warning(f"Could not find high-resolution URL for {img_title_raw}")
         return None
 
-    encoded_image = fetch_image_as_base64(high_res_url)
-    if not encoded_image:
+    # Skip SVG images as they are not supported by the model
+    if high_res_url.lower().endswith(".svg"):
+        logger.warning(f"Skipping SVG image as it's not a supported format: {high_res_url}")
         return None
 
     # Fetch metadata for caption context
@@ -229,7 +209,8 @@ def _process_single_image(img_info, all_captions):
     description = clean_html(metadata.get("ObjectName", {}).get("value"))
     real_caption = clean_html(all_captions.get(img_title_clean, ""))
 
-    generated_caption = generate_image_caption(encoded_image, title_caption, real_caption, description)
+    # Pass the image URL directly to the caption generation function
+    generated_caption = generate_image_caption(high_res_url, title_caption, real_caption, description)
     if not generated_caption:
         logger.warning(f"Failed to generate image caption for {high_res_url}")
         return None
@@ -237,7 +218,7 @@ def _process_single_image(img_info, all_captions):
     return {"image_url": high_res_url, "final_caption": generated_caption}
 
 
-def fetch_and_process_page_images(page_title, page_url):
+def fetch_and_process_images(page_title, page_url):
     """Orchestrates fetching, processing, and storing image captions for a Wikipedia page."""
     page, created = WikipediaPage.objects.get_or_create(url=page_url, defaults={"title": page_title})
     if created:

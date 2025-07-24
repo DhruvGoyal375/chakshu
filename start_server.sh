@@ -7,4 +7,4 @@ cd "$(dirname "$0")" || exit
 # The --chdir flag tells Gunicorn to change to the 'chakshu' directory before loading the app,
 # which is necessary for it to find the 'chakshu.wsgi' module.
 echo "Starting Gunicorn server..."
-poetry run gunicorn --chdir chakshu chakshu.wsgi:application -b 0.0.0.0:8000
+poetry run gunicorn --chdir chakshu chakshu.wsgi:application -b 0.0.0.0:8000 --workers 3 --timeout 1200
