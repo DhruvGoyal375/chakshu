@@ -73,6 +73,10 @@ jobs:
   deploy-docs:
     needs: validate-docs
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     if: |
       (github.ref == 'refs/heads/production' && github.event_name == 'push') ||
       (github.event_name == 'workflow_dispatch' && inputs.deploy == true)
@@ -115,7 +119,9 @@ jobs:
       run: |
         cd chakshu
         echo "🚀 Deploying documentation to GitHub Pages..."
-        mkdocs gh-deploy --force --verbose --message "docs: auto-deploy from commit ${{ github.sha }}"
+        mkdocs gh-deploy --force --verbose --remote-branch gh-pages --message "docs: auto-deploy from commit ${{ github.sha }}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Create deployment summary
       run: |
