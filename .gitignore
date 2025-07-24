@@ -52,4 +52,5 @@ npm-debug.log
 *.bak
 
 # Build artifacts
-*.sqlite3chakshu/site/
+*.sqlite3
+chakshu/site/

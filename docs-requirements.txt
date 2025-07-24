@@ -1,0 +1,11 @@
+# Documentation build requirements
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0
+pymdownx-superfences>=10.0.0
+pymdownx-highlight>=10.0.0
+pymdownx-inlinehilite>=10.0.0
+pymdownx-snippets>=10.0.0
+pymdownx-arithmatex>=10.0.0
+pymdownx-details>=10.0.0
+pymdownx-mark>=10.0.0
+mkdocs-markdownextradata-plugin>=0.2.0
