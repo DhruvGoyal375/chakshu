@@ -347,8 +347,8 @@ poetry install --no-cache
 
 If you encounter issues:
 
-1. Check the [Troubleshooting Guide](development/troubleshooting.md)
-2. Review logs: `tail -f chakshu/logs/chakshu.log`
+1. Review logs: `tail -f chakshu/logs/chakshu.log`
+2. Check the configuration settings in your `.env` file
 3. Open an issue on [GitHub](https://github.com/DhruvGoyal375/chakshu/issues)
 4. Join our community discussions
 
@@ -358,4 +358,4 @@ After installation:
 
 1. **[Configuration Guide](configuration.md)** - Configure Chakshu for your needs
 2. **[API Documentation](api/index.md)** - Learn how to use the API
-3. **[Development Guide](development/contributing.md)** - Start contributing to Chakshu
+3. **[Project Structure](project_structure.md)** - Understanding the codebase

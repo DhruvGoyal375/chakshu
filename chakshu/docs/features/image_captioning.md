@@ -438,7 +438,6 @@ ollama serve
 
 ## Next Steps
 
-- **[Table Analysis](table_analysis.md)** - Learn about table processing capabilities
-- **[Mathematical Content](mathematical_content.md)** - LaTeX and formula conversion
+- **[Content Processing](content_processing.md)** - Learn about all accessibility features
 - **[API Documentation](../api/processing_api.md)** - Technical API reference
-- **[Architecture](../architecture/ai_integration.md)** - AI system architecture details
+- **[Configuration Guide](../configuration.md)** - Setup and deployment options

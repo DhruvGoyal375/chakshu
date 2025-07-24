@@ -153,13 +153,12 @@ Now that Chakshu is running, explore these features:
 
 ### **For Developers:**
 - **[Full Installation Guide](installation.md)** - Production setup
-- **[Architecture Overview](architecture/core_components.md)** - Technical deep dive
-- **[Contributing Guide](development/contributing.md)** - Join the development
+- **[Project Structure](project_structure.md)** - Technical deep dive
+- **[Configuration Guide](configuration.md)** - Advanced settings
 
 ### **For Advanced Setup:**
-- **[AI Features Setup](architecture/ai_integration.md)** - Enable image captioning
-- **[Docker Deployment](deployment/docker.md)** - Production deployment
-- **[Configuration Guide](configuration.md)** - Advanced settings
+- **[AI Image Captioning](features/image_captioning.md)** - Enable AI image descriptions
+- **[Configuration Guide](configuration.md)** - Production deployment and advanced settings
 
 ## 🆘 Need Help?
 
@@ -169,7 +168,7 @@ Now that Chakshu is running, explore these features:
 - **Python version issues?** Ensure you have Python 3.10+
 
 **Get Support:**
-- 📖 [Troubleshooting Guide](development/troubleshooting.md)
+- 📖 [Configuration Guide](configuration.md) - Advanced setup and troubleshooting
 - 🐛 [Report Issues](https://github.com/DhruvGoyal375/chakshu/issues)
 - 💬 [Community Discussions](https://github.com/DhruvGoyal375/chakshu/discussions)
 

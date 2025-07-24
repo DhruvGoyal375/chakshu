@@ -565,6 +565,5 @@ print("DATABASE:", settings.DATABASES['default'])
 ## Next Steps
 
 - **[Installation Guide](installation.md)** - Complete installation instructions
-- **[Deployment Guide](deployment/docker.md)** - Production deployment
 - **[API Documentation](api/index.md)** - API configuration and usage
-- **[Troubleshooting](development/troubleshooting.md)** - Common configuration issues
+- **[Project Structure](project_structure.md)** - Understanding the codebase

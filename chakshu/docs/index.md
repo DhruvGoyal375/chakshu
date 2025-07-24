@@ -80,4 +80,8 @@ Chakshu is built with modern technologies:
 
 Chakshu is an open-source project focused on digital accessibility. We welcome contributions that help make the web more accessible for visually impaired users.
 
-See our [Contributing Guide](development/contributing.md) to get started.
+To contribute:
+1. Fork the repository on GitHub
+2. Create a feature branch for your changes
+3. Follow the existing code style and documentation standards
+4. Submit a pull request with a clear description of your changes

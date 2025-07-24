@@ -411,6 +411,5 @@ def safe_get_short_description(url):
 ## Next Steps
 
 - **[Image Captioning](image_captioning.md)** - Deep dive into AI-powered image descriptions
-- **[Table Analysis](table_analysis.md)** - Detailed table processing capabilities
-- **[Mathematical Content](mathematical_content.md)** - LaTeX and formula conversion
 - **[API Documentation](../api/index.md)** - Technical API reference
+- **[Configuration Guide](../configuration.md)** - Setup and deployment options

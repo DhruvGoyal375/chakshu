@@ -19,27 +19,14 @@ nav:
   - 'Features':
     - 'Content Processing': 'features/content_processing.md'
     - 'Image Captioning': 'features/image_captioning.md'
-    - 'Table Analysis': 'features/table_analysis.md'
-    - 'Mathematical Content': 'features/mathematical_content.md'
   - 'Architecture':
     - 'Project Structure': 'project_structure.md'
-    - 'Core Components': 'architecture/core_components.md'
-    - 'AI Integration': 'architecture/ai_integration.md'
-    - 'External Services': 'architecture/external_services.md'
   - 'Modules':
     - 'Overview': 'modules/index.md'
     - 'Core App': 'modules/core_app.md'
     - 'Scraper App': 'modules/scraper_app.md'
     - 'Captioner App': 'modules/captioner_app.md'
     - 'API App': 'modules/api_app.md'
-  - 'Deployment':
-    - 'Docker Setup': 'deployment/docker.md'
-    - 'Production Guide': 'deployment/production.md'
-    - 'Environment Variables': 'deployment/environment.md'
-  - 'Development':
-    - 'Contributing': 'development/contributing.md'
-    - 'Testing': 'development/testing.md'
-    - 'Troubleshooting': 'development/troubleshooting.md'
 theme:
   name: material
   features:
