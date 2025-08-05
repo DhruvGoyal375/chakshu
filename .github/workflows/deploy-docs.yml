@@ -1,0 +1,68 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches: [production]
+    paths: 
+      - 'chakshu/docs/**'
+      - 'chakshu/mkdocs.yml'
+      - 'apiResponses.md'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch full history for gh-pages deployment
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('docs-requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install MkDocs and dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r docs-requirements.txt
+        
+    - name: Configure Git for deployment
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Build and deploy documentation
+      run: |
+        cd chakshu
+        mkdocs build --verbose
+        mkdocs gh-deploy --force --verbose --remote-branch gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Notify deployment success
+      if: success()
+      run: |
+        echo "✅ Documentation successfully deployed to GitHub Pages!"
+        echo "📖 Available at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        
+    - name: Notify deployment failure
+      if: failure()
+      run: |
+        echo "❌ Documentation deployment failed!"
+        echo "Check the logs above for details."

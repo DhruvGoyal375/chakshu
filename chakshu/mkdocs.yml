@@ -1,0 +1,73 @@
+site_name: Chakshu Documentation
+site_description: Accessibility-focused Wikipedia reader for visually impaired users
+site_author: Chakshu Development Team
+repo_url: https://github.com/DhruvGoyal375/chakshu
+site_url: https://DhruvGoyal375.github.io/chakshu/
+nav:
+  - 'Home': 'index.md'
+  - 'Getting Started':
+    - 'Project Overview': 'project_overview.md'
+    - 'Quick Start': 'setup_guide.md'
+    - 'Installation': 'installation.md'
+    - 'Configuration': 'configuration.md'
+  - 'API Documentation':
+    - 'API Overview': 'api/index.md'
+    - 'Search API': 'api/search_api.md'
+    - 'Content Processing API': 'api/processing_api.md'
+    - 'Response Examples': 'api/response_examples.md'
+    - 'Error Handling': 'api/error_handling.md'
+  - 'Features':
+    - 'Content Processing': 'features/content_processing.md'
+    - 'Image Captioning': 'features/image_captioning.md'
+  - 'Architecture':
+    - 'Project Structure': 'project_structure.md'
+  - 'Modules':
+    - 'Overview': 'modules/index.md'
+    - 'Core App': 'modules/core_app.md'
+    - 'Scraper App': 'modules/scraper_app.md'
+    - 'Captioner App': 'modules/captioner_app.md'
+    - 'API App': 'modules/api_app.md'
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: blue
+      accent: blue
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search

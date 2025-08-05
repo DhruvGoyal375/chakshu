@@ -12,6 +12,16 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+from core.utils import get_env_variable
+
+# Load environment variables
+DEBUG = get_env_variable("DEBUG", "False").lower() == "true"
+SECRET_KEY = get_env_variable("SECRET_KEY", "django-insecure-default-key-change-me")
+ALLOWED_HOSTS = get_env_variable("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+
+# Logging configuration
+LOGGING_LEVEL = get_env_variable("LOG_LEVEL", "INFO").upper()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,12 +30,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-@ak_0lq74p123b5-vfo#4d(f+2blknu2(&cz4c28or3g!cs^pq"
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+# DEBUG and SECRET_KEY are now loaded from environment variables
 
 
 # Application definition
@@ -42,7 +48,6 @@ INSTALLED_APPS = [
     "captioner",
     "core",
     "scraper",
-    "summarizer",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +61,10 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = get_env_variable("CORS_ORIGIN_ALLOW_ALL", "True").lower() == "true"
+CORS_ALLOWED_ORIGINS = (
+    get_env_variable("CORS_ALLOWED_ORIGINS", "").split(",") if get_env_variable("CORS_ALLOWED_ORIGINS", "") else []
+)
 
 ROOT_URLCONF = "chakshu.urls"
 
@@ -84,8 +92,12 @@ WSGI_APPLICATION = "chakshu.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": get_env_variable("DB_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": BASE_DIR / get_env_variable("DB_NAME", "db.sqlite3"),
+        "USER": get_env_variable("DB_USER", ""),
+        "PASSWORD": get_env_variable("DB_PASSWORD", ""),
+        "HOST": get_env_variable("DB_HOST", ""),
+        "PORT": get_env_variable("DB_PORT", ""),
     }
 }
 
@@ -112,9 +124,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
+LANGUAGE_CODE = get_env_variable("LANGUAGE_CODE", "en-us")
+TIME_ZONE = get_env_variable("TIME_ZONE", "UTC")
 
 USE_I18N = True
 
@@ -124,7 +135,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = get_env_variable("STATIC_URL", "static/")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -134,9 +145,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Local memory cache (for development)
 CACHES = {
     "default": {
-        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "image_captions_cache",
-        "TIMEOUT": 86400,  # Cache for 1 day
+        "BACKEND": get_env_variable("CACHE_BACKEND", "django.core.cache.backends.locmem.LocMemCache"),
+        "LOCATION": get_env_variable("CACHE_LOCATION", "image_captions_cache"),
+        "TIMEOUT": int(get_env_variable("CACHE_TIMEOUT", "86400")),
     }
 }
 

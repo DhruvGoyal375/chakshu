@@ -1,0 +1,5 @@
+# Documentation build requirements - matching pyproject.toml versions
+mkdocs>=1.6.1
+mkdocs-material>=9.6.14
+mkdocstrings>=0.29.1
+mkdocs-markdownextradata-plugin>=0.2.6

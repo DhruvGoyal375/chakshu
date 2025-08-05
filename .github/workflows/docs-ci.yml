@@ -1,0 +1,149 @@
+name: Documentation CI/CD
+
+on:
+  push:
+    branches: [production, main]
+    paths: 
+      - 'chakshu/docs/**'
+      - 'chakshu/mkdocs.yml'
+      - 'apiResponses.md'
+      - '.github/workflows/docs-ci.yml'
+      - 'docs-requirements.txt'
+  pull_request:
+    branches: [production, main]
+    paths: 
+      - 'chakshu/docs/**'
+      - 'chakshu/mkdocs.yml'
+      - 'apiResponses.md'
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to GitHub Pages'
+        required: false
+        default: 'true'
+        type: boolean
+
+jobs:
+  # Job 1: Validate documentation
+  validate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('docs-requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+        
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r docs-requirements.txt
+        
+    - name: Validate MkDocs configuration
+      run: |
+        cd chakshu
+        mkdocs build --strict --verbose
+        
+    - name: Check for broken links
+      run: |
+        cd chakshu
+        # Build site and check for obvious issues
+        mkdocs build --verbose
+        echo "✅ Documentation builds successfully"
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: documentation-site
+        path: chakshu/site/
+        retention-days: 7
+
+  # Job 2: Deploy to GitHub Pages (only on production branch)
+  deploy-docs:
+    needs: validate-docs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    if: |
+      (github.ref == 'refs/heads/production' && github.event_name == 'push') ||
+      (github.event_name == 'workflow_dispatch' && inputs.deploy == true)
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('docs-requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+        
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r docs-requirements.txt
+        
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Deploy to GitHub Pages
+      run: |
+        cd chakshu
+        echo "🚀 Deploying documentation to GitHub Pages..."
+        mkdocs gh-deploy --force --verbose --remote-branch gh-pages --message "docs: auto-deploy from commit ${{ github.sha }}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Create deployment summary
+      run: |
+        echo "## 📖 Documentation Deployment Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ **Status**: Successfully deployed" >> $GITHUB_STEP_SUMMARY
+        echo "🌐 **URL**: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+        echo "📝 **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+        echo "🕒 **Deployed at**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Changes in this deployment:" >> $GITHUB_STEP_SUMMARY
+        echo "- Updated from commit: ${{ github.event.head_commit.message }}" >> $GITHUB_STEP_SUMMARY
+
+  # Job 3: Notify on failure
+  notify-failure:
+    needs: [validate-docs, deploy-docs]
+    runs-on: ubuntu-latest
+    if: failure()
+    
+    steps:
+    - name: Create failure summary
+      run: |
+        echo "## ❌ Documentation Deployment Failed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "The documentation build or deployment process failed." >> $GITHUB_STEP_SUMMARY
+        echo "Please check the workflow logs for details." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY

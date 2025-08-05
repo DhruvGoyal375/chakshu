@@ -1,0 +1,451 @@
+=== TABLE ANALYSIS RESULTS ===
+
+--- TABLE 1 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists the titles of James Bond films and their corresponding years of release, along with some additional information about the films. The table is divided into two columns: the left column lists the film titles and their release years, while the right column provides additional details about the films, such as the number of short stories they contain and any notable editions.
+
+### Table Description:
+
+#### Column Headers:
+1. **Left Column:** Film Title and Year
+2. **Right Column:** Additional Information
+
+#### Data Rows:
+
+1. **Left Column:**
+   - 1953 Casino Royale
+   - 1954 Live and Let Die
+   - 1955 Moonraker
+   - 1955 Goldfinger
+   - 1958 Dr. No
+   - 1959 Goldfinger
+   - 1959 From Russia, with Love
+   - 1956 Diamonds Are Forever
+   - 1957 From Russia, with Love
+   - 1960 For Your Eyes Only
+   - 1961 Thunderball
+   - 1962 The Spy Who Loved Me
+   - 1963 On Her Majesty's Secret Service
+   - 1964 You Only Live Twice
+   - 1965 The Man with the Golden Gun
+   - 1966 Octopussy and The Living Daylights
+
+2. **Right Column:**
+   - 1960 For Your Eyes Only (short stories)
+   - 1961 Thunderball
+   - 1962 The Spy Who Loved Me
+   - 1963 On Her Majesty's Secret Service
+   - 1964 You Only Live Twice
+   - 1965 The Man with the Golden Gun
+   - 1966 Octopussy and The Living Daylights (short stories; "The Property of a Lady" added to subsequent editions)
+
+### Purpose:
+The table provides a chronological list of James Bond films, along with supplementary information about the films' editions and the number of short stories they contain. This information is useful for readers who are interested in the history and editions of these films.
+
+================================================================================
+
+--- TABLE 2 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists the titles of various James Bond novels and their corresponding years of publication, along with some additional notes. Here is a detailed description of the table:
+
+### Table Purpose:
+The table compiles a list of James Bond novels, their publication years, and some notes about their status (e.g., novelisation, renewal of license).
+
+### Column Headers:
+The table has two columns:
+1. **Title and Year**: Lists the title of the novel and the year it was published.
+2. **Notes**: Provides additional information about the novel, such as whether it was a novelisation or a renewal of a license.
+
+### Data Rows:
+1. **1981 Licence Renewed** - [42] (This row indicates a renewal of the license, not a new novel.)
+2. **1982 For Special Services** - [43] (This is a novel.)
+3. **1983 Icebreaker** - [44] (This is a novel.)
+4. **1984 Role of Honour** - [45] (This is a novel.)
+5. **1986 Nobody Lives for Ever** - [46] (This is a novel.)
+6. **1987 No Deals, Mr. Bond** - [47] (This is a novel.)
+7. **1988 Scorpius** - [48] (This is a novel.)
+8. **1989 Licence to Kill** - [38] (This is a novelisation.)
+9. **1989 Win, Lose or Die** - [49] (This is a novel.)
+10. **1989 Licence Renewed** - [42] (This is a renewal of the license, not a new novel.)
+11. **1989 Icebreaker** - [44] (This is a novelisation.)
+12. **1990 Brokenclaw** - [50] (This is a novelisation.)
+13. **1991 The Man from Barbarossa** - [51] (This is a novelisation.)
+14. **1992 Death Is Forever** - [52] (This is a novelisation.)
+15. **1993 Never Send Flowers** - [53] (This is a novelisation.)
+16. **1994 SeaFire** - [54] (This is a novelisation.)
+17. **1995 GoldenEye** - [38] (This is a novelisation.)
+18. **1996 Cold** - [55] (This is a novelisation.)
+
+### Notes:
+- Some entries are marked as novelisations, indicating they are based on earlier works.
+- Some entries are marked as renewals of the license, indicating they are not new novels but rather updates or reprints of existing works.
+
+================================================================================
+
+--- TABLE 3 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists a series of works, categorized by year and type, which appear to be part of a fictional narrative or series. Here is a detailed description of the table for a screen reader or text-to-speech application:
+
+---
+
+### Table Description
+
+The table lists various works, categorized by year and type, which seem to be part of a fictional narrative or series. The table is divided into two columns: the left column lists the year and the title of the work, while the right column provides additional details such as the type of work (e.g., short story, novelisation, etc.) and a reference number.
+
+---
+
+### Table Structure
+
+#### Column Headers
+- **Left Column:** Year and Title
+- **Right Column:** Type of Work and Reference Number
+
+---
+
+### Table Data
+
+#### Left Column: Year and Title
+1. 1997 "Blast From the Past"[58] (short story)
+2. 1997 "Zero Minus Ten"[59]
+3. 1997 "Tomorrow Never Dies"
+4. 1998 "The Facts of Death"[60]
+5. 1999 "Midsummer Night's Doom"[61] (short story)
+6. 1999 "Live at Five"[62] (short story)
+7. 1999 "The World Is Not Enough"[38] (novelisation)
+8. 1999 "High Time to Kill"[63]
+9. 2000 "DoubleShot"[64]
+10. 2001 "Never Dream of Dying"[65]
+11. 2002 "The Man with the Red Tattoo"[66]
+12. 2002 "Die Another Day"[38] (novelisation)
+
+#### Right Column: Type of Work and Reference Number
+1. 1999 "The World Is Not Enough"[38] (novelisation)
+2. 1999 "High Time to Kill"[63]
+3. 2000 "DoubleShot"[64]
+4. 2001 "Never Dream of Dying"[65]
+5. 2002 "The Man with the Red Tattoo"[66]
+6. 2002 "Die Another Day"[38] (novelisation)
+
+---
+
+### Purpose
+The table appears to list works from a fictional narrative or series, categorized by year and type, with additional details such as the type of work and a reference number.
+
+================================================================================
+
+--- TABLE 4 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists the years and titles of various works, presumably from a series or a collection. Here is a detailed description of the table:
+
+### Table Description:
+
+#### Purpose:
+The table lists the years and titles of works, likely from a series or a collection, with the years on the left and the titles on the right.
+
+#### Column Headers:
+- The left column is labeled with the year.
+- The right column is labeled with the title of the work.
+
+#### Rows:
+1. **2008** - **Devil May Care**
+2. **2011** - **Carte Blanche**
+3. **2013** - **Solo**
+4. **2015** - **Trigger Mortis**
+5. **2018** - **Forever and a Day**
+6. **2022** - **With a Mind to Kill**
+7. **2023** - **On His Majesty's Secret Service**
+
+This table organizes the information chronologically, with the years on the left and the corresponding titles on the right.
+
+================================================================================
+
+--- TABLE 5 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists the publication years and titles of works associated with a specific series or collection, along with their respective references or identifiers. Here is a detailed description of the table:
+
+### Table Description:
+
+#### Purpose:
+The table lists the publication years and titles of works, along with their references or identifiers, for a series or collection.
+
+#### Column Headers:
+- **Year**: The year of publication.
+- **Title**: The title of the work.
+- **Reference**: The reference or identifier for the work.
+
+#### Rows:
+
+1. **2005**
+   - **Title**: SilverFin
+   - **Reference**: [84]
+
+2. **2006**
+   - **Title**: Blood Fever
+   - **Reference**: [85]
+
+3. **2007**
+   - **Title**: Double or Die
+   - **Reference**: [86]
+   - **Title**: Hurricane Gold
+   - **Reference**: [87]
+
+4. **2008**
+   - **Title**: By Royal Command
+   - **Reference**: [88]
+   - **Title**: SilverFin (graphic novel)
+   - **Reference**: [89]
+
+5. **2009**
+   - **Title**: "A Hard Man to Kill"
+   - **Reference**: [90]
+
+This table is structured to provide a chronological list of works, their titles, and their corresponding references or identifiers.
+
+================================================================================
+
+--- TABLE 6 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided lists a series of entries, each corresponding to a year and a title, likely related to a series or a collection of works. Here is a detailed description of the table:
+
+### Table Description:
+
+#### Purpose:
+The table appears to list the titles of works published in specific years, possibly related to a series or a collection of books or media.
+
+#### Column Headers:
+The table does not have explicit column headers. However, based on the content, it can be inferred that the table is structured as follows:
+- **Year**: The year in which the work was published.
+- **Title**: The title of the work.
+
+#### Rows:
+1. **2005** - The title is **"The Moneypenny Diaries: Guardian"**.
+2. **2006** - The title is **"Secret Angel"**.
+3. **2006** - The title is **"Secret Servant: The Moneypenny Diaries"**.
+4. **2008** - The title is **"The Moneypenny Diaries: Final Fling"**.
+
+### Summary:
+The table lists the titles of works published in the years 2005, 2006, and 2008, with some titles appearing in multiple years. The titles are related to a series called "The Moneypenny Diaries."
+
+================================================================================
+
+--- TABLE 7 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided is a comprehensive list of James Bond films, detailing their titles, release years, lead actors, and directors. Here is a detailed description of the table:
+
+### Table Purpose:
+This table lists the James Bond film series, providing information on the film's title, the year it was released, the actor who played James Bond, and the director of the film.
+
+### Column Headers:
+1. **Title**: The name of the James Bond film.
+2. **Year**: The year the film was released.
+3. **Actor**: The actor who portrayed James Bond in the film.
+4. **Director**: The director of the film.
+
+### Data Rows:
+1. **Dr. No**
+   - Year: 1962
+   - Actor: Sean Connery
+   - Director: Terence Young
+
+2. **From Russia with Love**
+   - Year: 1963
+   - Actor: Sean Connery
+   - Director: Terence Young
+
+3. **Goldfinger**
+   - Year: 1964
+   - Actor: Sean Connery
+   - Director: Guy Hamilton
+
+4. **Thunderball**
+   - Year: 1965
+   - Actor: Sean Connery
+   - Director: Terence Young
+
+5. **You Only Live Twice**
+   - Year: 1967
+   - Actor: Sean Connery
+   - Director: Lewis Gilbert
+
+6. **On Her Majesty's Secret Service**
+   - Year: 1969
+   - Actor: George Lazenby
+   - Director: Peter R. Hunt
+
+7. **Diamonds Are Forever**
+   - Year: 1971
+   - Actor: Sean Connery
+   - Director: Guy Hamilton
+
+8. **Live and Let Die**
+   - Year: 1973
+   - Actor: Roger Moore
+   - Director: Guy Hamilton
+
+9. **The Man with the Golden Gun**
+   - Year: 1974
+   - Actor: Roger Moore
+   - Director: Lewis Gilbert
+
+10. **The Spy Who Loved Me**
+    - Year: 1977
+    - Actor: Roger Moore
+    - Director: Lewis Gilbert
+
+11. **Moonraker**
+    - Year: 1979
+    - Actor: Roger Moore
+    - Director: Lewis Gilbert
+
+12. **For Your Eyes Only**
+    - Year: 1981
+    - Actor: Roger Moore
+    - Director: John Glen
+
+13. **Octopussy**
+    - Year: 1983
+    - Actor: Roger Moore
+    - Director: John Glen
+
+14. **A View to a Kill**
+    - Year: 1985
+    - Actor: Roger Moore
+    - Director: John Glen
+
+15. **The Living Daylights**
+    - Year: 1987
+    - Actor: Timothy Dalton
+    - Director: John Glen
+
+16. **Licence to Kill**
+    - Year: 1989
+    - Actor: Timothy Dalton
+    - Director: John Glen
+
+17. **GoldenEye**
+    - Year: 1995
+    - Actor: Pierce Brosnan
+    - Director: Martin Campbell
+
+18. **Tomorrow Never Dies**
+    - Year: 1997
+    - Actor: Pierce Brosnan
+    - Director: Roger Spottiswoode
+
+19. **The World Is Not Enough**
+    - Year: 1999
+    - Actor: Pierce Brosnan
+    - Director: Michael Apted
+
+20. **Die Another Day**
+    - Year: 2002
+    - Actor: Pierce Brosnan
+    - Director: Lee Tamahori
+
+21. **Casino Royale**
+    - Year: 2006
+    - Actor: Daniel Craig
+    - Director: Martin Campbell
+
+22. **Quantum of Solace**
+    - Year: 2008
+    - Actor: Daniel Craig
+    - Director: Marc Forster
+
+23. **Skyfall**
+    - Year: 2012
+    - Actor: Daniel Craig
+    - Director: Sam Mendes
+
+24. **Spectre**
+    - Year: 2015
+    - Actor: Daniel Craig
+    - Director: Sam Mendes
+
+25. **No Time to Die**
+    - Year: 2021
+    - Actor: Daniel Craig
+    - Director: Cary Joji Fukunaga
+
+This table provides a clear and structured overview of the James Bond film series, highlighting the actors and directors involved in each film.
+
+================================================================================
+
+--- TABLE 8 ---
+Image: Unknown
+Status: Success
+Model: Unknown
+Tokens - Prompt: 0, Completion: 0
+
+ANALYSIS:
+The table provided is a detailed record of film credits, specifically for the actors and directors involved in the production of two films: "Casino Royale" and "Never Say Never Again." The table is structured with four columns: Title, Year, Actor, and Director(s). Below is a description of the table's content:
+
+### Table Purpose:
+The table lists the actors and directors associated with the films "Casino Royale" and "Never Say Never Again."
+
+### Column Headers:
+1. **Title**: The name of the film.
+2. **Year**: The year the film was released.
+3. **Actor**: The actor who starred in the film.
+4. **Director(s)**: The names of the directors involved in the film.
+
+### Data Rows:
+
+#### 1. Casino Royale
+- **Title**: Casino Royale
+- **Year**: 1967
+- **Actor**: David Niven
+- **Director(s)**: Ken Hughes, John Huston, Joseph McGrath, Robert Parrish, Val Guest, Richard Talmadge
+
+#### 2. Never Say Never Again
+- **Title**: Never Say Never Again
+- **Year**: 1983
+- **Actor**: Sean Connery
+- **Director(s)**: Irvin Kershner
+
+This table provides a comprehensive overview of the key personnel involved in the production of these films, highlighting the actors and directors who contributed to their creation.
+
+================================================================================
+
+--- TABLE 9 ---
+Image: Unknown
+Status: Failed
+Error: Request timed out: The FastAPI server did not respond in time.
+
+================================================================================
+

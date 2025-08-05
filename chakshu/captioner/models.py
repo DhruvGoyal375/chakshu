@@ -14,7 +14,7 @@ class WikipediaPage(models.Model):
 class ImageCaption(models.Model):
     page = models.ForeignKey(WikipediaPage, on_delete=models.CASCADE, related_name="captions")
     image_url = models.URLField()
-    final_caption = models.TextField()  # Store the final LLaVA caption
+    final_caption = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

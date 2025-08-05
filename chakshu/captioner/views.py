@@ -1,20 +1,94 @@
-import base64
 import re
-import time  # Import the time module
+import time
 import urllib.parse
-from io import BytesIO
+from functools import wraps
 
 import requests
 from bs4 import BeautifulSoup
-from config import MODEL_NAME, MODEL_URL
+from config import IMAGE_CAPTIONING_PROMPT
+from core.logger import setup_logger
+from core.utils import get_env_variable
 from django.core.cache import cache
-from PIL import Image, UnidentifiedImageError
+from django_ratelimit.decorators import ratelimit
+from joblib import Parallel, delayed
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from .models import ImageCaption, WikipediaPage
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-}
+# Initialize module-level logger
+logger = setup_logger(__name__)
+
+# Standard headers for requests
+HEADERS = {"User-Agent": get_env_variable("WIKI_USER_AGENT", "Chakshu/1.0 (chakshu@pec.edu.in)")}
+
+
+def validate_url_param(param_name="link", required=True):
+    """Decorator to validate a URL parameter in a request."""
+
+    def decorator(view_func):
+        @wraps(view_func)
+        def _wrapped_view(request, *args, **kwargs):
+            url = request.data.get(param_name)
+            if required and not url:
+                return Response(
+                    {"status": "error", "message": f"'{param_name}' is required."},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
+            if url and not re.match(r"^https?://en\.wikipedia\.org/wiki/\S+$", url):
+                return Response(
+                    {"status": "error", "message": "Invalid Wikipedia URL format."},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
+            return view_func(request, *args, **kwargs)
+
+        return _wrapped_view
+
+    return decorator
+
+
+def _fetch_api(url, params=None, max_retries=3):
+    """Generic function to fetch data from an API with error handling and retry logic."""
+    last_exception = None
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(url, params=params, headers=HEADERS, timeout=15)
+            response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
+            return response.json()
+        except requests.exceptions.HTTPError as e:
+            last_exception = e
+            if e.response.status_code == 429:
+                retry_after = e.response.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        wait_time = int(retry_after)
+                        logger.warning(f"Rate limit hit. Retrying after {wait_time} seconds.")
+                        time.sleep(wait_time)
+                    except (ValueError, TypeError):
+                        logger.warning("Invalid Retry-After header. Using exponential backoff.")
+                        wait_time = 2 ** (attempt + 1)
+                        time.sleep(wait_time)
+                else:
+                    # Exponential backoff if Retry-After is not provided
+                    wait_time = 2 ** (attempt + 1)
+                    logger.warning(f"Rate limit hit. Retrying in {wait_time} seconds.")
+                    time.sleep(wait_time)
+            else:
+                # For other HTTP errors, don't retry
+                logger.error(f"API request failed for {url}: {e}", exc_info=True)
+                return None
+        except requests.exceptions.RequestException as e:
+            last_exception = e
+            logger.warning(f"API request attempt {attempt + 1}/{max_retries} failed for {url}: {e}")
+            time.sleep(2 ** (attempt + 1))  # Exponential backoff for other request errors
+
+    logger.error(
+        f"API request failed for {url} after {max_retries} retries. Last exception: {last_exception}", exc_info=True
+    )
+    return None
 
 
 def fetch_page_parsed_content(page_title):
@@ -22,286 +96,222 @@ def fetch_page_parsed_content(page_title):
     api_url = (
         f"https://en.wikipedia.org/w/api.php?action=parse&page={urllib.parse.quote(page_title)}&format=json&prop=text"
     )
-    response = requests.get(api_url, headers=headers).json()
-
-    if "parse" in response and "text" in response["parse"]:
-        return response["parse"]["text"]["*"]  # Returns HTML-like content
-    return None
+    response_data = _fetch_api(api_url)
+    return response_data["parse"]["text"]["*"] if response_data and "parse" in response_data else None
 
 
 def extract_captions_from_figcaption(parsed_content):
     """Extract image captions from <figcaption> inside <figure> tags."""
     captions = {}
+    if not parsed_content:
+        return captions
     soup = BeautifulSoup(parsed_content, "html.parser")
-
     for figure in soup.find_all("figure"):
         img = figure.find("img")
         figcaption = figure.find("figcaption")
-        link = figure.find("a")  # Get <a> tag linking to the full image
-
+        link = figure.find("a")
         if img and figcaption and link:
-            # Extract full image filename from <a href>, removing "File:" prefix
             img_url = link.get("href", "")
-            img_filename = img_url.split("/")[-1].replace("File:", "").replace("_", " ")  # Remove "File:"
-
+            img_filename = img_url.split("/")[-1].replace("File:", "").replace("_", " ")
             if img_filename:
-                captions[img_filename] = figcaption.get_text(strip=True)  # Store caption
-
+                captions[img_filename] = figcaption.get_text(strip=True)
     return captions
 
 
-def get_high_resolution_image_url(image_url):
-    """Fetch the highest resolution version of an image."""
-    try:
-        filename = image_url.split("/")[-1]
-        commons_api = "https://commons.wikimedia.org/w/api.php"
-        params = {
-            "action": "query",
-            "titles": f"File:{filename}",
-            "prop": "imageinfo",
-            "iiprop": "url",
-            "iiurlwidth": 4000,
-            "format": "json",
-        }
-        response = requests.get(commons_api, params=params, headers=headers).json()
-
-        pages = response.get("query", {}).get("pages", {})
+def get_high_resolution_image_url(image_title):
+    """Fetch the highest resolution version of an image from a title."""
+    commons_api = "https://commons.wikimedia.org/w/api.php"
+    params = {
+        "action": "query",
+        "titles": image_title,
+        "prop": "imageinfo",
+        "iiprop": "url",
+        "iiurlwidth": 4000,
+        "format": "json",
+    }
+    response_data = _fetch_api(commons_api, params=params)
+    if response_data:
+        pages = response_data.get("query", {}).get("pages", {})
         for page in pages.values():
             if "imageinfo" in page:
                 return page["imageinfo"][0]["url"]
-    except Exception as e:
-        print(f"Error fetching high-resolution image: {e}")
-    return image_url
+    return None
 
 
 def clean_html(raw_html):
     """Remove HTML tags using regex."""
-    return re.sub(r"<[^>]*>", "", raw_html)
+    return re.sub(r"<[^>]*>", "", raw_html) if raw_html else ""
 
 
-def fetch_image(image_url):
-    """Downloads an image from a URL, processes it, and returns a base64-encoded string."""
-    try:
-        response = requests.get(image_url, headers=headers, stream=True)
-        if response.status_code != 200:
-            print(f"Failed to download image: {image_url}, status code: {response.status_code}")
-            return None
-
-        image_bytes = BytesIO(response.content)
-        try:
-            image = Image.open(image_bytes)
-
-            # Handle transparency for RGBA images
-            if image.mode == "RGBA":
-                alpha = image.getchannel("A")
-                if alpha.getextrema()[0] < 255:  # If there's transparency
-                    background = Image.new("RGB", image.size, (128, 128, 128))
-                    background.paste(image, (0, 0), image)
-                    image = background
-
-            # Resize for efficiency
-            image = image.resize((512, 512), Image.LANCZOS)
-
-            # Detect format (default to JPEG if unknown)
-            image_format = image.format if image.format else "JPEG"
-
-            # Convert to base64 directly without saving
-            buffered = BytesIO()
-            image.save(buffered, format=image_format)
-            return base64.b64encode(buffered.getvalue()).decode("utf-8")
-
-        except UnidentifiedImageError:
-            print(f"UnidentifiedImageError: Cannot open {image_url}")
-            return None
-    except Exception as e:
-        print(f"Error fetching image {image_url}: {e}")
+def generate_image_caption(image_url, title, caption, description):
+    """Generates a detailed caption by sending an image URL to a remote captioning service."""
+    if not image_url:
         return None
 
+    prompt = IMAGE_CAPTIONING_PROMPT.format(Title=title, Caption=caption, Description=description)
+    payload = {"prompt": prompt, "image_url": image_url}
 
-def generate_llava_caption(encoded_image, title_caption, caption, description):
-    """Generates a detailed caption for an image tailored for visually impaired individuals."""
-    # Ensure valid image encoding
-    if not encoded_image:
-        print("Image encoding failed.")
-        return None
-
-    # Build the prompt with detailed instructions
-    prompt = (
-        f"Forget all previous messages and context. Focus **only** on the provided image.\n\n"
-        f"You are an AI specialized in generating **highly descriptive yet concise captions** for images, "
-        f"designed to help **visually impaired individuals** understand the scene with clarity.\n\n"
-        f"### **Key Instructions:**\n"
-        f"1. **Use Provided Context for Identification (If Certain):**\n"
-        f"   - If the **Title, Caption, or Description** mentions a **specific person, object, or place**, use the name **instead of generic terms**.\n"
-        f"   - If uncertain, describe the object or person as seen without assumption.\n"
-        f"2. **Describe Actions and Positions Clearly:**\n"
-        f"   - Identify what each person is doing.\n"
-        f"   - Specify relative positioning (who is sitting, standing, or interacting how).\n"
-        f"3. **Include Background Elements Only If Relevant:**\n"
-        f"   - Mention key visible details but avoid adding details that are not evident.\n"
-        f"4. **Concise Yet Detailed:** Use structured, vivid descriptions while keeping it short and natural.\n\n"
-        f"### **Context Provided (Use Only If It Matches What Is Seen):**\n"
-        f"- **Title:** {title_caption.strip()}\n"
-        f"- **Caption:** {caption.strip()}\n"
-        f"- **Description:** {description.strip()}\n\n"
-        f"### **Your Task:**\n"
-        f"Generate a **short but structured paragraph** that accurately describes:\n"
-        f"- **The main subjects and their actions.**\n"
-        f"- **Their spatial arrangement (who is sitting, standing, or interacting how).**\n"
-        f"- **Any relevant background elements.**\n"
-        f"- **Ensure clarity while keeping it brief.**\n"
-    )
-
-    # Prepare the payload for the remote API request with system message included
-    payload = {
-        "model": MODEL_NAME,  # Specify the model name running on the server (e.g., "llava")
-        "prompt": (
-            "[System message]: Forget all previous messages. Focus only on the given image and its specific context. "
-            "You are an AI generating precise, descriptive captions for visually impaired individuals, "
-            "ensuring accuracy and clarity. Always prioritize accuracy over assumption.\n\n"
-            "[User]: " + prompt  # Append the user message
-        ),
-        "images": [encoded_image],  # Send the image in base64 format
-        "stream": False,  # Disable streaming to get the full response at once
-        "options": {"temperature": 0, "top_p": 0.1, "top_k": 1},
-    }
-
-    # Send the request to the remote LLaVA server
     try:
-        # Start timer
         start_time = time.time()
+        # The OLLAMA_BASE_URL should point to the FastAPI wrapper's /query/ endpoint
+        service_url = get_env_variable("OLLAMA_BASE_URL") + "/query"
+        if not service_url:
+            logger.error("OLLAMA_BASE_URL environment variable not set.")
+            return None
 
-        response = requests.post(MODEL_URL, json=payload)
-
-        # Stop timer
+        response = requests.post(service_url, json=payload, timeout=90)  # Increased timeout
+        response.raise_for_status()
         end_time = time.time()
 
-        # Check the response status
-        if response.status_code == 200:
-            result = response.json()
-            print(f"Time taken to generate caption: {end_time - start_time:.2f} seconds")
-            return result.get("response", {})
-        else:
-            print(f"Failed to generate caption. Status code: {response.status_code}")
-            return None
+        logger.info(f"Image caption generated in {end_time - start_time:.2f}s.")
+        # The FastAPI wrapper returns the full JSON response from the Ollama server
+        ollama_response = response.json()
+        return ollama_response.get("response")
 
-    except Exception as e:
-        print(f"Error: {e}")
+    except requests.exceptions.RequestException as e:
+        if isinstance(e, requests.exceptions.HTTPError) and e.response is not None:
+            logger.error(
+                f"Image captioning server request failed with status {e.response.status_code}. Response: {e.response.text}",
+                exc_info=True,
+            )
+        else:
+            logger.error(f"Image captioning server request failed: {e}", exc_info=True)
         return None
 
 
-def process_image(image_url, title, caption, description):
-    encoded_image = fetch_image(image_url)
-    if encoded_image is None:
-        print("Image processing failed.")
-        return
-    print(image_url, title, caption, description)
-    llava_caption = generate_llava_caption(encoded_image, title, caption, description)
+def _process_single_image(img_info, all_captions):
+    """Process a single image: fetch data, generate caption, and return structured result."""
+    img_title_raw = img_info["title"]
+    img_title_clean = img_title_raw.replace("File:", "")
 
-    print(f"Image URL: {image_url}")
-    print(f"LLaVA Caption: {llava_caption}")
-    print("------")
-    return llava_caption
+    high_res_url = get_high_resolution_image_url(img_title_raw)
+    if not high_res_url:
+        logger.warning(f"Could not find high-resolution URL for {img_title_raw}")
+        return None
+
+    # Skip SVG images as they are not supported by the model
+    if high_res_url.lower().endswith(".svg"):
+        logger.warning(f"Skipping SVG image as it's not a supported format: {high_res_url}")
+        return None
+
+    # Fetch metadata for caption context
+    api_url = f"https://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&iiprop=extmetadata&format=json&titles={urllib.parse.quote(img_title_raw)}"
+    metadata_response = _fetch_api(api_url)
+    metadata = {}
+    if metadata_response:
+        pages = metadata_response.get("query", {}).get("pages", {})
+        for page in pages.values():
+            if "imageinfo" in page:
+                metadata = page["imageinfo"][0].get("extmetadata", {})
+                break
+
+    title_caption = clean_html(metadata.get("ImageDescription", {}).get("value"))
+    description = clean_html(metadata.get("ObjectName", {}).get("value"))
+    real_caption = clean_html(all_captions.get(img_title_clean, ""))
+
+    # Pass the image URL directly to the caption generation function
+    generated_caption = generate_image_caption(high_res_url, title_caption, real_caption, description)
+    if not generated_caption:
+        logger.warning(f"Failed to generate image caption for {high_res_url}")
+        return None
+
+    return {"image_url": high_res_url, "final_caption": generated_caption}
 
 
-def fetch_and_process_images(page_url):
-    """Fetch all images from a Wikipedia page along with their real captions."""
-
-    # Check if captions are in cache
-    cache_key = f"wikipedia:{page_url}"
-    cached_captions = cache.get(cache_key)
-
-    if cached_captions:
-        print("Cache hit. Returning cached captions.")
-        return cached_captions
-
-    # Check if captions are in the database
-    page = WikipediaPage.objects.filter(url=page_url).first()
-
-    if page:
-        # Fetch captions from DB
-        db_captions = list(ImageCaption.objects.filter(page=page).values("image_url", "final_caption"))
-
-        if db_captions:
-            print("DB hit. Returning stored captions.")
-
-            # Store in cache before returning
-            cache.set(cache_key, db_captions, timeout=60 * 60)  # Cache for 1 hour
-            return db_captions
-
-    # Otherwise, process the page
-    print("No cache or DB hit. Fetching and processing.")
-    page_title = urllib.parse.unquote(page_url.split("/")[-1])
+def fetch_and_process_images(page_title, page_url):
+    """Orchestrates fetching, processing, and storing image captions for a Wikipedia page."""
     page, created = WikipediaPage.objects.get_or_create(url=page_url, defaults={"title": page_title})
-    # Fetch images and process captions
-    processed_captions = []
+    if created:
+        logger.info(f"Created new page entry for {page_title}")
 
-    # Get parsed content and extract captions
-    parsed_content = fetch_page_parsed_content(page_title)
-    image_captions = extract_captions_from_figcaption(parsed_content) if parsed_content else {}
-
-    # Fetch image metadata via API
+    # 1. Fetch all image titles from the page
     api_url = f"https://en.wikipedia.org/w/api.php?action=query&prop=images&format=json&titles={page_title}"
-    continue_param = {}
+    response = _fetch_api(api_url)
+    if not response:
+        msg = "Failed to fetch image list from Wikipedia."
+        raise ConnectionError(msg)
 
-    while True:
-        response = requests.get(api_url, params=continue_param, headers=headers).json()
-        pages = response.get("query", {}).get("pages", {})
+    images_to_process = []
+    for page_data in response.get("query", {}).get("pages", {}).values():
+        images_to_process.extend(page_data.get("images", []))
 
-        for page_data in pages.values():
-            if "images" in page_data:
-                for img in page_data["images"]:
-                    img_title = img["title"].replace("File:", "")
+    # 2. Fetch structured captions for context
+    parsed_content = fetch_page_parsed_content(page_title)
+    all_captions = extract_captions_from_figcaption(parsed_content)
 
-                    # Fetch image metadata (URL, description)
-                    img_url_api = f"https://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|extmetadata&format=json&titles={urllib.parse.quote(img['title'])}"
-                    img_response = requests.get(img_url_api, headers=headers).json()
+    # 3. Process images in parallel
+    logger.info(f"Processing {len(images_to_process)} images in parallel...")
+    processed_results = Parallel(n_jobs=-1, backend="threading")(
+        delayed(_process_single_image)(img, all_captions) for img in images_to_process
+    )
 
-                    for img_page in img_response.get("query", {}).get("pages", {}).values():
-                        if "imageinfo" in img_page:
-                            for img_data in img_page["imageinfo"]:
-                                img_url = img_data["url"]
+    # 4. Filter out failed jobs and save successful ones
+    final_captions = []
+    for result in processed_results:
+        if result:
+            final_captions.append(result)
+            ImageCaption.objects.update_or_create(
+                page=page,
+                image_url=result["image_url"],
+                defaults={"final_caption": result["final_caption"]},
+            )
 
-                                # Get high-res version
-                                high_res_img_url = get_high_resolution_image_url(img_url)
-
-                                metadata = img_data.get("extmetadata", {})
-
-                                # Extract text captions and clean HTML tags
-                                title_caption = clean_html(
-                                    metadata.get("ImageDescription", {}).get("value", "")
-                                ) or clean_html(metadata.get("Caption", {}).get("value", ""))
-                                description = clean_html(metadata.get("ObjectName", {}).get("value", ""))
-                                real_caption = clean_html(image_captions.get(img_title, ""))
-
-                                # Process image and generate LLaVA caption
-                                llava_caption = process_image(
-                                    high_res_img_url, title_caption, real_caption, description
-                                )
-
-                                if llava_caption:
-                                    # Store only the LLaVA caption as final_caption
-                                    ImageCaption.objects.create(
-                                        page=page, image_url=high_res_img_url, final_caption=llava_caption
-                                    )
-
-                                    # Add to processed captions list
-                                    processed_captions.append(
-                                        {"image_url": high_res_img_url, "final_caption": llava_caption}
-                                    )
-
-        # Handle pagination
-        if "continue" in response:
-            continue_param = response["continue"]
-        else:
-            break
-
-    # Cache the results
-    cache.set(cache_key, processed_captions, timeout=60 * 60)  # Cache for 1 hour
-
-    return processed_captions
+    logger.info(f"Successfully processed and saved {len(final_captions)} image captions.")
+    return final_captions
 
 
-# # Example Wikipedia page
-# wiki_url = "https://en.wikipedia.org/wiki/Python_(programming_language)"
-# fetch_and_process_images(wiki_url)
+class CaptionGenerationView(APIView):
+    """
+    API view to trigger the processing of a Wikipedia page for image captions.
+    Accepts a POST request with a 'link' to a Wikipedia page.
+    """
+
+    @ratelimit(key="ip", rate=get_env_variable("RATE_LIMIT", "5/m"), method="POST", block=True)
+    @validate_url_param(param_name="link")
+    def post(self, request, *args, **kwargs):
+        page_url = request.data.get("link")
+        cache_key = f"wikipedia_captions:{page_url}"
+        cache_timeout = int(get_env_variable("CACHE_TIMEOUT_SECONDS", 3600))
+
+        try:
+            # 1. Check cache first
+            cached_data = cache.get(cache_key)
+            if cached_data:
+                logger.info(f"Cache hit for {page_url}")
+                return Response({"status": "success", "source": "cache", "data": cached_data})
+
+            # 2. Check database
+            page = WikipediaPage.objects.filter(url=page_url).first()
+            if page:
+                db_captions = list(ImageCaption.objects.filter(page=page).values("image_url", "final_caption"))
+                if db_captions:
+                    logger.info(f"DB hit for {page_url}")
+                    cache.set(cache_key, db_captions, timeout=cache_timeout)
+                    return Response({"status": "success", "source": "database", "data": db_captions})
+
+            # 3. Process the page if not in cache or DB
+            logger.info(f"Processing page: {page_url}")
+            page_title = urllib.parse.unquote(page_url.split("/")[-1])
+            processed_captions = fetch_and_process_page_images(page_title, page_url)
+
+            if processed_captions:
+                cache.set(cache_key, processed_captions, timeout=cache_timeout)
+                return Response({"status": "success", "source": "processed", "data": processed_captions})
+            else:
+                return Response(
+                    {"status": "error", "message": "No processable images found on the page."},
+                    status=status.HTTP_404_NOT_FOUND,
+                )
+
+        except ConnectionError as e:
+            logger.error(f"Network error while processing {page_url}: {e}", exc_info=True)
+            return Response(
+                {"status": "error", "message": "Failed to connect to external services."},
+                status=status.HTTP_503_SERVICE_UNAVAILABLE,
+            )
+        except Exception as e:
+            logger.critical(f"An unexpected error occurred for {page_url}: {e}", exc_info=True)
+            return Response(
+                {"status": "error", "message": "An internal server error occurred."},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )
